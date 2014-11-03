@@ -1,0 +1,25 @@
+/*██ Theme ██████████████████
+================================================*/
+
+// >> Layout Variables >>>>>>>>>>>>>>>>>>>>>>>>>
+
+// -- Theme Swatch -------------------------
+$themeWhite : #fff;
+$themeGreyLighter : #e5e5e5;
+$themeGreyLight : #ccc;
+$themeGrey : #999;
+$themeGreyDark : #777;
+$themeGreyDarker : #555;
+$themeRed : #ff4949;
+$themeRedDark : #f00;
+//
+$fontColor: $themeGreyDarker;
+//
+$linkColor : $themeRed;
+$linkHover : darken($linkColor, 10%);
+$linkVisited : darken($linkHover, 5%);
+$linkFocus : $linkHover;
+$linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);
+
+
+$cdn : '//thecdnurl.com/whatever';

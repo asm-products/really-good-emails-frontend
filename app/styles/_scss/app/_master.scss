@@ -1,0 +1,50 @@
+/* ░░ Master ░░░░░░░░░
+============================================*/
+
+body {
+	height: auto;
+	font-family: $roboto-regular;
+	color: $fontColor;
+	background: $themeGreyLight; 
+}
+
+body, .container, header, section, footer {
+	min-width: 320px;
+}
+
+a {
+	color: $linkColor;
+	//
+	&:hover {
+		color: $linkHover;
+		text-decoration: underline;
+	}
+}
+
+p {
+	font-size: 1em;
+}
+
+@include selection($themeRed, $white);
+
+//
+
+.notific {
+	background: $themeGreyLight;
+	color:$themeGrey;
+	//
+	.link {
+		color: $linkColor;
+		&:hover {
+			color: $linkHover;
+		}
+	}
+	.close {
+		color: $themeGrey;
+		text-decoration: none;
+		//
+		&:hover {
+			color: $themeGrey;
+		}
+	}
+}
