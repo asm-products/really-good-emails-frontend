@@ -1,0 +1,65 @@
+/* >> Feature (Module) >>>>>>>>>>>>
+============================================*/
+.feature {
+	position: relative;
+	background: $slate;
+	//
+  figure {
+  	position: relative;
+  	z-index: 4;
+  	height: 450px;
+  	//
+  	&:before {
+  		content: '';
+  		position: absolute;
+  		z-index: 1;
+  		top: 0;
+  		left: 0;
+  		height: 100%;
+  		width: 100%;
+  		background: url(/media/images/feature-bg-email-tiles.jpg) no-repeat center center;
+  		// background: url(http://placehold.it/800x600&text=1920x1080) no-repeat center center;
+  	}
+  	&.gradient {
+  		//
+  		&:after {
+	  		content: '';
+	  		position: absolute;
+	  		z-index: 2;
+	  		top: 0;
+	  		left: 0;
+	  		height: 100%;
+	  		width: 100%;
+				@include background-image(linear-gradient(top,  rgba(53,57,65,0.75) -35%,rgba(53,57,65,1) 85%));
+	  	}
+  	}
+  }
+  figcaption {
+  	position: relative;
+  	z-index: 5;
+  	top: 50%;
+  	@include translate3d(0,-50%,0);
+  	text-align: center;
+  	max-width: 1200px;
+  	margin:0 auto;
+  	color: $white;
+  	//
+  	h2 {
+  		margin: 0 0 0.35em 0;
+  		line-height: 1.4em;
+  		font-size: 3.5em;
+  		font-family: $roboto-light;
+  		//
+  		a {
+  			color: $white;
+  			text-decoration: none;
+  		}
+  	}
+  	h3 {
+  		margin: 0 0 0 0;
+  		line-height: 1.25em;
+  		font-size: 1.5em;
+  		font-family: $roboto-medium;
+  	}
+  }
+}

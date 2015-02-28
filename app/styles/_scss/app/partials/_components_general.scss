@@ -1,0 +1,260 @@
+/* >> General (Components) >>>>>>>>>>>>
+============================================*/
+
+$spin-load-small-offset: 128;
+$spin-load-duration: 1s;
+
+.spin-load-small {
+	@extend .gpu;
+	width: 32px;
+	height: 32px;
+	@include animation(rotator 2.5s linear infinite);
+	//
+	.path {
+		@extend .gpu;
+	  stroke-dasharray: $spin-load-small-offset;
+	  stroke-dashoffset: 0;
+	  transform-origin: center;
+	  @include animation(dash 1s ease-in-out infinite, colors ($spin-load-duration*4) ease-in-out infinite);
+	}
+	@include keyframes(rotator) {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
+	@include keyframes(colors) {
+		0% { stroke: $teal }
+		25% { stroke: $ruby; }
+		50% { stroke: #F7C223; }
+		75% { stroke: #1B9A59; }
+	  100% { stroke: $teal }
+	}
+	@include keyframes(dash) {
+	 0% {
+	 	 stroke-dashoffset: $spin-load-small-offset;
+	 }
+	 50% {
+	   stroke-dashoffset: $spin-load-small-offset/2;
+	   transform:rotate(120deg);
+	 }
+	 100% {
+	   stroke-dashoffset: $spin-load-small-offset;
+	   transform:rotate(360deg);
+	 }
+	}
+}
+
+a.button-big {
+	display: inline-block;
+	padding: 0.2em 3em;
+	color: $white;
+	background: $teal;
+	border-radius: 50px;
+	font-size:1.375em;
+	font-family: $roboto-bold;
+	text-decoration: none;
+	&:hover {
+		background: $tealDark;
+	}
+}
+
+.hamburger-menu-button {
+	display: inline-block;
+	width: 50px;
+	padding-left: 3px;
+	text-align: center;
+	vertical-align: middle;
+	//
+	@media screen and (min-width: 768px) {
+		display: none;
+		width: auto;
+	}
+	.button-primary {
+		padding: 0.5em 0.25em;
+		cursor: pointer;
+		-webkit-user-select: none;
+		border: 0;
+		border-radius: 5px;
+		-webkit-touch-callout: none;
+		@include transition(background .2s ease-in-out);
+		//
+		&:hover {
+			background: $slate;
+			@include transition(background .2s ease-in-out);
+			//
+			.icon-bar {
+				background-color: $slateLighter;
+			}
+		}
+		&.active {
+			background: $slate;
+			@include transition(background .2s ease-in-out);
+			//
+			.icon-bar {
+				background-color: $slateLighter;
+			}
+		}
+		&.touch:hover {
+			background: none;
+		}
+		.icon-bar {
+			line-height: 2px;
+			display: block;
+			width: 20px;
+			height: 3px;
+			margin: 4px auto;
+			vertical-align: text-top;
+			background-color: $slateLighter;
+		}
+	}
+}
+
+.nav-dropdown {
+	margin: 0;
+	//
+	a {
+		padding: 1em;
+		text-decoration: none;
+		//
+		&:hover {
+			background: $winkleLight;
+		}
+	}
+	dt {
+		display: inline-block;
+		font-weight: normal;
+		//
+		a {
+			display: inline-block;
+		}
+		.item {
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 0.5em;
+		}
+		.arrow {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			vertical-align: middle;
+			margin: 3px 0 0 0;
+			border-style: solid;
+			border-width: 4px 0 4px 5px;
+			border-color: transparent transparent transparent $slateDark;
+			@include rotate(90deg);
+		}
+	}
+	dd {
+		position: relative;
+		margin: 0;
+	}
+	.dd-list {
+		position: absolute;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		background: $winkleLighter;
+		border-top: 1px solid $winkleLight;
+		//
+		> li {
+			// display:inline-block;
+			list-style-type: none;
+			border-bottom: 1px solid $winkleLight;
+			&:last-child {
+				border-bottom: none;
+			}
+			//
+			&.active {
+				background: $winkleLight;
+			}
+		}
+		a {
+			display: block;
+		}
+	}
+	&.active {
+		//
+		dt {
+			//
+			a {
+				background: $winkleLighter;
+			}
+		}
+	}
+}
+
+.plus-menu-button {
+	display:inline-block;
+	//
+	.plus {
+		position: relative;
+		display:inline-block;
+		height:35px;
+		width:35px;
+		vertical-align: middle;
+		text-decoration: none;
+		background: $teal;
+		border-radius: 50px;
+		@include rotate(0deg);
+		@include transition(all 0.3s ease);
+		//
+		&:hover {
+			svg {
+				@include rotate(180deg);
+				@include transition(all 0.3s ease);
+			}
+		}
+		svg {
+			position: absolute;
+			top: 9.5px;
+			left: 10px;
+			height: 15px;
+			width: 15px;
+			fill: $slateDark;
+		}
+	}
+}
+
+.avatar-box {
+	display:inline-block;
+	//
+	.avatar {
+		display:inline-block;
+		width:32px;
+		text-decoration: none;
+		background: $slateLightest;
+		border-radius: 3px;
+		//
+		&:hover {
+			//
+			img {
+				@include opacity(0.75);
+			}
+		}
+		img {
+			border-radius: 3px;
+		}
+	}
+}
+
+.notification-box {
+	display:inline-block;
+	//
+	.notification {
+		display:inline-block;
+		width:32px;
+		height:32px;
+		padding-top:4px;
+		color: $white;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 0.85em;
+		font-weight: bold;
+		text-decoration: none;
+		background: $rubyLight;
+		border-radius: 3px;
+		//
+		&:hover {
+			background: $rubyLighter;
+		}
+	}
+}

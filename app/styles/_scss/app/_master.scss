@@ -2,18 +2,42 @@
 ============================================*/
 
 body {
+	overflow-x: hidden;
 	height: auto;
 	font-family: $roboto-regular;
 	color: $fontColor;
-	background: $themeGreyLight; 
+	background: $slateDark;
 }
 
-body, .container, header, section, footer {
+body, header, section, footer {
 	min-width: 320px;
+}
+
+.container {
+	background: $white;
+}
+
+.preload {
+  // visibility: hidden;
+  opacity:0;
+  @extend .gpu;
+}
+.loaded {
+  // visibility: visible;
+  opacity:1;
+}
+
+body > .container > main {
+  position: relative;
+  padding-top: 3.75em;
+  @media screen and (min-width: 768px) {
+		padding-top: 5em;
+	}
 }
 
 a {
 	color: $linkColor;
+	@include transition(color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease);
 	//
 	&:hover {
 		color: $linkHover;
@@ -25,26 +49,26 @@ p {
 	font-size: 1em;
 }
 
-@include selection($themeRed, $white);
+@include selection($ruby, $white);
 
 //
 
-.notific {
-	background: $themeGreyLight;
-	color:$themeGrey;
-	//
-	.link {
-		color: $linkColor;
-		&:hover {
-			color: $linkHover;
-		}
-	}
-	.close {
-		color: $themeGrey;
-		text-decoration: none;
-		//
-		&:hover {
-			color: $themeGrey;
-		}
-	}
-}
+// .notific {
+// 	background: $themeGreyLight;
+// 	color:$themeGrey;
+// 	//
+// 	.link {
+// 		color: $linkColor;
+// 		&:hover {
+// 			color: $linkHover;
+// 		}
+// 	}
+// 	.close {
+// 		color: $themeGrey;
+// 		text-decoration: none;
+// 		//
+// 		&:hover {
+// 			color: $themeGrey;
+// 		}
+// 	}
+// }

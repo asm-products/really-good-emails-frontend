@@ -1,6 +1,12 @@
 /*░░ Footer ░░░░░░░░░
 ============================================*/
 //
-footer {
-	background: $themeGrey;
+body > .container > footer {
+	color: $white;
+	background: $slateDark;
+	//
+	.inner {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
 }

@@ -1,0 +1,45 @@
+/* >> Card Grid (Module) >>>>>>>>>>>>
+============================================*/
+//
+// Header ///////
+.card-grid {
+	//
+	header {
+		position: relative;
+		z-index: 5;
+		border-bottom: 1px solid $winkleLight;
+	}
+	.card-grid-nav {
+		max-width:  1200px;
+		margin: 0 auto;
+		//
+		a {
+			// display: inline-block;
+			// padding: 1em;
+			color: $slateDark;
+			font-family: $roboto-medium;
+			font-size: 0.9em;
+		}
+		.card-grid-nav-primary {
+			display: inline-block;
+			width: 50%;
+		}
+		.card-grid-nav-secondary {
+			display: inline-block;
+			width: 50%;
+			> ul {
+				margin:0;
+				padding:0;
+				//
+				> li {
+					display:inline-block;
+					list-style-type: none;
+				}
+			}
+		}
+	}
+// Main ///////
+	main {
+
+	}
+}

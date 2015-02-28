@@ -1,19 +1,5 @@
 /*>> App Font Controller >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @import "config/--fonts";
-@import "app/font-local"; // app font stack (for self hosted fonts)
+@import "app/font-load"; // app font stack (for self hosted fonts)
 @import "app/font-vars";  // app font variables
-
-/*
-.wf-loading {
-    visibility: hidden;
-    opacity:0;
-    @include transition(opacity 0.25s ease-in-out);
-} 
-
-.wf-active, .wf-inactive {
-    visibility: visible;
-    opacity:1;
-    @include transition(opacity 0.25s ease-in-out);
-}
-*/

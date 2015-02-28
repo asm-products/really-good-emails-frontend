@@ -4,22 +4,34 @@
 // >> Layout Variables >>>>>>>>>>>>>>>>>>>>>>>>>
 
 // -- Theme Swatch -------------------------
-$themeWhite : #fff;
-$themeGreyLighter : #e5e5e5;
-$themeGreyLight : #ccc;
-$themeGrey : #999;
-$themeGreyDark : #777;
-$themeGreyDarker : #555;
-$themeRed : #ff4949;
-$themeRedDark : #f00;
 //
-$fontColor: $themeGreyDarker;
+$slateLightest: #747981;
+$slateLighter: #646971;
+$slateLight: #555961;
+$slate: #454951;
+$slateDark: #353941;
+$slateDarker: #2a2e35;
+$slateDarkest: #202329;
 //
-$linkColor : $themeRed;
+$winkleLighter: #f8fafc;
+$winkleLight: #dbdee3;
+$winkle: #c2c7d0;
+//
+$rubyLighter : #ff8585;
+$rubyLight : #ff6565;
+$ruby : #ff4848;
+$rubyDark : #ff1414;
+//
+$tealLight: #6ecace;
+$teal: #3db8bf;
+$tealDark: #0f858c;
+//
+$fontColor: $slateDark;
+//
+$linkColor : $ruby;
 $linkHover : darken($linkColor, 10%);
 $linkVisited : darken($linkHover, 5%);
 $linkFocus : $linkHover;
 $linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);
-
 
 $cdn : '//thecdnurl.com/whatever';

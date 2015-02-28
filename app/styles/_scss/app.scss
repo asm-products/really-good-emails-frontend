@@ -23,15 +23,21 @@
 @import "app/vars";
 @import "app/fonts";
 //
-@import "app/master";						// shared app styles
+@import "app/master";											// shared app styles
 @import "app/header";
+@import "app/main";
 @import "app/footer";
 @import "app/print";
 
 // -- Partials --------------------------------------------------------
 //
-// Modules											// Base styles for multipurpose / global modules
+// Modules																// Base styles for reusable, global modules
+@import "app/partials/module_feature";
+@import "app/partials/module_card-grid.scss";
 
-// Layouts											// Base styles for each layout type
+// Components															// Base styles for reusable, global components
+@import "app/partials/components_general.scss";
 
-// Sections											// Sectional breakouts of each layout (all layout level module skinning done here as well)
+// Layouts																// Base styles & module overwrites for each layout type
+
+

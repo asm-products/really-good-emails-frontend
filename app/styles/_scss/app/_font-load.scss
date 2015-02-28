@@ -1,0 +1,93 @@
+/*>> Theme Font Stack >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+// -- @font-face declarations ---------------------------------
+@font-face {
+    font-family:"roboto-thin";
+    src:url("fonts/Roboto-Thin-webfont.woff") format("woff2"),
+        url("fonts/Roboto-Thin-webfont.woff") format("woff"),
+        url("fonts/Roboto-Thin-webfont.svg#roboto-thin") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // old stock android browser fix
+    @font-face {
+        font-family:"roboto-thin";
+        src:url("fonts/Roboto-Thin-webfont.svg#roboto-thin") format("svg");
+    }
+}
+//
+@font-face {
+    font-family:"roboto-light";
+    src:url("fonts/Roboto-Light-webfont.woff") format("woff2"),
+        url("fonts/Roboto-Light-webfont.woff") format("woff"),
+        url("fonts/Roboto-Light-webfont.svg#roboto-light") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // old stock android browser fix
+    @font-face {
+        font-family:"roboto-light";
+        src:url("fonts/Roboto-Light-webfont.svg#roboto-light") format("svg");
+    }
+}
+//
+@font-face {
+    font-family:"roboto-regular";
+    src:url("fonts/Roboto-Regular-webfont.woff") format("woff2"),
+        url("fonts/Roboto-Regular-webfont.woff") format("woff"),
+        url("fonts/Roboto-Regular-webfont.svg#roboto-regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // old stock android browser fix
+    @font-face {
+        font-family:"roboto-regular";
+        src:url("fonts/Roboto-Regular-webfont.svg#roboto-regular") format("svg");
+    }
+}
+//
+@font-face {
+    font-family:"roboto-medium";
+    src:url("fonts/Roboto-Medium-webfont.woff") format("woff2"),
+        url("fonts/Roboto-Medium-webfont.woff") format("woff"),
+        url("fonts/Roboto-Medium-webfont.svg#roboto-medium") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // old stock android browser fix
+    @font-face {
+        font-family:"roboto-medium";
+        src:url("fonts/Roboto-Medium-webfont.svg#roboto-medium") format("svg");
+    }
+}
+//
+@font-face {
+    font-family:"roboto-bold";
+    src:url("fonts/Roboto-Bold-webfont.woff") format("woff2"),
+        url("fonts/Roboto-Bold-webfont.woff") format("woff"),
+        url("fonts/Roboto-Bold-webfont.svg#roboto-bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // old stock android browser fix
+    @font-face {
+        font-family:"roboto-bold";
+        src:url("fonts/Roboto-Bold-webfont.svg#roboto-bold") format("svg");
+    }
+}
+//
+@font-face {
+    font-family:"roboto-black";
+    src:url("fonts/Roboto-Black-webfont.woff") format("woff2"),
+        url("fonts/Roboto-Black-webfont.woff") format("woff"),
+        url("fonts/Roboto-Black-webfont.svg#roboto-black") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { // old stock android browser fix
+    @font-face {
+        font-family:"roboto-black";
+        src:url("fonts/Roboto-Black-webfont.svg#roboto-black") format("svg");
+    }
+}
+
