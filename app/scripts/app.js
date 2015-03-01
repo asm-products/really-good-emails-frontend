@@ -88,8 +88,8 @@
     });
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
       $timeout(function(){
-        $rootScope.toggleLoadMain = true;
-        $rootScope.toggleLoadSpin = false;
+        // $rootScope.toggleLoadMain = true;
+        // $rootScope.toggleLoadSpin = false;
       }, 500);
       $rootScope.titleTag = current.$$route.titleTag;
       $rootScope.metaTitle = current.$$route.metaTitle;

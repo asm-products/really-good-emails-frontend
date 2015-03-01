@@ -10,16 +10,26 @@ $spin-load-duration: 1s;
 	height: 32px;
 	@include animation(rotator 2.5s linear infinite);
 	//
-	.path {
-		@extend .gpu;
-	  stroke-dasharray: $spin-load-small-offset;
+	.gwrap1 {
+	  @include translate3d(16px,16px,0);
+	}
+	.gwrap2 {
+		stroke-dasharray: $spin-load-small-offset;
 	  stroke-dashoffset: 0;
-	  transform-origin: center;
-	  @include animation(dash 1s ease-in-out infinite, colors ($spin-load-duration*4) ease-in-out infinite);
+	  @include translate3d(16px,16px,0);
+		@include animation(dash $spin-load-duration ease-in-out infinite);
+	}
+	.path {
+		@include translate3d(-16px,-16px,0);
+	  @include animation(colors ($spin-load-duration*4) ease-in-out infinite);
 	}
 	@include keyframes(rotator) {
-	  0% { transform: rotate(0deg); }
-	  100% { transform: rotate(360deg); }
+	  0% {
+	  	@include rotate(0deg);
+	 	}
+	  100% {
+	  	@include rotate(360deg);
+	 	}
 	}
 	@include keyframes(colors) {
 		0% { stroke: $teal }
@@ -30,15 +40,16 @@ $spin-load-duration: 1s;
 	}
 	@include keyframes(dash) {
 	 0% {
-	 	 stroke-dashoffset: $spin-load-small-offset;
+	 	stroke-dashoffset: $spin-load-small-offset;
+	 	@include rotate(0deg);
 	 }
 	 50% {
-	   stroke-dashoffset: $spin-load-small-offset/2;
-	   transform:rotate(120deg);
+	  stroke-dashoffset: ($spin-load-small-offset/2);
+	  @include rotate(120deg);
 	 }
 	 100% {
 	   stroke-dashoffset: $spin-load-small-offset;
-	   transform:rotate(360deg);
+	   @include rotate(360deg);
 	 }
 	}
 }
@@ -243,7 +254,7 @@ a.button-big {
 		display:inline-block;
 		width:32px;
 		height:32px;
-		padding-top:4px;
+		padding-top:3px;
 		color: $white;
 		vertical-align: middle;
 		text-align: center;
