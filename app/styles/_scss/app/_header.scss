@@ -7,37 +7,33 @@
 body > .container {
 	> header, > main, > footer {
 		@extend .gpu;
-		@include translate3d(0,0,0);
-		@include transition(transform 0.3s ease, opacity 0.25s ease-in-out);
+		transform: translate3d(0,0,0);
+		transition: transform 0.3s ease;
 	}
 }
 .site-nav .site-nav-primary nav {
 	height: 2000px;
-	@include translate3d(-200px,0,0);
-	@include transition(transform 0.3s ease);
+	transform: translate3d(-200px,0,0);
 	@media screen and (min-width: 768px) {
 		height: auto;
-		@include translate3d(0,0,0);
+		transform: translate3d(0,0,0);
 	}
 }
 .site-nav .site-nav-secondary nav {
 	height: 2000px;
-	@include translate3d(0,0,0);
-	@include transition(transform 0.3s ease);
+	transform: translate3d(0,0,0);
 }
 // active
 .primary-menu-active > .container {
 	//
 	> header, > main, > footer {
-		@include translate3d(200px,0,0);
-		@include transition(transform 0.3s ease);
+		transform: translate3d(200px,0,0);
 	}
 }
 .secondary-menu-active > .container {
 	//
 	> header, > main, > footer {
-		@include translate3d(-200px,0,0);
-		@include transition(transform 0.3s ease);
+		transform: translate3d(-200px,0,0);
 	}
 }
 // loader
@@ -108,32 +104,17 @@ body > .container > header {
 				margin: 0 0.5em 0 0;
 			}
 			//
-			span { display: none; }
+			span {
+				display: none;
+			}
 			a {
 				display:block;
-				// @include animation-play-state(paused);
+				// animation-play-state: paused;
 				//
 				&:hover {
-					@include animation(logo-hop 0.5s 1);
-					// @include animation-play-state(running);
+					animation: logo-hop 0.5s 1;
+					// animation-play-state: running;
 				}
-			}
-			@include keyframes(logo-hop) {
-			  0% {
-			    @include translate3d(0,0,0);
-			  }
-			  25% {
-			    @include translate3d(0,-3px,0);
-			  }
-			  50% {
-			    @include translate3d(0,0,0);
-			  }
-			  75% {
-			    @include translate3d(0,-3px,0);
-			  }
-			  100% {
-			    @include translate3d(0,0,0);
-			  }
 			}
 			svg {
 				display: inline-block;
@@ -159,10 +140,10 @@ body > .container > header {
 			a {
 				color: $winkleLight;
 				text-decoration: none;
-				@include opacity(1);
+				opacity: 1;
 				&:hover {
 					@media screen and (min-width: 768px) {
-						@include opacity(0.5);
+						opacity: 0.5;
 					}
 				}
 			}
@@ -346,4 +327,24 @@ body > .container > header {
 			}
 		}
 	}
+}
+
+// Animations
+
+@keyframes logo-hop {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  25% {
+    transform: translate3d(0,-3px,0);
+  }
+  50% {
+    transform: translate3d(0,0,0);
+  }
+  75% {
+    transform: translate3d(0,-3px,0);
+  }
+  100% {
+    transform: translate3d(0,0,0);
+  }
 }

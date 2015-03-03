@@ -28,10 +28,8 @@
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
-        controller: 'homeCtrl',
-        // resolve: { // things that need to happen before the page can load
-        // },
-        resolve: resolve,
+        // controller: 'homeCtrl',
+        resolve: resolve, // things that need to happen before load
         titleTag: 'Really Good Emails - The Best Email Designs in the Universe (that came into my inbox)',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
@@ -56,21 +54,57 @@
         templateUrl: 'views/email-kits.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Email - Kits',
+        titleTag: 'Really Good Emails - Email Kits',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
-      .otherwise({
-        redirectTo: '/',
-        titleTag: 'Really Good Emails',
+      .when('/archive', {
+        templateUrl: 'views/archive.html',
+        // controller: 'secondaryCtrl',
         resolve: resolve,
-        metaTitle: '',
-        metaDesc: ''
+        titleTag: 'Really Good Emails - Archive',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
+      })
+      .when('/faq', {
+        templateUrl: 'views/faq.html',
+        // controller: 'secondaryCtrl',
+        resolve: resolve,
+        titleTag: 'Really Good Emails - FAQ',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        // controller: 'secondaryCtrl',
+        resolve: resolve,
+        titleTag: 'Really Good Emails - Contact',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
+      })
+      .when('/newsletter', {
+        templateUrl: 'views/newsletter.html',
+        // controller: 'secondaryCtrl',
+        resolve: resolve,
+        titleTag: 'Really Good Emails - Newsletter',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
+      })
+      .when('/404', {
+          templateUrl : 'views/error.html',
+          //controller : 'errorCtrl',
+          resolve: resolve,
+          titleTag: 'Really Good Emails - 404 Ruh Roh!',
+          metaTitle: 'the meta title',
+          metaDesc: 'the meta description'
+      })
+      .otherwise({
+        redirectTo: '/404',
       });
       $locationProvider.html5Mode(true);
   }]);
 
-// Global Meta /////
+// Global Meta Injection /////
   app.controller('metaCtrl', ['$scope', function($scope) {
     $scope.appName = 'reallygoodemails';
     $scope.appTitle = 'Really Good Emails';
@@ -79,18 +113,10 @@
     $scope.appCDNurl = '';
   }]);
 
-  app.run(['$rootScope', '$timeout', function($rootScope, $timeout) {
-    $rootScope.$on('$routeChangeStart', function (event, next, current, previous) {
-      if (next && next.$$route) {
-        $rootScope.toggleLoadMain = false;
-        $rootScope.toggleLoadSpin = true;
-      }
-    });
-    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-      $timeout(function(){
-        // $rootScope.toggleLoadMain = true;
-        // $rootScope.toggleLoadSpin = false;
-      }, 500);
+// Per Page Meta Injection /////
+  app.run(['$rootScope', function($rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+      $rootScope.controller = current.$$route.controller;
       $rootScope.titleTag = current.$$route.titleTag;
       $rootScope.metaTitle = current.$$route.metaTitle;
       $rootScope.metaDesc = current.$$route.metaDesc;

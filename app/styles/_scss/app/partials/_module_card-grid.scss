@@ -1,45 +1,175 @@
 /* >> Card Grid (Module) >>>>>>>>>>>>
 ============================================*/
 //
-// Header ///////
 .card-grid {
 	//
-	header {
-		position: relative;
-		z-index: 5;
-		border-bottom: 1px solid $winkleLight;
+	.icon-arrow {
+		width:9px;
+		height:12px;
+		vertical-align: middle;
+		fill: $slateDark;
+		transition: transform 0.15s ease-in-out;
 	}
-	.card-grid-nav {
-		max-width:  1200px;
+	.icon-list {
+		width:12px;
+		vertical-align: middle;
+		fill: $slateLighter;
+		margin: 0 3px 1px 0;
+	}
+	.icon-smiley {
+		width:15px;
+		vertical-align: middle;
+		fill: $slateLighter;
+		margin: 0 2px 3px 0;
+	}
+}
+//
+.card-grid-nav {
+	position: relative;
+	z-index: 5;
+	margin: 0 0 2em 0;
+	border-bottom: 1px solid $winkleLight;
+	//
+	.inner {
+		max-width: 1230px;
 		margin: 0 auto;
 		//
+	}
+	a {
+		color: $slateDark;
+		font-size: 0.925em;
+	}
+	.card-grid-nav-primary {
+		display: inline-block;
+		width: 35%;
+		vertical-align: middle;
+		//
+		.nav-group-one {
+			//
+			.icon-arrow {
+				margin-top: 0.175em;
+			}
+		}
+	}
+	.card-grid-nav-secondary {
+		display: inline-block;
+		width: 65%;
+		vertical-align: middle;
+		text-align: right;
+		> ul {
+			text-align: left;
+			margin:0;
+			padding:0;
+			//
+			> li {
+				display:inline-block;
+				list-style-type: none;
+			}
+		}
 		a {
-			// display: inline-block;
-			// padding: 1em;
-			color: $slateDark;
-			font-family: $roboto-medium;
-			font-size: 0.9em;
+			font-size: 0.8125em;
+			padding: 1.3em 1.2em;
 		}
-		.card-grid-nav-primary {
+		.nav-group-two {
+			position: relative;
+			&:before {
+				content:'';
+				position: absolute;
+				top: 25%;
+				right: 0;
+				height: 50%;
+				width: 1px;
+				background-color:$winkleLight;
+			}
+		}
+	}
+}
+.card-grid-main {
+	padding: 0 0 2em 0;
+	margin: 0 0 2em 0;
+	border-bottom: 1px solid $winkleLight;
+	//
+	> .inner {
+		max-width: 1212px;
+		margin: 0 auto;
+		padding: 0 1em;
+		@media screen and (min-width: 1250px) {
+			padding: 0;
+		}
+	}
+	.header {
+		@media screen and (min-width: 1250px) {
+			padding: 0 0.4em;
+		}
+		//
+		h4 {
+			display: inline-block;
+			margin: 0;
+			vertical-align: middle;
+			width: 50%;
+			font-size:1.25em;
+		}
+		.secondary {
 			display: inline-block;
 			width: 50%;
+			margin: 0;
+			vertical-align: middle;
+			text-align: right;
+			//
+			a {
+				font-family: $roboto-light;
+				font-size: 0.8125em;
+				color: $slateDark;
+				text-decoration: none;
+				transition: color 0.25s ease-in-out;
+				&:hover {
+					color: $ruby;
+					svg {
+						fill: $ruby;
+						transition: fill 0.25s ease-in-out;
+					}
+				}
+			}
+			svg {
+				width:9px;
+				height:12px;
+				vertical-align: middle;
+				fill: $slateDark;
+				transition: fill 0.25s ease-in-out;
+			}
+			span {
+				vertical-align: middle;
+			}
 		}
-		.card-grid-nav-secondary {
+	}
+	.main {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		//
+		li {
 			display: inline-block;
-			width: 50%;
-			> ul {
-				margin:0;
-				padding:0;
-				//
-				> li {
+			padding: 24px 6px;
+			max-width: none;
+			@media screen and (min-width: 700px) {
+				width: 50%;
+			}
+			@media screen and (min-width: 1024px) {
+				width: 33.3333%;
+			}
+			@media screen and (min-width: 1200px) {
+				width: 25%;
+			}
+			&:last-child {
+				@media screen and (min-width: 1024px) {
+					display:none;
+				}
+				@media screen and (min-width: 1200px) {
 					display:inline-block;
-					list-style-type: none;
 				}
 			}
 		}
 	}
-// Main ///////
-	main {
-
-	}
 }
+
+

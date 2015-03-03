@@ -2,11 +2,7 @@
 
 // Base Styles /////////////////////
 
-// ==== SCSS ==========================================================
-@import "compass";
-
 // ==== Config (universal) ============================================
-@import "app/config/mixins/--all";				// pop in them mixins
 @import "app/config/--summary";						// Summary: An optional table of contents defining your document structure
 @import "app/config/--normalize"; 				// Normalize: CSS reset alt for resolving cross browser style differences
 @import "app/config/--general";						// General: Common SCSS variables & general helper classes (eg clearfix, alignment, etc)
@@ -34,10 +30,11 @@
 // Modules																// Base styles for reusable, global modules
 @import "app/partials/module_feature";
 @import "app/partials/module_card-grid.scss";
+@import "app/partials/module_grid-card.scss";
 
 // Components															// Base styles for reusable, global components
 @import "app/partials/components_general.scss";
 
-// Layouts																// Base styles & module overwrites for each layout type
+// // Layouts																// Base styles & module overwrites for each layout type
 
 

@@ -3,8 +3,8 @@
 
 /*>> Selection >>>>>>>>>>>>
 ============================================*/
-@include selection($linkColor, $white);
-
+::-moz-selection{ background:$linkColor; color:white; text-shadow:none; }
+::selection { background:$linkColor; color:white; text-shadow:none; }
 
 /*>> Headers >>>>>>>>>>>>
 ============================================*/
@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /*>> Copy >>>>>>>>>>>>
 ============================================*/
+
+.force-wrap {
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    word-wrap: break-word;
+}
+
 p {
     margin: 0 0 rhythm();
 }
@@ -64,8 +76,9 @@ del {
     vertical-align: baseline;
     text-decoration: line-through;
 }
+
 pre {
-    @include force-wrap;
+    @extend .force-wrap;
     margin: 1.5em 0;
     padding: rhythm(.5) rhythm(.3);
     border-top: 1px solid #ff2;
@@ -210,9 +223,7 @@ input::-moz-focus-inner {
 
 // -- Placeholders ----------------
 input, input.placeholder, textarea, textarea.placeholder {
-    @include placeholder {
-        color: lighten($fontColor, 20%);
-    }
+    &.placeholder { color: lighten($fontColor, 20%); }
 }
 
 /*>> Tables >>>>>>>>>>>>

@@ -41,7 +41,7 @@ body {
     color: $greyDark;
     text-align: center;
     font-family: $helvetica;
-    @include mq-at-least(480px) {
+    @media screen and (min-width: 480px) {
         padding: 1.1em 3.5em 1.25em;
     }
     //
@@ -54,10 +54,10 @@ body {
     }
     span {
         display:inline;
-        @include mq-at-least(768px) {
+        @media screen and (min-width: 768px) {
             display:block;
         }
-        @include mq-at-least(1280px) {
+        @media screen and (min-width: 1280px) {
             display:inline;
         }
     }
@@ -69,17 +69,17 @@ body {
         width: 2em;
         text-align: center;
         color: $greyDark;
-        @include opacity(0.4);
+        opacity: 0.4;
         text-decoration: none;
         //
-        @include mq-at-least(480px) {
+        @media screen and (min-width: 480px) {
             top: 50%;
             right: 0.75em;
             margin: -1em 0 0 0;
         }
         &:hover {
             color: $greyDark;
-            @include opacity(0.75);
+            opacity: 0.75;
         }
     }
 }

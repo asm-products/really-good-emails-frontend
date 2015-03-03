@@ -93,7 +93,7 @@ $linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);
 
 // kick in gpu render
 .gpu {
-    @include backface-visibility(hidden);
-    @include transform-style(flat);
-    @include translateZ(0);
+    backface-visibility:hidden;
+    transform-style: flat;
+    transform: translateZ(200px);
 }

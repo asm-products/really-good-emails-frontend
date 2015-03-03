@@ -72,14 +72,14 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
-<body ng-controller="mainCtrl" ng-class="(togglePrimaryMenu ? 'primary-menu-active' : '')+' '+(toggleSecondaryMenu ? 'secondary-menu-active' : '')">
+<body class="{{controller}}" ng-controller="mainCtrl" ng-class="($root.togglePrimaryMenu ? 'primary-menu-active' : '')+' '+($root.toggleSecondaryMenu ? 'secondary-menu-active' : '')">
     <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="container">
         <header ng-include="'partials/header.html'"></header>
-        <main class="preload" ng-view="" ng-class="toggleLoadMain ? 'loaded' : ''" ng-click="menuToggle()"></main>
+        <main class="preload" ng-view="" ng-click="menuToggle()"></main>
         <footer ng-include="'partials/footer.html'" ng-click="menuToggle()"></footer>
     </div>
 
@@ -114,7 +114,6 @@
     <script src="bower_components/enquire/dist/enquire.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <!-- endbower -->
-    <script src="scripts/libs/jquery.ba-throttle-debounce.js"></script>
     <script src="scripts/libs/ios-orientationchange-fix.js"></script>
     <script src="scripts/libs/css-browser-selector.js"></script>
     <script src="scripts/libs/placeholder-fix.js"></script>
@@ -124,13 +123,11 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/config.js"></script>
+    <script src="scripts/enquire-config.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/mainCtrl.js"></script>
     <script src="scripts/controllers/headerCtrl.js"></script>
-    <script src="scripts/controllers/homeCtrl.js"></script>
-    <script src="scripts/enquire-config.js"></script>
-    <script src="scripts/directives/components_general.js"></script>
-    <script src="scripts/directives/header.js"></script>
+    <script src="scripts/controllers/cardGridCtrl.js"></script>
     <!-- endbuild -->
 </body>
 </html>

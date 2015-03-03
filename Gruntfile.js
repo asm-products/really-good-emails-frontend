@@ -21,31 +21,14 @@ module.exports = function(grunt) {
 
 // Frameworks //////////////////////////////////////////////
 // --
-    compass: {
+    sass: {
       options: {
-        sassDir: '<%= yeoman.app %>/styles/_scss',
-        cssDir: '.tmp/styles',
-        generatedImagesDir: '.tmp/images/generated',
-        imagesDir: '<%= yeoman.app %>/media/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
-        cacheDir: '.tmp/styles/.sass-cache',
-        importPath: './bower_components',
-        httpImagesPath: '/media/images',
-        httpGeneratedImagesPath: '/media/images/generated',
-        httpFontsPath: '/styles/fonts',
-        relativeAssets: false,
-        assetCacheBuster: false,
-        raw: 'Sass::Script::Number.precision = 10\n'
-      },
-      dist: {
-        options: {
-          generatedImagesDir: '<%= yeoman.dist %>/media/images/generated'
-        }
+        sourceMap: true,
+        outputStyle: 'expanded'
       },
       server: {
-        options: {
-          debugInfo: true
+        files: {
+          '.tmp/styles/app.css': '<%= yeoman.app %>/styles/_scss/app.scss'
         }
       }
     },
@@ -144,7 +127,7 @@ module.exports = function(grunt) {
 // --
     autoprefixer: {
       options: {
-        browsers: ['last 1 version']
+        browsers: ['last 2 versions', 'ie 9']
       },
       dist: {
         files: [{
@@ -228,13 +211,9 @@ module.exports = function(grunt) {
 // --
     concurrent: {
       server: [
-        'compass:server'
-      ],
-      test: [
-        'compass'
+        'sass:server'
       ],
       dist: [
-        'compass:dist',
         'imagemin',
         'svgmin'
       ]
@@ -290,7 +269,7 @@ module.exports = function(grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js', '!<%= yeoman.app %>/scripts/libs/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/scripts/{,*/}*.{js,json}', '!<%= yeoman.app %>/scripts/libs/{,*/}*.{js,json}'],
         tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -300,12 +279,14 @@ module.exports = function(grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/**/*.{scss,sass}'],
-        tasks: ['compass:server'],
+      sass: {
+        files: ['<%= yeoman.app %>/styles/_scss/*.{scss,sass}', '<%= yeoman.app %>/styles/_scss/**/*.{scss,sass}'],
+        tasks: ['sass','autoprefixer'],
+        sourceComments: 'normal',
         options: {
-          spawn: false,
-        },
+          nospawn: true,
+          //livereload: true
+        }
       },
       gruntfile: {
         files: ['Gruntfile.js']
