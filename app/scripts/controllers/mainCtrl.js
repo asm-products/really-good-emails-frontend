@@ -29,6 +29,9 @@
     });
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
       $timeout(function(){
+        window.scrollTo(0,0);
+      }, 300);
+      $timeout(function(){
         $rootScope.toggleLoadCover = true;
         $rootScope.toggleLoadSpin = false;
       }, 500);
