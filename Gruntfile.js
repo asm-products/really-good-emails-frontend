@@ -101,6 +101,42 @@ module.exports = function(grunt) {
 
 // Lint / Hint ///////////////////////////////////////////////
 // --
+    htmlhint: {
+      options: {
+        htmlhintrc: '.htmlhintrc'
+      },
+      strict: {
+        options: {
+          "tagname-lowercase": true,
+          "attr-lowercase": true,
+          "attr-value-double-quotes": true,
+          "doctype-first": true,
+          "tag-pair": true,
+          "spec-char-escape": true,
+          "id-unique": true,
+          "src-not-empty": true,
+          "attr-no-duplication": true
+        },
+        src: ['path/to/**/*.html']
+      },
+    },
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['.tmp/styles/{,*/}*.css',]
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['.tmp/styles/{,*/}*.css',]
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -395,9 +431,9 @@ module.exports = function(grunt) {
 // Build //////////////////////////////////////////////
 // --
   grunt.registerTask('build', [
-    //'newer:htmlhint',
-    //'newer:csslint',
-    //'newer:jshint',
+    'newer:htmlhint:strict',
+    'newer:csslint:strict',
+    'newer:jshint:all',
     'clean:dist',
     'wiredep',
     'useminPrepare',
