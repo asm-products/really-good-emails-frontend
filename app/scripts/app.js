@@ -34,11 +34,19 @@
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
+      .when('/email-details', {
+        templateUrl: 'views/email-details.html',
+        // controller: 'secondaryCtrl',
+        resolve: resolve,
+        titleTag: '{{Email Page Title}} | Really Good Emails',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
+      })
       .when('/inspiration', {
         templateUrl: 'views/inspiration.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Inspiration',
+        titleTag: 'Email Inspiration | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -46,7 +54,7 @@
         templateUrl: 'views/interviews.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Interviews',
+        titleTag: 'Email Interviews | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -54,7 +62,7 @@
         templateUrl: 'views/email-kits.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Email Kits',
+        titleTag: 'Email Kits | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -62,7 +70,7 @@
         templateUrl: 'views/archive.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Archive',
+        titleTag: 'Email Archive | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -70,7 +78,7 @@
         templateUrl: 'views/faq.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - FAQ',
+        titleTag: 'FAQ | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -78,7 +86,7 @@
         templateUrl: 'views/contact.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Contact',
+        titleTag: 'Contact | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -86,7 +94,7 @@
         templateUrl: 'views/newsletter.html',
         // controller: 'secondaryCtrl',
         resolve: resolve,
-        titleTag: 'Really Good Emails - Newsletter',
+        titleTag: 'Email Newsletter | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
@@ -94,7 +102,7 @@
           templateUrl : 'views/error.html',
           //controller : 'errorCtrl',
           resolve: resolve,
-          titleTag: 'Really Good Emails - 404 Ruh Roh!',
+          titleTag: 'Ruh Roh! | Really Good Emails',
           metaTitle: 'the meta title',
           metaDesc: 'the meta description'
       })
