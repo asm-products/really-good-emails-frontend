@@ -14,57 +14,57 @@
       </figcaption>
   </figure>
 </section>
-<section class="card-grid" ng-controller="cardGridCtrl">	<!-- code in this section is a tad crunchy, Dustin clean up imminent -->
+<section class="card-grid" data-ng-controller="cardGridCtrl">	<!-- code in this section is a tad crunchy, Dustin clean up imminent -->
 	<div class="card-grid-nav">
 		<div class="inner">
 			<div class="card-grid-nav-primary">
-				<dl class="nav-dropdown nav-group-one" ng-class="toggleNavGroupOne ? 'active' : ''">
-					<dt ng-click="toggleNavGroupOne = !toggleNavGroupOne; toggleNavGroupTwo = ''; toggleNavGroupThree = '';">
+				<dl class="nav-dropdown nav-group-one" data-ng-class="toggleNavGroupOne ? 'active' : ''">
+					<dt data-ng-click="toggleNavGroupOne = !toggleNavGroupOne; toggleNavGroupTwo = ''; toggleNavGroupThree = '';">
 						<a href="">
 							<span class="item">{{navGroupOneTitle}}</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
-							  <use xlink:href="/media/images/icons.svg#icon-arrow"></use>
+							  <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 							</svg>
 						</a>
 					<dd>
 						<ul class="dd-list">
-              <li class="{{status1}}" ng-class="{active:$first, first:$first}" ng-repeat="item in navGroupOneItems">
-              	<a href="#" ng-click="toggleNavGroupOneItem(this)">{{item.title}}</a>
+              <li class="{{status1}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupOneItems">
+              	<a href="#" data-ng-click="toggleNavGroupOneItem(this)">{{item.title}}</a>
 	          </ul>
 				</dl>
 			</div><!--
 	 --><div class="card-grid-nav-secondary">
-				<dl class="nav-dropdown nav-group-two _inline _right" ng-class="toggleNavGroupTwo ? 'active' : '';">
-					<dt ng-click="toggleNavGroupTwo = !toggleNavGroupTwo; toggleNavGroupOne = ''; toggleNavGroupThree = '';">
+				<dl class="nav-dropdown nav-group-two _inline _right" data-ng-class="toggleNavGroupTwo ? 'active' : '';">
+					<dt data-ng-click="toggleNavGroupTwo = !toggleNavGroupTwo; toggleNavGroupOne = ''; toggleNavGroupThree = '';">
 						<a href="">
 							<span class="item">{{navGroupTwoTitle}}</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
-							  <use xlink:href="/media/images/icons.svg#icon-arrow"></use>
+							  <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 							</svg>
 						</a>
 					<dd>
 						<ul class="dd-list">
-              <li class="{{status2}}" ng-class="{active:$first, first:$first}" ng-repeat="item in navGroupTwoItems">
-              	<a href="#" ng-click="toggleNavGroupTwoItem(this)">
+              <li class="{{status2}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupTwoItems">
+              	<a href="#" data-ng-click="toggleNavGroupTwoItem(this)">
 			            <svg class="{{item.svg}}" viewBox="0 0 32 32">
-									    <use xlink:href="{{'/media/images/icons.svg#' + item.svg}}"></use>
+									    <use xlink:href="{{'/media/images/img.svg#' + item.svg}}" data-ng-href="{{'/media/images/img.svg#' + item.svg}}"></use>
 									</svg>
               		{{item.title}}
               	</a>
 	          </ul>
 				</dl><!--
-		 --><dl class="nav-dropdown nav-group-three _inline _right" ng-class="toggleNavGroupThree ? 'active' : '';">
-					<dt ng-click="toggleNavGroupThree = !toggleNavGroupThree; toggleNavGroupOne = ''; toggleNavGroupTwo = '';">
+		 --><dl class="nav-dropdown nav-group-three _inline _right" data-ng-class="toggleNavGroupThree ? 'active' : '';">
+					<dt data-ng-click="toggleNavGroupThree = !toggleNavGroupThree; toggleNavGroupOne = ''; toggleNavGroupTwo = '';">
 						<a href="">
 							<span class="item">{{navGroupThreeTitle}}</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
-							  <use xlink:href="/media/images/icons.svg#icon-arrow"></use>
+							  <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 							</svg>
 						</a>
 					<dd>
 						<ul class="dd-list">
-              <li class="{{status3}}" ng-class="{active:$first, first:$first}" ng-repeat="item in navGroupThreeItems">
-              	<a href="#" ng-click="toggleNavGroupThreeItem(this)">{{item.title}}</a>
+              <li class="{{status3}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupThreeItems">
+              	<a href="#" data-ng-click="toggleNavGroupThreeItem(this)">{{item.title}}</a>
 	          </ul>
 				</dl>
 			</div>
@@ -80,35 +80,35 @@
 					<a href="">
 						<span>View All Trending</span>
 						<svg class="icon-arrow" viewBox="0 0 32 32">
-                <use xlink:href="/media/images/icons.svg#icon-arrow"></use>
+                <use xlink:href="/media/images/img.svg#icon-arrow"></use>
             </svg>
 					</a>
 				</div>
 			</div>
 			<ul class="main">
-				<li class="grid-card" ng-repeat="item in gridCards">
+				<li class="grid-card" data-ng-repeat="item in gridCards">
 					<div class="card" href="{{item.url}}">
 						<div class="thumb">
 							<a href="/email-details">
-								<img src="{{item.img}}" alt="{{item.title}}">
+								<img data-ng-src="{{item.img}}" alt="{{item.title}}">
 							</a>
 							<div class="overlay">
 								<div class="social">
 									<a href="" class="likes">
 										<svg class="icon-smiley" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/icons.svg#icon-smiley"></use>
+                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
                     </svg>
 										<span>15</span>
 									</a>
 									<a href="" class="comments">
 										<svg class="icon-comment" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/icons.svg#icon-comment"></use>
+                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
                     </svg>
 										<span>23</span>
 									</a>
 									<a href="" class="shares">
 										<svg class="icon-share" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/icons.svg#icon-share"></use>
+                        <use xlink:href="/media/images/img.svg#icon-share"></use>
                     </svg>
 										<span>2</span>
 									</a>
@@ -147,7 +147,7 @@
 		</div>
 	</div>
 </section>
-<section class="card-grid" ng-controller="cardGridCtrl">
+<section class="card-grid" data-ng-controller="cardGridCtrl">
 	<div class="card-grid-main">
 		<div class="inner">
 			<div class="header">
@@ -158,35 +158,35 @@
 					<a href="">
 						<span>View All 38 Brands</span>
 						<svg class="icon-arrow" viewBox="0 0 32 32">
-            	<use xlink:href="/media/images/icons.svg#icon-arrow"></use>
+            	<use xlink:href="/media/images/img.svg#icon-arrow"></use>
             </svg>
 					</a>
 				</div>
 			</div>
 			<ul class="main">
-				<li class="grid-card" ng-repeat="item in gridCards">
+				<li class="grid-card" data-ng-repeat="item in gridCards">
 					<div class="card" href="{{item.url}}">
 						<div class="thumb">
 							<a href="/email-details">
-								<img src="{{item.img}}" alt="{{item.title}}">
+								<img data-ng-src="{{item.img}}" alt="{{item.title}}">
 							</a>
 							<div class="overlay">
 								<div class="social">
 									<a href="" class="likes">
 										<svg class="icon-smiley" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/icons.svg#icon-smiley"></use>
+                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
                     </svg>
 										<span>15</span>
 									</a>
 									<a href="" class="comments">
 										<svg class="icon-comment" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/icons.svg#icon-comment"></use>
+                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
                     </svg>
 										<span>15</span>
 									</a>
 									<a href="" class="shares">
 										<svg class="icon-share" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/icons.svg#icon-share"></use>
+                        <use xlink:href="/media/images/img.svg#icon-share"></use>
                     </svg>
 										<span>15</span>
 									</a>
@@ -226,5 +226,4 @@
 	</div>
 </section>
 
-
-<div class="load-cover preload" ng-class="($parent.toggleLoadCover ? 'loaded' : '')+' '+($parent.toggleLoadVisHid ? 'vis-hid' : '')"></div>
+<div class="load-cover preload" data-ng-class="($parent.toggleLoadCover ? 'loaded' : '')+' '+($parent.toggleLoadVisHid ? 'vis-hid' : '')"></div>

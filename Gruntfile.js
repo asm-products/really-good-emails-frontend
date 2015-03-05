@@ -22,14 +22,23 @@ module.exports = function(grunt) {
 // Frameworks //////////////////////////////////////////////
 // --
     sass: {
-      options: {
-        sourceMap: true,
-        outputStyle: 'expanded'
-      },
       server: {
+        options: {
+          sourceMap: true,
+          outputStyle: 'nested'
+        },
         files: {
           '.tmp/styles/app.css': '<%= yeoman.app %>/styles/_scss/app.scss'
-        }
+        },
+      },
+      build: {
+        options: {
+          sourceMap: false,
+          outputStyle: 'compressed'
+        },
+        files: {
+          '.tmp/styles/app.css': '<%= yeoman.app %>/styles/_scss/app.scss'
+        },
       }
     },
 
@@ -47,7 +56,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['*.html', 'views/{,*/}*.html'],
+          src: ['*.html', 'views/{,*/}*.html', 'partials/{,*/}*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -87,17 +96,6 @@ module.exports = function(grunt) {
         }]
       }
     },
-// --
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/media/images',
-          src: '{,*/}*.svg',
-          dest: '<%= yeoman.dist %>/media/images'
-        }]
-      }
-    },
 
 // Lint / Hint ///////////////////////////////////////////////
 // --
@@ -107,15 +105,15 @@ module.exports = function(grunt) {
       },
       strict: {
         options: {
-          "tagname-lowercase": true,
-          "attr-lowercase": true,
-          "attr-value-double-quotes": true,
-          "doctype-first": true,
-          "tag-pair": true,
-          "spec-char-escape": true,
-          "id-unique": true,
-          "src-not-empty": true,
-          "attr-no-duplication": true
+          'tagname-lowercase': true,
+          'attr-lowercase': true,
+          'attr-value-double-quotes': true,
+          'doctype-first': true,
+          'tag-pair': true,
+          'spec-char-escape': true,
+          'id-unique': true,
+          'src-not-empty': true,
+          'attr-no-duplication': true
         },
         src: ['path/to/**/*.html']
       },
@@ -128,13 +126,13 @@ module.exports = function(grunt) {
         options: {
           import: 2
         },
-        src: ['.tmp/styles/{,*/}*.css',]
+        src: ['.tmp/styles/{,*/}*.css']
       },
       lax: {
         options: {
           import: false
         },
-        src: ['.tmp/styles/{,*/}*.css',]
+        src: ['.tmp/styles/{,*/}*.css']
       }
     },
     jshint: {
@@ -145,7 +143,8 @@ module.exports = function(grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/scripts/{,*/}*.js',
+          '!<%= yeoman.app %>/scripts/libs/{,*/}*.{js,json}'
         ]
       },
       test: {
@@ -223,12 +222,11 @@ module.exports = function(grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
-            '*.{ico,png,txt}',
+            '*.{ico,png,txt,md,yaml,xml}',
             '.htaccess',
-            '*.html',
-            'views/{,*/}*.html',
-            '/media/images/{,*/}*.{webp}',
-            'fonts/*'
+            '{,*/}*.html',
+            'media/{,*/}*.{webp,svg,gif,ico,mp4,ogv,ogg,webm,mp3}',
+            'styles/fonts/{,*/}*.*',
           ]
         }, {
           expand: true,
@@ -237,21 +235,21 @@ module.exports = function(grunt) {
           src: ['generated/*']
         }]
       },
-      styles: {
-        expand: true,
-        cwd: '<%= yeoman.app %>/styles',
-        dest: '.tmp/styles/',
-        src: '{,*/}*.css'
-      }
+      //styles: {
+      //  expand: true,
+      //  cwd: '<%= yeoman.app %>/styles',
+      //  dest: '.tmp/styles/',
+      //  src: '{,*/}*.css'
+      //}
     },
 // --
     concurrent: {
       server: [
         'sass:server'
       ],
-      dist: [
-        'imagemin',
-        'svgmin'
+      build: [
+        'sass:build',
+        'imagemin'
       ]
     },
 // --
@@ -271,7 +269,14 @@ module.exports = function(grunt) {
         html: ['<%= yeoman.dist %>/*.html']
       }
     },
-
+// --
+    'shell': {
+      dist: {
+        command: function () {
+          return 'echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ༼ つ ◕◡◕ ༽つ Grunt Build Done! ███ Ctrl+C to Exit ███';
+        }
+      }
+    },
 // testing
 // --
     karma: {
@@ -291,7 +296,7 @@ module.exports = function(grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/media/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.dist %>/media/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -317,11 +322,11 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['<%= yeoman.app %>/styles/_scss/*.{scss,sass}', '<%= yeoman.app %>/styles/_scss/**/*.{scss,sass}'],
-        tasks: ['sass','autoprefixer'],
+        tasks: ['sass:server','autoprefixer'],
         sourceComments: 'normal',
         options: {
           nospawn: true,
-          //livereload: true
+          livereload: true
         }
       },
       gruntfile: {
@@ -376,7 +381,7 @@ module.exports = function(grunt) {
       },
       test: {
         options: {
-          port: 9001,
+          port: 9002,
           middleware: function(connect) {
             return [
               connect.static('.tmp'),
@@ -392,8 +397,29 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          open: true,
-          base: '<%= yeoman.dist %>'
+          port: 9001,
+          livereload: false,
+          keepalive: true, // this is kind of stupid, but its seemingly the only way to kick off a local preview after build
+          base: '<%= yeoman.dist %>',
+          // below is needed for build as well - due to angular routing on local server
+          middleware: function (connect, options) {
+            var middlewares = [];
+
+            middlewares.push(modRewrite(['^[^\\.]*$ /index.html [L]'])); //Matches everything that does not contain a '.' (period)
+            options.base.forEach(function (base) {
+              middlewares.push(connect.static(base));
+            });
+
+            middlewares.push(
+              connect.static('.tmp'),
+              connect().use(
+                '/bower_components',
+                connect.static('./bower_components')
+              )
+            );
+
+            return middlewares;
+          }
         }
       }
     },
@@ -432,23 +458,25 @@ module.exports = function(grunt) {
 // --
   grunt.registerTask('build', [
     'newer:htmlhint:strict',
-    'newer:csslint:strict',
-    'newer:jshint:all',
+    // 'newer:csslint:lax',
+    'jshint:all',
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+    'concurrent:build',
     'autoprefixer',
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
-    'cssmin',
+    'newer:cdnify',
+    'cssmin:generated',
     'uglify',
     'modernizr',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'shell:dist',
+    'connect:dist'
   ]);
 
 // Default //////////////////////////////////////////////

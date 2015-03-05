@@ -1,6 +1,6 @@
 <!doctype html>
-<html class="no-js" ng-app="reallygoodemails">
-<head ng-controller="metaCtrl">
+<html class="no-js" data-ng-app="reallygoodemails">
+<head data-ng-controller="metaCtrl">
     <meta name="fragment" content="!">
     <base href="/">
     <meta name="title" content="{{metaTitle}}" />
@@ -57,7 +57,7 @@
     <meta http-equiv="cache-control" content="public">
     <meta http-equiv="cache-control" content="max-age=72000" />
 
-    <title ng-bind="titleTag"></title>
+    <title data-ng-bind="titleTag"></title>
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -72,15 +72,15 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 </head>
-<body class="{{controller}}" ng-controller="mainCtrl" ng-class="($root.togglePrimaryMenu ? 'primary-menu-active' : '')+' '+($root.toggleSecondaryMenu ? 'secondary-menu-active' : '')">
+<body class="{{controller}}" data-ng-controller="mainCtrl" data-ng-class="($root.togglePrimaryMenu ? 'primary-menu-active' : '')+' '+($root.toggleSecondaryMenu ? 'secondary-menu-active' : '')">
     <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="container">
-        <header ng-include="'partials/header.html'"></header>
-        <main class="preload" ng-view="" ng-click="menuToggle()"></main>
-        <footer ng-include="'partials/footer.html'" ng-click="menuToggle()"></footer>
+        <header data-ng-include="'partials/header.html'"></header>
+        <main class="preload" data-ng-view="" data-ng-click="menuToggle()"></main>
+        <footer data-ng-include="'partials/footer.html'" data-ng-click="menuToggle()"></footer>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

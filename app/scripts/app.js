@@ -16,11 +16,11 @@
   var app = angular.module('reallygoodemails', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']); // services / dependecies
 
   var resolve = {
-    delay: function($q, $timeout) {
+    delay: ['$q','$timeout', function($q, $timeout) {
       var delay = $q.defer();
       $timeout(delay.resolve, 200, false);
       return delay.promise;
-    }
+    }]
   };
 
 // Routing /////
