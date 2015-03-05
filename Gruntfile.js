@@ -21,31 +21,24 @@ module.exports = function(grunt) {
 
 // Frameworks //////////////////////////////////////////////
 // --
-    compass: {
-      options: {
-        sassDir: '<%= yeoman.app %>/styles/_scss',
-        cssDir: '.tmp/styles',
-        generatedImagesDir: '.tmp/images/generated',
-        imagesDir: '<%= yeoman.app %>/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
-        importPath: './bower_components',
-        httpImagesPath: '/media/images',
-        httpGeneratedImagesPath: '/media/images/generated',
-        httpFontsPath: '/styles/fonts',
-        relativeAssets: false,
-        assetCacheBuster: false,
-        raw: 'Sass::Script::Number.precision = 10\n'
-      },
-      dist: {
-        options: {
-          generatedImagesDir: '<%= yeoman.dist %>/images/generated'
-        }
-      },
+    sass: {
       server: {
         options: {
-          debugInfo: true
-        }
+          sourceMap: true,
+          outputStyle: 'nested'
+        },
+        files: {
+          '.tmp/styles/app.css': '<%= yeoman.app %>/styles/_scss/app.scss'
+        },
+      },
+      build: {
+        options: {
+          sourceMap: false,
+          outputStyle: 'compressed'
+        },
+        files: {
+          '.tmp/styles/app.css': '<%= yeoman.app %>/styles/_scss/app.scss'
+        },
       }
     },
 
@@ -63,7 +56,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['*.html', 'views/{,*/}*.html'],
+          src: ['*.html', 'views/{,*/}*.html', 'partials/{,*/}*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -89,7 +82,7 @@ module.exports = function(grunt) {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
-        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
+        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/media/images']
       }
     },
 // --
@@ -97,26 +90,51 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: '<%= yeoman.app %>/media/images',
           src: '{,*/}*.{png,jpg,jpeg,gif}',
-          dest: '<%= yeoman.dist %>/images'
-        }]
-      }
-    },
-// --
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.svg',
-          dest: '<%= yeoman.dist %>/images'
+          dest: '<%= yeoman.dist %>/media/images'
         }]
       }
     },
 
 // Lint / Hint ///////////////////////////////////////////////
 // --
+    htmlhint: {
+      options: {
+        htmlhintrc: '.htmlhintrc'
+      },
+      strict: {
+        options: {
+          'tagname-lowercase': true,
+          'attr-lowercase': true,
+          'attr-value-double-quotes': true,
+          'doctype-first': true,
+          'tag-pair': true,
+          'spec-char-escape': true,
+          'id-unique': true,
+          'src-not-empty': true,
+          'attr-no-duplication': true
+        },
+        src: ['path/to/**/*.html']
+      },
+    },
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['.tmp/styles/{,*/}*.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['.tmp/styles/{,*/}*.css']
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -125,7 +143,8 @@ module.exports = function(grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/scripts/{,*/}*.js',
+          '!<%= yeoman.app %>/scripts/libs/{,*/}*.{js,json}'
         ]
       },
       test: {
@@ -143,7 +162,7 @@ module.exports = function(grunt) {
 // --
     autoprefixer: {
       options: {
-        browsers: ['last 1 version']
+        browsers: ['last 2 versions', 'ie 9']
       },
       dist: {
         files: [{
@@ -203,39 +222,34 @@ module.exports = function(grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
-            '*.{ico,png,txt}',
+            '*.{ico,png,txt,md,yaml,xml}',
             '.htaccess',
-            '*.html',
-            'views/{,*/}*.html',
-            'images/{,*/}*.{webp}',
-            'fonts/*'
+            '{,*/}*.html',
+            'media/{,*/}*.{webp,svg,gif,ico,mp4,ogv,ogg,webm,mp3}',
+            'styles/fonts/{,*/}*.*',
           ]
         }, {
           expand: true,
           cwd: '.tmp/images',
-          dest: '<%= yeoman.dist %>/images',
+          dest: '<%= yeoman.dist %>/media/images',
           src: ['generated/*']
         }]
       },
-      styles: {
-        expand: true,
-        cwd: '<%= yeoman.app %>/styles',
-        dest: '.tmp/styles/',
-        src: '{,*/}*.css'
-      }
+      //styles: {
+      //  expand: true,
+      //  cwd: '<%= yeoman.app %>/styles',
+      //  dest: '.tmp/styles/',
+      //  src: '{,*/}*.css'
+      //}
     },
 // --
     concurrent: {
       server: [
-        'compass:server'
+        'sass:server'
       ],
-      test: [
-        'compass'
-      ],
-      dist: [
-        'compass:dist',
-        'imagemin',
-        'svgmin'
+      build: [
+        'sass:build',
+        'imagemin'
       ]
     },
 // --
@@ -255,7 +269,14 @@ module.exports = function(grunt) {
         html: ['<%= yeoman.dist %>/*.html']
       }
     },
-
+// --
+    'shell': {
+      dist: {
+        command: function () {
+          return 'echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ༼ つ ◕◡◕ ༽つ Grunt Build Done! ███ Ctrl+C to Exit ███';
+        }
+      }
+    },
 // testing
 // --
     karma: {
@@ -275,7 +296,7 @@ module.exports = function(grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.dist %>/media/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -289,7 +310,7 @@ module.exports = function(grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/scripts/{,*/}*.{js,json}', '!<%= yeoman.app %>/scripts/libs/{,*/}*.{js,json}'],
         tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -299,9 +320,14 @@ module.exports = function(grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/**/*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+      sass: {
+        files: ['<%= yeoman.app %>/styles/_scss/*.{scss,sass}', '<%= yeoman.app %>/styles/_scss/**/*.{scss,sass}'],
+        tasks: ['sass:server','autoprefixer'],
+        sourceComments: 'normal',
+        options: {
+          nospawn: true,
+          livereload: true
+        }
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -313,7 +339,7 @@ module.exports = function(grunt) {
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= yeoman.app %>/media/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
     },
@@ -355,7 +381,7 @@ module.exports = function(grunt) {
       },
       test: {
         options: {
-          port: 9001,
+          port: 9002,
           middleware: function(connect) {
             return [
               connect.static('.tmp'),
@@ -371,8 +397,29 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          open: true,
-          base: '<%= yeoman.dist %>'
+          port: 9001,
+          livereload: false,
+          keepalive: true, // this is kind of stupid, but its seemingly the only way to kick off a local preview after build
+          base: '<%= yeoman.dist %>',
+          // below is needed for build as well - due to angular routing on local server
+          middleware: function (connect, options) {
+            var middlewares = [];
+
+            middlewares.push(modRewrite(['^[^\\.]*$ /index.html [L]'])); //Matches everything that does not contain a '.' (period)
+            options.base.forEach(function (base) {
+              middlewares.push(connect.static(base));
+            });
+
+            middlewares.push(
+              connect.static('.tmp'),
+              connect().use(
+                '/bower_components',
+                connect.static('./bower_components')
+              )
+            );
+
+            return middlewares;
+          }
         }
       }
     },
@@ -410,24 +457,26 @@ module.exports = function(grunt) {
 // Build //////////////////////////////////////////////
 // --
   grunt.registerTask('build', [
-    //'newer:htmlhint',
-    //'newer:csslint',
-    //'newer:jshint',
+    'newer:htmlhint:strict',
+    // 'newer:csslint:lax',
+    'jshint:all',
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+    'concurrent:build',
     'autoprefixer',
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
-    'cssmin',
+    'newer:cdnify',
+    'cssmin:generated',
     'uglify',
     'modernizr',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'shell:dist',
+    'connect:dist'
   ]);
 
 // Default //////////////////////////////////////////////

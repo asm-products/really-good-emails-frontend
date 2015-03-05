@@ -1,0 +1,101 @@
+/* >> Grid Card (Module) >>>>>>>>>>>>
+============================================*/
+//
+.grid-card {
+	//
+	.card {
+		position: relative;
+		display:block;
+	}
+	.thumb {
+	//
+		&:hover {
+			cursor: pointer;
+			//
+			.overlay {
+				opacity: 0.85;
+			}
+		}
+		.overlay {
+			opacity: 0;
+			z-index: 4;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			background: $ruby;
+			transition: opacity 0.25s ease-in-out;
+		}
+	}
+	.social {
+	  display: inline-block;
+	  position: absolute;
+	  bottom: 5.5em;
+	  width: 100%;
+	  text-align: center;
+		//
+		a {
+			display: inline-block;
+			padding: 1em;
+			color: $white;
+			font-size: 1.1rem;
+			text-align: center;
+			text-decoration: none;
+			pointer-events: auto;
+			transition: transform 0.2s ease-in-out;
+			transform: scale(0.9,0.9);
+			&:hover {
+				transform: translateY(-0.5em);
+			}
+			//
+			span {
+				padding-right: 0.1em;
+				text-align: center;
+			}
+		}
+		svg {
+			display:block;
+			width:30px;
+			vertical-align: middle;
+			fill: $white;
+		}
+	}
+	.label {
+		z-index: 5;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 1em;
+		background: $winkleLight;
+		//
+		.title {
+			//
+			a {
+				font-family: $roboto-medium;
+				font-size: 0.9em;
+				color: $slateDark;
+				text-decoration: none;
+			}
+		}
+		.tags {
+
+		}
+		.tag {
+			display: inline-block;
+			//
+			a {
+				padding: 0 0 0.25em 0;
+				font-family: $droid-serif;
+				font-size: 0.9em;
+				color: $slateLighter;
+				text-transform: capitalize;
+				text-decoration: none;
+				transition: color 0.25s ease-in-out;
+				&:hover {
+					color: $ruby;
+				}
+			}
+		}
+	}
+}

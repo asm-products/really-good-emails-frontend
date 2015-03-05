@@ -1,7 +1,0 @@
-// if you decide that you want to load css asyncroulsy, you must add this file as an @import
-// in the partial head, as they are basic imports needed for compass(etc) to process on scss render
-@import "compass";
-@import "../app/config/mixins/--all";
-@import "../app/config/--fonts";
-@import "../app/vars";
-@import "../app/font-vars";

@@ -1,10 +1,9 @@
-/*global jQuery, app:true, $, FastClick*/
+/*global $, FastClick*/
 /*jshint unused:false*/
-/*jshint multistr:true */
 
 //## Config ########
 //================================================
-app = {
+var gbl = {
   path: {
     url: window.location.protocol+'//'+window.location.host,
     currentUrl: window.location.href,
@@ -14,10 +13,10 @@ app = {
   obj: {
       $html: $('html'),
       $body: $('body'),
-      $header: $('header'),
-      $main: $('main'),
-      $section: $('section'),
-      $footer: $('footer')
+      $header: $('body').find('> header'),
+      $main: $('body').find('> main'),
+      $section: $('body').find('> section'),
+      $footer: $('body').find('> footer')
   }
 };
 // >> General >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -28,3 +27,4 @@ app = {
 
 // -- fastclick ---------------
 FastClick.attach(document.body);
+

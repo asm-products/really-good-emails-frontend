@@ -93,16 +93,7 @@ $linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);
 
 // kick in gpu render
 .gpu {
-    // -webkit-transform: translate3d(0, 0, 0);
-    // -moz-transform: translate3d(0, 0, 0);
-    // -ms-transform: translate3d(0, 0, 0);
-    // -o-transform: translate3d(0, 0, 0);
-    // transform: translate3d(0, 0, 0);
-    // -webkit-backface-visibility: hidden;
-    // -moz-backface-visibility: hidden;
-    // -ms-backface-visibility: hidden;
-    // -o-backface-visibility: hidden;
-    // backface-visibility: hidden;
-    // -webkit-transform-style: flat;
-    @include translateZ(0);
+    backface-visibility:hidden;
+    transform-style: flat;
+    transform: translateZ(200px);
 }

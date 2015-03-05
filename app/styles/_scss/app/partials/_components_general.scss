@@ -1,0 +1,344 @@
+/* >> General (Components) >>>>>>>>>>>>
+============================================*/
+
+// temporary catch all for components - to be organizzed later
+
+
+$spin-load-small-offset: 128;
+$spin-load-duration: 1s;
+
+.spin-load-small {
+	@extend .gpu;
+	width: 32px;
+	height: 32px;
+	animation: rotator 2.5s linear infinite;
+	transition: opacity 0.25s ease-in-out;
+	//
+	.gwrap1 {
+	  transform: translate3d(16px,16px,0);
+	}
+	.gwrap2 {
+		stroke-dasharray: $spin-load-small-offset;
+	  stroke-dashoffset: 0;
+	  transform: translate3d(16px,16px,0);
+		animation: dash $spin-load-duration ease-in-out infinite;
+	}
+	.path {
+		transform: translate3d(-16px,-16px,0);
+	  animation: colors ($spin-load-duration*4) ease-in-out infinite;
+	}
+	//
+	&.preload {
+		opacity: 0;
+	}
+	&.loaded {
+		opacity: 1;
+	}
+}
+
+// spin animations
+
+@keyframes rotator {
+	  0% {
+	  	transform: rotate(0deg);
+	 	}
+	  100% {
+	  	transform: rotate(360deg);
+	 	}
+	}
+	@keyframes colors {
+		0% { stroke: $teal }
+		25% { stroke: $ruby; }
+		50% { stroke: #F7C223; }
+		75% { stroke: #1B9A59; }
+	  100% { stroke: $teal }
+	}
+	@keyframes dash {
+	 0% {
+	 	stroke-dashoffset: $spin-load-small-offset;
+	 	transform: rotate(0deg);
+	 }
+	 50% {
+	  stroke-dashoffset: ($spin-load-small-offset/2);
+	  transform: rotate(120deg);
+	 }
+	 100% {
+	   stroke-dashoffset: $spin-load-small-offset;
+	   transform: rotate(360deg);
+	 }
+	}
+
+a.button-big {
+	display: inline-block;
+	padding: 0.2em 3em;
+	color: $white;
+	background: $teal;
+	border-radius: 50px;
+	font-size:1.375em;
+	font-family: $roboto-bold;
+	text-decoration: none;
+	&:hover {
+		background: $tealDark;
+	}
+}
+
+.hamburger-menu-button {
+	display: inline-block;
+	width: 50px;
+	padding-left: 3px;
+	text-align: center;
+	vertical-align: middle;
+	//
+	@media screen and (min-width: 768px) {
+		display: none;
+		width: auto;
+	}
+	.button-primary {
+		padding: 0.5em 0.25em;
+		cursor: pointer;
+		-webkit-user-select: none;
+		border: 0;
+		border-radius: 5px;
+		-webkit-touch-callout: none;
+		transition: background .2s ease-in-out;
+		//
+		&:hover {
+			background: $slate;
+			transition: background .2s ease-in-out;
+			//
+			.icon-bar {
+				background-color: $slateLighter;
+			}
+		}
+		&.active {
+			background: $slate;
+			transition: background .2s ease-in-out;
+			//
+			.icon-bar {
+				background-color: $slateLighter;
+			}
+		}
+		&.touch:hover {
+			background: none;
+		}
+		.icon-bar {
+			line-height: 2px;
+			display: block;
+			width: 20px;
+			height: 3px;
+			margin: 4px auto;
+			vertical-align: text-top;
+			background-color: $slateLighter;
+		}
+	}
+}
+
+.nav-dropdown {
+	margin: 0;
+	//
+	a {
+		padding: 1em;
+		text-decoration: none;
+	}
+	dt {
+		display: inline-block;
+		font-weight: normal;
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+		//
+		a {
+			display: inline-block;
+			&:hover {
+				background: $winkleLight;
+			}
+		}
+		.item {
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 0.5em;
+		}
+		.arrow {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			vertical-align: middle;
+			margin: 3px 0 0 0;
+			border-style: solid;
+			border-width: 4px 0 4px 5px;
+			border-color: transparent transparent transparent $slateDark;
+			transform: rotate(90deg);
+			transition: transform 0.15s ease-in-out;
+		}
+	}
+	dd {
+		position: relative;
+		margin: 0;
+	}
+	.dd-list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:130px;
+		max-height: 0;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		background: $winkleLighter;
+		transition: max-height 0.2s ease-in-out;
+		@media screen and (min-width: 768px) {
+			display: block;
+			position: static;
+			width:auto;
+			max-height: none;
+			overflow: visible;
+			background: none;
+			border: none;
+		}
+		//
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid $winkleLight;
+			@media screen and (min-width: 768px) {
+				display:inline-block;
+				border: none;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+			//
+			&.active {
+				//
+				a {
+					background: $winkleLight;
+				}
+			}
+			&.first {
+				//
+				a {
+					@media screen and (min-width: 768px) {
+						background: none;
+					}
+					&:hover {
+						@media screen and (min-width: 768px) {
+							background: $winkleLight;
+						}
+					}
+				}
+			}
+		}
+		a {
+			display: block;
+			&:hover {
+				background: $winkleLight;
+			}
+		}
+	}
+	&.active {
+		//
+		dt {
+			//
+			a {
+				background: $winkleLight;
+			}
+			.icon-arrow {
+				transform: rotate(90deg);
+			}
+		}
+		.dd-list {
+			// display: block;
+			max-height: 200px;
+		}
+	}
+
+	&._inline {
+		display: inline-block;
+	}
+
+	&._right {
+		text-align: right;
+		//
+		.dd-list {
+			right: 0;
+			left: auto;
+			text-align: left;
+		}
+	}
+}
+
+.plus-menu-button {
+	display:inline-block;
+	//
+	.plus {
+		position: relative;
+		display:inline-block;
+		height:35px;
+		width:35px;
+		vertical-align: middle;
+		text-decoration: none;
+		background: $teal;
+		border-radius: 50px;
+		transform: rotate(0deg);
+		transition: all 0.3s ease;
+		//
+		&:hover {
+			svg {
+				transform: rotate(180deg);
+				transition: all 0.3s ease;
+			}
+		}
+		svg {
+			position: absolute;
+			top: 9.5px;
+			left: 10px;
+			height: 15px;
+			width: 15px;
+			fill: $slateDark;
+		}
+	}
+}
+
+.avatar-box {
+	display:inline-block;
+	//
+	.avatar {
+		display:inline-block;
+		width:32px;
+		text-decoration: none;
+		background: $slateLightest;
+		border-radius: 3px;
+		//
+		&:hover {
+			//
+			img {
+				opacity: 0.75;
+			}
+		}
+		img {
+			border-radius: 3px;
+		}
+	}
+}
+
+.notification-box {
+	display:inline-block;
+	//
+	.notification {
+		display:inline-block;
+		width:32px;
+		height:32px;
+		padding-top:3px;
+		color: $white;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		background: $rubyLight;
+		border-radius: 3px;
+		//
+		&:hover {
+			background: $rubyLighter;
+		}
+	}
+}
