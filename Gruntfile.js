@@ -234,13 +234,7 @@ module.exports = function(grunt) {
           dest: '<%= yeoman.dist %>/media/images',
           src: ['generated/*']
         }]
-      },
-      //styles: {
-      //  expand: true,
-      //  cwd: '<%= yeoman.app %>/styles',
-      //  dest: '.tmp/styles/',
-      //  src: '{,*/}*.css'
-      //}
+      }
     },
 // --
     concurrent: {
@@ -425,7 +419,7 @@ module.exports = function(grunt) {
     },
   });
 
-/* >> Tasks: >>>>>>>>>>>>
+/* >> Task Execution: >>>>>>>>>>>>
 =====================================================================================*/
 
 // Dev //////////////////////////////////////////////
