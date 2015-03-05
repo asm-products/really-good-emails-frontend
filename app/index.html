@@ -2,7 +2,12 @@
 <html class="no-js" data-ng-app="reallygoodemails">
 <head data-ng-controller="metaCtrl">
     <meta name="fragment" content="!">
-    <base data-ng-href="{{basePath}}">
+    <script type="text/javascript">
+        if(window.location.href.indexOf('github') > -1) {
+           document.getElementById('base').innerHTML = '/really-good-emails-frontend/';
+        }
+    </script>
+    <base id="base" href="/">
     <meta name="title" content="{{metaTitle}}" />
     <meta name="description" content="{{metaDesc}}">
     <meta http-equiv="cleartype" content="on">

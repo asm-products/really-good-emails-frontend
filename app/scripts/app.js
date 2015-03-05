@@ -119,13 +119,6 @@
     $scope.appMetaTitleDefault = '';
     $scope.appURL = 'http://reallygoodemails.com';
     $scope.appCDNurl = '';
-
-    if(window.location.href.indexOf('github') > -1) {
-       $scope.basePath = '/really-good-emails-frontend/';
-    } else {
-      $scope.basePath = '/';
-    }
-
   }]);
 
 // Per Page Meta Injection /////
