@@ -4,8 +4,8 @@
     <meta name="fragment" content="!">
     <base id="base" href="/">
     <script type="text/javascript">
-        if(!window.location.href.indexOf('github') > -1) {
-           document.getElementById('base').href = '/really-good-emails-frontend/';
+        if(window.location.href.indexOf('github') > -1) {
+           document.getElementById('base').href = '/really-good-emails-frontend/'; // path condition for dev server
         }
     </script>
     <meta name="title" content="{{metaTitle}}" />
