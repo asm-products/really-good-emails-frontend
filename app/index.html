@@ -1,13 +1,9 @@
 <!doctype html>
 <html class="no-js" data-ng-app="reallygoodemails">
 <head data-ng-controller="metaCtrl">
+    <meta charset="utf-8">
     <meta name="fragment" content="!">
-    <base id="base" href="/">
-    <script type="text/javascript">
-        if(window.location.href.indexOf('github') > -1) {
-           document.getElementById('base').href = '/really-good-emails-frontend/'; // path condition for dev server
-        }
-    </script>
+    <title data-ng-bind="titleTag"></title>
     <meta name="title" content="{{metaTitle}}" />
     <meta name="description" content="{{metaDesc}}">
     <meta http-equiv="cleartype" content="on">
@@ -61,8 +57,6 @@
     <!-- -->
     <meta http-equiv="cache-control" content="public">
     <meta http-equiv="cache-control" content="max-age=72000" />
-
-    <title data-ng-bind="titleTag"></title>
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
