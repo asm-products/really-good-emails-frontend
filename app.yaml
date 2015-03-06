@@ -6,6 +6,14 @@ threadsafe: true
 
 default_expiration: "30d"
 
+skip_files:
+  - ^\..*
+  - ^.*\.(js|json|yaml)$
+  - ^app
+  - ^bower_components
+  - ^node_modules
+  - ^test
+
 handlers:
 # web files
 - url: /(.*\.(appcache|manifest))
