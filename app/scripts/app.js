@@ -20,7 +20,7 @@
       var delay = $q.defer();
       $timeout(delay.resolve, 200, false);
       return delay.promise;
-    }]
+    }] 
   };
 
 // Routing /////

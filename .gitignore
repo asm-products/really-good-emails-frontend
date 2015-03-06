@@ -2,7 +2,7 @@
 #################### -- https://help.github.com/articles/ignoring-files
 
 node_modules
-dist
+# dist - commented so gh-pages can view dist files
 .tmp
 .sass-cache
 bower_components
