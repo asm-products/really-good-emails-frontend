@@ -47,7 +47,7 @@
               <li class="{{status2}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupTwoItems">
               	<a href="#" data-ng-click="toggleNavGroupTwoItem(this)">
 			            <svg class="{{item.svg}}" viewBox="0 0 32 32">
-									    <use xlink:href="{{'/media/images/img.svg#' + item.svg}}" data-ng-href="{{'/media/images/img.svg#' + item.svg}}"></use>
+									    <use data-ng-href="{{'/media/images/img.svg#' + item.svg}}" xlink:href="/media/images/img.svg#"></use>
 									</svg>
               		{{item.title}}
               	</a>
