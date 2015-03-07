@@ -24,20 +24,20 @@ handlers:
   expiration: "0m"
 
 - url: /(.*\.html)
-  mime_type: text/html
   static_files: dist/\1
   upload: dist/(.*\.html)
+  mime_type: text/html
   expiration: "1h"
 
 - url: /(.*\.css)
-  mime_type: text/css
   static_files: dist/\1
   upload: dist/(.*\.css)
+  mime_type: text/css
 
 - url: /(.*\.js)
-  mime_type: text/javascript
   static_files: dist/\1
   upload: dist/(.*\.js)
+  mime_type: text/javascript
 
 - url: /(.*\.json)
   mime_type: application/json
@@ -126,7 +126,7 @@ handlers:
   upload: dist/(.*\.webp)
 
 - url: /(.*\.(svg|svgz))
-  mime_type: images/svg+xml
+  mime_type: image/svg+xml
   static_files: dist/\1
   upload: dist/(.*\.(svg|svgz))
 
@@ -181,14 +181,15 @@ handlers:
   static_files: dist/\1
   upload: dist/(.*\.(bz2|gz|rar|tar|tgz|zip))
 
-# index files
-- url: /(.*)/
-  static_files: dist/\1/index.html
-  upload: dist/(.*)/index.html
-  expiration: "15m"
-
-# site root
+### site root
 - url: /
   static_files: dist/index.html
   upload: dist/index.html
-  expiration: "15m"
+
+### index route - angular reloop - http://stackoverflow.com/a/24399182/923454
+- url: /(.*)
+  static_files: dist/index.html
+  upload: dist/index.html
+
+- url: /
+  static_dir: dist/

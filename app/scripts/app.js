@@ -20,7 +20,7 @@
       var delay = $q.defer();
       $timeout(delay.resolve, 200, false);
       return delay.promise;
-    }] 
+    }]
   };
 
 // Routing /////
@@ -121,13 +121,18 @@
     $scope.appCDNurl = '';
   }]);
 
-// Per Page Meta Injection /////
-  app.run(['$rootScope', function($rootScope) {
+// Per Page Injection /////
+  app.run(['$rootScope', '$window', '$location', function($rootScope, $window, $location) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       $rootScope.controller = current.$$route.controller;
       $rootScope.titleTag = current.$$route.titleTag;
       $rootScope.metaTitle = current.$$route.metaTitle;
       $rootScope.metaDesc = current.$$route.metaDesc;
+      // analytics
+      if (!$window.ga) {
+        return;
+      }
+      $window.ga('send', 'pageview', { page: $location.path() });
     });
   }]);
 
