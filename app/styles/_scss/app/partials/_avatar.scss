@@ -1,0 +1,26 @@
+/* >> Avatar (Module) >>>>>>>>>>>>
+============================================*/
+//
+.avatar-box {
+	display:inline-block;
+	//
+	.avatar {
+		display:inline-block;
+		width:32px;
+		text-decoration: none;
+		background: $slateLightest;
+		border-radius: 3px;
+		//
+		&:hover {
+			//
+			img {
+				opacity: 0.75;
+			}
+		}
+		img {
+			border-radius: 3px;
+		}
+	}
+}
+
+

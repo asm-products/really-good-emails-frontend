@@ -9,4 +9,22 @@ body > .container > footer {
 		margin: 0 auto;
 		max-width: 1200px;
 	}
+	> header, > main {
+		border-bottom: solid 1px $slateLight;
+	}
+	.list-grid {
+		// padding:0 0.5em;
+		font-size: 0.9em;
+		@media screen and (min-width: 480px) {
+			// padding:0 1.5em;
+		}
+	}
+	a {
+		color: $winkleLight;
+		text-decoration: none;
+		opacity: 1;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
 }

@@ -1,0 +1,137 @@
+/* >> Dropdown (Module) >>>>>>>>>>>>
+============================================*/
+//
+.nav-dropdown {
+	margin: 0;
+	//
+	a {
+		padding: 1em;
+		text-decoration: none;
+	}
+	dt {
+		display: inline-block;
+		font-weight: normal;
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+		//
+		a {
+			display: inline-block;
+			&:hover {
+				background: $winkleLight;
+			}
+		}
+		.item {
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 0.5em;
+		}
+		.arrow {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			vertical-align: middle;
+			margin: 3px 0 0 0;
+			border-style: solid;
+			border-width: 4px 0 4px 5px;
+			border-color: transparent transparent transparent $slateDark;
+			transform: rotate(90deg);
+			transition: transform 0.15s ease-in-out;
+		}
+	}
+	dd {
+		position: relative;
+		margin: 0;
+	}
+	.dd-list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:130px;
+		max-height: 0;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		background: $winkleLighter;
+		transition: max-height 0.2s ease-in-out;
+		@media screen and (min-width: 768px) {
+			display: block;
+			position: static;
+			width:auto;
+			max-height: none;
+			overflow: visible;
+			background: none;
+			border: none;
+		}
+		//
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid $winkleLight;
+			@media screen and (min-width: 768px) {
+				display:inline-block;
+				border: none;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+			//
+			&.active {
+				//
+				a {
+					background: $winkleLight;
+				}
+			}
+			&.first {
+				//
+				a {
+					@media screen and (min-width: 768px) {
+						background: none;
+					}
+					&:hover {
+						@media screen and (min-width: 768px) {
+							background: $winkleLight;
+						}
+					}
+				}
+			}
+		}
+		a {
+			display: block;
+			&:hover {
+				background: $winkleLight;
+			}
+		}
+	}
+	&.active {
+		//
+		dt {
+			//
+			a {
+				background: $winkleLight;
+			}
+			.icon-arrow {
+				transform: rotate(90deg);
+			}
+		}
+		.dd-list {
+			// display: block;
+			max-height: 200px;
+		}
+	}
+
+	&._inline {
+		display: inline-block;
+	}
+
+	&._right {
+		text-align: right;
+		//
+		.dd-list {
+			right: 0;
+			left: auto;
+			text-align: left;
+		}
+	}
+}
+
+

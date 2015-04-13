@@ -1,0 +1,26 @@
+/* >> Notification (Module) >>>>>>>>>>>>
+============================================*/
+//
+.notification-box {
+	display:inline-block;
+	//
+	.notification {
+		display:inline-block;
+		width:32px;
+		height:32px;
+		padding-top:3px;
+		color: $white;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		background: $rubyLight;
+		border-radius: 3px;
+		//
+		&:hover {
+			background: $rubyLighter;
+		}
+	}
+}
+
