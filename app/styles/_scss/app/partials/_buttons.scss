@@ -22,10 +22,6 @@ a.button-big {
 	text-align: center;
 	vertical-align: middle;
 	//
-	@media screen and (min-width: 768px) {
-		display: none;
-		width: auto;
-	}
 	.button-primary {
 		padding: 0.5em 0.25em;
 		cursor: pointer;
@@ -69,31 +65,58 @@ a.button-big {
 .plus-menu-button {
 	display:inline-block;
 	//
-	.plus {
-		position: relative;
-		display:inline-block;
-		height:35px;
-		width:35px;
+	a {
+		color: $slate;
 		vertical-align: middle;
 		text-decoration: none;
-		background: $teal;
-		border-radius: 50px;
-		transform: rotate(0deg);
-		transition: all 0.3s ease;
 		//
 		&:hover {
+			//
+			.label {
+				// opacity: 0.5;
+			}
+			.notification {
+				background: $rubyLighter;
+			}
 			svg {
 				transform: rotate(180deg);
 				transition: all 0.3s ease;
 			}
 		}
-		svg {
-			position: absolute;
-			top: 9.5px;
-			left: 10px;
-			height: 15px;
-			width: 15px;
-			fill: $slateDark;
+		.label {
+			display: inline-block;
+			padding-right: 0.25em;
+			vertical-align: middle;
+			text-decoration: none;
+			opacity: 1;
+			transition: opacity 0.2s ease;
+		}
+		.plus {
+			position: relative;
+			display:inline-block;
+			height:35px;
+			width:35px;
+			vertical-align: middle;
+			text-decoration: none;
+			background: $teal;
+			border-radius: 50px;
+			transform: rotate(0deg);
+			transition: all 0.3s ease;
+			//
+			svg {
+				position: absolute;
+				top: 9.5px;
+				left: 10px;
+				height: 15px;
+				width: 15px;
+				fill: $slateDark;
+			}
+		}
+	}
+	&.dark {
+		//
+		a {
+			color: $winkleLight;
 		}
 	}
 }

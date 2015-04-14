@@ -1,8 +1,7 @@
 <!-- these need to be a reload action and a reuse of the main page possibly small feature w/ title -->
-
-<header class="site-nav">
+<header class="navbar">
   <div class="inner">
-    <div class="site-nav-primary">
+   <div class="navbar-primary">
       <h1 class="logo" ng-click="menuToggle(); loadSpin('left')">
         <a href="/">
           <svg class="icon-logo" viewBox="0 0 32 32">
@@ -21,7 +20,7 @@
       <nav>
         <ul>
           <li>
-            <a href="/inspiration" ng-click="menuToggle(); loadSpin('left')">Inspiration</a> <!-- if body class is active, on click toggle body class -->
+            <a href="/inspiration" ng-click="menuToggle(); loadSpin('left')">Inspiration</a> <!-- add active states -->
           </li>
           <li>
             <a href="/email-kits" ng-click="menuToggle(); loadSpin('left')">Email Kits</a>
@@ -32,17 +31,24 @@
         </ul>
       </nav>
     </div><!--
- --><div class="site-nav-secondary">
+--><div class="navbar-secondary">
       <div class="inner">
         <div class="nav-drawer">
-          <div class="plus-menu-button" ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
-            <a href="" class="plus">
-              <svg class="icon-plus" viewBox="0 0 32 32">
-                <use xlink:href="/media/images/img.svg#icon-plus"></use>
-              </svg>
-            </a>
+          <div class="button-row">
+            <div class="item">
+              <div class="plus-menu-button dark">
+                <a href="/">
+                  <span class="label">Submit Email</span>
+                  <span class="plus">
+                    <svg class="icon-plus" viewBox="0 0 32 32">
+                      <use xlink:href="/media/images/img.svg#icon-plus"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+         </div>
       </div>
     </div>
   </div>

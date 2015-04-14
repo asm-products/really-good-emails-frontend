@@ -1,7 +1,12 @@
 /* ░░ Header ░░░░░░░░░
 ============================================ */
-// side menu stuff
-// static
+body > .container > header {
+	position:fixed;
+	z-index: 25;
+	width:100%;
+}
+
+// -- Mobile Navigation
 body > .container {
 	> header, > main, > footer {
 		@extend .gpu;
@@ -9,7 +14,7 @@ body > .container {
 		transition: transform 0.3s ease;
 	}
 }
-.site-nav .site-nav-primary nav {
+.navbar.sidebar .navbar-primary nav {
 	height: 2000px;
 	transform: translate3d(-200px,0,0);
 	@media screen and (min-width: 768px) {
@@ -17,11 +22,11 @@ body > .container {
 		transform: translate3d(0,0,0);
 	}
 }
-.site-nav .site-nav-secondary nav {
+.navbar.sidebar .navbar-secondary nav {
 	height: 2000px;
 	transform: translate3d(0,0,0);
 }
-// active
+
 .primary-menu-active > .container {
 	//
 	> header, > main, > footer {
@@ -34,7 +39,58 @@ body > .container {
 		transform: translate3d(-200px,0,0);
 	}
 }
-// loader
+
+// Navbar
+.navbar {
+	//
+	.navbar-primary {
+		@media screen and (min-width: 768px) {
+			width: 58.5%;			// define this adhock inside of header w/ media queries
+		}
+	}
+	.navbar-secondary {
+		@media screen and (min-width: 768px) {
+			width:41.5%;	// define this adhock inside of header w/ media queries
+		}
+		//
+		.search {
+			@media screen and (min-width: 768px) {
+				width:12em;	// define this adhock inside of header w/ media queries
+			}
+			@media screen and (min-width: 1024px) {
+				width:15em;	// define this adhock inside of header w/ media queries
+			}
+		}
+		.nav-drawer {
+			width:35px;
+			@media screen and (min-width: 768px) {
+				width: auto;
+			}
+			//
+			.button-row {
+				//
+				.item {
+					display: none;
+				}
+				.item:first-child {
+					@media screen and (min-width: 1024px) {
+						display: inline-block;
+					}
+				}
+				.item:nth-child(2) {
+					@media screen and (min-width: 768px) {
+						display: inline-block;
+					}
+				}
+				.item:last-of-type {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+// -- Page Loader
 body > .container > header > .load-tray {
 	position: relative;
 	width: 100%;
@@ -59,290 +115,4 @@ body > .container > header > .load-tray {
 			}
 		}
 	}
-}
-
-// regular things
-
-body > .container > header {
-	position:fixed;
-	z-index: 25;
-	width:100%;
-}
-.site-nav {
-	width:100%;
-	padding: 0.5em 1em;
-	color: $white;
-	background: $slateDark;
-	font-size: 1.125em;
-	//
-	> .inner {
-		display: table;
-	  table-layout: fixed;
-	  width: 100%;
-		max-width: 1200px;
-		margin: 0 auto;
-		@media screen and (min-width: 768px) {
-			display: block;
-	  	table-layout: auto;
-		}
-	}
-	.site-nav-primary {
-		display: table-cell;
-		width: 7em;
-		@media screen and (min-width: 768px) {
-			display:inline-block;
-			width: 58.5%;
-		}
-		//
-		.logo {
-			display: inline-block;
-			vertical-align: middle;
-			font-size: 1em;
-			@media screen and (min-width: 768px) {
-				margin: 0 0.5em 0 0;
-			}
-			//
-			span {
-				display: none;
-			}
-			a {
-				display:block;
-				// animation-play-state: paused;
-				//
-				&:hover {
-					animation: logo-hop 0.5s 1;
-					// animation-play-state: running;
-				}
-			}
-			svg {
-				display: inline-block;
-				vertical-align: middle;
-				width: 2.25em;
-			}
-		}
-		nav {
-			// overflow: hidden;
-			position: absolute;
-			width:200px;
-			top: 0;
-			left: 0;
-			background: $slate;
-			@media screen and (min-width: 768px) {
-				display: inline-block;
-				position: static;
-				width: auto;
-				vertical-align: middle;
-				background: none;
-			}
-			//
-			a {
-				color: $winkleLight;
-				text-decoration: none;
-				opacity: 1;
-				&:hover {
-					@media screen and (min-width: 768px) {
-						opacity: 0.5;
-					}
-				}
-			}
-			> ul {
-				margin: 0;
-				padding: 0;
-				> li {
-					@media screen and (min-width: 768px) {
-						display: inline-block;
-						vertical-align: middle;
-					}
-					//
-					&:hover {
-						background: $slateLighter;
-						@media screen and (min-width: 768px) {
-							background: none;
-						}
-					}
-					&:first-child {
-						//
-						a {
-							padding-top:1em;
-							@media screen and (min-width: 768px) {
-								padding:0.75em 1em;
-							}
-						}
-					}
-					//
-					a {
-						display: inline-block;
-						padding:0.5em 4.5em 0.5em 1em;
-						@media screen and (min-width: 768px) {
-							padding:0.9em 1em;
-						}
-					}
-				}
-			}
-		}
-	}
-	.site-nav-secondary {
-		display: table-cell;
-		text-align: right;
-		@media screen and (min-width: 768px) {
-			display: inline-block;
-			width:41.5%;
-			vertical-align: middle;
-			padding-bottom: 0.1em;
-		}
-		//
-		.inner {
-			display: table;
-			table-layout: fixed;
-			width:100%;
-			@media screen and (min-width: 768px) {
-				display: block;
-				table-layout: auto;
-			}
-		}
-		.search {
-			display:table-cell;
-			padding-right: 1em;
-			font-size: 0.9em;
-			@media screen and (min-width: 768px) {
-				text-align: right;
-				display: inline-block;
-			}
-			//
-			form {
-				position: relative;
-				@media screen and (min-width: 768px) {
-					display: inline-block;
-					width:12em;
-				}
-				@media screen and (min-width: 1024px) {
-					width:15em;
-				}
-			}
-			input[type="text"] {
-				width: 100%;
-				background: $slate;
-				padding:0.3em 0.75em;
-				color: $winkle;
-				border-radius: 50px;
-			}
-			button[type="submit"] {
-				position: absolute;
-				right: 0.7em;
-				top: 0.45em;
-				width: 0.8em;
-				background: none;
-				-webkit-appearance: none;
-				padding: 0;
-				margin:0;
-				//
-				svg {
-					fill: $winkle;
-				}
-			}
-		}
-		.nav-drawer {
-			display:table-cell;
-			width:32px;
-			margin: 0;
-			padding: 0;
-			@media screen and (min-width: 768px) {
-				display: inline-block;
-				width: auto;
-			}
-			//
-			> div {
-				display: none;
-				vertical-align: middle;
-				width:32px;
-				margin-right: 1em;
-			}
-			> div:first-child {
-				@media screen and (min-width: 800px) {
-					display: inline-block;
-				}
-			}
-			> div:nth-child(2) {
-				@media screen and (min-width: 900px) {
-					display: inline-block;
-				}
-			}
-			> div:last-of-type {
-				width:35px;
-				display: inline-block;
-				margin-right: 0;
-				margin-top: -1px;
-			}
-		}
-		nav {
-			// overflow: hidden;
-			position: absolute;
-			width:200px;
-			top: 0;
-			left: 100%;
-			text-align: left;
-			background: $slate;
-			//
-			a {
-				color: $white;
-				text-decoration: none;
-			}
-			> ul {
-				margin: 0;
-				padding: 0;
-				> li {
-					//
-					&:hover {
-						background: $slateLighter;
-					}
-					&:first-child {
-						@media screen and (min-width: 900px) {
-							display: none;
-						}
-						//
-						a {
-							padding-top:1em;
-						}
-					}
-					&:nth-child(2) {
-						@media screen and (min-width: 900px) {
-							display: none;
-						}
-					}
-					&:nth-child(3) {
-						a {
-							@media screen and (min-width: 900px) {
-								padding-top:1em;
-							}
-						}
-					}
-					//
-					a {
-						display: inline-block;
-						padding:0.5em 4.5em 0.5em 1em;
-					}
-				}
-			}
-		}
-	}
-}
-
-// Animations
-
-@keyframes logo-hop {
-  0% {
-    transform: translate3d(0,0,0);
-  }
-  25% {
-    transform: translate3d(0,-3px,0);
-  }
-  50% {
-    transform: translate3d(0,0,0);
-  }
-  75% {
-    transform: translate3d(0,-3px,0);
-  }
-  100% {
-    transform: translate3d(0,0,0);
-  }
 }

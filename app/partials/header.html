@@ -1,6 +1,6 @@
-<div class="site-nav">
+<div class="navbar sidebar">
   <div class="inner">
-    <div class="site-nav-primary">
+    <div class="navbar-primary">
       <h1 class="logo" ng-click="menuToggle(); loadSpin('left')">
         <a href="/">
           <svg class="icon-logo" viewBox="0 0 32 32">
@@ -30,9 +30,9 @@
         </ul>
       </nav>
     </div><!--
- --><div class="site-nav-secondary">
+ --><div class="navbar-secondary">
       <div class="inner">
-        <div class="search">
+        <div class="search dark">
           <form>
             <input type="text">
             <button type="submit">
@@ -43,20 +43,34 @@
           </form>
         </div>
         <div class="nav-drawer">
-          <div class="avatar-box">
-            <a href="" class="avatar">
-              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dustintheweb/73.jpg" alt="">
-            </a>
-          </div><!--
-       --><div class="notification-box">
-            <a href="" class="notification">3</a>
-          </div><!--
-       --><div class="plus-menu-button" ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
-            <a href="" class="plus">
-              <svg class="icon-plus" viewBox="0 0 32 32">
-                <use xlink:href="/media/images/img.svg#icon-plus"></use>
-              </svg>
-            </a>
+          <div class="button-row">
+            <div class="item">
+              <div class="avatar-box dark">
+                <a href="/">
+                  <span class="avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dustintheweb/73.jpg" alt="">
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="notification-box dark">
+                <a href="/">
+                  <span class="notification">3</span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="plus-menu-button dark" ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
+                <a href="/">
+                  <span class="plus">
+                    <svg class="icon-plus" viewBox="0 0 32 32">
+                      <use xlink:href="/media/images/img.svg#icon-plus"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
           <nav>
             <ul>

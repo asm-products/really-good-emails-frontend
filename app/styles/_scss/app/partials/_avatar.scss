@@ -4,21 +4,45 @@
 .avatar-box {
 	display:inline-block;
 	//
-	.avatar {
-		display:inline-block;
-		width:32px;
+	a {
+		vertical-align: middle;
+		color: $slate;
 		text-decoration: none;
-		background: $slateLightest;
-		border-radius: 3px;
 		//
 		&:hover {
 			//
+			.label {
+				// opacity: 0.5;
+			}
 			img {
 				opacity: 0.75;
 			}
 		}
-		img {
+		.label {
+			display: inline-block;
+			padding-right: 0.25em;
+			vertical-align: middle;
+			text-decoration: none;
+			opacity: 1;
+			transition: opacity 0.2s ease;
+		}
+		.avatar {
+			display:inline-block;
+			width:32px;
+			text-decoration: none;
+			background: $slateLightest;
 			border-radius: 3px;
+			//
+			img {
+				border-radius: 3px;
+				transition: opacity 0.2s ease;
+			}
+		}
+	}
+	&.dark {
+		//
+		a {
+			color: $winkleLight;
 		}
 	}
 }

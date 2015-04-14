@@ -2,7 +2,7 @@
 
 // Base Styles /////////////////////
 
-// ==== Config (universal) ============================================
+// ==== Config Level (general) ==============================================
 @import "app/config/--summary";						// Summary: An optional table of contents defining your document structure
 @import "app/config/--normalize"; 				// Normalize: CSS reset alt for resolving cross browser style differences
 @import "app/config/--general";						// General: Common SCSS variables & general helper classes (eg clearfix, alignment, etc)
@@ -10,25 +10,18 @@
 @import "app/config/--structure";					// Structure: Default framework structure styles
 @import "app/config/--content";						// Content: Default styles for all content - header, copy, tables, lists, etc
 
-// CSS Libraries
-// ----------------------------------------------------------------------
+// ==== Lib Level ===========================================================
+// any css / scss libs go here
 
-// scss libs go here
-
-// ==== App (project specific) ========================================
+// ==== App Level (project specific) ========================================
 @import "app/vars";
 @import "app/fonts";
-//
 @import "app/master";											// shared app styles
-@import "app/header";
-@import "app/main";
-@import "app/footer";
-@import "app/print";
 
-// -- Partials --------------------------------------------------------
-//
-// Modules																// Base styles for reusable, global modules
+// ==== Module Level ========================================================
+@import "app/partials/form.scss";
 @import "app/partials/buttons.scss";
+@import "app/partials/navbar.scss";
 @import "app/partials/avatar.scss";
 @import "app/partials/notification.scss";
 @import "app/partials/loading.scss";
@@ -38,6 +31,8 @@
 @import "app/partials/card.scss";
 @import "app/partials/list-grid.scss";
 
-// // Layouts															// Base styles & module overwrites for each layout type
-
-
+// ==== Layout Level ========================================================
+@import "app/header";
+// @import "app/main";
+@import "app/footer";
+@import "app/print";
