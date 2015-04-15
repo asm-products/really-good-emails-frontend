@@ -39,8 +39,10 @@
 			}
 		}
 	}
-	&.dark {
-		//
+}
+// -- Theme
+.dark {
+	.avatar-box {
 		a {
 			color: $winkleLight;
 		}

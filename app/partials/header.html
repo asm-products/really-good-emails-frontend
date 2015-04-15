@@ -1,4 +1,4 @@
-<div class="base">
+<div class="base border-bottom-1">
   <div class="inner">
     <main class="navbar sidebar">
       <div class="primary">
@@ -10,8 +10,8 @@
             <span>Really Good Emails</span>
           </a>
         </h1>
-        <div class="hamburger-menu-button" ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu">
-          <div class="button-primary">
+        <div class="hamburger-menu-button" ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu"> <!-- data-ng-class="toggleNavGroupTwo ? 'active' : '';"> -->
+          <div class="primary">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -33,7 +33,7 @@
       </div><!--
    --><div class="secondary">
         <div class="inner">
-          <div class="search dark">
+          <div class="search">
             <form>
               <input type="text">
               <button type="submit">
@@ -46,7 +46,7 @@
           <div class="nav-drawer">
             <div class="button-row">
               <div class="item">
-                <div class="avatar-box dark">
+                <div class="avatar-box">
                   <a href="/">
                     <span class="avatar">
                       <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dustintheweb/73.jpg" alt="">
@@ -55,14 +55,14 @@
                 </div>
               </div>
               <div class="item">
-                <div class="notification-box dark">
+                <div class="notification-box">
                   <a href="/">
                     <span class="notification">3</span>
                   </a>
                 </div>
               </div>
               <div class="item">
-                <div class="plus-menu-button dark" ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
+                <div class="plus-menu-button" ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
                   <a href="/">
                     <span class="plus">
                       <svg class="icon-plus" viewBox="0 0 32 32">

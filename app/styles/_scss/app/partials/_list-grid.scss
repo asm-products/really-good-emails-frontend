@@ -12,12 +12,6 @@
 	@media screen and (min-width: 1200px) {
 		column-count: 6;
 	}
-	&.dark {
-		//
-		a {
-			color: $winkleLight;
-		}
-	}
 	ul {
 	  margin: 0;
 	  padding: 0;
@@ -33,6 +27,14 @@
 			&:hover {
 				opacity: 0.5;
 			}
+		}
+	}
+}
+.dark {
+	//
+	.list-grid {
+		a {
+			color: $winkleLight;
 		}
 	}
 }

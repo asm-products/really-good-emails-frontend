@@ -22,7 +22,7 @@ a.button-big {
 	text-align: center;
 	vertical-align: middle;
 	//
-	.button-primary {
+	> .primary {
 		padding: 0.5em 0.25em;
 		cursor: pointer;
 		-webkit-user-select: none;
@@ -31,20 +31,12 @@ a.button-big {
 		-webkit-touch-callout: none;
 		transition: background .2s ease-in-out;
 		//
-		&:hover {
-			background: $slate;
+		&:hover, &.active {
+			background: $winkleLight;
 			transition: background .2s ease-in-out;
 			//
 			.icon-bar {
-				background-color: $slateLighter;
-			}
-		}
-		&.active {
-			background: $slate;
-			transition: background .2s ease-in-out;
-			//
-			.icon-bar {
-				background-color: $slateLighter;
+				background-color: $slateLightest;
 			}
 		}
 		&.touch:hover {
@@ -109,14 +101,34 @@ a.button-big {
 				left: 10px;
 				height: 15px;
 				width: 15px;
-				fill: $slateDark;
+				fill: $white;
 			}
 		}
 	}
-	&.dark {
+}
+.dark {
+	//
+	.hamburger-menu-button {
+		//
+		.primary  {
+			//
+			&:hover, &.active {
+				background: $slate;
+				//
+				.icon-bar {
+					background-color: $slateLighter;
+				}
+			}
+		}
+	}
+	.plus-menu-button {
 		//
 		a {
 			color: $winkleLight;
+			//
+			svg {
+				fill: $slateDark;
+			}
 		}
 	}
 }

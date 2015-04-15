@@ -10,7 +10,7 @@
 	}
 	input[type="text"] {
 		width: 100%;
-		background: $winkle;
+		background: $winkleLight;
 		padding:0.3em 2em 0.3em 0.75em;
 		color: $slate;
 		border-radius: 50px;
@@ -18,7 +18,7 @@
 	button[type="submit"] {
 		position: absolute;
 		right: 0.7em;
-		top: 0.45em;
+		top: 0.4em;
 		width: 0.8em;
 		background: none;
 		-webkit-appearance: none;
@@ -26,16 +26,18 @@
 		margin:0;
 		//
 		svg {
-			fill: $slate;
+			fill: $slateLighter;
 		}
 	}
-	&.dark {
+}
+// -- Theme
+.dark {
+	.search {
 		input[type="text"] {
 			background: $slate;
 			color: $winkle;
 		}
 		button[type="submit"] {
-			//
 			svg {
 				fill: $winkle;
 			}

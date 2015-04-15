@@ -1,22 +1,15 @@
 /* >> Nav Bar (Module) >>>>>>>>>>>>
 ============================================*/
 .navbar {
-	// width:100%;
-	// padding: 0.5em 1em;
-	color: $white;
+	display: table;
+  table-layout: fixed;
+  width: 100%;
 	font-size: 1.125em;
-	//
-	> .inner {
-		display: table;
-	  table-layout: fixed;
-	  width: 100%;
-		max-width: 1200px;
-		margin: 0 auto;
-		@media screen and (min-width: 768px) {
-			display: block;
-	  	table-layout: auto;
-		}
+	@media screen and (min-width: 768px) {
+		display: block;
+  	table-layout: auto;
 	}
+	//
 	> .primary {
 		display: table-cell;
 		width: 7em;
@@ -67,9 +60,12 @@
 			}
 			//
 			a {
-				color: $winkleLight;
+				color: $winkleLighter;
 				text-decoration: none;
 				opacity: 1;
+				@media screen and (min-width: 768px) {
+					color: $slate;
+				}
 				&:hover {
 					@media screen and (min-width: 768px) {
 						opacity: 0.5;
@@ -125,7 +121,7 @@
 		text-align: right;
 		@media screen and (min-width: 768px) {
 			display: inline-block;
-			width:50%;		// define this adhock inside of header w/ media queries
+			width:50%;
 			vertical-align: middle;
 			padding-bottom: 0.1em;
 		}
@@ -140,8 +136,7 @@
 			}
 		}
 		.search {
-			display:table-cell; 
-			// width: // define this adhock inside of header w/ media queries
+			display:table-cell;
 			padding-right: 1em;
 			@media screen and (min-width: 768px) {
 				text-align: right;
@@ -150,13 +145,6 @@
 			form {
 				position: relative;
 				width: 100%;
-				@media screen and (min-width: 768px) { // define this adhock inside of header w/ media queries
-					// display: inline-block;
-					// width:12em;
-				}
-				@media screen and (min-width: 1024px) {
-					// width:15em;
-				}
 			}
 		}
 		.nav-drawer {
@@ -189,7 +177,7 @@
 			background: $slate;
 			//
 			a {
-				color: $white;
+				color: $winkleLighter;
 				text-decoration: none;
 			}
 			> ul {
@@ -231,9 +219,16 @@
 		}
 	}
 }
-
-// Animations
-
+// -- Theme
+.dark {
+	.navbar > .primary nav a {
+		//
+		@media screen and (min-width: 768px) {
+		 color: $winkleLighter;
+		}
+	}
+}
+// -- Animations
 @keyframes logo-hop {
   0% {
     transform: translate3d(0,0,0);

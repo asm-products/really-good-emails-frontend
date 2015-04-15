@@ -3,15 +3,12 @@
 //
 body > .container > footer {
 	color: $white;
-	background: $winkle;
+	background: $white;
 	//
 	&.dark {
 		background: $slateDark;
 	}
 	//
-	.inner > header, .inner > main {
-		border-bottom: solid 1px $slateLight;
-	}
 	.list-grid {
 		padding:2em 0 1.5em;
 		font-size: 0.9em;

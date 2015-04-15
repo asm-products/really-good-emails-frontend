@@ -23,3 +23,15 @@ a {
 		text-decoration: underline;
 	}
 }
+
+/*>> Lines >>>>>>>>>>>>
+============================================*/
+.border-bottom-1, .border-bottom-2, .border-bottom-3 {
+  border-bottom-color: $winkleLight;
+}
+.dark {
+	//
+	.border-bottom-1, .border-bottom-2, .border-bottom-3 {
+	  border-bottom-color: $slateLight;
+	}
+}
