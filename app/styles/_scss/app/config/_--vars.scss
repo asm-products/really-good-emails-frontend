@@ -1,0 +1,26 @@
+// ░░ Variables (Framework) ░░░░░░░░░
+// ============================================
+
+// >> Framework Swatch >>>>>>>>>>>>>>>>>>>>>>>>>
+//
+$black : #000 !default;
+$blackLight : #333 !default;
+$blackLighter : #555 !default;
+$greyDarker : #999 !default;
+$greyDark : #aaa !default;
+$grey : #ccc !default;
+$greyLight : #ddd !default;
+$greyLighter : #eee !default;
+$white : #fff !default;
+$whiteDark : #f5f5f5 !default;
+$whiteDarker : #f0f0f0 !default;
+$red : #f00 !default;
+$blue : #0033ff !default;
+//
+$fontColor: #656565 !default;
+//
+$linkColor : $blue !default;
+$linkHover : darken($linkColor, 10%);
+$linkVisited : darken($linkHover, 5%);
+$linkFocus : $linkHover;
+$linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);

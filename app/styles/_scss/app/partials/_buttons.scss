@@ -1,0 +1,134 @@
+/* >> Buttons (Module) >>>>>>>>>>>>
+============================================*/
+//
+a.button-big {
+	display: inline-block;
+	padding: 0.2em 3em;
+	color: $white;
+	background: $teal;
+	border-radius: 50px;
+	font-size: 1.375em;
+	font-family: $roboto-bold;
+	text-decoration: none;
+	&:hover {
+		background: $tealDark;
+	}
+}
+
+.hamburger-menu-button {
+	display: inline-block;
+	width: 50px;
+	padding-left: 3px;
+	text-align: center;
+	vertical-align: middle;
+	//
+	> .primary {
+		padding: 0.5em 0.25em;
+		cursor: pointer;
+		-webkit-user-select: none;
+		border: 0;
+		border-radius: 5px;
+		-webkit-touch-callout: none;
+		transition: background .2s ease-in-out;
+		//
+		&:hover, &.active {
+			background: $winkleLight;
+			transition: background .2s ease-in-out;
+			//
+			.icon-bar {
+				background-color: $slateLightest;
+			}
+		}
+		&.touch:hover {
+			background: none;
+		}
+		.icon-bar {
+			line-height: 2px;
+			display: block;
+			width: 20px;
+			height: 3px;
+			margin: 4px auto;
+			vertical-align: text-top;
+			background-color: $slateLighter;
+		}
+	}
+}
+
+.plus-menu-button {
+	display:inline-block;
+	//
+	a {
+		color: $slate;
+		vertical-align: middle;
+		text-decoration: none;
+		//
+		&:hover {
+			//
+			.label {
+				// opacity: 0.5;
+			}
+			.notification {
+				background: $rubyLighter;
+			}
+			svg {
+				transform: rotate(180deg);
+				transition: all 0.3s ease;
+			}
+		}
+		.label {
+			display: inline-block;
+			padding-right: 0.25em;
+			vertical-align: middle;
+			text-decoration: none;
+			opacity: 1;
+			transition: opacity 0.2s ease;
+		}
+		.plus {
+			position: relative;
+			display:inline-block;
+			height:35px;
+			width:35px;
+			vertical-align: middle;
+			text-decoration: none;
+			background: $teal;
+			border-radius: 50px;
+			transform: rotate(0deg);
+			transition: all 0.3s ease;
+			//
+			svg {
+				position: absolute;
+				top: 9.5px;
+				left: 10px;
+				height: 15px;
+				width: 15px;
+				fill: $white;
+			}
+		}
+	}
+}
+.dark {
+	//
+	.hamburger-menu-button {
+		//
+		.primary  {
+			//
+			&:hover, &.active {
+				background: $slate;
+				//
+				.icon-bar {
+					background-color: $slateLighter;
+				}
+			}
+		}
+	}
+	.plus-menu-button {
+		//
+		a {
+			color: $winkleLight;
+			//
+			svg {
+				fill: $slateDark;
+			}
+		}
+	}
+}

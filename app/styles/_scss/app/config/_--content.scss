@@ -1,4 +1,4 @@
-/*░░ Content ░░░░░░░░░░░░░
+/* ░░ Content (Framework) ░░░░░░░░░░░░░
 ================================================*/
 
 /*>> Selection >>>>>>>>>>>>
@@ -9,250 +9,259 @@
 /*>> Headers >>>>>>>>>>>>
 ============================================*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: $trebuchet;
-    font-weight: 400;
-    font-style: normal;
+  font-family: $trebuchet;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*>> Copy >>>>>>>>>>>>
 ============================================*/
-
 .force-wrap {
-    white-space: pre;
-    white-space: pre-wrap;
-    white-space: pre-line;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -hp-pre-wrap;
-    word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
 }
 
 p {
-    margin: 0 0 rhythm();
+  margin: 0 0 rhythm();
 }
 em {
-    font-style: italic;
-    display:inline-block;
-    //
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-        transform: skewX(-3deg);
-    }
+  font-style: italic;
+  display:inline-block;
+  //
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    transform: skewX(-3deg);
+  }
 }
 b, strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 small {
-    font-size: 85%;
+  font-size: 85%;
 }
 cite {
-    font-style: normal;
+  font-style: normal;
 }
 dfn {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
 sub, sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
 }
 sup {
-    top: -0.5em;
-    vertical-align: sub;
+  top: -0.5em;
+  vertical-align: sub;
 }
 sub {
-    bottom: -0.25em;
-    vertical-align: super;
+  bottom: -0.25em;
+  vertical-align: super;
 }
 abbr, acronym {
-    border-bottom: 1px dotted $greyLight;
-    text-transform: uppercase;
-    font-size: 90%;
-    cursor: help;
+  border-bottom: 1px dotted $greyLight;
+  text-transform: uppercase;
+  font-size: 90%;
+  cursor: help;
 }
 del {
-    color: $greyDark;
-    vertical-align: baseline;
-    text-decoration: line-through;
+  color: $greyDark;
+  vertical-align: baseline;
+  text-decoration: line-through;
 }
 
 pre {
-    @extend .force-wrap;
-    margin: 1.5em 0;
-    padding: rhythm(.5) rhythm(.3);
-    border-top: 1px solid #ff2;
-    border-bottom: 1px solid #ff2;
-    background: #ffff99;
-    color: #990;
+  @extend .force-wrap;
+  margin: 1.5em 0;
+  padding: rhythm(.5) rhythm(.3);
+  border-top: 1px solid #ff2;
+  border-bottom: 1px solid #ff2;
+  background: #ffff99;
+  color: #990;
 }
 code {
-    padding: rhythm(.2);
-    background: #ffff99;
-    color: #990;
-    font-size: 11px;
-    line-height: 1.2em;
+  padding: rhythm(.2);
+  background: #ffff99;
+  color: #990;
+  font-size: 11px;
+  line-height: 1.2em;
 }
 pre, code, kbd, samp, tt {
-    font-family: $consolas;
+  font-family: $consolas;
 }
 ins {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 mark {
-    background: #ff0;
-    color: #990;
-    font-size: 11px;
+  background: #ff0;
+  color: #990;
+  font-size: 11px;
 }
 address {
-    display: block;
-    margin: 0 0 1.5em;
-    font-style: italic;
+  display: block;
+  margin: 0 0 1.5em;
+  font-style: italic;
 }
 
 /*>> Links >>>>>>>>>>>>
 ============================================*/
 a {
+  color: $linkColor;
+  text-decoration: none;
+  -webkit-touch-callout: none; // mobile touch select
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //
+  &:hover {
     color: $linkColor;
     text-decoration: none;
-    -webkit-touch-callout: none; // mobile touch select
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    //
-    &:hover {
-        color: $linkColor;
-        text-decoration: none;
-    }
-    &:focus {
-        outline: none;
-    }
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 /*>> Media >>>>>>>>>>>>
 ============================================*/
 audio, canvas, img, video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 img {
-    height: auto;
-    max-width:100%;
+  height: auto;
+  max-width:100%;
 }
 
 /*>> Lines >>>>>>>>>>>>
 ============================================*/
 hr {
-    display: block;
-    margin: 1em 0;
-    padding: 0;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.border-bottom-1 {
+  border-bottom: solid 1px #ccc;
+}
+.border-bottom-2 {
+  border-bottom: solid 2px #ccc;
+}
+.border-bottom-3 {
+  border-bottom: solid 3px #ccc;
 }
 
 /*>> Lists >>>>>>>>>>>>
 ============================================*/
 ul, ol {
-    margin: 1em 0;
-    padding: 0 0 0 rhythm(1.5);
+  margin: 1em 0;
+  padding: 0 0 0 rhythm(1.5);
 }
 ul {
-    list-style: disc;
+  list-style: disc;
 }
 ol {
-    list-style-type: decimal;
+  list-style-type: decimal;
+  //
+  ol {
+    list-style: upper-alpha;
     //
     ol {
-        list-style: upper-alpha;
-        //
-        ol {
-            list-style: lower-roman;
-            //
-            ol {
-                list-style: lower-alpha;
-            }
-        }
+      list-style: lower-roman;
+      //
+      ol {
+        list-style: lower-alpha;
+      }
     }
+  }
 }
 li ul, li ol {
-    margin: 0;
+  margin: 0;
 }
 dl {
-    margin: 0 1.625em;
+  margin: 0 1.625em;
 }
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 dd {
-    margin-bottom: 1.625em;
+  margin-bottom: 1.625em;
 }
 
 /*>> Forms >>>>>>>>>>>>
 ============================================*/
 fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 button,
 input,
 select,
 textarea {
-    font-family: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    border: 0;
-    outline: 0;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 // -- Remove input autofocus webkit -------------
 *:focus {
-    outline: none;
+  outline: none;
 }
 
 // -- Placeholders ----------------
 input, input.placeholder, textarea, textarea.placeholder {
-    &.placeholder { color: lighten($fontColor, 20%); }
+  &.placeholder { color: lighten($fontColor, 20%); }
 }
 
 /*>> Tables >>>>>>>>>>>>
 ============================================*/
 // css table
 .table {
-    display:table;
-    .tr {
-        display:table-row;
-    }
-    .thead {
-        display:table-header-group;
-    }
-    .tbody {
-        display:table-row-group;
-    }
-    .tfoot {
-        display:table-footer-group;
-    }
-    .col    {
-        display:table-column;
-    }
-    .colgroup {
-        display:table-column-group;
-    }
-    .td, .th {
-        display:table-cell; vertical-align:top;
-    }
-    .caption {
-        display:table-caption;
-    }
+  display:table;
+  .tr {
+    display:table-row;
+  }
+  .thead {
+    display:table-header-group;
+  }
+  .tbody {
+    display:table-row-group;
+  }
+  .tfoot {
+    display:table-footer-group;
+  }
+  .col    {
+    display:table-column;
+  }
+  .colgroup {
+    display:table-column-group;
+  }
+  .td, .th {
+    display:table-cell; vertical-align:top;
+  }
+  .caption {
+    display:table-caption;
+  }
 }

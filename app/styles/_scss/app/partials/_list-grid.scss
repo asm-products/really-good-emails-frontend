@@ -1,0 +1,40 @@
+/* >> List Grid (Module) >>>>>>>>>>>>
+============================================*/
+
+.list-grid {
+	column-count: 2;
+	@media screen and (min-width: 600px) {
+		column-count: 3;
+	}
+	@media screen and (min-width: 768px) {
+		column-count: 4;
+	}
+	@media screen and (min-width: 1200px) {
+		column-count: 6;
+	}
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  //
+		a {
+			display: inline-block;
+			padding: 0.25em 0;
+			transform: translate3d(0,0,0);
+			color: $slate;
+			text-decoration: none;
+			opacity: 1;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+.dark {
+	//
+	.list-grid {
+		a {
+			color: $winkleLight;
+		}
+	}
+}

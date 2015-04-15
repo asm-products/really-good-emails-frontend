@@ -1,0 +1,77 @@
+/* >> Loading (Module) >>>>>>>>>>>>
+============================================*/
+
+$spin-load-small-offset: 128;
+$spin-load-duration: 1s;
+.spin-load-small {
+	@extend .gpu;
+	width: 32px;
+	height: 32px;
+	animation: rotator 2.5s linear infinite;
+	transition: opacity 0.25s ease-in-out;
+	//
+	.gwrap1 {
+		transform: translate3d(16px, 16px, 0);
+	}
+	.gwrap2 {
+		stroke-dasharray: $spin-load-small-offset;
+		stroke-dashoffset: 0;
+		transform: translate3d(16px, 16px, 0);
+		animation: dash $spin-load-duration ease-in-out infinite;
+	}
+	.path {
+		transform: translate3d(-16px, -16px, 0);
+		animation: colors ($spin-load-duration*4) ease-in-out infinite;
+	}
+	//
+	&.preload {
+		opacity: 0;
+	}
+	&.loaded {
+		opacity: 1;
+	}
+}
+
+// spin animations
+@keyframes rotator {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes colors {
+	0% {
+		stroke: $teal
+	}
+	25% {
+		stroke: $ruby;
+	}
+	50% {
+		stroke: #F7C223;
+	}
+	75% {
+		stroke: #1B9A59;
+	}
+	100% {
+		stroke: $teal
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: $spin-load-small-offset;
+		transform: rotate(0deg);
+	}
+	50% {
+		stroke-dashoffset: ($spin-load-small-offset/2);
+		transform: rotate(120deg);
+	}
+	100% {
+		stroke-dashoffset: $spin-load-small-offset;
+		transform: rotate(360deg);
+	}
+}
+

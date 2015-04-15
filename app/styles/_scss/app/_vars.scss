@@ -1,9 +1,7 @@
-/*██ Theme ██████████████████
-================================================*/
+// ░░ Variables (App) ░░░░░░░░░░░░░
+// ================================================
 
-// >> Layout Variables >>>>>>>>>>>>>>>>>>>>>>>>>
-
-// -- Theme Swatch -------------------------
+// >> App Swatch >>>>>>>>>>>>
 //
 $slateLightest: #747981;
 $slateLighter: #646971;
@@ -34,4 +32,6 @@ $linkVisited : darken($linkHover, 5%);
 $linkFocus : $linkHover;
 $linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);
 
+// >> Etc >>>>>>>>>>>>
+//
 $cdn : '//thecdnurl.com/whatever';
