@@ -3,21 +3,21 @@
 //
 body > .container > footer {
 	color: $white;
-	background: $slateDark;
+	background: $winkle;
 	//
-	.inner {
-		margin: 0 auto;
-		max-width: 1200px;
+	&.dark {
+		background: $slateDark;
 	}
-	> header, > main {
+	//
+	.inner > header, .inner > main {
 		border-bottom: solid 1px $slateLight;
 	}
 	.list-grid {
-		// padding:0 0.5em;
+		padding:2em 0 1.5em;
 		font-size: 0.9em;
-		@media screen and (min-width: 480px) {
-			// padding:0 1.5em;
-		}
+		// @media screen and (min-width: 480px) {
+		// 	padding:0 1.5em;
+		// }
 	}
 	.navbar {
 		//
@@ -28,12 +28,4 @@ body > .container > footer {
 			}
 		}
 	}
-	// a {
-	// 	color: $winkleLight;
-	// 	text-decoration: none;
-	// 	opacity: 1;
-	// 	&:hover {
-	// 		opacity: 0.5;
-	// 	}
-	// }
 }

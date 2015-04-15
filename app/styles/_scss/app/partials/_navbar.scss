@@ -1,10 +1,9 @@
 /* >> Nav Bar (Module) >>>>>>>>>>>>
 ============================================*/
 .navbar {
-	width:100%;
-	padding: 0.5em 1em;
+	// width:100%;
+	// padding: 0.5em 1em;
 	color: $white;
-	background: $slateDark;
 	font-size: 1.125em;
 	//
 	> .inner {
@@ -18,7 +17,7 @@
 	  	table-layout: auto;
 		}
 	}
-	.navbar-primary {
+	> .primary {
 		display: table-cell;
 		width: 7em;
 		@media screen and (min-width: 768px) {
@@ -121,7 +120,7 @@
 			}
 		}
 	}
-	.navbar-secondary {
+	> .secondary {
 		display: table-cell;
 		text-align: right;
 		@media screen and (min-width: 768px) {

@@ -1,174 +1,191 @@
 <!-- these need to be a reload action and a reuse of the main page possibly small feature w/ title -->
-<header class="navbar">
+<div class="base">
   <div class="inner">
-   <div class="navbar-primary">
-      <h1 class="logo" ng-click="menuToggle(); loadSpin('left')">
-        <a href="/">
-          <svg class="icon-logo" viewBox="0 0 32 32">
-            <use xlink:href="/media/images/img.svg#icon-logo"></use>
-          </svg>
-          <span>Really Good Emails</span>
-        </a>
-      </h1>
-      <div class="hamburger-menu-button" ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu">
-        <div class="button-primary">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="/inspiration" ng-click="menuToggle(); loadSpin('left')">Inspiration</a> <!-- add active states -->
-          </li>
-          <li>
-            <a href="/email-kits" ng-click="menuToggle(); loadSpin('left')">Email Kits</a>
-          </li>
-          <li>
-            <a href="/interviews" ng-click="menuToggle(); loadSpin('left')">Interviews</a>
-          </li>
-        </ul>
-      </nav>
-    </div><!--
---><div class="navbar-secondary">
-      <div class="inner">
-        <div class="nav-drawer">
-          <div class="button-row">
-            <div class="item">
-              <div class="plus-menu-button dark">
-                <a href="/">
-                  <span class="label">Submit Email</span>
-                  <span class="plus">
-                    <svg class="icon-plus" viewBox="0 0 32 32">
-                      <use xlink:href="/media/images/img.svg#icon-plus"></use>
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-         </div>
-      </div>
-    </div>
+  	<header class="navbar">
+	  	<div class="primary">
+	      <h1 class="logo" ng-click="menuToggle(); loadSpin('left')">
+	        <a href="/">
+	          <svg class="icon-logo" viewBox="0 0 32 32">
+	            <use xlink:href="/media/images/img.svg#icon-logo"></use>
+	          </svg>
+	          <span>Really Good Emails</span>
+	        </a>
+	      </h1>
+	      <div class="hamburger-menu-button" ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu">
+	        <div class="button-primary">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </div>
+	      </div>
+	      <nav>
+	        <ul>
+	          <li>
+	            <a href="/inspiration" ng-click="menuToggle(); loadSpin('left')">Inspiration</a> <!-- add active states -->
+	          </li>
+	          <li>
+	            <a href="/email-kits" ng-click="menuToggle(); loadSpin('left')">Email Kits</a>
+	          </li>
+	          <li>
+	            <a href="/interviews" ng-click="menuToggle(); loadSpin('left')">Interviews</a>
+	          </li>
+	        </ul>
+	      </nav>
+	    </div><!--
+	 --><div class="secondary">
+	      <div class="inner">
+	        <div class="nav-drawer">
+	          <div class="button-row">
+	            <div class="item">
+	              <div class="plus-menu-button dark">
+	                <a href="/">
+	                  <span class="label">Submit Emails</span>
+	                  <span class="plus">
+	                    <svg class="icon-plus" viewBox="0 0 32 32">
+	                      <use xlink:href="/media/images/img.svg#icon-plus"></use>
+	                    </svg>
+	                  </span>
+	                </a>
+	              </div>
+	            </div>
+	          </div>
+	         </div>
+	      </div>
+	    </div>
+	  </header>
   </div>
-</header>
-<main class="base">
-	<div class="inner list-grid">
-		<ul>
-			<li>
-				<a href="/">Abandoned Cart</a>
-			<li>
-				<a href="">Account</a>
-			<li>
-				<a href="">Activation</a>
-			<li>
-				<a href="">Activity</a>
-			<li>
-				<a href="">Alerts</a>
-			<li>
-				<a href="">Announcement</a>
-			<li>
-				<a href="">Automated</a>
-			<li>
-				<a href="">Comments</a>
-			<li>
-				<a href="">Confirmation</a>
-			<li>
-				<a href="">Customer Appreciation</a>
-		</ul>
-		<ul>
-			<li>
-				<a href="">Deactivation</a>
-			<li>
-				<a href="">Discovery</a>
-			<li>
-				<a href="">Ecommerce</a>
-			<li>
-				<a href="">Email Digest</a>
-			<li>
-				<a href="">Engagement</a>
-			<li>
-				<a href="">Events</a>
-			<li>
-				<a href="">Expiration</a>
-			<li>
-				<a href="">Featured Product</a>
-			<li>
-				<a href="">Feed</a>
-			<li>
-				<a href="">Holiday</a>
-		</ul>
-		<ul>
-			<li>
-					<a href="">Invitation</a>
-			<li>
-				<a href="">Local</a>
-			<li>
-				<a href="">Marketing</a>
-			<li>
-				<a href="">New Article</a>
-			<li>
-				<a href="">Newsletter</a>
-			<li>
-				<a href="">Notice</a>
-			<li>
-				<a href="">Offer</a>
-			<li>
-				<a href="">Onboarding</a>
-			<li>
-				<a href="">Order Shipped</a>
-			<li>
-				<a href="">Password Reset</a>
-		</ul>
-		<ul>
-			<li>
-					<a href="">Product Launch</a>
-			<li>
-				<a href="">Product Sale</a>
-			<li>
-				<a href="">Product Update</a>
-			<li>
-				<a href="">Promotion</a>
-			<li>
-				<a href="">Receipt</a>
-			<li>
-				<a href="">Referral</a>
-			<li>
-				<a href="">Report</a>
-			<li>
-				<a href="">Retention</a>
-			<li>
-				<a href="">Reviews</a>
-			<li>
-				<a href="">Security</a>
-		</ul>
-		<ul>
-			<li>
-					<a href="">Sharing</a>
-			<li>
-				<a href="">Shipping</a>
-			<li>
-				<a href="">Social</a>
-			<li>
-				<a href="">Subscription</a>
-			<li>
-				<a href="">Support</a>
-			<li>
-				<a href="">Survey</a>
-			<li>
-				<a href="">Text</a>
-			<li>
-				<a href="">Transactional</a>
-			<li>
-				<a href="">Trial</a>
-			<li>
-				<a href="">Unsubscribe</a>
-		</ul>
-	</div>
-</main>
-<footer class="base">
+</div>
+<div class="base">
 	<div class="inner">
-		bottom
+		<main class="list-grid dark">
+			<ul>
+				<li>
+					<a href="/">Abandoned Cart</a>
+				<li>
+					<a href="">Account</a>
+				<li>
+					<a href="">Activation</a>
+				<li>
+					<a href="">Activity</a>
+				<li>
+					<a href="">Alerts</a>
+				<li>
+					<a href="">Announcement</a>
+				<li>
+					<a href="">Automated</a>
+				<li>
+					<a href="">Comments</a>
+				<li>
+					<a href="">Confirmation</a>
+				<li>
+					<a href="">Customer Appreciation</a>
+			</ul>
+			<ul>
+				<li>
+					<a href="">Deactivation</a>
+				<li>
+					<a href="">Discovery</a>
+				<li>
+					<a href="">Ecommerce</a>
+				<li>
+					<a href="">Email Digest</a>
+				<li>
+					<a href="">Engagement</a>
+				<li>
+					<a href="">Events</a>
+				<li>
+					<a href="">Expiration</a>
+				<li>
+					<a href="">Featured Product</a>
+				<li>
+					<a href="">Feed</a>
+				<li>
+					<a href="">Holiday</a>
+			</ul>
+			<ul>
+				<li>
+						<a href="">Invitation</a>
+				<li>
+					<a href="">Local</a>
+				<li>
+					<a href="">Marketing</a>
+				<li>
+					<a href="">New Article</a>
+				<li>
+					<a href="">Newsletter</a>
+				<li>
+					<a href="">Notice</a>
+				<li>
+					<a href="">Offer</a>
+				<li>
+					<a href="">Onboarding</a>
+				<li>
+					<a href="">Order Shipped</a>
+				<li>
+					<a href="">Password Reset</a>
+			</ul>
+			<ul>
+				<li>
+						<a href="">Product Launch</a>
+				<li>
+					<a href="">Product Sale</a>
+				<li>
+					<a href="">Product Update</a>
+				<li>
+					<a href="">Promotion</a>
+				<li>
+					<a href="">Receipt</a>
+				<li>
+					<a href="">Referral</a>
+				<li>
+					<a href="">Report</a>
+				<li>
+					<a href="">Retention</a>
+				<li>
+					<a href="">Reviews</a>
+				<li>
+					<a href="">Security</a>
+			</ul>
+			<ul>
+				<li>
+						<a href="">Sharing</a>
+				<li>
+					<a href="">Shipping</a>
+				<li>
+					<a href="">Social</a>
+				<li>
+					<a href="">Subscription</a>
+				<li>
+					<a href="">Support</a>
+				<li>
+					<a href="">Survey</a>
+				<li>
+					<a href="">Text</a>
+				<li>
+					<a href="">Transactional</a>
+				<li>
+					<a href="">Trial</a>
+				<li>
+					<a href="">Unsubscribe</a>
+			</ul>
+		</main>
 	</div>
-</footer>
+</div>
+<div class="base">
+	<div class="inner">
+		<footer class="fifty-fifty">
+			<div class="primary">
+				<div>
+					<a href="/">
+			      <!-- <svg class="icon-heart" viewBox="0 0 32 32">
+			        <use xlink:href="/media/images/img.svg#icon-logo"></use>
+			      </svg> -->
+			    </a>
+			  </div>
+			</div>
+		  <div class="secondary">
+		  	
+		  </div>
+		</footer>
+	</div>
+</div>

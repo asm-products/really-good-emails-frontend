@@ -2,23 +2,30 @@
 
 // Base Styles /////////////////////
 
-// ==== Config Level (general) ==============================================
+// ==== Framework Level (config / general) ==================================
 @import "app/config/--summary";						// Summary: An optional table of contents defining your document structure
+//
+@import "app/config/labels/label-fw";
 @import "app/config/--normalize"; 				// Normalize: CSS reset alt for resolving cross browser style differences
-@import "app/config/--general";						// General: Common SCSS variables & general helper classes (eg clearfix, alignment, etc)
+@import "app/config/--vars"; 							// Vars: Base Framework Variables
 @import "app/config/--fonts"; 						// Fonts: Universal Typography Variables
+@import "app/config/--general";						// General: Common SCSS variables & general helper classes (eg clearfix, alignment, etc)
 @import "app/config/--structure";					// Structure: Default framework structure styles
 @import "app/config/--content";						// Content: Default styles for all content - header, copy, tables, lists, etc
 
 // ==== Lib Level ===========================================================
+@import "app/config/labels/label-lib";
 // any css / scss libs go here
 
 // ==== App Level (project specific) ========================================
+@import "app/config/labels/label-app";
 @import "app/vars";
 @import "app/fonts";
-@import "app/master";											// shared app styles
+@import "app/structure";
+@import "app/content";
 
 // ==== Module Level ========================================================
+@import "app/config/labels/label-module";
 @import "app/partials/form.scss";
 @import "app/partials/buttons.scss";
 @import "app/partials/navbar.scss";
@@ -32,6 +39,7 @@
 @import "app/partials/list-grid.scss";
 
 // ==== Layout Level ========================================================
+@import "app/config/labels/label-layout";
 @import "app/header";
 // @import "app/main";
 @import "app/footer";

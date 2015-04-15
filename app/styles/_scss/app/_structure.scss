@@ -1,6 +1,8 @@
-/* ░░ Master ░░░░░░░░░
+/* ░░ Structure (App) ░░░░░░░░░
 ============================================*/
 
+/*>> Core >>>>>>>>>>>>
+============================================*/
 body {
 	overflow-x: hidden;
 	height: auto;
@@ -30,6 +32,39 @@ body > .container {
 	}
 }
 
+.base {
+	padding: 0.5em 1em;
+	//
+	> .inner {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+}
+
+/*>> Notific >>>>>>>>>>>>
+============================================*/
+.notific {
+	background: $winkleLight;
+	color:$winkle;
+	//
+	.link {
+		color: $linkColor;
+		&:hover {
+			color: $linkHover;
+		}
+	}
+	.close {
+		color: $slate;
+		text-decoration: none;
+		//
+		&:hover {
+			color: $slate;
+		}
+	}
+}
+
+/*>> Load Screen >>>>>>>>>>>>
+============================================*/
 .load-cover {
 	z-index: 10;
 	position: absolute;
@@ -52,46 +87,3 @@ body > .container {
 		visibility: hidden;
 	}
 }
-
-.base {
-	padding: 0.5em 1em;
-}
-
-a {
-	color: $linkColor;
-	transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
-	//
-	&:hover {
-		color: $linkHover;
-		text-decoration: underline;
-	}
-}
-
-p {
-	font-size: 1em;
-}
-
-::-moz-selection{ background:$rubyLight; color:white; }
-::selection { background:$rubyLight; color:white; }
-
-//
-
-// .notific {
-// 	background: $themeGreyLight;
-// 	color:$themeGrey;
-// 	//
-// 	.link {
-// 		color: $linkColor;
-// 		&:hover {
-// 			color: $linkHover;
-// 		}
-// 	}
-// 	.close {
-// 		color: $themeGrey;
-// 		text-decoration: none;
-// 		//
-// 		&:hover {
-// 			color: $themeGrey;
-// 		}
-// 	}
-// }

@@ -1,10 +1,10 @@
 /*
 Contents:
-1. ██ Normalize ██████████████ / streamline cross browser html/css
-2. ██ Framework ██████████████ / framework base styles for general elements
-3. ██ Theme ██████████████████ / theme specific styles (& framework overwrites) in order of use
-4. ██ Plugins ████████████████ / styles & overwrites for libraries / third party code, etc
-5. ██ Print ██████████████████
+2. ██ Framework ██████████████ / framework base styles for general elements (normalize, etc)
+3. ██ Libs ███████████████████ / styles for included libraries
+3. ██ App ████████████████████ / app specific styles - app level framework & lib overrides
+4. ██ Modules ████████████████ / base styles for reusable modular components
+4. ██ Layout █████████████████ / layout specific styles - layout level app & module overrides
 
 .  ░░ Section ░░░░░░░░░░░░░ / section titles
 .  >> Sub-Section >>>>>>>>>>>> / sub-section titles

@@ -4,6 +4,11 @@ body > .container > header {
 	position:fixed;
 	z-index: 25;
 	width:100%;
+	background: $winkle;
+	//
+	&.dark {
+		background: $slateDark;
+	}
 }
 
 // -- Mobile Navigation
@@ -14,7 +19,7 @@ body > .container {
 		transition: transform 0.3s ease;
 	}
 }
-.navbar.sidebar .navbar-primary nav {
+.navbar.sidebar > .primary nav {
 	height: 2000px;
 	transform: translate3d(-200px,0,0);
 	@media screen and (min-width: 768px) {
@@ -22,7 +27,7 @@ body > .container {
 		transform: translate3d(0,0,0);
 	}
 }
-.navbar.sidebar .navbar-secondary nav {
+.navbar.sidebar > .secondary nav {
 	height: 2000px;
 	transform: translate3d(0,0,0);
 }
@@ -43,12 +48,12 @@ body > .container {
 // Navbar
 .navbar {
 	//
-	.navbar-primary {
+	> .primary {
 		@media screen and (min-width: 768px) {
 			width: 58.5%;			// define this adhock inside of header w/ media queries
 		}
 	}
-	.navbar-secondary {
+	>	.secondary {
 		@media screen and (min-width: 768px) {
 			width:41.5%;	// define this adhock inside of header w/ media queries
 		}

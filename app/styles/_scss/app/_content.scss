@@ -1,0 +1,25 @@
+/* ░░ Content (App) ░░░░░░░░░
+============================================*/
+
+/*>> Selection >>>>>>>>>
+============================================*/
+::-moz-selection{ background:$rubyLight; color:white; }
+::selection { background:$rubyLight; color:white; }
+
+/*>> Copy >>>>>>>>>>>>
+============================================*/
+p {
+	font-size: 1em;
+}
+
+/*>> Links >>>>>>>>>>>>
+============================================*/
+a {
+	color: $linkColor;
+	transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+	//
+	&:hover {
+		color: $linkHover;
+		text-decoration: underline;
+	}
+}
