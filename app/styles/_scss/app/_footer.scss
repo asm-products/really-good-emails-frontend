@@ -5,16 +5,9 @@ body > .container > footer {
 	color: $white;
 	background: $white;
 	//
-	&.dark {
-		background: $slateDark;
-	}
-	//
 	.list-grid {
 		padding:2em 0 1.5em;
 		font-size: 0.9em;
-		// @media screen and (min-width: 480px) {
-		// 	padding:0 1.5em;
-		// }
 	}
 	.navbar {
 		//
@@ -22,6 +15,61 @@ body > .container > footer {
 			display:none;
 			@media screen and (min-width: 768px) {
 			 display:inline-block;
+			}
+		}
+	}
+	footer {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		margin-bottom: 7.5em;
+		font-size: 1.125em;
+		//
+		> div {
+			display: table-cell;
+			width: 50%;
+		}
+		a {
+			color: $slate;
+			text-decoration: none;
+			opacity: 1;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+		> .primary {
+			//
+			svg {
+				display: inline-block;
+				vertical-align: middle;
+				width: 0.95em;
+			  fill: $ruby;
+			  margin-left: 0.1em;
+  			margin-bottom: 0.1em;
+			}
+		}
+		> .secondary {
+			//
+			p {
+				color: $slate;
+				text-align: right;
+				font-size: 0.8em;
+			}
+		}
+	}
+	&.dark {
+		background: $slateDark;
+		//
+		footer {
+			//
+			a {
+				color: $winkleLight;
+			}
+			> .secondary {
+				//
+				p {
+					color: $slateLightest;
+				}
 			}
 		}
 	}
