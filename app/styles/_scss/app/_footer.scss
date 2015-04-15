@@ -19,16 +19,17 @@ body > .container > footer {
 		}
 	}
 	footer {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		margin-bottom: 7.5em;
+		margin-bottom: 5em;
+		padding-top: 0.5em;
 		font-size: 1.125em;
-		//
-		> div {
-			display: table-cell;
-			width: 50%;
+		@media screen and (min-width: 768px) {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			margin-bottom: 7.5em;
+			padding-top: 0;
 		}
+		//
 		a {
 			color: $slate;
 			text-decoration: none;
@@ -38,6 +39,12 @@ body > .container > footer {
 			}
 		}
 		> .primary {
+			text-align: center;
+			@media screen and (min-width: 768px) {
+				display: table-cell;
+				width: 40%;
+				text-align: left;
+			}
 			//
 			svg {
 				display: inline-block;
@@ -49,11 +56,19 @@ body > .container > footer {
 			}
 		}
 		> .secondary {
+			text-align: center;
+			@media screen and (min-width: 768px) {
+				display: table-cell;
+				width: 60%;
+				text-align: left;
+			}
 			//
 			p {
 				color: $slate;
-				text-align: right;
 				font-size: 0.8em;
+				@media screen and (min-width: 768px) {
+				 text-align: right;
+				}
 			}
 		}
 	}
