@@ -1,6 +1,7 @@
 /*global jQuery, gbl, app*/
 /*jshint unused:false*/
 /*jshint devel:true*/
+'use strict';
 
 /*
  * @ngdoc overview
@@ -11,9 +12,9 @@
  * Main module of the application.
  */
 
-(function() { 'use strict';
+(function() {
 
-  var app = angular.module('reallygoodemails', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']); // services / dependecies
+  var app = angular.module('reallygoodemails', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'headroom']); // services / dependecies
 
   var resolve = {
     delay: ['$q','$timeout', function($q, $timeout) {

@@ -129,6 +129,7 @@ handlers:
   mime_type: image/svg+xml
   static_files: dist/\1
   upload: dist/(.*\.(svg|svgz))
+  expiration: "1d"
 
 # audio files
 - url: /(.*\.(mid|midi|mp3|wav))

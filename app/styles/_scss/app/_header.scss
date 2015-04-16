@@ -47,6 +47,16 @@ body > .container > header {
 			border: none;
 		}
 	}
+	// Headroom
+	&.headroom {
+		//
+		// &.pinned {
+		// 	transform: translate3d(0,0,0);
+		// }
+		&.unpinned {
+			transform: translateY(-5em);
+		}
+	}
 	// Navbar
 	.navbar {
 		//
