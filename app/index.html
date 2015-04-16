@@ -79,7 +79,9 @@
   <![endif]-->
 
   <div class="container">
-    <header class="dark" data-ng-include="'partials/header.html'"></header>
+    <header class="dark" data-ng-include="'partials/header.html'"
+            data-headroom data-tolerance='5' data-offset='300' data-scroller=".app-view" data-classes="{initial:'headroom', pinned:'pinned', unpinned:'unpinned', top: 'is-above', notTop: 'is-below'}">
+    </header>
     <main class="preload" data-ng-view="" data-ng-click="menuToggle()"></main>
     <footer class="dark" data-ng-include="'partials/footer.html'"></footer>
   </div>
@@ -119,6 +121,8 @@
   <script src="bower_components/enquire/dist/enquire.js"></script>
   <script src="bower_components/fastclick/lib/fastclick.js"></script>
   <!-- endbower -->
+  <script src="scripts/libs/headroom.js"></script>
+  <script src="scripts/libs/angular.headroom.js"></script>
   <script src="scripts/libs/ios-orientationchange-fix.js"></script>
   <script src="scripts/libs/css-browser-selector.js"></script>
   <script src="scripts/libs/placeholder-fix.js"></script>

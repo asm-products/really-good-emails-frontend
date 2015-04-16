@@ -2,6 +2,7 @@
 /*jshint unused:false*/
 /*jshint devel:true*/
 
+'use strict';
 /*
  * @ngdoc function
  * @name reallygoodemails.controller:mainCtrl
@@ -10,7 +11,7 @@
  * Controller of reallygoodemails
  */
 
-(function() { 'use strict';
+(function() {
 
   var app = angular.module('reallygoodemails');
 
@@ -60,6 +61,12 @@
 
 		// make below a separate directive
 		//
+    // nav kill on scroll
+    angular.element($window).on('scroll', function () {
+      $timeout(function(){
+        $scope.menuToggle();
+      }, 10);
+    });
 		// nav kill on orientation change
 		angular.element($window).on('orientationchange', function () {
       $timeout(function() {
@@ -76,5 +83,7 @@
 		});
 
 	}]);
+
+
 
 })();
