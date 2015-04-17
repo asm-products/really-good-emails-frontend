@@ -1,10 +1,132 @@
 /* >> Call Out (Module) >>>>>>>>>>>>
 ============================================*/
-
 .callout {
-
-}
-.dark {
+	background: $white;
+	padding: 1.625em 2.5em;
+	text-align: center;
+	border: solid 1px $winkleLight;
+	@media screen and (min-width: 768px) {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		text-align: left;
+	}
 	//
-	
+	> .primary {
+		margin-bottom: 1em;
+		@media screen and (min-width: 768px) {
+			display: table-cell;
+			width: 50%;
+			vertical-align: middle;
+		}
+		p {
+			font-size: 1.125em;
+		}
+	}
+	>.secondary {
+		//
+		@media screen and (min-width: 768px) {
+			display: table-cell;
+			width: 50%;
+			vertical-align: middle;
+			text-align: right;
+		}
+	}
+	form {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		//
+		> .primary {
+			display: table-cell;
+			vertical-align: middle;
+			//
+			input[type="text"] {
+				display: inline-block;
+				background: $winkleLight;
+				width:100%;
+				margin-right: 1em;
+				padding:0.7em 1em;
+				font-size: 0.9em;
+				color: $slate;
+			}
+		}
+		> .secondary {
+			display: table-cell;
+			vertical-align: middle;
+			//
+			button {
+				display: inline-block;
+				margin-left: 1em;
+			}
+			.close {
+				display: inline-block;
+			}
+		}
+	}
+	&.theme-slate {
+		background: $slateDark;
+		border: none;
+		//
+		p {
+			color: $winkleLight;
+		}
+		form > .primary input[type="text"] {
+			color: $winkleLight;
+			background: $slate;
+		}
+		::-webkit-input-placeholder {
+			color: $winkleLight;
+		}
+		:-moz-placeholder {
+			color: $winkleLight;
+		}
+		:-ms-input-placeholder {
+			color: $winkleLight;
+		}
+	}
+	&.theme-ruby {
+		background: $rubyLight;
+		border: none;
+		//
+		p {
+			color: rgba(255,255,255,0.9);
+		}
+		form > .primary input[type="text"] {
+			color: rgba(255,255,255,0.9);
+			background: $rubyDark;
+		}
+		::-webkit-input-placeholder {
+			color: rgba(255,255,255,0.9);
+		}
+		:-moz-placeholder {
+			color: rgba(255,255,255,0.9);
+		}
+		:-ms-input-placeholder {
+			color: rgba(255,255,255,0.9);
+		}
+	}
 }
+
+
+// input[type="text"] {
+// 		width: 100%;
+// 		background: $winkleLight;
+// 		padding:0.3em 2em 0.3em 0.75em;
+// 		color: $slate;
+// 		border-radius: 50px;
+// 	}
+// 	button[type="submit"] {
+// 		position: absolute;
+// 		right: 0.7em;
+// 		top: 0.4em;
+// 		width: 0.8em;
+// 		background: none;
+// 		-webkit-appearance: none;
+// 		padding: 0;
+// 		margin:0;
+// 		//
+// 		svg {
+// 			fill: $slateLighter;
+// 		}
+// 	}

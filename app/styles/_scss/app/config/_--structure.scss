@@ -32,6 +32,17 @@ body {
   -webkit-text-size-adjust: 100%; // Prevents iOS text size adjust after orientation change, without disabling user zoom
 }
 
+/*>> Base >>>>>>>>>>>>
+============================================*/
+.base {
+  padding: 1em 2em;
+  //
+  > .inner {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+}
+
 /*>> Notific >>>>>>>>>>>>
 ============================================*/
 .notific {

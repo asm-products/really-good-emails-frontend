@@ -40,7 +40,7 @@ body > .container > header {
 	width:100%;
 	background: $white;
 	//
-	&.dark {
+	&.theme-slate {
 		background: $slateDark;
 		//
 		.border-bottom-1 {
@@ -50,12 +50,13 @@ body > .container > header {
 	// Headroom
 	&.headroom {
 		//
-		// &.pinned {
-		// 	transform: translate3d(0,0,0);
-		// }
 		&.unpinned {
 			transform: translateY(-5em);
 		}
+	}
+	// Base
+	&.theme-slate > .base {
+		border-bottom: none;
 	}
 	// Navbar
 	.navbar {

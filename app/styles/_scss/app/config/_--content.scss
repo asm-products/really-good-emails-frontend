@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin: 0 0 rhythm();
+  margin: 0;
 }
 em {
   font-style: italic;
@@ -149,16 +149,6 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-}
-
-.border-bottom-1 {
-  border-bottom: solid 1px #ccc;
-}
-.border-bottom-2 {
-  border-bottom: solid 2px #ccc;
-}
-.border-bottom-3 {
-  border-bottom: solid 3px #ccc;
 }
 
 /*>> Lists >>>>>>>>>>>>
