@@ -32,13 +32,24 @@ body > .container {
 	}
 }
 
+/*>> Base >>>>>>>>>>>>
+============================================*/
 .base {
 	padding: 0.5em 1em;
 	//
 	> .inner {
-		margin: 0 auto;
 		max-width: 1200px;
 	}
+	//
+  ._bb1 {
+    border-bottom-color: $winkleLight;
+  }
+}
+.theme-slate {
+  //
+  ._bb1 {
+    border-bottom-color: $slateLight;
+  }
 }
 
 /*>> Notific >>>>>>>>>>>>

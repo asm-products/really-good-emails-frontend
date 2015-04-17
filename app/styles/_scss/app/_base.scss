@@ -1,0 +1,56 @@
+/* ░░ Base ░░░░░░░░░
+============================================*/
+//
+.base {																			// limited use .base adjustment classes
+  // padding
+  &._pt0 {
+    padding-top: 0;
+  }
+  &._pt-base {
+    padding-top: 0.5em;
+  }
+  &._pb0 {
+    padding-bottom: 0;
+  }
+  &._pb-base {
+    padding-bottom: 0.5em;
+  }
+  &._ptb0 {
+    padding-top: 0;
+    padding-bottom:0;
+  }
+  &._ptb-base {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  // -- margin
+  &._mt0 {
+    margin-top: 0;
+  }
+  &._mt0-base {
+    margin-top: 0.5em;
+  }
+  &._mb0 {
+    margin-bottom: 0;
+  }
+  &._mb0-base {
+    margin-bottom: 0.5em;
+  }
+  &._mtb0 {
+    margin-top: 0;
+    margin-bottom:0;
+  }
+  &._mtb-base {
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+  }
+  // -- borders
+  &._bt1 {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+  &._bb1 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+}
