@@ -98,14 +98,6 @@
 		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
 		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}];
 
   }]);
