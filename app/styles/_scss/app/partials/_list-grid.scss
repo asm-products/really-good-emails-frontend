@@ -35,12 +35,11 @@
 	&.labels {
 		//
 		ul {
-			display: inline-block;
-			vertical-align: top;
-			width: 16.6666%;
+			column-count: 2;
+			width: 100%;
   		margin-right: -4px;
   		margin-bottom: 1em;
-  		width: 100%;
+  		vertical-align: top;
 			&:nth-child(n+3) {
 				display: none;
 			}
@@ -48,6 +47,8 @@
 				margin-bottom: 0;
 			}
   		@media screen and (min-width: 480px) {
+  			display: inline-block;
+  			column-count: auto;
 				width: 50%;
 				&:nth-child(n+3) {
 					display: inline-block;
@@ -92,7 +93,11 @@
   			}
   		}
   		.title {
+  			column-span: all;
   			font-size: 1.250em;
+  			@media screen and (min-width: 480px) {
+  				column-span: none;
+  			}
   		}
   		a {
   			span {
