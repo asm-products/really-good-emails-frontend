@@ -75,29 +75,29 @@
   	};
 
 	  $scope.gridCards = [{
-			'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=600x600', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+			'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}, {
-		  'title':'Company Name', 'url':'#', 'img':'http://placehold.it/600/e5e8e8/c9cece&text=placeholder', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
+		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
 		}];
 
   }]);
