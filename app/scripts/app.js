@@ -45,7 +45,6 @@
       })
       .when('/inspiration', {
         templateUrl: 'views/inspiration.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'Email Inspiration | Really Good Emails',
         metaTitle: 'the meta title',
@@ -53,7 +52,6 @@
       })
       .when('/interviews', {
         templateUrl: 'views/interviews.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'Email Interviews | Really Good Emails',
         metaTitle: 'the meta title',
@@ -61,7 +59,6 @@
       })
       .when('/email-kits', {
         templateUrl: 'views/email-kits.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'Email Kits | Really Good Emails',
         metaTitle: 'the meta title',
@@ -69,7 +66,6 @@
       })
       .when('/archive', {
         templateUrl: 'views/archive.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'Email Archive | Really Good Emails',
         metaTitle: 'the meta title',
@@ -77,7 +73,6 @@
       })
       .when('/faq', {
         templateUrl: 'views/faq.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'FAQ | Really Good Emails',
         metaTitle: 'the meta title',
@@ -85,7 +80,6 @@
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'Contact | Really Good Emails',
         metaTitle: 'the meta title',
@@ -93,9 +87,15 @@
       })
       .when('/newsletter', {
         templateUrl: 'views/newsletter.html',
-        // controller: 'secondaryCtrl',
         resolve: resolve,
         titleTag: 'Email Newsletter | Really Good Emails',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
+      })
+      .when('/test', {
+        templateUrl: 'views/test.html',
+        resolve: resolve,
+        titleTag: 'test | Really Good Emails',
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })

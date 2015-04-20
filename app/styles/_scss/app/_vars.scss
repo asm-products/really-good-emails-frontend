@@ -14,15 +14,16 @@ $slateDarkest: #202329;
 $winkleLighter: #eff4f8;
 $winkleLight: #dbdee3;
 $winkle: #c2c7d0;
+$winkleDark: #9fa3ac;
+$winkleDarker: #7c8089;
 //
-$rubyLighter : #ff8585;
-$rubyLight : #ff6565;
-$ruby : #ff4848;
-$rubyDark : #e13f3f;
+$rubyLighter: #ff8585;
+$rubyLight: #ff6565;
+$ruby: #ff4848;
+$rubyDark: #e13f3f;
 //
-$gold : #e1e132;
-$goldDark : #e9c23f;
-
+$gold: #e1e132;
+$goldDark: #e9c23f;
 //
 $tealLight: #6ecace;
 $teal: #3db8bf;
@@ -30,12 +31,13 @@ $tealDark: #0f858c;
 //
 $fontColor: $slateDark;
 //
-$linkColor : $ruby;
-$linkHover : darken($linkColor, 10%);
-$linkVisited : darken($linkHover, 5%);
-$linkFocus : $linkHover;
-$linkActive : lighten(adjust-hue($linkColor, 75deg), 10%);
+$linkColor: $ruby;
+$linkHover: darken($linkColor, 10%);
+$linkVisited: darken($linkHover, 5%);
+$linkFocus: $linkHover;
+$linkActive: lighten(adjust-hue($linkColor, 75deg), 10%);
 
 // >> Etc >>>>>>>>>>>>
 //
-$cdn : '//thecdnurl.com/whatever';
+$cdn-images : '//reallygoodemails-cdn.appspot.com/media/images';
+$cdn-images-email : '//reallygoodemails-cdn.appspot.com/media/images/emails';

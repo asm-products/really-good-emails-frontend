@@ -72,84 +72,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="base">
-		<div class="inner">
-			<div class="callout theme-slate">
-				<div class="primary">
-					<p>
-						This is your friendly neighborhood&nbsp;callout
-					</p>
-				</div>
-				<div class="secondary">
-					<form>
-						<div class="primary">
-	          	<input type="text" placeholder="Email Address">
-	          </div>
-	          <div class="secondary" style="width:8.5em;">
-		          <button class="button big" type="submit">
-		            See it!
-		          </button>
-		        </div>
-	        </form>
-					<div class="close">
-						<!-- svg close -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="base">
-		<div class="inner">
-			<div class="callout theme-ruby">
-				<div class="primary">
-					<p>
-						This is your friendly neighborhood&nbsp;callout
-					</p>
-				</div>
-				<div class="secondary">
-					<form>
-						<div class="primary">
-	          	<input type="text" placeholder="Email Address">
-	          </div>
-	          <div class="secondary" style="width:8.5em;">
-		          <button class="button big" type="submit">
-		            See it!
-		          </button>
-		        </div>
-	        </form>
-					<!-- <a href="/" class="button">
-						See it!
-					</a> -->
-					<div class="close">
-						<!-- svg close -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="base">
-		<div class="inner">
-			<div class="callout theme-slate">
-				<div class="primary">
-					<p>
-						This is your friendly neighborhood&nbsp;callout
-					</p>
-				</div>
-				<div class="secondary">
-					<a href="/" class="button big">
-						See it!
-					</a>
-					<div class="close">
-						<!-- svg close -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 	<div class="base">
 		<div class="inner">
 			<div class="card-grid-main">
@@ -196,35 +118,669 @@
 									</div>
 								</div>
 							</div>
-							<div class="label">
-								<div class="inner">
-									<div class="title">
-										<a href="/email-details">
-											{{item.title}}
+						</div>
+						<div class="label">
+							<div class="inner">
+								<div class="title">
+									<a href="/email-details">
+										{{item.title}}
+									</a>
+								</div>
+								<div class="tags">
+									<div class="tag">
+										<a href="">
+											{{item.tag1}},
 										</a>
 									</div>
-									<div class="tags">
-										<div class="tag">
-											<a href="">
-												{{item.tag1}},
-											</a>
-										</div>
-										<div class="tag">
-											<a href="">
-												{{item.tag2}},
-											</a>
-										</div>
-										<div class="tag">
-											<a href="">
-												{{item.tag3}}
-											</a>
-										</div>
+									<div class="tag">
+										<a href="">
+											{{item.tag2}},
+										</a>
+									</div>
+									<div class="tag">
+										<a href="">
+											{{item.tag3}}
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Call out -->
+	<div class="base">
+		<div class="inner">
+			<div class="callout form close theme-slate">
+				<main>
+					<div class="inner">
+						<div class="primary">
+							<p>
+								Just a friendly neighborhood&nbsp;callout
+							</p>
+						</div>
+						<div class="secondary">
+							<form>
+								<div class="primary">
+			          	<input type="text" placeholder="Email Address">
+			          </div>
+			          <div class="secondary" style="width:8.5em;">
+				          <button class="button big" type="submit">
+				            See it!
+				          </button>
+				        </div>
+			        </form>
+						</div>
+					</div>
+				</main>
+				<aside>
+					<div class="inner">
+						<div class="close-button">
+							<a href="">
+								<svg class="icon-close" viewBox="0 0 32 32">
+		               <use xlink:href="/media/images/img.svg#icon-close"></use>
+		            </svg>
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+<!-- Trending Brands -->
+	<div class="base">
+		<div class="inner">
+			<div class="card-grid-main">
+				<div class="header">
+					<h4>
+						Trending Brands
+					</h4><!--
+			 --><div class="secondary">
+						<a href="">
+							<span>View All 38 Brands</span>
+							<svg class="icon-arrow" viewBox="0 0 32 32">
+	                <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+	            </svg>
+						</a>
+					</div>
+				</div>
+				<ul class="main">
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>15</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										Squarespace
+									</div>
+									<div class="category">
+										Software Product
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+				</ul>
+				<ul class="main">
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>31</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										Treehouse
+									</div>
+									<div class="category">
+										Software Product
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+				</ul>
+				<ul class="main">
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>7</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										Dot &amp; Bo
+									</div>
+									<div class="category">
+										Ecommerce Site
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+				</ul>
+				<ul class="main">
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>2</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										Twitter
+									</div>
+									<div class="category">
+										Social Software
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+				</ul>
+			</div>
+			<div class="list-grid labels">
+				<ul>
+					<li class="title">
+						<a href="/">Ecommerce</a>
+					<li>
+					<li>
+						<a href="/">Etsy <span>(10)</span></a>
+					<li>
+						<a href="/">Pinterest <span>(10)</span></a>
+					<li>
+						<a href="/">Treehouse <span>(10)</span></a>
+					<li>
+						<a href="/">Dot &amp; Bo <span>(10)</span></a>
+					<li>
+						<a href="/">Facebook <span>(10)</span></a>
+					<li>
+						<a href="/">Twitter <span>(10)</span></a>
+					<li>
+						<a href="/">Google <span>(10)</span></a>
+					<li>
+						<a href="/">Amazon <span>(10)</span></a>
+					<li>
+						<a href="">View All</a>
+				</ul>
+				<ul>
+					<li class="title">
+						<a href="/">SAAS</a>
+					<li>
+					<li>
+						<a href="/">Etsy <span>(10)</span></a>
+					<li>
+						<a href="/">Pinterest <span>(10)</span></a>
+					<li>
+						<a href="/">Treehouse <span>(10)</span></a>
+					<li>
+						<a href="/">Dot &amp; Bo <span>(10)</span></a>
+					<li>
+						<a href="/">Facebook <span>(10)</span></a>
+					<li>
+						<a href="/">Twitter <span>(10)</span></a>
+					<li>
+						<a href="/">Google <span>(10)</span></a>
+					<li>
+						<a href="/">Amazon <span>(10)</span></a>
+					<li>
+						<a href="">View All</a>
+				</ul>
+				<ul>
+					<li class="title">
+						<a href="/">Brick &amp; Mortar</a>
+					<li>
+					<li>
+						<a href="/">Etsy <span>(10)</span></a>
+					<li>
+						<a href="/">Pinterest <span>(10)</span></a>
+					<li>
+						<a href="/">Treehouse <span>(10)</span></a>
+					<li>
+						<a href="/">Dot &amp; Bo <span>(10)</span></a>
+					<li>
+						<a href="/">Facebook <span>(10)</span></a>
+					<li>
+						<a href="/">Twitter <span>(10)</span></a>
+					<li>
+						<a href="/">Google <span>(10)</span></a>
+					<li>
+						<a href="/">Amazon <span>(10)</span></a>
+					<li>
+						<a href="">View All</a>
+				</ul>
+				<ul>
+					<li class="title">
+						<a href="/">Category 4</a>
+					<li>
+					<li>
+						<a href="/">Etsy <span>(10)</span></a>
+					<li>
+						<a href="/">Pinterest <span>(10)</span></a>
+					<li>
+						<a href="/">Treehouse <span>(10)</span></a>
+					<li>
+						<a href="/">Dot &amp; Bo <span>(10)</span></a>
+					<li>
+						<a href="/">Facebook <span>(10)</span></a>
+					<li>
+						<a href="/">Twitter <span>(10)</span></a>
+					<li>
+						<a href="/">Google <span>(10)</span></a>
+					<li>
+						<a href="/">Amazon <span>(10)</span></a>
+					<li>
+						<a href="">View All</a>
+				</ul>
+				<ul>
+					<li class="title">
+						<a href="/">Category 5</a>
+					<li>
+					<li>
+						<a href="/">Etsy <span>(10)</span></a>
+					<li>
+						<a href="/">Pinterest <span>(10)</span></a>
+					<li>
+						<a href="/">Treehouse <span>(10)</span></a>
+					<li>
+						<a href="/">Dot &amp; Bo <span>(10)</span></a>
+					<li>
+						<a href="/">Facebook <span>(10)</span></a>
+					<li>
+						<a href="/">Twitter <span>(10)</span></a>
+					<li>
+						<a href="/">Google <span>(10)</span></a>
+					<li>
+						<a href="/">Amazon <span>(10)</span></a>
+					<li>
+						<a href="">View All</a>
+				</ul>
+				<ul>
+					<li class="title">
+						<a href="/">Category 6</a>
+					<li>
+					<li>
+						<a href="/">Etsy <span>(10)</span></a>
+					<li>
+						<a href="/">Pinterest <span>(10)</span></a>
+					<li>
+						<a href="/">Treehouse <span>(10)</span></a>
+					<li>
+						<a href="/">Dot &amp; Bo <span>(10)</span></a>
+					<li>
+						<a href="/">Facebook <span>(10)</span></a>
+					<li>
+						<a href="/">Twitter <span>(10)</span></a>
+					<li>
+						<a href="/">Google <span>(10)</span></a>
+					<li>
+						<a href="/">Amazon <span>(10)</span></a>
+					<li>
+						<a href="">View All</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Call out -->
+	<div class="base">
+		<div class="inner">
+			<div class="callout close theme-slate">
+				<main>
+					<div class="inner">
+						<div class="primary">
+							<p>
+								Just a friendly neighborhood&nbsp;callout
+							</p>
+						</div>
+						<div class="secondary">
+							<a href="/" class="button big">
+								Buy Cool Stuff!
+							</a>
+						</div>
+					</div>
+				</main>
+				<aside>
+					<div class="inner">
+						<div class="close-button">
+							<a href="">
+								<svg class="icon-close" viewBox="0 0 32 32">
+		               <use xlink:href="/media/images/img.svg#icon-close"></use>
+		            </svg>
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+<!-- Collections -->
+	<div class="base">
+		<div class="inner">
+			<div class="card-grid-main">
+				<div class="header">
+					<h4>
+						Collections
+					</h4><!--
+			 --><div class="secondary">
+						<a href="">
+							<span>View All 25 Collections</span>
+							<svg class="icon-arrow" viewBox="0 0 32 32">
+	                <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+	            </svg>
+						</a>
+					</div>
+				</div>
+				<ul class="main">
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>28</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										Onboarding
+									</div>
+									<div class="category">
+										Collection
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+				</ul>
+				<ul class="main">
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>22</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										Promotion
+									</div>
+									<div class="category">
+										Collection
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+					<li class="card">
+						<div class="inner" href="{{item.url}}">
+							<div class="thumb">
+								<a href="/email-details">
+									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								</a>
+							</div>
+						</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Call out -->
+	<div class="base">
+		<div class="inner">
+			<div class="callout theme-ruby">
+				<main>
+					<div class="inner">
+						<div class="primary">
+							<p>
+								Just a friendly neighborhood&nbsp;callout
+							</p>
+						</div>
+						<div class="secondary">
+							<a href="/" class="button big">
+								Call To Action!
+							</a>
+						</div>
+					</div>
+				</main>
+				<aside>
+					<div class="inner">
+						<div class="close-button">
+							<a href="">
+								<svg class="icon-close" viewBox="0 0 32 32">
+		               <use xlink:href="/media/images/img.svg#icon-close"></use>
+		            </svg>
+							</a>
+						</div>
+					</div>
+				</aside>
 			</div>
 		</div>
 	</div>

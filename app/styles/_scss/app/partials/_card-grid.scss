@@ -36,6 +36,8 @@
 .card-grid-nav {
 	position: relative;
 	z-index: 5;
+	margin-left: -0.938em;
+	margin-right: -0.938em;
 	//
 	a {
 		color: $slateDark;
@@ -87,11 +89,10 @@
 	}
 }
 .card-grid-main {
+	margin: 0 -0.375em;
 	//
 	.header {
-		@media screen and (min-width: 1250px) {
-			padding: 0 0.4em;
-		}
+		padding: 0 0.375em;
 		//
 		h4 {
 			display: inline-block;
@@ -140,22 +141,23 @@
 		//
 		li {
 			display: inline-block;
+			width: 100%;
 			padding: 1em 0.375em;
-			max-width: none;
-			@media screen and (min-width: 700px) {
+			vertical-align: top;
+			@media screen and (min-width: 480px) {
 				width: 50%;
 			}
-			@media screen and (min-width: 1024px) {
+			@media screen and (min-width: 600px) {
 				width: 33.3333%;
 			}
-			@media screen and (min-width: 1200px) {
+			@media screen and (min-width: 1024px) {
 				width: 25%;
 			}
 			&:last-child {
-				@media screen and (min-width: 1024px) {
+				@media screen and (min-width: 600px) {
 					display:none;
 				}
-				@media screen and (min-width: 1200px) {
+				@media screen and (min-width: 1024px) {
 					display:inline-block;
 				}
 			}
