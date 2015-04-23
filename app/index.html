@@ -12,6 +12,7 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> -->
   <!-- -->
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Apple -->
@@ -82,8 +83,11 @@
     <header class="theme-slate" data-ng-include="'partials/header.html'"
             data-headroom data-tolerance='5' data-offset='300' data-scroller=".app-view" data-classes="{initial:'headroom', pinned:'pinned', unpinned:'unpinned', top: 'is-above', notTop: 'is-below'}">
     </header>
-    <main class="preload" data-ng-view="" data-ng-click="menuToggle()"></main>
-    <footer class="theme-slate" data-ng-include="'partials/footer.html'"></footer>
+    <div class="core">
+      <!-- <div style="margin:10em 0 0 0; color: white; text-align:right;">text</div> -->
+      <main class="page preload" data-ng-view="" data-ng-click="menuToggle($event)"></main>
+      <footer class="theme-slate" data-ng-include="'partials/footer.html'"></footer>
+    </div>
   </div>
 
   <script>
@@ -132,12 +136,11 @@
   <!-- endbuild -->
 
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
-  <script src="scripts/config.js"></script>
-  <script src="scripts/enquire-config.js"></script>
   <script src="scripts/app.js"></script>
+  <script src="scripts/enquire-config.js"></script>
   <script src="scripts/controllers/mainCtrl.js"></script>
-  <script src="scripts/controllers/headerCtrl.js"></script>
   <script src="scripts/controllers/cardGridCtrl.js"></script>
+<!-- <script src="scripts/test.js"></script> -->
   <!-- endbuild -->
 </body>
 </html>

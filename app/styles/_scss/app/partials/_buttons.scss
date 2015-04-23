@@ -39,11 +39,13 @@
 }
 //
 .hamburger-menu-button {
+	transform: translateZ(0);
 	display: inline-block;
 	width: 50px;
 	padding-left: 3px;
 	text-align: center;
 	vertical-align: middle;
+	@extend .no-select;
 	//
 	> .primary {
 		padding: 0.5em 0.25em;
@@ -96,25 +98,26 @@
 //
 .plus-menu-button {
 	display:inline-block;
+	@extend .no-select;
 	//
 	a {
 		color: $slate;
 		vertical-align: middle;
 		text-decoration: none;
 		//
-		&:hover {
-			//
-			.label {
-				// opacity: 0.5;
-			}
-			.notification {
-				background: $rubyLighter;
-			}
-			svg {
-				transform: rotate(180deg);
-				transition: all 0.3s ease;
-			}
-		}
+		// &:hover {
+		// 	//
+		// 	.label {
+		// 		// opacity: 0.5;
+		// 	}
+		// 	.notification {
+		// 		background: $rubyLighter;
+		// 	}
+		// 	svg {
+		// 		transform: rotate(180deg);
+		// 		transition: all 0.3s ease;
+		// 	}
+		// }
 		.label {
 			display: inline-block;
 			padding-right: 0.25em;

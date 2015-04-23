@@ -3,7 +3,7 @@
   <div class="inner">
   	<header class="navbar">
 	  	<div class="primary">
-	      <h1 class="logo" ng-click="menuToggle(); loadSpin('left')">
+	      <h1 class="logo" ng-click="menuToggle($event); loadSpin('left')">
 	        <a href="/">
 	          <svg class="icon-logo" viewBox="0 0 32 32">
 	            <use xlink:href="/media/images/img.svg#icon-logo"></use>
@@ -21,21 +21,21 @@
 	      <nav>
 	        <ul>
 	          <li>
-	            <a href="/inspiration" ng-click="menuToggle(); loadSpin('left')">Inspiration</a> <!-- add active states -->
+	            <a href="/inspiration" ng-click="menuToggle($event); loadSpin('left')">Inspiration</a> <!-- add active states -->
 	          </li>
 	          <li>
-	            <a href="/email-kits" ng-click="menuToggle(); loadSpin('left')">Email Kits</a>
+	            <a href="/email-kits" ng-click="menuToggle($event); loadSpin('left')">Email Kits</a>
 	          </li>
 	          <li>
-	            <a href="/interviews" ng-click="menuToggle(); loadSpin('left')">Interviews</a>
+	            <a href="/interviews" ng-click="menuToggle($event); loadSpin('left')">Interviews</a>
 	          </li>
 	        </ul>
 	      </nav>
 	    </div><!--
 	 --><div class="secondary">
 	      <div class="inner">
-	        <div class="nav-drawer">
-	          <div class="button-row">
+	        <div class="sub-container">
+	          <div class="row">
 	            <div class="item">
 	              <div class="plus-menu-button">
 	                <a href="/">
@@ -60,7 +60,7 @@
 		<main class="list-grid freeflow">
 			<ul>
 				<li>
-					<a href="/">Abandoned Cart</a>
+					<a href="">Abandoned Cart</a>
 				<li>
 					<a href="">Account</a>
 				<li>

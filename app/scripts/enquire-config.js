@@ -1,9 +1,10 @@
 /* global jQuery, gbl, enquire */
+'use strict';
 
 //## Enquire Config ########
 //================================================
 (function($) {
-	'use strict';
+
 	$.mq320 = 'screen and (min-width: 320px)';
 	$.mq480 = 'screen and (min-width: 480px)';
 	$.mq600 = 'screen and (min-width: 600px)';

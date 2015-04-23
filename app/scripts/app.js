@@ -1,4 +1,4 @@
-/*global jQuery, gbl, app*/
+/*global $, FastClick, app*/
 /*jshint unused:false*/
 /*jshint devel:true*/
 'use strict';
@@ -8,23 +8,82 @@
  * @name reallygoodemails
  * @description
  * # reallygoodemails
- *
- * Main module of the application.
+ * Main module of reallygoodemails.
  */
 
+// >> Global Vars >>>>>>>>>>>>>>>
+var gbl = {
+  path: {
+    url: window.location.protocol+'//'+window.location.host,
+    currentUrl: window.location.href,
+    img: '/media/images',
+    cdn: '//cdnurl.com/something'
+  },
+  obj: {
+    $html: $('html'),
+    $body: $('body'),
+    $header: $('body').find('> header'),
+    $container: $('body').find('> .container'),
+    $core: $('body > .container').find('> .core'),
+    $footer: $('body').find('> footer')
+  }
+};
+
+//## Config ########
+//================================================
 (function() {
 
-  var app = angular.module('reallygoodemails', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'headroom']); // services / dependecies
+// >> App Config >>>>>>>>>>>>>>>
+var app = angular
+          .module('reallygoodemails', [
+            'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', // services / dependencies / directives
+          ])
+          .run(['$templateCache', '$http', function($templateCache, $http) {
+            $http.get('partials/header.html', {cache:$templateCache});
+            $http.get('partials/footer.html', {cache:$templateCache});
+          }]);
 
-  var resolve = {
-    delay: ['$q','$timeout', function($q, $timeout) {
-      var delay = $q.defer();
-      $timeout(delay.resolve, 200, false);
-      return delay.promise;
-    }]
+// >> Init >>>>>>>>>>>>>>>
+app.run(function($rootScope) { // onready
+  // -- FastClick -----------
+  // FastClick.attach(document.body); // may not be needed
+});
+
+// >> General Functions >>>>>>>>>>>>>>>
+app.factory('db', function() {
+  var items = [];
+
+  var modify = {};
+  modify.addItem = function(item) {
+    items.push(item);
+    return 'added item';
   };
+  modify.getItems = function() {
+    return items;
+  };
+  return modify;
+});
 
-// Routing /////
+// function MainCtrl = function ($scope, db) {  // for controller
+//   $scope.save = function() {
+//     db.addItem('hello');
+//     console.log( db.getItems() );
+//   };
+// }
+
+// optimization stuff
+// https://github.com/ericclemmons/grunt-angular-templates
+// bindonce - https://github.com/Pasvaz/bindonce
+
+
+// >> Routing >>>>>>>>>>>>>>>
+  var resolve = {
+    // delay: ['$q','$timeout', function($q, $timeout) {
+    //   var delay = $q.defer();
+    //   $timeout(delay.resolve, 200, false);
+    //   return delay.promise;
+    // }]
+  };
   app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
@@ -100,12 +159,12 @@
         metaDesc: 'the meta description'
       })
       .when('/404', {
-          templateUrl : 'views/error.html',
-          //controller : 'errorCtrl',
-          resolve: resolve,
-          titleTag: 'Ruh Roh! | Really Good Emails',
-          metaTitle: 'the meta title',
-          metaDesc: 'the meta description'
+        templateUrl : 'views/error.html',
+        //controller : 'errorCtrl',
+        resolve: resolve,
+        titleTag: 'Ruh Roh! | Really Good Emails',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
       })
       .otherwise({
         redirectTo: '/404',
@@ -113,7 +172,7 @@
       $locationProvider.html5Mode(true);
   }]);
 
-// Global Meta Injection /////
+// >> Global Meta Injection >>>>>>>>>>>>>>>
   app.controller('metaCtrl', ['$scope', function($scope) {
     $scope.appName = 'reallygoodemails';
     $scope.appTitle = 'Really Good Emails';
@@ -122,7 +181,7 @@
     $scope.appCDNurl = '';
   }]);
 
-// Per Page Injection /////
+// >> Per Page Injection >>>>>>>>>>>>>>>
   app.run(['$rootScope', '$window', '$location', function($rootScope, $window, $location) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       $rootScope.controller = current.$$route.controller;
@@ -138,4 +197,3 @@
   }]);
 
 })();
-

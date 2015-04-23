@@ -1,8 +1,8 @@
 <div class="base _bb1">
   <div class="inner">
-    <main class="navbar sidebar">
+    <main class="navbar search sidenav">
       <div class="primary">
-        <h1 class="logo" ng-click="menuToggle(); loadSpin('left')">
+        <h1 class="logo" data-ng-click="menuToggle($event); loadSpin('left')">
           <a href="/">
             <svg class="icon-logo" viewBox="0 0 32 32">
               <use xlink:href="/media/images/img.svg#icon-logo"></use>
@@ -10,7 +10,7 @@
             <span>Really Good Emails</span>
           </a>
         </h1>
-        <div class="hamburger-menu-button" ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu"> <!-- data-ng-class="toggleNavGroupTwo ? 'active' : '';"> -->
+        <div class="hamburger-menu-button" data-ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu">
           <div class="primary">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -20,13 +20,13 @@
         <nav>
           <ul>
             <li>
-              <a href="/inspiration" ng-click="menuToggle(); loadSpin('left')">Inspiration</a> <!-- if body class is active, on click toggle body class -->
+              <a href="/inspiration" data-ng-click="menuToggle($event); loadSpin('left')">Inspiration</a> <!-- if body class is active, on click toggle body class -->
             </li>
             <li>
-              <a href="/email-kits" ng-click="menuToggle(); loadSpin('left')">Email Kits</a>
+              <a href="/email-kits" data-ng-click="menuToggle($event); loadSpin('left')">Email Kits</a>
             </li>
             <li>
-              <a href="/interviews" ng-click="menuToggle(); loadSpin('left')">Interviews</a>
+              <a href="/interviews" data-ng-click="menuToggle($event); loadSpin('left')">Interviews</a>
             </li>
           </ul>
         </nav>
@@ -43,8 +43,8 @@
               </button>
             </form>
           </div>
-          <div class="nav-drawer">
-            <div class="button-row">
+          <div class="sub-container">
+            <div class="row">
               <div class="item">
                 <div class="avatar-box">
                   <a href="/">
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <div class="item">
-                <div class="plus-menu-button" ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
+                <div class="plus-menu-button" data-ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
                   <a href="">
                     <span class="plus">
                       <svg class="icon-plus" viewBox="0 0 32 32">
@@ -82,16 +82,16 @@
                   <a href="">notifications</a>
                 </li>
                 <li>
-                  <a href="/archive" ng-click="loadSpin('right')">Archive</a>
+                  <a href="/archive" data-ng-click="loadSpin('right')">Archive</a>
                 </li>
                 <li>
-                  <a href="/faq" ng-click="loadSpin('right')">FAQ</a>
+                  <a href="/faq" data-ng-click="loadSpin('right')">FAQ</a>
                 </li>
                 <li>
-                  <a href="/contact" ng-click="loadSpin('right')">Contact Us</a>
+                  <a href="/contact" data-ng-click="loadSpin('right')">Contact Us</a>
                 </li>
                 <li>
-                  <a href="/newsletter" ng-click="loadSpin('right')">Newsletter</a>
+                  <a href="/newsletter" data-ng-click="loadSpin('right')">Newsletter</a>
                 </li>
               </ul>
             </nav>
@@ -103,7 +103,7 @@
 </div>
 
 <div class="load-tray">
-  <svg x="0" y="0" class="preload spin-load-small left" viewBox="0 0 32 32" ng-class="($parent.toggleLoadSpin ? 'loaded' : '')+' '+(loadSpinLoc ? 'left' : 'right')">
+  <svg x="0" y="0" class="preload spin-load-small left" viewBox="0 0 32 32" data-ng-class="($parent.toggleLoadSpin ? 'loaded' : '')+' '+(loadSpinLoc ? 'left' : 'right')">
     <g class="gwrap1">
       <g class="gwrap2">
         <circle class="path" fill="none" stroke-width="4" stroke-linecap="round" cx="16" cy="16" r="14"></circle>

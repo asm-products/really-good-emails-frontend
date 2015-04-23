@@ -4,9 +4,9 @@
 $spin-load-small-offset: 128;
 $spin-load-duration: 1s;
 .spin-load-small {
-	@extend .gpu;
 	width: 32px;
 	height: 32px;
+	transform: translateZ(0);
 	animation: rotator 2.5s linear infinite;
 	transition: opacity 0.25s ease-in-out;
 	//
@@ -26,9 +26,11 @@ $spin-load-duration: 1s;
 	//
 	&.preload {
 		opacity: 0;
+		display: none;
 	}
 	&.loaded {
 		opacity: 1;
+		display: block;
 	}
 }
 

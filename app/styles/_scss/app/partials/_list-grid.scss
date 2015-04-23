@@ -2,21 +2,22 @@
 ============================================*/
 
 .list-grid {
+	transform: translateZ(0);
 	//
 	ul {
 	  margin: 0;
 	  padding: 0;
 	  list-style: none;
+	  vertical-align: top;
 	  //
 		a {
 			display: inline-block;
 			padding: 0.25em 0;
-			transform: translate3d(0,0,0);
 			color: $slate;
 			text-decoration: none;
-			opacity: 1;
+			//
 			&:hover {
-				opacity: 0.5;
+				color: $winkleDark;
 			}
 		}
 	}
@@ -39,7 +40,7 @@
 			width: 100%;
   		margin-right: -4px;
   		margin-bottom: 1em;
-  		vertical-align: top;
+  		//
 			&:nth-child(n+3) {
 				display: none;
 			}
