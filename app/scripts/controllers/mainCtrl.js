@@ -1,84 +1,79 @@
-/*global jQuery, gbl, app*/
+/*global $, app*/
 /*jshint unused:false*/
-/*jshint devel:true*/
 'use strict';
 
-/*
+/**
  * @ngdoc function
  * @name reallygoodemails.controller:mainCtrl
- * @description
- * # mainCtrl
- * Main controller of reallygoodemails
- */
+ * @description Main controller of reallygoodemails
+**/
 
 (function() {
 
   var app = angular.module('reallygoodemails');
 
-// Main Ctrl /////
-	app.controller('mainCtrl',['$scope', '$rootScope', '$window', '$timeout', function($scope, $rootScope, $window, $timeout){
+  // Main Ctrl /////
+	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', function($rootScope, $scope, $window, $location, $timeout) {
 
-    // all of this should prob go in a run & possibly in a directive
+    $rootScope.appName = 'reallygoodemails';
+    $rootScope.appTitle = 'Really Good Emails';
+    $rootScope.appURL = 'http://reallygoodemails.com';
+    $rootScope.currentURL = window.location.href;
+    $rootScope.imgPath = '/media/images';
+    $rootScope.appCDNurl = '//reallygoodemails-cdn.appspot.com';
 
-		// Loading Spinner
-		// $scope.loadSpinLoc = true;
-		// $scope.loadSpin = function(value) {
-		// 	if (value === 'left') {
-		// 		$scope.loadSpinLoc = true;
-		// 	}
-		// 	if (value === 'right') {
-		// 		$scope.loadSpinLoc = false;
-		// 	}
-		// };
-		// //
-  //   // nav kill on scroll
-  //   angular.element($window).on('scroll', function () {
-  //     $timeout(function(){
-  //       $scope.menuToggle();
-  //     }, 10);
-  //   });
-		// // nav kill on orientation change
-		// angular.element($window).on('orientationchange', function () {
-  //     $timeout(function() {
-  //     	$scope.menuToggle();
-  //     });
-		// });
-		// // nav kill on resize
-		// angular.element($window).on('resize', function () {
-  //     $timeout(function() {
-  //     	if (!angular.element('html').hasClass('mobile')) {
-  //     		$scope.menuToggle();
-  //     	}
-  //     });
-		// });
+    // -- Load (onReady) ---------------
+    $rootScope.$on('$routeChangeStart', function (event, next, current, previous) {
+      if (next && next.$$route) {
+        // "Load Cover" Sequence: Start
+        $rootScope.loaderTrash = false;
+        $rootScope.loaderSpin = true;
+        $rootScope.loader = true;
+      }
+    });
+    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+      // inject vars
+      $rootScope.titleTag = current.$$route.titleTag;
+      $rootScope.metaTitle = current.$$route.metaTitle;
+      $rootScope.metaDesc = current.$$route.metaDesc;
+      // "Load Cover" Sequence: End
+      window.scrollTo(0,0);
+      $timeout(function(){
+        $rootScope.loader = false;
+      }, 750);
+      $timeout(function(){
+        $rootScope.loaderTrash = true;
+        $rootScope.loaderSpin = false;
+      }, 1000);
+      $timeout(function(){
+        $rootScope.mobileSideNav = false;
+      }, 1050);
 
-  //   $rootScope.menuToggle = function(event) {
-  //     $rootScope.togglePrimaryMenu = false;
-  //     $rootScope.toggleSecondaryMenu = false;
-  //     event.preventDefault();
-  //   };
-  //   $rootScope.$on('$routeChangeStart', function (event, next, current, previous) {
-  //     if (next && next.$$route) {
-  //       $rootScope.toggleLoadCover = false;
-  //       $rootScope.toggleLoadVisHid = false;
-  //       $rootScope.toggleLoadSpin = true;
-  //     }
-  //   });
-  //   $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-  //     $timeout(function(){
-  //       window.scrollTo(0,0);
-  //     }, 300);
-  //     $timeout(function(){
-  //       $rootScope.toggleLoadCover = true;
-  //       $rootScope.toggleLoadSpin = false;
-  //     }, 500);
-  //     $timeout(function(){
-  //       $rootScope.menuToggle();
-  //     }, 700);
-  //     $timeout(function(){
-  //       $rootScope.toggleLoadVisHid = true;
-  //     }, 1000);
-  //   });
+      // analytics
+      if (!$window.ga) {
+        return;
+      }
+      $window.ga('send', 'pageview', { page: $location.path() });
+    });
+    // -- Events ---------------
+    //
+    // -- Menu Toggle
+    $rootScope.mobileSideNavClose = function(event) {
+      $rootScope.mobileSideNav = false;
+      // $rootScope.toggleSecondaryMenu = false;  // cleanup later
+      // if (typeof event !== 'undefined') {
+      //   var $this = angular.element(event.target);
+      //   if (!$this.is('a')) {
+      //     event.preventDefault();
+      //     console.log('is not a!');
+      //   }
+      // }
+    };
+
+    $rootScope.heightAdjust = function() {
+      var $header = angular.element($('header'));
+      console.log($header);
+    };
 
 	}]);
 

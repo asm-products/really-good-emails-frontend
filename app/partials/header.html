@@ -1,113 +1,101 @@
-<div class="base _bb1">
-  <div class="inner">
-    <main class="navbar search sidenav">
-      <div class="primary">
-        <h1 class="logo" data-ng-click="menuToggle($event); loadSpin('left')">
-          <a href="/">
-            <svg class="icon-logo" viewBox="0 0 32 32">
-              <use xlink:href="/media/images/img.svg#icon-logo"></use>
-            </svg>
-            <span>Really Good Emails</span>
-          </a>
-        </h1>
-        <div class="hamburger-menu-button" data-ng-click="$root.togglePrimaryMenu = !$root.togglePrimaryMenu">
-          <div class="primary">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </div>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="/inspiration" data-ng-click="menuToggle($event); loadSpin('left')">Inspiration</a> <!-- if body class is active, on click toggle body class -->
-            </li>
-            <li>
-              <a href="/email-kits" data-ng-click="menuToggle($event); loadSpin('left')">Email Kits</a>
-            </li>
-            <li>
-              <a href="/interviews" data-ng-click="menuToggle($event); loadSpin('left')">Interviews</a>
-            </li>
-          </ul>
-        </nav>
-      </div><!--
-   --><div class="secondary">
-        <div class="inner">
-          <div class="search">
-            <form>
-              <input type="text">
-              <button type="submit">
-                <svg class="icon-search" viewBox="0 0 32 32">
-                  <use xlink:href="/media/images/img.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
-          <div class="sub-container">
-            <div class="row">
-              <div class="item">
-                <div class="avatar-box">
-                  <a href="/">
-                    <span class="avatar">
-                      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dustintheweb/73.jpg" alt="">
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="notification-box">
-                  <a href="/">
-                    <span class="notification">3</span>
-                  </a>
-                </div>
-              </div>
-              <div class="item">
-                <div class="plus-menu-button" data-ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
-                  <a href="">
-                    <span class="plus">
-                      <svg class="icon-plus" viewBox="0 0 32 32">
-                        <use xlink:href="/media/images/img.svg#icon-plus"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <nav>
-              <ul>
-                <li>
-                  <a href="">user info</a>
-                </li>
-                <li>
-                  <a href="">notifications</a>
-                </li>
-                <li>
-                  <a href="/archive" data-ng-click="loadSpin('right')">Archive</a>
-                </li>
-                <li>
-                  <a href="/faq" data-ng-click="loadSpin('right')">FAQ</a>
-                </li>
-                <li>
-                  <a href="/contact" data-ng-click="loadSpin('right')">Contact Us</a>
-                </li>
-                <li>
-                  <a href="/newsletter" data-ng-click="loadSpin('right')">Newsletter</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+<div class="inner">
+  <main class="navbar search side-nav">
+    <div class="primary">
+      <h1 class="logo">
+        <a href="/">
+          <svg class="icon-logo" viewBox="0 0 32 32">
+            <use xlink:href="/media/images/img.svg#icon-logo"></use>
+          </svg>
+          <span>Really Good Emails</span>
+        </a>
+      </h1>
+      <div class="hamburger-menu-button" data-ng-click="$root.mobileSideNav = !$root.mobileSideNav">
+        <div class="primary">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </div>
       </div>
-    </main>
-  </div>
-</div>
-
-<div class="load-tray">
-  <svg x="0" y="0" class="preload spin-load-small left" viewBox="0 0 32 32" data-ng-class="($parent.toggleLoadSpin ? 'loaded' : '')+' '+(loadSpinLoc ? 'left' : 'right')">
-    <g class="gwrap1">
-      <g class="gwrap2">
-        <circle class="path" fill="none" stroke-width="4" stroke-linecap="round" cx="16" cy="16" r="14"></circle>
-      </g>
-    </g>
-  </svg>
+      <nav>
+        <ul>
+          <li>
+            <a href="/inspiration">Inspiration</a> <!-- if body class is active, on click toggle body class -->
+          </li>
+          <li>
+            <a href="/email-kits">Email Kits</a>
+          </li>
+          <li>
+            <a href="/interviews">Interviews</a>
+          </li>
+        </ul>
+      </nav>
+    </div><!--
+ --><div class="secondary">
+      <div class="inner">
+        <div class="search">
+          <form>
+            <input type="text">
+            <button type="submit">
+              <svg class="icon-search" viewBox="0 0 32 32">
+                <use xlink:href="/media/images/img.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="sub-container">
+          <div class="row">
+            <div class="item">
+              <div class="avatar-box">
+                <a href="/">
+                  <span class="avatar">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dustintheweb/73.jpg" alt="">
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="notification-box">
+                <a href="/">
+                  <span class="notification">3</span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="plus-menu-button" data-ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
+                <a href="">
+                  <span class="plus">
+                    <svg class="icon-plus" viewBox="0 0 32 32">
+                      <use xlink:href="/media/images/img.svg#icon-plus"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">user info</a>
+              </li>
+              <li>
+                <a href="">notifications</a>
+              </li>
+              <li>
+                <a href="/archive">Archive</a>
+              </li>
+              <li>
+                <a href="/faq">FAQ</a>
+              </li>
+              <li>
+                <a href="/contact">Contact Us</a>
+              </li>
+              <li>
+                <a href="/newsletter">Newsletter</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>

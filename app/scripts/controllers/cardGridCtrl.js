@@ -5,9 +5,7 @@
 /*
  * @ngdoc function
  * @name reallygoodemails.controller:cardGridCtrl
- * @description
- * # cardGridCtrl
- * Controller of reallygoodemails
+ * @description card grid controller
  */
 
 (function() { 'use strict';

@@ -1,12 +1,14 @@
 /* >> Loading (Module) >>>>>>>>>>>>
 ============================================*/
 
+// Animations
+//
+// -- Spinner --------------
 $spin-load-small-offset: 128;
 $spin-load-duration: 1s;
 .spin-load-small {
 	width: 32px;
 	height: 32px;
-	transform: translateZ(0);
 	animation: rotator 2.5s linear infinite;
 	transition: opacity 0.25s ease-in-out;
 	//
@@ -23,18 +25,10 @@ $spin-load-duration: 1s;
 		transform: translate3d(-16px, -16px, 0);
 		animation: colors ($spin-load-duration*4) ease-in-out infinite;
 	}
-	//
-	&.preload {
-		opacity: 0;
+	&._hide {
 		display: none;
 	}
-	&.loaded {
-		opacity: 1;
-		display: block;
-	}
 }
-
-// spin animations
 @keyframes rotator {
 	0% {
 		transform: rotate(0deg);
@@ -43,7 +37,6 @@ $spin-load-duration: 1s;
 		transform: rotate(360deg);
 	}
 }
-
 @keyframes colors {
 	0% {
 		stroke: $teal
@@ -61,7 +54,6 @@ $spin-load-duration: 1s;
 		stroke: $teal
 	}
 }
-
 @keyframes dash {
 	0% {
 		stroke-dashoffset: $spin-load-small-offset;
@@ -77,3 +69,31 @@ $spin-load-duration: 1s;
 	}
 }
 
+// Page Loader
+//
+.loader {
+	opacity: 1;
+	visibility: visible;
+	position: absolute;
+	top: 4.95em;
+	left: 0;
+	width: 100%;
+	height: 1500px;
+	transform: translateZ(0);
+	transition: opacity 0.25s ease-in-out;
+	background: $winkleLighter;
+	//
+	> .inner {
+		position: relative;
+		z-index: 5;
+	}
+	.spin-load-small {
+		margin-left: 0.25em;
+	}
+	&._hide {
+  	opacity: 0;
+	}
+	&._trash { // applied via js after fade
+		visibility: hidden;
+	}
+}

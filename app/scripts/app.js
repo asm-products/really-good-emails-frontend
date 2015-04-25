@@ -3,88 +3,66 @@
 /*jshint devel:true*/
 'use strict';
 
-/*
+/**
  * @ngdoc overview
  * @name reallygoodemails
- * @description
- * # reallygoodemails
- * Main module of reallygoodemails.
- */
+ * @description Main module of reallygoodemails
+**/
 
-// >> Global Vars >>>>>>>>>>>>>>>
-var gbl = {
-  path: {
-    url: window.location.protocol+'//'+window.location.host,
-    currentUrl: window.location.href,
-    img: '/media/images',
-    cdn: '//cdnurl.com/something'
-  },
-  obj: {
-    $html: $('html'),
-    $body: $('body'),
-    $header: $('body').find('> header'),
-    $container: $('body').find('> .container'),
-    $core: $('body > .container').find('> .core'),
-    $footer: $('body').find('> footer')
-  }
-};
-
-//## Config ########
-//================================================
 (function() {
-
 // >> App Config >>>>>>>>>>>>>>>
+//
 var app = angular
           .module('reallygoodemails', [
-            'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', // services / dependencies / directives
+            'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
+            'app.directives.navigation',
+            'headroom'
           ])
-          .run(['$templateCache', '$http', function($templateCache, $http) {
+          .run(['$templateCache', '$http', function($templateCache, $http) { // onReady
             $http.get('partials/header.html', {cache:$templateCache});
             $http.get('partials/footer.html', {cache:$templateCache});
           }]);
 
 // >> Init >>>>>>>>>>>>>>>
-app.run(function($rootScope) { // onready
+//
+app.run(['$rootScope', function($rootScope) { // onready
   // -- FastClick -----------
   // FastClick.attach(document.body); // may not be needed
-});
+}]);
 
 // >> General Functions >>>>>>>>>>>>>>>
-app.factory('db', function() {
-  var items = [];
-
-  var modify = {};
-  modify.addItem = function(item) {
-    items.push(item);
-    return 'added item';
-  };
-  modify.getItems = function() {
-    return items;
-  };
-  return modify;
-});
-
-// function MainCtrl = function ($scope, db) {  // for controller
-//   $scope.save = function() {
-//     db.addItem('hello');
-//     console.log( db.getItems() );
-//   };
-// }
+// stuff here
 
 // optimization stuff
 // https://github.com/ericclemmons/grunt-angular-templates
 // bindonce - https://github.com/Pasvaz/bindonce
 
+// modules are used for base definitions
+// controllers are used for wiring up services
+// services are used for channeling data across domains (prefer these over factories)
+// directives are used for interacting with DOM elements
+// -- structure wise, use these as modular js files in the same way you do w/ scss partials
+// -- if you have directive type function but has global use, put it in the most appropriate place
+// ---- ex: scroll, resize, etc - add it in app.js
+// ---- basically, if you have something that is used so universally, that it doesn't make sense to
+// ---- constantly have to refer to it as a dependency, keep it in app.js
+// ----
+// target "this": pass event to click in the html, data-ng-click="someFunc($event);"
+//                then in the js: angular.element(event.target).addClass('yo');
+// if (typeof event !== 'undefined') {
+
 
 // >> Routing >>>>>>>>>>>>>>>
+//
   var resolve = {
-    // delay: ['$q','$timeout', function($q, $timeout) {
-    //   var delay = $q.defer();
-    //   $timeout(delay.resolve, 200, false);
-    //   return delay.promise;
-    // }]
+    // timeout for load cover
+    delay: ['$q','$timeout', function($q, $timeout) {
+      var delay = $q.defer();
+      $timeout(delay.resolve, 400, false);
+      return delay.promise;
+    }]
   };
-  app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  app.config(['$routeProvider', '$locationProvider', '$logProvider', function($routeProvider, $locationProvider, $logProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
@@ -172,27 +150,29 @@ app.factory('db', function() {
       $locationProvider.html5Mode(true);
   }]);
 
-// >> Global Meta Injection >>>>>>>>>>>>>>>
-  app.controller('metaCtrl', ['$scope', function($scope) {
-    $scope.appName = 'reallygoodemails';
-    $scope.appTitle = 'Really Good Emails';
-    $scope.appMetaTitleDefault = '';
-    $scope.appURL = 'http://reallygoodemails.com';
-    $scope.appCDNurl = '';
-  }]);
-
-// >> Per Page Injection >>>>>>>>>>>>>>>
-  app.run(['$rootScope', '$window', '$location', function($rootScope, $window, $location) {
-    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
-      $rootScope.controller = current.$$route.controller;
-      $rootScope.titleTag = current.$$route.titleTag;
-      $rootScope.metaTitle = current.$$route.metaTitle;
-      $rootScope.metaDesc = current.$$route.metaDesc;
-      // analytics
-      if (!$window.ga) {
-        return;
-      }
-      $window.ga('send', 'pageview', { page: $location.path() });
+// >> Global Functions (onReady) >>>>>>>>>>>>>>>
+//
+  app.run(['$rootScope', '$window', '$timeout', function($rootScope, $window, $timeout) {
+  // -- Scroll
+    angular.element($window).on('scroll', function() {
+      // $timeout(function(){
+        // something here later
+      // }, 250);
+    });
+  // -- Responsive
+    angular.element($window).on('orientationchange', function () {
+      // nav kill on orientation change
+      $timeout(function() {
+        $rootScope.mobileSideNavClose();
+      });
+    });
+    angular.element($window).on('resize', function () {
+      // nav kill on resize
+      $timeout(function() {
+        if (!angular.element('html').hasClass('mobile')) {
+          $rootScope.mobileSideNavClose();
+        }
+      });
     });
   }]);
 

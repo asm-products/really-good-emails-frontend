@@ -1,4 +1,4 @@
-/* >> Nav Bar (Module) >>>>>>>>>>>>
+/* >> Navigation (Module) >>>>>>>>>>>>
 ============================================*/
 
 // -- Default Navbar --------
@@ -176,7 +176,7 @@
 	}
 }
 
-// -- Mobile SideNav Mod -----------
+// -- Mobile Side-Nav Mod -----------
 //
 // Page Toggle ------------
 body > .container {
@@ -185,21 +185,15 @@ body > .container {
 		transition: transform 0.3s ease;
 	}
 }
-body.primary-menu-active > .container {
+body.mobile-side-nav > .container {
 	//
 	> header, > .core {
 		transform: translate3d(200px,0,0);
 	}
 }
-// body.secondary-menu-active > .container {
-// 	//
-// 	> header, > .core {
-// 		transform: translate3d(-200px,0,0);
-// 	}
-// }
 
-// Mobile SideNav ------------
-.navbar.sidenav {
+// Mobile Side-Nav ------------
+.navbar.side-nav {
 	//
 	nav {
 		position: absolute;

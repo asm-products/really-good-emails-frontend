@@ -1,6 +1,6 @@
 <!doctype html>
-<html class="no-js" data-ng-app="reallygoodemails">
-<head data-ng-controller="metaCtrl">
+<html class="no-js" data-ng-app="reallygoodemails" data-ng-controller="mainCtrl">
+<head>
   <meta charset="utf-8">
   <base href="/">
   <meta name="fragment" content="!">
@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <!-- Apple -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="{{appName}}.com">
+  <meta name="apple-mobile-web-app-title" content="{{::appName}}.com">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" sizes="57x57" href="/media/images/_icons/apple-touch-icon-114x114.png">
   <link rel="apple-touch-icon" sizes="114x114" href="/media/images/_icons/apple-touch-icon-114x114.png">
@@ -34,7 +34,7 @@
   <link rel="icon" type="image/png" href="/media/images/_icons/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/media/images/_icons/favicon-32x32.png" sizes="32x32">
   <!-- MS -->
-  <meta name="application-name" content="{{appTitle}}">
+  <meta name="application-name" content="{{::appTitle}}">
   <meta name="msapplication-config" content="/media/images/_icons/browserconfig.xml">
   <meta name="msapplication-TileColor" content="#dc5037">
   <meta name="msapplication-square70x70logo" content="/media/images/_icons/mstile-70x70.png">
@@ -42,20 +42,20 @@
   <meta name="msapplication-wide310x150logo" content="/media/images/_icons/mstile-310x150.png">
   <meta name="msapplication-square310x310logo" content="/media/images/_icons/mstile-310x310.png">
   <!-- Facebook -->
-  <meta property="og:title" content="{{appTitle}}"/>
-  <meta property="og:site_name" content="{{appName}}.com"/>
-  <meta property="og:url" content="{{appURL}}"/>
+  <meta property="og:title" content="{{::appTitle}}"/>
+  <meta property="og:site_name" content="{{::appName}}.com"/>
+  <meta property="og:url" content="{{::appURL}}"/>
   <meta property="og:description" content="{{metaDesc}}"/>
   <meta property="og:image" content="http:{{appCDNurl}}/media/images/fb_og-image.jpg"/>
   <meta property="og:type" content="website"/>
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{appName}}">
-  <meta name="twitter:title" content="{{appTitle}}"/>
+  <meta name="twitter:site" content="@{{::appName}}">
+  <meta name="twitter:title" content="{{::appTitle}}"/>
   <meta name="twitter:description" content="{{metaDesc}}">
-  <meta name="twitter:creator" content="@{{appName}}">
-  <meta name="twitter:image:src" content="http:{{appCDNurl}}/media/images/tw_sum-image.png">
-  <meta name="twitter:domain" content="{{appURL}}">
+  <meta name="twitter:creator" content="@{{::appName}}">
+  <meta name="twitter:image:src" content="http:{{::appCDNurl}}/media/images/tw_sum-image.png">
+  <meta name="twitter:domain" content="{{::appURL}}">
   <!-- -->
   <meta http-equiv="cache-control" content="public">
   <meta http-equiv="cache-control" content="max-age=72000" />
@@ -74,18 +74,28 @@
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
-<body class="{{controller}}" data-ng-controller="mainCtrl" data-ng-class="($root.togglePrimaryMenu ? 'primary-menu-active' : '')+' '+($root.toggleSecondaryMenu ? 'secondary-menu-active' : '')">
+<body data-ng-class="($root.mobileSideNav ? 'mobile-side-nav' : '')">
   <!--[if lt IE 9]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <div class="container">
-    <header class="theme-slate" data-ng-include="'partials/header.html'"
-            data-headroom data-tolerance='5' data-offset='300' data-scroller=".app-view" data-classes="{initial:'headroom', pinned:'pinned', unpinned:'unpinned', top: 'is-above', notTop: 'is-below'}">
+    <header class="theme-slate" data-headroom data-tolerance='5' data-offset='300' data-scroller=".app-view" data-classes="{initial:'headroom', pinned:'pinned', unpinned:'unpinned', top: 'is-above', notTop: 'is-below'}">
+      <div class="base _bb1" data-ng-include="'partials/header.html'"></div>
+      <div class="base loader" data-ng-class="($parent.loader ? '' : '_hide')+' '+($parent.loaderTrash ? '_trash' : '')" data-height-100>
+        <div class="inner">
+          <svg x="0" y="0" class="spin-load-small left" viewBox="0 0 32 32" data-ng-class="($parent.loaderSpin ? '' : '_hide')">
+            <g class="gwrap1">
+              <g class="gwrap2">
+                <circle class="path" fill="none" stroke-width="4" stroke-linecap="round" cx="16" cy="16" r="14"></circle>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
     </header>
     <div class="core">
-      <!-- <div style="margin:10em 0 0 0; color: white; text-align:right;">text</div> -->
-      <main class="page preload" data-ng-view="" data-ng-click="menuToggle($event)"></main>
+      <main class="page preload" data-ng-view="" data-ng-click="mobileSideNavClose()"></main>
       <footer class="theme-slate" data-ng-include="'partials/footer.html'"></footer>
     </div>
   </div>
@@ -140,7 +150,9 @@
   <script src="scripts/enquire-config.js"></script>
   <script src="scripts/controllers/mainCtrl.js"></script>
   <script src="scripts/controllers/cardGridCtrl.js"></script>
-<!-- <script src="scripts/test.js"></script> -->
+  <script src="scripts/services/emails.js"></script>
+  <script src="scripts/services/users.js"></script>
+  <script src="scripts/directives/navigation.js"></script>
   <!-- endbuild -->
 </body>
 </html>
