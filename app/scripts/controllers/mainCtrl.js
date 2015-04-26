@@ -36,6 +36,10 @@
       $rootScope.titleTag = current.$$route.titleTag;
       $rootScope.metaTitle = current.$$route.metaTitle;
       $rootScope.metaDesc = current.$$route.metaDesc;
+      // set active state
+      $scope.page = function(viewLocation) { 
+        return viewLocation === $location.path();
+      };
       // "Load Cover" Sequence: End
       window.scrollTo(0,0);
       $timeout(function(){
@@ -48,7 +52,6 @@
       $timeout(function(){
         $rootScope.mobileSideNav = false;
       }, 1050);
-
       // analytics
       if (!$window.ga) {
         return;

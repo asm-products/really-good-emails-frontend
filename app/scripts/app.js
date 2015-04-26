@@ -50,6 +50,7 @@ app.run(['$rootScope', function($rootScope) { // onready
 // target "this": pass event to click in the html, data-ng-click="someFunc($event);"
 //                then in the js: angular.element(event.target).addClass('yo');
 // if (typeof event !== 'undefined') {
+// <div class="base loader" data-ng-class="($parent.loader ? '' : '_hide')+' '+($parent.loaderTrash ? '_trash' : '')" data-height-100>
 
 
 // >> Routing >>>>>>>>>>>>>>>

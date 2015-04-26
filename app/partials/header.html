@@ -9,7 +9,7 @@
           <span>Really Good Emails</span>
         </a>
       </h1>
-      <div class="hamburger-menu-button" data-ng-click="$root.mobileSideNav = !$root.mobileSideNav">
+      <div class="hamburger-menu-button" data-ng-click="$root.mobileSideNav = !$root.mobileSideNav" data-ng-class="($root.mobileSideNav ? 'mobile-side-nav' : '')">
         <div class="primary">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -18,13 +18,13 @@
       </div>
       <nav>
         <ul>
-          <li>
+          <li data-ng-class="{active:page('/inspiration')}">
             <a href="/inspiration">Inspiration</a> <!-- if body class is active, on click toggle body class -->
           </li>
-          <li>
+          <li data-ng-class="{active:page('/email-kits')}">
             <a href="/email-kits">Email Kits</a>
           </li>
-          <li>
+          <li data-ng-class="{active:page('/interviews')}">
             <a href="/interviews">Interviews</a>
           </li>
         </ul>
@@ -80,16 +80,16 @@
               <li>
                 <a href="">notifications</a>
               </li>
-              <li>
+              <li data-ng-class="{active:page('/archive')}">
                 <a href="/archive">Archive</a>
               </li>
-              <li>
+              <li data-ng-class="{active:page('/faq')}">
                 <a href="/faq">FAQ</a>
               </li>
-              <li>
+              <li data-ng-class="{active:page('/contact')}">
                 <a href="/contact">Contact Us</a>
               </li>
-              <li>
+              <li data-ng-class="{active:page('/newsletter')}">
                 <a href="/newsletter">Newsletter</a>
               </li>
             </ul>

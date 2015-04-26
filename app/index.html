@@ -82,9 +82,9 @@
   <div class="container">
     <header class="theme-slate" data-headroom data-tolerance='5' data-offset='300' data-scroller=".app-view" data-classes="{initial:'headroom', pinned:'pinned', unpinned:'unpinned', top: 'is-above', notTop: 'is-below'}">
       <div class="base _bb1" data-ng-include="'partials/header.html'"></div>
-      <div class="base loader" data-ng-class="($parent.loader ? '' : '_hide')+' '+($parent.loaderTrash ? '_trash' : '')" data-height-100>
+      <div class="base loader" data-ng-class="($root.loader ? '' : '_hide')+' '+($root.loaderTrash ? '_trash' : '')" data-height-100>
         <div class="inner">
-          <svg x="0" y="0" class="spin-load-small left" viewBox="0 0 32 32" data-ng-class="($parent.loaderSpin ? '' : '_hide')">
+          <svg x="0" y="0" class="spin-load-small left" viewBox="0 0 32 32" data-ng-class="($root.loaderSpin ? '' : '_hide')">
             <g class="gwrap1">
               <g class="gwrap2">
                 <circle class="path" fill="none" stroke-width="4" stroke-linecap="round" cx="16" cy="16" r="14"></circle>
