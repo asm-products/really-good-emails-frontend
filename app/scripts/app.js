@@ -16,6 +16,7 @@ var app = angular
           .module('reallygoodemails', [
             'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
             'headroom',
+            'app.services.emails',
             'app.directives.general',
             'app.directives.navigation',
           ])
@@ -40,7 +41,7 @@ app.run(function() { // onready
       return delay.promise;
     }]
   };
-  app.config(['$routeProvider', '$locationProvider', '$logProvider', function($routeProvider, $locationProvider, $logProvider) {
+  app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
@@ -107,6 +108,34 @@ app.run(function() { // onready
         metaTitle: 'the meta title',
         metaDesc: 'the meta description'
       })
+      .when('/emails/:page', {
+        templateUrl: 'views/email-detail.html',
+        resolve: resolve,
+        titleTag: '',
+        metaTitle: '',
+        metaDesc: ''
+      })
+      .when('/collections/:page', {
+        templateUrl: 'views/collections.html',
+        resolve: resolve,
+        titleTag: '',
+        metaTitle: '',
+        metaDesc: ''
+      })
+      .when('/brands/:page', {
+        templateUrl: 'views/brands.html',
+        resolve: resolve,
+        titleTag: '',
+        metaTitle: '',
+        metaDesc: ''
+      })
+      .when('/tags/:page', {
+        templateUrl: 'views/tags.html',
+        resolve: resolve,
+        titleTag: '',
+        metaTitle: '',
+        metaDesc: ''
+      })
       .when('/test', {
         templateUrl: 'views/test.html',
         resolve: resolve,
@@ -116,7 +145,6 @@ app.run(function() { // onready
       })
       .when('/404', {
         templateUrl : 'views/error.html',
-        //controller : 'errorCtrl',
         resolve: resolve,
         titleTag: 'Ruh Roh! | Really Good Emails',
         metaTitle: 'the meta title',

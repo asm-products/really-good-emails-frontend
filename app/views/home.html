@@ -89,11 +89,11 @@
 					</div>
 				</div>
 				<ul class="main">
-					<li class="card" data-ng-repeat="item in emails">
-						<div class="inner" href="{{::item.url}}">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | limitTo:'12'">
+						<div class="inner" href="{{::email.url}}">
 							<div class="thumb">
-								<a href="/email-details">
-									<img data-ng-src="{{::item.img.thumb}}" alt="{{::item.subject}}">
+								<a href="/{{::email.slug}}">
+									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
 								</a>
 								<div class="overlay">
 									<div class="social">
@@ -101,19 +101,19 @@
 											<svg class="icon-smiley" viewBox="0 0 32 32">
 	                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
 	                    </svg>
-											<span>15</span>
+											<span>{{::email.metrics[0].likes}}</span>
 										</a>
 										<a href="" class="comments">
 											<svg class="icon-comment" viewBox="0 0 32 32">
 	                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
 	                    </svg>
-											<span>23</span>
+											<span>{{::email.metrics[0].comments}}</span>
 										</a>
 										<a href="" class="shares">
 											<svg class="icon-share" viewBox="0 0 32 32">
 	                        <use xlink:href="/media/images/img.svg#icon-share"></use>
 	                    </svg>
-											<span>2</span>
+											<span>{{::email.metrics[0].shares}}</span>
 										</a>
 									</div>
 								</div>
@@ -122,14 +122,14 @@
 						<div class="label">
 							<div class="inner">
 								<div class="title">
-									<a href="/email-details">
-										{{::item.source}}
+									<a href="/{{::email.slug}}">
+										{{::email.source}}
 									</a>
 								</div>
 								<div class="tags">
-									<div class="tag" data-ng-repeat="item in item.tags">
+									<div class="tag" data-ng-repeat="tag in email.tags">
 										<a href="">
-											{{::item}}
+											{{::tag}}
 										</a>
 									</div>
 								</div>
