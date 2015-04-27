@@ -225,6 +225,7 @@ module.exports = function(grunt) {
             '*.{ico,png,txt,md,yaml,xml}',
             '.htaccess',
             '{,*/}*.html',
+            'data/*.json',
             'media/{,*/}*.{webp,svg,gif,ico,mp4,ogv,ogg,webm,mp3}',
             'styles/fonts/{,*/}*.*',
           ]
@@ -303,7 +304,7 @@ module.exports = function(grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.{js,json}', '!<%= yeoman.app %>/scripts/libs/{,*/}*.{js,json}'],
+        files: ['<%= yeoman.app %>/scripts/{,*/}*.{js,json}', '<%= yeoman.app %>/data/*.json', '!<%= yeoman.app %>/scripts/libs/{,*/}*.{js,json}'],
         tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
