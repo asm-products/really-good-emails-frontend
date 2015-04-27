@@ -1,31 +1,46 @@
-/*global jQuery, gbl, app*/
+/*global $, FastClick, app*/
 /*jshint unused:false*/
 /*jshint devel:true*/
 'use strict';
 
-/*
+/**
  * @ngdoc overview
  * @name reallygoodemails
- * @description
- * # reallygoodemails
- *
- * Main module of the application.
- */
+ * @description Main module of reallygoodemails
+**/
 
 (function() {
+// >> App Config >>>>>>>>>>>>>>>
+// 
+var app = angular
+          .module('reallygoodemails', [
+            'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
+            'headroom',
+            'app.directives.general',
+            'app.directives.navigation',
+          ])
+          .run(['$templateCache', '$http', function($templateCache, $http) { // onReady
+            $http.get('partials/header.html', {cache:$templateCache});
+            $http.get('partials/footer.html', {cache:$templateCache});
+          }]);
 
-  var app = angular.module('reallygoodemails', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', 'headroom']); // services / dependecies
+// >> Init >>>>>>>>>>>>>>>
+//
+app.run(function() { // onready
+  // stuff
+});
 
+// >> Routing >>>>>>>>>>>>>>>
+//
   var resolve = {
+    // timeout for load cover
     delay: ['$q','$timeout', function($q, $timeout) {
       var delay = $q.defer();
-      $timeout(delay.resolve, 200, false);
+      $timeout(delay.resolve, 400, false);
       return delay.promise;
     }]
   };
-
-// Routing /////
-  app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  app.config(['$routeProvider', '$locationProvider', '$logProvider', function($routeProvider, $locationProvider, $logProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
@@ -100,12 +115,12 @@
         metaDesc: 'the meta description'
       })
       .when('/404', {
-          templateUrl : 'views/error.html',
-          //controller : 'errorCtrl',
-          resolve: resolve,
-          titleTag: 'Ruh Roh! | Really Good Emails',
-          metaTitle: 'the meta title',
-          metaDesc: 'the meta description'
+        templateUrl : 'views/error.html',
+        //controller : 'errorCtrl',
+        resolve: resolve,
+        titleTag: 'Ruh Roh! | Really Good Emails',
+        metaTitle: 'the meta title',
+        metaDesc: 'the meta description'
       })
       .otherwise({
         redirectTo: '/404',
@@ -113,29 +128,30 @@
       $locationProvider.html5Mode(true);
   }]);
 
-// Global Meta Injection /////
-  app.controller('metaCtrl', ['$scope', function($scope) {
-    $scope.appName = 'reallygoodemails';
-    $scope.appTitle = 'Really Good Emails';
-    $scope.appMetaTitleDefault = '';
-    $scope.appURL = 'http://reallygoodemails.com';
-    $scope.appCDNurl = '';
-  }]);
-
-// Per Page Injection /////
-  app.run(['$rootScope', '$window', '$location', function($rootScope, $window, $location) {
-    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
-      $rootScope.controller = current.$$route.controller;
-      $rootScope.titleTag = current.$$route.titleTag;
-      $rootScope.metaTitle = current.$$route.metaTitle;
-      $rootScope.metaDesc = current.$$route.metaDesc;
-      // analytics
-      if (!$window.ga) {
-        return;
-      }
-      $window.ga('send', 'pageview', { page: $location.path() });
+// >> Global Functions (onReady) >>>>>>>>>>>>>>>
+//
+  app.run(['$rootScope', '$window', '$timeout', function($rootScope, $window, $timeout) {
+  // -- Scroll
+    angular.element($window).on('scroll', function() {
+      // $timeout(function(){
+        // something here later
+      // }, 250);
+    });
+  // -- Responsive
+    angular.element($window).on('orientationchange', function () {
+      // nav kill on orientation change
+      $timeout(function() {
+        $rootScope.mobileSideNavClose();
+      });
+    });
+    angular.element($window).on('resize', function () {
+      // nav kill on resize
+      $timeout(function() {
+        if (!angular.element('html').hasClass('mobile')) {
+          $rootScope.mobileSideNavClose();
+        }
+      });
     });
   }]);
 
 })();
-

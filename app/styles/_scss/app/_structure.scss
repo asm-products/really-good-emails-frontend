@@ -1,8 +1,6 @@
 /* ░░ Structure (App) ░░░░░░░░░
 ============================================*/
 
-/*>> Core >>>>>>>>>>>>
-============================================*/
 body {
 	overflow-x: hidden;
 	height: auto;
@@ -11,8 +9,23 @@ body {
 	background: $slateDark;
 }
 
-body, .container > header, .container > section, .container > footer {
+body {
 	min-width: 320px;
+	//
+	> .container {
+		min-width: 320px;
+		//
+		> header {
+			min-width: 320px;
+		}
+		> .core {
+			min-width: 320px;
+			//
+			main, footer {
+				min-width: 320px;
+			}
+		}
+	}
 }
 
 body > .container {
@@ -27,7 +40,7 @@ body > .container {
 			margin-top: -4.95em;
 		}
 	}
-	> main {
+	> .core {
 		position: relative;
 	}
 }
@@ -71,30 +84,5 @@ body > .container {
 		&:hover {
 			color: $slate;
 		}
-	}
-}
-
-/*>> Load Screen >>>>>>>>>>>>
-============================================*/
-.load-cover {
-	z-index: 10;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 20000px;
-	background: $white;
-	transition: opacity 0.25s ease-in-out;
-	// @extend .gpu;
-	//
-	&.preload {
-  	opacity:1;
-  	visibility: visible;
-	}
-	&.loaded {
-  	opacity:0;
-	}
-	&.vis-hid { // applied via js after fade
-		visibility: hidden;
 	}
 }

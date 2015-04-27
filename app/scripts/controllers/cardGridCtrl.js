@@ -5,20 +5,17 @@
 /*
  * @ngdoc function
  * @name reallygoodemails.controller:cardGridCtrl
- * @description
- * # cardGridCtrl
- * Controller of reallygoodemails
+ * @description card grid controller
  */
 
 (function() { 'use strict';
 
   var app = angular.module('reallygoodemails');
   //
-  app.controller('cardGridCtrl',['$scope', '$timeout', function($scope, $timeout) {
+  app.controller('cardGridCtrl',['$scope', '$timeout', '$http', function($scope, $timeout, $http) {
 
   	// todo: make item data conditional based on a route or key (class) of some sort
-  	// to do - this is an unoptimal piece of crap at the moment, but it will do for now
-  	// make more dynamic, break out into dropdownCtrl.js
+  	// make more dynamic, break out into dropdownCtrl.js (directive?)
 
   	// nav group 1
 		$scope.navGroupOneItems = [{'title':'Brands'}, {'title':'Collections'}];
@@ -74,31 +71,10 @@
       }, 100);
   	};
 
-	  $scope.gridCards = [{
-			'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}, {
-		  'title':'Company Name', 'url':'#', 'img':'https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234', 'tag1':'sometag', 'tag2':'anothertag', 'tag3':'onemoretag'
-		}];
+    $http.get('data/emails.json').success(function(data) {
+      $scope.emails = data;
+    });
+    $scope.orderProp = 'age';
 
   }]);
 })();

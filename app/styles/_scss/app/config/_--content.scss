@@ -111,15 +111,20 @@ address {
 
 /*>> Links >>>>>>>>>>>>
 ============================================*/
-a {
-  color: $linkColor;
-  text-decoration: none;
-  -webkit-touch-callout: none; // mobile touch select
+.no-select {
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+  @extend .no-select;
   //
   &:hover {
     color: $linkColor;
@@ -129,6 +134,7 @@ a {
     outline: none;
   }
 }
+
 
 /*>> Media >>>>>>>>>>>>
 ============================================*/

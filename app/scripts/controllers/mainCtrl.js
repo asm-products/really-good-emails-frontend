@@ -1,89 +1,103 @@
-/*global jQuery, gbl, app*/
+/*global $, app*/
 /*jshint unused:false*/
-/*jshint devel:true*/
-
 'use strict';
-/*
+
+/**
  * @ngdoc function
  * @name reallygoodemails.controller:mainCtrl
- * @description
- * # mainCtrl
- * Controller of reallygoodemails
- */
+ * @description Main controller of reallygoodemails
+**/
 
 (function() {
 
   var app = angular.module('reallygoodemails');
 
-// Root Level Page Load / Nav logic /////
-	app.run(['$rootScope', '$timeout', function($rootScope, $timeout) {
-    $rootScope.menuToggle = function() {
-      $rootScope.togglePrimaryMenu = false;
-      $rootScope.toggleSecondaryMenu = false;
-    };
+  // Main Ctrl /////
+	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', function($rootScope, $scope, $window, $location, $timeout) {
+
+    $rootScope.appName = 'reallygoodemails';
+    $rootScope.appTitle = 'Really Good Emails';
+    $rootScope.appURL = 'http://reallygoodemails.com';
+    $rootScope.currentURL = window.location.href;
+    $rootScope.imgPath = '/media/images';
+    $rootScope.appCDNurl = '//reallygoodemails-cdn.appspot.com';
+
+    // -- Load (onReady) ---------------
     $rootScope.$on('$routeChangeStart', function (event, next, current, previous) {
       if (next && next.$$route) {
-        $rootScope.toggleLoadCover = false;
-        $rootScope.toggleLoadVisHid = false;
-        $rootScope.toggleLoadSpin = true;
+        // "Load Cover" Sequence: Start
+        $rootScope.loaderTrash = false;
+        $rootScope.loaderSpin = true;
+        $rootScope.loader = true;
       }
     });
-    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+      // Inject Vars
+      $rootScope.titleTag = current.$$route.titleTag;
+      $rootScope.metaTitle = current.$$route.metaTitle;
+      $rootScope.metaDesc = current.$$route.metaDesc;
+      // Route Active State
+      $scope.page = function(viewLocation) { 
+        return viewLocation === $location.path();
+      };
+      // "Load Cover" Sequence: End
+      window.scrollTo(0,0);
       $timeout(function(){
-        window.scrollTo(0,0);
-      }, 300);
+        $rootScope.loader = false;
+      }, 750);
       $timeout(function(){
-        $rootScope.toggleLoadCover = true;
-        $rootScope.toggleLoadSpin = false;
-      }, 500);
-      $timeout(function(){
-        $rootScope.menuToggle();
-      }, 700);
-      $timeout(function(){
-        $rootScope.toggleLoadVisHid = true;
+        $rootScope.loaderTrash = true;
+        $rootScope.loaderSpin = false;
       }, 1000);
-    });
-  }]);
-
-// Main Ctrl /////
-	app.controller('mainCtrl',['$scope', '$rootScope', '$window', '$timeout', function($scope, $rootScope, $window, $timeout){
-
-		// Loading Spinner
-		$scope.loadSpinLoc = true;
-		$scope.loadSpin = function(value) {
-			if (value === 'left') {
-				$scope.loadSpinLoc = true;
-			}
-			if (value === 'right') {
-				$scope.loadSpinLoc = false;
-			}
-		};
-
-		// make below a separate directive
-		//
-    // nav kill on scroll
-    angular.element($window).on('scroll', function () {
       $timeout(function(){
-        $scope.menuToggle();
-      }, 10);
+        $rootScope.mobileSideNav = false;
+      }, 1050);
+      // analytics
+      if (!$window.ga) {
+        return;
+      }
+      $window.ga('send', 'pageview', { page: $location.path() });
     });
-		// nav kill on orientation change
-		angular.element($window).on('orientationchange', function () {
-      $timeout(function() {
-      	$scope.menuToggle();
-      });
-		});
-		// nav kill on resize
-		angular.element($window).on('resize', function () {
-      $timeout(function() {
-      	if (!angular.element('html').hasClass('mobile')) {
-      		$scope.menuToggle();
-      	}
-      });
-		});
+
+    // -- Load (LazyLoad) ---------------
+
+    // $scope.data = {};
+    // $scope.data.list = [];
+    // $scope.range = '12';
+    // $scope.startDelay = '1000';
+    // $scope.appendDelay = '1000';
+    // $scope.spinnerColor = 'rgb(79, 167, 217)';
+
+    // $scope.$watch('spinnerColor', function(newVal){
+    //   $scope.spinnerColor = newVal;
+    //   console.log('watch', $scope.spinnerColor);
+    // });
+
+    // $scope.update = function(newVal){
+    //   $scope.spinnerColor = newVal;
+    //   $timeout(function(){
+    //     $scope.$apply();
+    //   },100);
+    // };
+
+    // -- Functions ---------------
+    //
+    // -- Relative Active State Toggle
+    $scope.activeToggle = function() {
+      $scope.active = !$scope.active;
+    };
+    // -- Mobile Side Nav
+    $rootScope.mobileSideNavToggle = function(event) {
+      $rootScope.mobileSideNav = !$rootScope.mobileSideNav;
+    };
+    $rootScope.mobileSideNavClose = function(event) {
+      $rootScope.mobileSideNav = false;
+    };
+    //
+    $rootScope.heightAdjust = function() {
+      var $header = angular.element($('header'));
+    };
 
 	}]);
-
-
 
 })();

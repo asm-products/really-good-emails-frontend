@@ -39,6 +39,7 @@
 }
 //
 .hamburger-menu-button {
+	transform: translateZ(0);
 	display: inline-block;
 	width: 50px;
 	padding-left: 3px;
@@ -48,11 +49,10 @@
 	> .primary {
 		padding: 0.5em 0.25em;
 		cursor: pointer;
-		-webkit-user-select: none;
 		border: 0;
 		border-radius: 5px;
-		-webkit-touch-callout: none;
 		transition: background .2s ease-in-out;
+		@extend .no-select;
 		//
 		&:hover, &.active {
 			background: $winkleLight;
@@ -96,6 +96,7 @@
 //
 .plus-menu-button {
 	display:inline-block;
+	@extend .no-select;
 	//
 	a {
 		color: $slate;
