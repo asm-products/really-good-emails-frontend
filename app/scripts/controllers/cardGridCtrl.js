@@ -1,6 +1,7 @@
 /*global jQuery, gbl, app*/
 /*jshint unused:false*/
 /*jshint devel:true*/
+'use strict';
 
 /*
  * @ngdoc function
@@ -8,11 +9,11 @@
  * @description card grid controller
  */
 
-(function() { 'use strict';
+(function() {
 
   var app = angular.module('reallygoodemails');
   //
-  app.controller('cardGridCtrl',['$scope', '$timeout', '$http', function($scope, $timeout, $http) {
+  app.controller('cardGridCtrl',['$scope', '$timeout', '$http', 'emails', function($scope, $timeout, $http, emails) {
 
   	// todo: make item data conditional based on a route or key (class) of some sort
   	// make more dynamic, break out into dropdownCtrl.js (directive?)
@@ -71,10 +72,10 @@
       }, 100);
   	};
 
-    $http.get('data/emails.json').success(function(data) {
-      $scope.emails = data;
-    });
-    $scope.orderProp = 'age';
+    // $scope.viewCount = 'metrics[0].views';
+
+    // console.log($scope.emails);
+
 
   }]);
 })();

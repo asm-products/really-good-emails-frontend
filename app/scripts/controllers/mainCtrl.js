@@ -13,7 +13,7 @@
   var app = angular.module('reallygoodemails');
 
   // Main Ctrl /////
-	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', function($rootScope, $scope, $window, $location, $timeout) {
+	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', 'emails', function($rootScope, $scope, $window, $location, $timeout, emails) {
 
     $rootScope.appName = 'reallygoodemails';
     $rootScope.appTitle = 'Really Good Emails';
@@ -22,7 +22,22 @@
     $rootScope.imgPath = '/media/images';
     $rootScope.appCDNurl = '//reallygoodemails-cdn.appspot.com';
 
+    // -- Data -------------------------
+    // Build Urls
+    emails().success(function(emails) {
+      $scope.emails = emails;
+      $scope.slugs = emails.map(function(email) {
+        var source = email.source.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
+            subject = email.subject.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
+            slug = 'emails/'+source+'-'+subject;
+        email.slug = slug;
+      });
+    });
+
+    $scope.viewCount = 'metrics[0].views';
+
     // -- Load (onReady) ---------------
+
     $rootScope.$on('$routeChangeStart', function (event, next, current, previous) {
       if (next && next.$$route) {
         // "Load Cover" Sequence: Start
