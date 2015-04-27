@@ -32,11 +32,11 @@
       }
     });
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
-      // inject vars
+      // Inject Vars
       $rootScope.titleTag = current.$$route.titleTag;
       $rootScope.metaTitle = current.$$route.metaTitle;
       $rootScope.metaDesc = current.$$route.metaDesc;
-      // set active state
+      // Route Active State
       $scope.page = function(viewLocation) { 
         return viewLocation === $location.path();
       };
@@ -58,24 +58,44 @@
       }
       $window.ga('send', 'pageview', { page: $location.path() });
     });
-    // -- Events ---------------
+
+    // -- Load (LazyLoad) ---------------
+
+    // $scope.data = {};
+    // $scope.data.list = [];
+    // $scope.range = '12';
+    // $scope.startDelay = '1000';
+    // $scope.appendDelay = '1000';
+    // $scope.spinnerColor = 'rgb(79, 167, 217)';
+
+    // $scope.$watch('spinnerColor', function(newVal){
+    //   $scope.spinnerColor = newVal;
+    //   console.log('watch', $scope.spinnerColor);
+    // });
+
+    // $scope.update = function(newVal){
+    //   $scope.spinnerColor = newVal;
+    //   $timeout(function(){
+    //     $scope.$apply();
+    //   },100);
+    // };
+
+    // -- Functions ---------------
     //
-    // -- Menu Toggle
+    // -- Relative Active State Toggle
+    $scope.activeToggle = function() {
+      $scope.active = !$scope.active;
+    };
+    // -- Mobile Side Nav
+    $rootScope.mobileSideNavToggle = function(event) {
+      $rootScope.mobileSideNav = !$rootScope.mobileSideNav;
+    };
     $rootScope.mobileSideNavClose = function(event) {
       $rootScope.mobileSideNav = false;
-      // $rootScope.toggleSecondaryMenu = false;  // cleanup later
-      // if (typeof event !== 'undefined') {
-      //   var $this = angular.element(event.target);
-      //   if (!$this.is('a')) {
-      //     event.preventDefault();
-      //     console.log('is not a!');
-      //   }
-      // }
     };
-
+    //
     $rootScope.heightAdjust = function() {
       var $header = angular.element($('header'));
-      console.log($header);
     };
 
 	}]);

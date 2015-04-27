@@ -45,16 +45,14 @@
 	padding-left: 3px;
 	text-align: center;
 	vertical-align: middle;
-	@extend .no-select;
 	//
 	> .primary {
 		padding: 0.5em 0.25em;
 		cursor: pointer;
-		-webkit-user-select: none;
 		border: 0;
 		border-radius: 5px;
-		-webkit-touch-callout: none;
 		transition: background .2s ease-in-out;
+		@extend .no-select;
 		//
 		&:hover, &.active {
 			background: $winkleLight;
@@ -105,19 +103,19 @@
 		vertical-align: middle;
 		text-decoration: none;
 		//
-		// &:hover {
-		// 	//
-		// 	.label {
-		// 		// opacity: 0.5;
-		// 	}
-		// 	.notification {
-		// 		background: $rubyLighter;
-		// 	}
-		// 	svg {
-		// 		transform: rotate(180deg);
-		// 		transition: all 0.3s ease;
-		// 	}
-		// }
+		&:hover {
+			//
+			.label {
+				// opacity: 0.5;
+			}
+			.notification {
+				background: $rubyLighter;
+			}
+			svg {
+				transform: rotate(180deg);
+				transition: all 0.3s ease;
+			}
+		}
 		.label {
 			display: inline-block;
 			padding-right: 0.25em;

@@ -202,6 +202,9 @@ body.mobile-side-nav > .container {
 		top: 0;
 		text-align: left;
 		background: $slate;
+		@media screen and (min-width: 768px) {
+			height: auto !important;
+		}
 		//
 		a {
 			color: $winkleLighter;

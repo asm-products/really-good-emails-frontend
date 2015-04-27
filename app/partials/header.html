@@ -9,17 +9,17 @@
           <span>Really Good Emails</span>
         </a>
       </h1>
-      <div class="hamburger-menu-button" data-ng-click="$root.mobileSideNav = !$root.mobileSideNav" data-ng-class="($root.mobileSideNav ? 'mobile-side-nav' : '')">
-        <div class="primary">
+      <div class="hamburger-menu-button">
+        <div class="primary" data-ng-class="{active:active}" data-ng-mobile-click="mobileSideNavToggle(); activeToggle();">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </div>
       </div>
-      <nav>
+      <nav data-ng-height-100>
         <ul>
           <li data-ng-class="{active:page('/inspiration')}">
-            <a href="/inspiration">Inspiration</a> <!-- if body class is active, on click toggle body class -->
+            <a href="/inspiration">Inspiration</a>
           </li>
           <li data-ng-class="{active:page('/email-kits')}">
             <a href="/email-kits">Email Kits</a>
@@ -61,7 +61,7 @@
               </div>
             </div>
             <div class="item">
-              <div class="plus-menu-button" data-ng-click="$root.toggleSecondaryMenu = !$root.toggleSecondaryMenu">
+              <div class="plus-menu-button">
                 <a href="">
                   <span class="plus">
                     <svg class="icon-plus" viewBox="0 0 32 32">

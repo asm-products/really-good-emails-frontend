@@ -74,7 +74,7 @@
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
-<body data-ng-class="($root.mobileSideNav ? 'mobile-side-nav' : '')">
+<body data-ng-class="(mobileSideNav ? 'mobile-side-nav' : '')">
   <!--[if lt IE 9]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -82,9 +82,9 @@
   <div class="container">
     <header class="theme-slate" data-headroom data-tolerance='5' data-offset='300' data-scroller=".app-view" data-classes="{initial:'headroom', pinned:'pinned', unpinned:'unpinned', top: 'is-above', notTop: 'is-below'}">
       <div class="base _bb1" data-ng-include="'partials/header.html'"></div>
-      <div class="base loader" data-ng-class="($root.loader ? '' : '_hide')+' '+($root.loaderTrash ? '_trash' : '')" data-height-100>
+      <div class="base loader" data-ng-class="(loader ? '' : '_hide')+' '+(loaderTrash ? '_trash' : '')" data-ng-height-100>
         <div class="inner">
-          <svg x="0" y="0" class="spin-load-small left" viewBox="0 0 32 32" data-ng-class="($root.loaderSpin ? '' : '_hide')">
+          <svg x="0" y="0" class="spin-load-small" viewBox="0 0 32 32" data-ng-class="(loaderSpin ? '' : '_hide')">
             <g class="gwrap1">
               <g class="gwrap2">
                 <circle class="path" fill="none" stroke-width="4" stroke-linecap="round" cx="16" cy="16" r="14"></circle>
@@ -152,6 +152,7 @@
   <script src="scripts/controllers/cardGridCtrl.js"></script>
   <script src="scripts/services/emails.js"></script>
   <script src="scripts/services/users.js"></script>
+  <script src="scripts/directives/general.js"></script>
   <script src="scripts/directives/navigation.js"></script>
   <!-- endbuild -->
 </body>

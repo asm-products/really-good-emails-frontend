@@ -4,19 +4,21 @@
 
 /**
  * @ngdoc directive
- * @name reallygoodemails.directive:navbar
- * @restrict A
+ * @name reallygoodemails.directive:navigation
  * @element ANY
  * @priority 1000
- * # @scope
 **/
 
+//## Navigation Directives ########
+//================================================
+//
 angular.module('app.directives.navigation', [])
-	.directive('menuToggle', ['$rootScope', function($rootScope) {
-	  return {
-	    restrict: 'A',
-	    link: function (scope, element, attrs) {
-	    	// code stuff
-	    }
+	.directive('ngMobileClick', [function () {
+	  return function (scope, elem, attrs) {
+	    elem.bind('touchstart click', function (e) {
+	      e.preventDefault();
+	      e.stopPropagation();
+	      scope.$apply(attrs.ngMobileClick);
+	    });
 	  };
 	}]);

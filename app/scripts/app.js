@@ -11,12 +11,13 @@
 
 (function() {
 // >> App Config >>>>>>>>>>>>>>>
-//
+// 
 var app = angular
           .module('reallygoodemails', [
             'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
+            'headroom',
+            'app.directives.general',
             'app.directives.navigation',
-            'headroom'
           ])
           .run(['$templateCache', '$http', function($templateCache, $http) { // onReady
             $http.get('partials/header.html', {cache:$templateCache});
@@ -25,33 +26,9 @@ var app = angular
 
 // >> Init >>>>>>>>>>>>>>>
 //
-app.run(['$rootScope', function($rootScope) { // onready
-  // -- FastClick -----------
-  // FastClick.attach(document.body); // may not be needed
-}]);
-
-// >> General Functions >>>>>>>>>>>>>>>
-// stuff here
-
-// optimization stuff
-// https://github.com/ericclemmons/grunt-angular-templates
-// bindonce - https://github.com/Pasvaz/bindonce
-
-// modules are used for base definitions
-// controllers are used for wiring up services
-// services are used for channeling data across domains (prefer these over factories)
-// directives are used for interacting with DOM elements
-// -- structure wise, use these as modular js files in the same way you do w/ scss partials
-// -- if you have directive type function but has global use, put it in the most appropriate place
-// ---- ex: scroll, resize, etc - add it in app.js
-// ---- basically, if you have something that is used so universally, that it doesn't make sense to
-// ---- constantly have to refer to it as a dependency, keep it in app.js
-// ----
-// target "this": pass event to click in the html, data-ng-click="someFunc($event);"
-//                then in the js: angular.element(event.target).addClass('yo');
-// if (typeof event !== 'undefined') {
-// <div class="base loader" data-ng-class="($parent.loader ? '' : '_hide')+' '+($parent.loaderTrash ? '_trash' : '')" data-height-100>
-
+app.run(function() { // onready
+  // stuff
+});
 
 // >> Routing >>>>>>>>>>>>>>>
 //
