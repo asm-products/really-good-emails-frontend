@@ -437,14 +437,14 @@
 					</h4><!--
 			 --><div class="secondary">
 						<a href="">
-							<span>View All {{::collectionCount}} Curated Collections</span>
+							<span>View All {{::collectionCount}} Collections</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
 	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 	            </svg>
 						</a>
 					</div>
 				</div>
-				<ul class="main" data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'2'">
+				<ul class="main two-four-five-seven" data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'2'">
 					<li class="card">
 						<div class="inner" href="{{::item.url}}">
 							<div class="thumb">
@@ -459,7 +459,7 @@
                     </svg>
 									</div>
 									<div class="title">
-										{{::collection.name}}
+										{{collection.name}}
 									</div>
 									<div class="category">
 										Collection
@@ -467,14 +467,7 @@
 								</div>
 							</div>
 						</div>
-					<li class="card" data-ng-repeat="email in emails | limitTo:'7'">
-						<!-- filter:{collection:collection.name} -->
-						<!-- filter:{ tags: [{collection:collection.name}] }  -->
-						<!-- filter:{brand:brand.name} -->
-						<!-- filter:'marketing' -->
-						<!-- {{::email.tags[0]}}
-						{{::collection.name}}
-						{{somefunc()}} -->
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collection:collection.name} | limitTo:'7'">
 						<div class="inner" href="{{::email.url}}">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">

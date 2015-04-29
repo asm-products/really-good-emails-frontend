@@ -171,6 +171,31 @@
 				}
 			}
 		}
+		&.two-four-five-seven {
+			//
+			li:nth-child(n+4) {
+				display: none;
+				@media screen and (min-width: 480px) {
+					display: inline-block;
+				}
+			}
+			li:nth-child(n+5) {
+				@media screen and (min-width: 480px) {
+					display: none;
+				}
+				@media screen and (min-width: 800px) {
+					display: inline-block;
+				}
+			}
+			li:nth-child(n+7) {
+				@media screen and (min-width: 800px) {
+					display: none;
+				}
+				@media screen and (min-width: 1100px) {
+					display: inline-block;
+				}
+			}
+		}
 		&.six-nine-twelve {
 			//
 			li:nth-child(n+7) {
