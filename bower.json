@@ -2,23 +2,22 @@
   "name": "reallgoodemails",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "1.4.0-rc.0",
+    "angular": "1.4.0-rc.1",
     "json3": "latest",
     "es5-shim": "latest",
-    "angular-resource": "1.4.0-rc.0",
-    "angular-cookies": "1.4.0-rc.0",
-    "angular-sanitize": "1.4.0-rc.0",
-    "angular-animate": "1.4.0-rc.0",
-    "angular-touch": "1.4.0-rc.0",
-    "angular-route": "1.4.0-rc.0",
+    "angular-resource": "1.4.0-rc.1",
+    "angular-cookies": "1.4.0-rc.1",
+    "angular-sanitize": "1.4.0-rc.1",
+    "angular-animate": "1.4.0-rc.1",
+    "angular-touch": "1.4.0-rc.1",
+    "angular-route": "1.4.0-rc.1",
     "modernizr": "latest",
     "jquery": "latest",
-    "enquire": "latest",
-    "fastclick": "~1.0.6"
+    "enquire": "latest"
   },
   "devDependencies": {
-    "angular-mocks": "1.4.0-rc.0",
-    "angular-scenario": "1.4.0-rc.0"
+    "angular-mocks": "1.4.0-rc.1",
+    "angular-scenario": "1.4.0-rc.1"
   },
   "appPath": "app"
 }

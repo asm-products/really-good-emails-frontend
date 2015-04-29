@@ -1,0 +1,574 @@
+[
+	{
+		"id": 1,
+		"metrics": [{
+			"posts": 36,
+			"views": 4203,
+			"likes": 224,
+			"comments": 105,
+			"shares": 67
+		}],
+    "name": "Abandoned Cart"
+	},
+	{
+		"id": 2,
+		"metrics": [{
+			"posts": 42,
+			"views": 3440,
+			"likes": 182,
+			"comments": 122,
+			"shares": 126
+		}],
+    "name": "Account"
+	},
+	{
+		"id": 3,
+		"metrics": [{
+			"posts": 32,
+			"views": 4999,
+			"likes": 165,
+			"comments": 145,
+			"shares": 123
+		}],
+    "name": "Activation"
+	},
+	{
+		"id": 4,
+		"metrics": [{
+			"posts": 27,
+			"views": 2200,
+			"likes": 110,
+			"comments": 115,
+			"shares": 29
+		}],
+    "name": "Activity"
+	},
+	{
+		"id": 5,
+		"metrics": [{
+			"posts": 26,
+			"views": 3802,
+			"likes": 147,
+			"comments": 119,
+			"shares": 90
+		}],
+    "name": "Activity"
+	},
+	{
+		"id": 6,
+		"metrics": [{
+			"posts": 37,
+			"views": 3545,
+			"likes": 97,
+			"comments": 101,
+			"shares": 57
+		}],
+    "name": "Alerts"
+	},
+	{
+		"id": 7,
+		"metrics": [{
+			"posts": 42,
+			"views": 3177,
+			"likes": 82,
+			"comments": 70,
+			"shares": 1
+		}],
+    "name": "Announcement"
+	},
+	{
+		"id": 8,
+		"metrics": [{
+			"posts": 25,
+			"views": 2370,
+			"likes": 112,
+			"comments": 52,
+			"shares": 41
+		}],
+    "name": "Automated"
+	},
+	{
+		"id": 9,
+		"metrics": [{
+			"posts": 34,
+			"views": 3299,
+			"likes": 128,
+			"comments": 63,
+			"shares": 55
+		}],
+    "name": "Comments"
+	},
+	{
+		"id": 10,
+		"metrics": [{
+			"posts": 44,
+			"views": 2355,
+			"likes": 123,
+			"comments": 73,
+			"shares": 62
+		}],
+    "name": "Confirmation"
+	},
+	{
+		"id": 11,
+		"metrics": [{
+			"posts": 56,
+			"views": 3371,
+			"likes": 113,
+			"comments": 51,
+			"shares": 40
+		}],
+    "name": "Customer Appreciation"
+	},
+	{
+		"id": 12,
+		"metrics": [{
+			"posts": 28,
+			"views": 3411,
+			"likes": 124,
+			"comments": 64,
+			"shares": 52
+		}],
+    "name": "Deactivation"
+	},
+	{
+		"id": 13,
+		"metrics": [{
+			"posts": 42,
+			"views": 3254,
+			"likes": 85,
+			"comments": 72,
+			"shares": 62
+		}],
+    "name": "Discovery"
+	},
+	{
+		"id": 14,
+		"metrics": [{
+			"posts": 33,
+			"views": 2266,
+			"likes": 64,
+			"comments": 52,
+			"shares": 43
+		}],
+    "name": "Ecommerce"
+	},
+	{
+		"id": 15,
+		"metrics": [{
+			"posts": 33,
+			"views": 2287,
+			"likes": 75,
+			"comments": 61,
+			"shares": 51
+		}],
+    "name": "Email Digest"
+	},
+	{
+		"id": 16,
+		"metrics": [{
+			"posts": 36,
+			"views": 2398,
+			"likes": 106,
+			"comments": 72,
+			"shares": 62
+		}],
+    "name": "Engagement"
+	},
+	{
+		"id": 17,
+		"metrics": [{
+			"posts": 41,
+			"views": 2473,
+			"likes": 124,
+			"comments": 52,
+			"shares": 41
+		}],
+    "name": "Events"
+	},
+	{
+		"id": 18,
+		"metrics": [{
+			"posts": 35,
+			"views": 2447,
+			"likes": 104,
+			"comments": 61,
+			"shares": 53
+		}],
+    "name": "Expiration"
+	},
+	{
+		"id": 19,
+		"metrics": [{
+			"posts": 43,
+			"views": 3454,
+			"likes": 115,
+			"comments": 72,
+			"shares": 61
+		}],
+    "name": "Expiration"
+	},
+	{
+		"id": 20,
+		"metrics": [{
+			"posts": 25,
+			"views": 2354,
+			"likes": 104,
+			"comments": 52,
+			"shares": 43
+		}],
+    "name": "Featured Product"
+	},
+	{
+		"id": 21,
+		"metrics": [{
+			"posts": 21,
+			"views": 2105,
+			"likes": 115,
+			"comments": 61,
+			"shares": 51
+		}],
+    "name": "Feed"
+	},
+	{
+		"id": 22,
+		"metrics": [{
+			"posts": 34,
+			"views": 2233,
+			"likes": 96,
+			"comments": 72,
+			"shares": 62
+		}],
+    "name": "Holiday"
+	},
+	{
+		"id": 23,
+		"metrics": [{
+			"posts": 21,
+			"views": 3166,
+			"likes": 94,
+			"comments": 52,
+			"shares": 41
+		}],
+    "name": "Invitation"
+	},
+	{
+		"id": 24,
+		"metrics": [{
+			"posts": 45,
+			"views": 3203,
+			"likes": 102,
+			"comments": 66,
+			"shares": 54
+		}],
+    "name": "Local"
+	},
+	{
+		"id": 25,
+		"metrics": [{
+			"posts": 39,
+			"views": 5001,
+			"likes": 92,
+			"comments": 72,
+			"shares": 66
+		}],
+    "name": "Marketing"
+	},
+	{
+		"id": 26,
+		"metrics": [{
+			"posts": 32,
+			"views": 3755,
+			"likes": 165,
+			"comments": 55,
+			"shares": 43
+		}],
+    "name": "New Article"
+	},
+	{
+		"id": 27,
+		"metrics": [{
+			"posts": 35,
+			"views": 2200,
+			"likes": 119,
+			"comments": 65,
+			"shares": 59
+		}],
+    "name": "News Letter"
+	},
+	{
+		"id": 28,
+		"metrics": [{
+			"posts": 36,
+			"views": 2802,
+			"likes": 147,
+			"comments": 79,
+			"shares": 60
+		}],
+    "name": "Notice"
+	},
+	{
+		"id": 29,
+		"metrics": [{
+			"posts": 27,
+			"views": 2545,
+			"likes": 107,
+			"comments": 51,
+			"shares": 47
+		}],
+    "name": "Offer"
+	},
+	{
+		"id": 30,
+		"metrics": [{
+			"posts": 32,
+			"views": 3177,
+			"likes": 132,
+			"comments": 60,
+			"shares": 51
+		}],
+    "name": "Onboarding"
+	},
+	{
+		"id": 31,
+		"metrics": [{
+			"posts": 35,
+			"views": 2370,
+			"likes": 112,
+			"comments": 72,
+			"shares": 61
+		}],
+    "name": "Order Shipped"
+	},
+	{
+		"id": 32,
+		"metrics": [{
+			"posts": 44,
+			"views": 3299,
+			"likes": 138,
+			"comments": 53,
+			"shares": 45
+		}],
+    "name": "Password Reset"
+	},
+	{
+		"id": 33,
+		"metrics": [{
+			"posts": 44,
+			"views": 2355,
+			"likes": 113,
+			"comments": 63,
+			"shares": 52
+		}],
+    "name": "Product Launch"
+	},
+	{
+		"id": 34,
+		"metrics": [{
+			"posts": 36,
+			"views": 3371,
+			"likes": 163,
+			"comments": 71,
+			"shares": 60
+		}],
+    "name": "Product Sale"
+	},
+	{
+		"id": 35,
+		"metrics": [{
+			"posts": 28,
+			"views": 2411,
+			"likes": 144,
+			"comments": 54,
+			"shares": 42
+		}],
+    "name": "Product Update"
+	},
+	{
+		"id": 36,
+		"metrics": [{
+			"posts": 32,
+			"views": 2254,
+			"likes": 115,
+			"comments": 62,
+			"shares": 52
+		}],
+    "name": "Promotion"
+	},
+	{
+		"id": 37,
+		"metrics": [{
+			"posts": 43,
+			"views": 2266,
+			"likes": 134,
+			"comments": 72,
+			"shares": 63
+		}],
+    "name": "Receipt"
+	},
+	{
+		"id": 38,
+		"metrics": [{
+			"posts": 33,
+			"views": 2287,
+			"likes": 155,
+			"comments": 51,
+			"shares": 41
+		}],
+    "name": "Referral"
+	},
+	{
+		"id": 39,
+		"metrics": [{
+			"posts": 26,
+			"views": 2398,
+			"likes": 116,
+			"comments": 62,
+			"shares": 52
+		}],
+    "name": "Report"
+	},
+	{
+		"id": 40,
+		"metrics": [{
+			"posts": 33,
+			"views": 2473,
+			"likes": 124,
+			"comments": 72,
+			"shares": 61
+		}],
+    "name": "Retention"
+	},
+	{
+		"id": 41,
+		"metrics": [{
+			"posts": 35,
+			"views": 3447,
+			"likes": 74,
+			"comments": 61,
+			"shares": 43
+		}],
+    "name": "Reviews"
+	},
+	{
+		"id": 42,
+		"metrics": [{
+			"posts": 23,
+			"views": 2454,
+			"likes": 65,
+			"comments": 52,
+			"shares": 51
+		}],
+    "name": "Security"
+	},
+	{
+		"id": 43,
+		"metrics": [{
+			"posts": 35,
+			"views": 3354,
+			"likes": 84,
+			"comments": 72,
+			"shares": 63
+		}],
+    "name": "Sharing"
+	},
+	{
+		"id": 44,
+		"metrics": [{
+			"posts": 21,
+			"views": 2105,
+			"likes": 105,
+			"comments": 61,
+			"shares": 41
+		}],
+    "name": "Shipping"
+	},
+	{
+		"id": 45,
+		"metrics": [{
+			"posts": 34,
+			"views": 3233,
+			"likes": 126,
+			"comments": 52,
+			"shares": 52
+		}],
+    "name": "Social"
+	},
+	{
+		"id": 46,
+		"metrics": [{
+			"posts": 21,
+			"views": 3166,
+			"likes": 94,
+			"comments": 72,
+			"shares": 61
+		}],
+    "name": "Subscription"
+	},
+	{
+		"id": 47,
+		"metrics": [{
+			"posts": 40,
+			"views": 2473,
+			"likes": 124,
+			"comments": 62,
+			"shares": 41
+		}],
+    "name": "Support"
+	},
+	{
+		"id": 48,
+		"metrics": [{
+			"posts": 35,
+			"views": 3447,
+			"likes": 134,
+			"comments": 51,
+			"shares": 53
+		}],
+    "name": "Survey"
+	},
+	{
+		"id": 49,
+		"metrics": [{
+			"posts": 43,
+			"views": 3454,
+			"likes": 165,
+			"comments": 72,
+			"shares": 61
+		}],
+    "name": "Text"
+	},
+	{
+		"id": 50,
+		"metrics": [{
+			"posts": 25,
+			"views": 2354,
+			"likes": 154,
+			"comments": 62,
+			"shares": 43
+		}],
+    "name": "Transactional"
+	},
+	{
+		"id": 51,
+		"metrics": [{
+			"posts": 31,
+			"views": 3105,
+			"likes": 105,
+			"comments": 51,
+			"shares": 51
+		}],
+    "name": "Trial"
+	},
+	{
+		"id": 52,
+		"metrics": [{
+			"posts": 44,
+			"views": 2233,
+			"likes": 126,
+			"comments": 72,
+			"shares": 62
+		}],
+    "name": "Unsubscribe"
+	}
+]

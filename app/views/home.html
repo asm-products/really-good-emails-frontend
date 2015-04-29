@@ -72,6 +72,7 @@
 			</div>
 		</div>
 	</div>
+<!-- Trending Emails -->
 	<div class="base">
 		<div class="inner">
 			<div class="card-grid-main">
@@ -83,12 +84,12 @@
 						<a href="">
 							<span>View All Trending</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
-	                <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 	            </svg>
 						</a>
 					</div>
 				</div>
-				<ul class="main">
+				<ul class="main six-nine-twelve">
 					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | limitTo:'12'">
 						<div class="inner" href="{{::email.url}}">
 							<div class="thumb">
@@ -123,7 +124,7 @@
 							<div class="inner">
 								<div class="title">
 									<a href="/{{::email.slug}}">
-										{{::email.source}}
+										{{::email.brand}}
 									</a>
 								</div>
 								<div class="tags">
@@ -135,6 +136,7 @@
 								</div>
 							</div>
 						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -188,14 +190,14 @@
 					</h4><!--
 			 --><div class="secondary">
 						<a href="">
-							<span>View All 38 Brands</span>
+							<span>View All {{::brandCount}} Brands</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
-	                <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 	            </svg>
 						</a>
 					</div>
 				</div>
-				<ul class="main">
+				<ul class="main two-three-four" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'4'">
 					<li class="card">
 						<div class="inner" href="{{::item.url}}">
 							<div class="thumb">
@@ -204,191 +206,54 @@
 								</a>
 								<div class="big-label">
 									<div class="count">
-										<span>15</span>
+										<span>{{::brand.metrics[0].posts}}</span>
 										<svg class="icon-smiley" viewBox="0 0 32 32">
                     	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
                     </svg>
 									</div>
 									<div class="title">
-										Squarespace
+										{{::brand.name}}
 									</div>
 									<div class="category">
-										Software Product
+										{{::brand.type}}
 									</div>
 								</div>
 							</div>
 						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brand:brand.name} | limitTo:'3'">
+						<div class="inner" href="{{::email.url}}">
 							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								<a href="/{{::email.slug}}">
+									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
 								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-				</ul>
-				<ul class="main">
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="/media/images/thumb-spacer.png" alt="">
-								</a>
-								<div class="big-label">
-									<div class="count">
-										<span>31</span>
-										<svg class="icon-smiley" viewBox="0 0 32 32">
-                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
-                    </svg>
-									</div>
-									<div class="title">
-										Treehouse
-									</div>
-									<div class="category">
-										Software Product
+								<div class="overlay">
+									<div class="social">
+										<a href="" class="likes">
+											<svg class="icon-smiley" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].likes}}</span>
+										</a>
+										<a href="" class="comments">
+											<svg class="icon-comment" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].comments}}</span>
+										</a>
+										<a href="" class="shares">
+											<svg class="icon-share" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-share"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].shares}}</span>
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-				</ul>
-				<ul class="main">
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="/media/images/thumb-spacer.png" alt="">
-								</a>
-								<div class="big-label">
-									<div class="count">
-										<span>7</span>
-										<svg class="icon-smiley" viewBox="0 0 32 32">
-                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
-                    </svg>
-									</div>
-									<div class="title">
-										Dot &amp; Bo
-									</div>
-									<div class="category">
-										Ecommerce Site
-									</div>
-								</div>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-				</ul>
-				<ul class="main">
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="/media/images/thumb-spacer.png" alt="">
-								</a>
-								<div class="big-label">
-									<div class="count">
-										<span>2</span>
-										<svg class="icon-smiley" viewBox="0 0 32 32">
-                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
-                    </svg>
-									</div>
-									<div class="title">
-										Twitter
-									</div>
-									<div class="category">
-										Social Software
-									</div>
-								</div>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
+					</li>
 				</ul>
 			</div>
-			<div class="list-grid labels">
+			<div class="list-grid labels"> <!-- turn this into an ng-repeat -->
 				<ul>
 					<li class="title">
 						<a href="/">Ecommerce</a>
@@ -572,14 +437,14 @@
 					</h4><!--
 			 --><div class="secondary">
 						<a href="">
-							<span>View All 25 Collections</span>
+							<span>View All {{::collectionCount}} Collections</span>
 							<svg class="icon-arrow" viewBox="0 0 32 32">
-	                <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 	            </svg>
 						</a>
 					</div>
 				</div>
-				<ul class="main">
+				<ul class="main two-four-five-seven" data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'2'">
 					<li class="card">
 						<div class="inner" href="{{::item.url}}">
 							<div class="thumb">
@@ -588,13 +453,13 @@
 								</a>
 								<div class="big-label">
 									<div class="count">
-										<span>28</span>
+										<span>{{::collection.metrics[0].posts}}</span>
 										<svg class="icon-smiley" viewBox="0 0 32 32">
                     	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
                     </svg>
 									</div>
 									<div class="title">
-										Onboarding
+										{{collection.name}}
 									</div>
 									<div class="category">
 										Collection
@@ -602,140 +467,34 @@
 								</div>
 							</div>
 						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collection:collection.name} | limitTo:'7'">
+						<div class="inner" href="{{::email.url}}">
 							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
+								<a href="/{{::email.slug}}">
+									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
 								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-				</ul>
-				<ul class="main">
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="/media/images/thumb-spacer.png" alt="">
-								</a>
-								<div class="big-label">
-									<div class="count">
-										<span>22</span>
-										<svg class="icon-smiley" viewBox="0 0 32 32">
-                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
-                    </svg>
-									</div>
-									<div class="title">
-										Promotion
-									</div>
-									<div class="category">
-										Collection
+								<div class="overlay">
+									<div class="social">
+										<a href="" class="likes">
+											<svg class="icon-smiley" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].likes}}</span>
+										</a>
+										<a href="" class="comments">
+											<svg class="icon-comment" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].comments}}</span>
+										</a>
+										<a href="" class="shares">
+											<svg class="icon-share" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-share"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].shares}}</span>
+										</a>
 									</div>
 								</div>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg?=1234" alt="">
-								</a>
-							</div>
-						</div>
-					<li class="card">
-						<div class="inner" href="{{::item.url}}">
-							<div class="thumb">
-								<a href="/email-details">
-									<img src="https://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg?=1234" alt="">
-								</a>
 							</div>
 						</div>
 				</ul>

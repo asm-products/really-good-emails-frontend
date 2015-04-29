@@ -10,8 +10,9 @@
 		}],
     "date": "2015-04-24T01:00:01.000Z",
     "subject": "Top Articles on DesignModo",
-    "source": "DesignModo",
+    "brand": "DesignModo",
     "tags": ["onboarding", "retention", "ecommerce"],
+    "collection": "onboarding",
     "img": {
     	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg",
     	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+1"
@@ -28,8 +29,9 @@
 		}],
     "date": "2015-04-24T02:00:01.000Z",
     "subject": "Get Competitive with Marvel Enterprise",
-    "source": "Marvel",
+    "brand": "Marvel",
     "tags": ["comments", "events"],
+    "collection": "comments",
     "img": {
     	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg",
     	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+2"
@@ -46,8 +48,9 @@
 		}],
     "date": "2015-04-24T03:00:01.000Z",
     "subject": "Welcome to Trello!",
-    "source": "Trello",
+    "brand": "Trello",
     "tags": ["welcome", "offer"],
+    "collection": "welcome",
     "img": {
     	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg",
     	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+3"
@@ -64,8 +67,9 @@
 		}],
     "date": "2015-04-24T04:00:01.000Z",
     "subject": "Get Creative with JakPrints",
-    "source": "JakPrints",
+    "brand": "JakPrints",
     "tags": ["security", "report", "promotion"],
+    "collection": "advertising",
     "img": {
     	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg",
     	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+4"
@@ -82,8 +86,9 @@
 		}],
     "date": "2015-04-24T05:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 1vr6",
-    "source": "Spacely Sprockets",
+    "brand": "Spacely Sprockets",
     "tags": ["trial", "holiday", "notice"],
+    "collection": "trial",
     "img": {
     	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+5",
     	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+5"
@@ -100,8 +105,9 @@
 		}],
     "date": "2015-04-24T06:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. rj85",
-    "source": "Fajita Joe's",
+    "brand": "Fajita Joe's",
     "tags": ["invitation", "retention"],
+    "collection": "invitation",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+6",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+6"
@@ -118,8 +124,9 @@
 		}],
     "date": "2015-04-24T07:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. pls2",
-    "source": "Browserly",
+    "brand": "Browserly",
     "tags": ["receipt", "order shipped", "local"],
+    "collection": "receipt",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+7",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+7"
@@ -136,8 +143,9 @@
 		}],
     "date": "2015-04-24T08:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 00pw",
-    "source": "SoundCluster",
-    "tags": ["promotion", "newsletter", "feed"],
+    "brand": "SoundCluster",
+    "tags": ["activation", "newsletter", "feed"],
+    "collection": "activation",
     "img": {
     	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+8",
     	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+8"
@@ -154,8 +162,9 @@
 		}],
     "date": "2015-04-24T09:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. hd72",
-    "source": "Broseph, Inc",
+    "brand": "Broseph, Inc",
     "tags": ["announcement"],
+    "collection": "announcement",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+9",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+9"
@@ -172,8 +181,9 @@
 		}],
     "date": "2015-04-24T10:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. p26m",
-    "source": "Acme",
+    "brand": "Acme",
     "tags": ["engagement", "discovery"],
+    "collection": "engagement",
     "img": {
     	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+10",
     	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+10"
@@ -190,8 +200,9 @@
 		}],
     "date": "2015-04-24T11:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. x002",
-    "source": "Wayne Enterprises",
+    "brand": "Wayne Enterprises",
     "tags": ["text", "trial"],
+    "collection": "text",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+11",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+11"
@@ -208,8 +219,9 @@
 		}],
     "date": "2015-04-24T12:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 22sl",
-    "source": "Kanoodle",
+    "brand": "Kanoodle",
     "tags": ["automated", "account", "security"],
+    "collection": "automated",
     "img": {
     	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+12",
     	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+12"
@@ -226,8 +238,9 @@
 		}],
     "date": "2015-04-24T13:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. ao2z",
-    "source": "Zoomdawg",
-    "tags": ["product launch", "notice"],
+    "brand": "Zoomdawg",
+    "tags": ["activation", "notice"],
+    "collection": "activation",
     "img": {
     	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+13",
     	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+13"
@@ -244,8 +257,9 @@
 		}],
     "date": "2015-04-24T14:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. s7aa",
-    "source": "Zoomdawg",
+    "brand": "Zoomdawg",
     "tags": ["product launch", "notice"],
+    "collection": "product launch",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+14",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+14"
@@ -262,8 +276,9 @@
 		}],
     "date": "2015-04-24T15:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 3zus",
-    "source": "Chattertags",
+    "brand": "Chattertags",
     "tags": ["password reset"],
+    "collection": "password reset",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+15",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+15"
@@ -280,8 +295,9 @@
 		}],
     "date": "2015-04-24T16:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 3d7a",
-    "source": "WobbleLab",
-    "tags": ["reviews", "comments", "marketing"],
+    "brand": "WobbleLab",
+    "tags": ["marketing", "reviews", "comments"],
+    "collection": "marketing",
     "img": {
     	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+16",
     	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+16"
@@ -298,11 +314,12 @@
 		}],
     "date": "2015-04-25T01:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. q511",
-    "source": "Coolnomics",
-    "tags": ["other"],
+    "brand": "Coolnomics",
+    "tags": ["activation"],
+    "collection": "activation",
     "img": {
-    	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+17",
-    	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+17"
+    	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+17",
+    	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+17"
     }
 	},
 	{
@@ -316,8 +333,9 @@
 		}],
     "date": "2015-04-25T02:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 5n32",
-    "source": "Wonka Industries",
+    "brand": "Wonka Industries",
     "tags": ["sharing", "retention"],
+    "collection": "sharing",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+18",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+18"
@@ -334,11 +352,12 @@
 		}],
     "date": "2015-04-25T03:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. pa9x",
-    "source": "Oscorp",
-    "tags": ["new article", "transactional", "support"],
+    "brand": "Oscorp",
+    "tags": ["marketing", "transactional", "support"],
+    "collection": "marketing",
     "img": {
-    	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+19",
-    	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+19"
+    	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+19",
+    	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+19"
     }
 	},
 	{
@@ -352,8 +371,9 @@
 		}],
     "date": "2015-04-25T04:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. sxx5",
-    "source": "Globex",
+    "brand": "Globex",
     "tags": ["social", "support", "ecommerce"],
+    "collection": "social",
     "img": {
     	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+20",
     	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+20"
@@ -370,8 +390,9 @@
 		}],
     "date": "2015-04-25T05:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. hh2s",
-    "source": "Squarespace",
+    "brand": "Squarespace",
     "tags": ["password reset"],
+    "collection": "password reset",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+21",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+21"
@@ -388,8 +409,9 @@
 		}],
     "date": "2015-04-25T06:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. pli5",
-    "source": "Treehouse",
-    "tags": ["reviews", "comments", "marketing"],
+    "brand": "Treehouse",
+    "tags": ["marketing", "reviews", "comments"],
+    "collection": "marketing",
     "img": {
     	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+22",
     	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+22"
@@ -406,8 +428,9 @@
 		}],
     "date": "2015-04-25T07:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. paa9",
-    "source": "Dot & Bo",
+    "brand": "Dot & Bo",
     "tags": ["other"],
+    "collection": "other",
     "img": {
     	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+23",
     	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+23"
@@ -424,8 +447,9 @@
 		}],
     "date": "2015-04-25T08:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 0ps2",
-    "source": "Twitter",
+    "brand": "Twitter",
     "tags": ["sharing", "retention"],
+    "collection": "sharing",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+24",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+24"
@@ -442,8 +466,9 @@
 		}],
     "date": "2015-04-25T09:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. eu8s",
-    "source": "Squarespace",
+    "brand": "Squarespace",
     "tags": ["new article", "transactional", "support"],
+    "collection": "new article",
     "img": {
     	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+25",
     	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+25"
@@ -460,8 +485,9 @@
 		}],
     "date": "2015-04-25T10:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. ok2a",
-    "source": "Treehouse",
-    "tags": ["social", "support", "ecommerce"],
+    "brand": "Treehouse",
+    "tags": ["activation", "support", "ecommerce"],
+    "collection": "activation",
     "img": {
     	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+26",
     	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+26"
@@ -478,8 +504,9 @@
 		}],
     "date": "2015-04-25T11:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. px07",
-    "source": "Dot & Bo",
+    "brand": "Dot & Bo",
     "tags": ["other"],
+    "collection": "other",
     "img": {
     	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+27",
     	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+27"
@@ -496,8 +523,9 @@
 		}],
     "date": "2015-04-25T12:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. ee3s",
-    "source": "Twitter",
+    "brand": "Twitter",
     "tags": ["sharing", "retention"],
+    "collection": "sharing",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+28",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+28"
@@ -514,8 +542,9 @@
 		}],
     "date": "2015-04-25T13:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. pa6z",
-    "source": "Squarespace",
-    "tags": ["text", "trial"],
+    "brand": "Squarespace",
+    "tags": ["activation", "trial"],
+    "collection": "activation",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+29",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+29"
@@ -532,8 +561,9 @@
 		}],
     "date": "2015-04-25T14:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. pt72",
-    "source": "Treehouse",
+    "brand": "Treehouse",
     "tags": ["automated", "account", "security"],
+    "collection": "automated",
     "img": {
     	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+30",
     	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+30"
@@ -550,8 +580,9 @@
 		}],
     "date": "2015-04-25T15:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. hsd1",
-    "source": "Dot & Bo",
+    "brand": "Dot & Bo",
     "tags": ["product launch", "notice"],
+    "collection": "product launch",
     "img": {
     	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+31",
     	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+31"
@@ -568,8 +599,9 @@
 		}],
     "date": "2015-04-25T16:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. asd5",
-    "source": "Twitter",
+    "brand": "Twitter",
     "tags": ["product launch", "notice"],
+    "collection": "product launch",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+32",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+32"
@@ -586,11 +618,12 @@
 		}],
     "date": "2015-04-26T01:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. zxc8",
-    "source": "Squarespace",
-    "tags": ["promotion", "newsletter", "feed"],
+    "brand": "Squarespace",
+    "tags": ["activation", "newsletter", "feed"],
+    "collection": "activation",
     "img": {
-    	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+33",
-    	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+33"
+    	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+33",
+    	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+33"
     }
 	},
 	{
@@ -604,8 +637,9 @@
 		}],
     "date": "2015-04-26T02:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. cxz3",
-    "source": "Treehouse",
+    "brand": "Treehouse",
     "tags": ["announcement"],
+    "collection": "announcement",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+34",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+34"
@@ -622,8 +656,9 @@
 		}],
     "date": "2015-04-26T03:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. mlk6",
-    "source": "Dot & Bo",
+    "brand": "Dot & Bo",
     "tags": ["engagement", "discovery"],
+    "collection": "engagement",
     "img": {
     	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+35",
     	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+35"
@@ -640,8 +675,9 @@
 		}],
     "date": "2015-04-26T04:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. lkk8",
-    "source": "Twitter",
+    "brand": "Twitter",
     "tags": ["text", "trial"],
+    "collection": "text",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+36",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+36"
@@ -658,8 +694,9 @@
 		}],
     "date": "2015-04-26T05:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. ps2q",
-    "source": "Squarespace",
+    "brand": "Squarespace",
     "tags": ["trial", "holiday", "notice"],
+    "collection": "trial",
     "img": {
     	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+37",
     	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+37"
@@ -676,8 +713,9 @@
 		}],
     "date": "2015-04-26T06:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. oil3",
-    "source": "Treehouse",
+    "brand": "Treehouse",
     "tags": ["invitation", "retention"],
+    "collection": "invitation",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+38",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+38"
@@ -694,8 +732,9 @@
 		}],
     "date": "2015-04-26T07:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. lo2s",
-    "source": "Dot & Bo",
-    "tags": ["receipt", "order shipped", "local"],
+    "brand": "Dot & Bo",
+    "tags": ["activation", "order shipped", "local"],
+    "collection": "activation",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+39",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+39"
@@ -712,8 +751,9 @@
 		}],
     "date": "2015-04-26T08:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. cuw8",
-    "source": "Twitter",
+    "brand": "Twitter",
     "tags": ["promotion", "newsletter", "feed"],
+    "collection": "promotion",
     "img": {
     	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+40",
     	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+40"
@@ -730,8 +770,9 @@
 		}],
     "date": "2015-04-26T09:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. xa92",
-    "source": "Squarespace",
-    "tags": ["product launch", "notice"],
+    "brand": "Squarespace",
+    "tags": ["marketing", "notice"],
+    "collection": "marketing",
     "img": {
     	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+41",
     	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+41"
@@ -748,8 +789,9 @@
 		}],
     "date": "2015-04-26T10:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. s22p",
-    "source": "Treehouse",
+    "brand": "Treehouse",
     "tags": ["product launch", "notice"],
+    "collection": "product launch",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+42",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+42"
@@ -766,8 +808,9 @@
 		}],
     "date": "2015-04-26T11:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. ma6c",
-    "source": "Dot & Bo",
+    "brand": "Dot & Bo",
     "tags": ["password reset"],
+    "collection": "password reset",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+43",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+43"
@@ -784,8 +827,9 @@
 		}],
     "date": "2015-04-26T12:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. kkz3",
-    "source": "Squarespace",
-    "tags": ["reviews", "comments", "marketing"],
+    "brand": "Squarespace",
+    "tags": ["marketing", "reviews", "comments"],
+    "collection": "marketing",
     "img": {
     	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+44",
     	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+44"
@@ -802,8 +846,9 @@
 		}],
     "date": "2015-04-26T13:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 0pos",
-    "source": "Treehouse",
+    "brand": "Treehouse",
     "tags": ["promotion", "newsletter", "feed"],
+    "collection": "promotion",
     "img": {
     	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+45",
     	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+45"
@@ -820,8 +865,9 @@
 		}],
     "date": "2015-04-26T14:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. pla3",
-    "source": "Squarespace",
-    "tags": ["announcement"],
+    "brand": "Squarespace",
+    "tags": ["marketing"],
+    "collection": "marketing",
     "img": {
     	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+46",
     	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+46"
@@ -838,8 +884,9 @@
 		}],
     "date": "2015-04-26T15:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. ooy2",
-    "source": "Squarespace",
+    "brand": "Squarespace",
     "tags": ["engagement", "discovery"],
+    "collection": "engagement",
     "img": {
     	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+47",
     	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+47"
@@ -856,11 +903,164 @@
 		}],
     "date": "2015-04-26T16:00:01.000Z",
     "subject": "Lorem ipsum dolor sit amet. 551s",
-    "source": "Squarespace",
+    "brand": "Squarespace",
     "tags": ["text", "trial"],
+    "collection": "text",
     "img": {
     	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+48",
     	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+48"
+    }
+	},
+	{
+		"id": 51,
+		"slug": "",
+		"metrics": [{
+			"views": 69,
+			"likes": 5,
+			"comments": 0,
+			"shares": 4
+		}],
+    "date": "2015-04-26T18:00:01.000Z",
+    "subject": "Designs of the Week",
+    "brand": "DesignModo",
+    "tags": ["announcement"],
+    "collection": "announcement",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+51",
+    	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+51"
+    }
+	},
+	{
+		"id": 56,
+		"slug": "",
+		"metrics": [{
+			"views": 77,
+			"likes": 5,
+			"comments": 0,
+			"shares": 4
+		}],
+    "date": "2015-04-27T19:00:01.000Z",
+    "subject": "Trello Reviews FTW!",
+    "brand": "Trello",
+    "tags": ["comments", "reviews"],
+    "collection": "comments",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+56",
+    	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+56"
+    }
+	},
+	{
+		"id": 58,
+		"slug": "",
+		"metrics": [{
+			"views": 123,
+			"likes": 6,
+			"comments": 2,
+			"shares": 2
+		}],
+    "date": "2015-04-28T17:00:01.000Z",
+    "subject": "Mo' Sprockets, Mo' Problems",
+    "brand": "Spacely Sprockets",
+    "tags": ["engagement", "discovery"],
+    "collection": "engagement",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+58",
+    	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+58"
+    }
+	},
+	{
+		"id": 62,
+		"slug": "",
+		"metrics": [{
+			"views": 55,
+			"likes": 6,
+			"comments": 2,
+			"shares": 2
+		}],
+    "date": "2015-04-29T17:00:01.000Z",
+    "subject": "Marvel Newsletter - August 2015",
+    "brand": "Marvel",
+    "tags": ["newsletter", "feed"],
+    "collection": "newsletter",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+62",
+    	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+62"
+    }
+	},
+	{
+		"id": 71,
+		"slug": "",
+		"metrics": [{
+			"views": 65,
+			"likes": 2,
+			"comments": 1,
+			"shares": 2
+		}],
+    "date": "2015-04-30T18:00:01.000Z",
+    "subject": "Put Some Space In Your Sprockets",
+    "brand": "Spacely Sprockets",
+    "tags": ["password reset"],
+    "collection": "password reset",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+71",
+    	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+71"
+    }
+	},
+	{
+		"id": 80,
+		"slug": "",
+		"metrics": [{
+			"views": 42,
+			"likes": 2,
+			"comments": 2,
+			"shares": 1
+		}],
+    "date": "2015-05-01T08:00:01.000Z",
+    "subject": "Lorem ipsum dolor sit amet. saq1",
+    "brand": "Marvel",
+    "tags": ["feed", "notice"],
+    "collection": "feed",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+80",
+    	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+80"
+    }
+	},
+	{
+		"id": 86,
+		"slug": "",
+		"metrics": [{
+			"views": 47,
+			"likes": 3,
+			"comments": 1,
+			"shares": 0
+		}],
+    "date": "2015-05-02T13:00:01.000Z",
+    "subject": "Lorem ipsum dolor sit amet. pa6z",
+    "brand": "Trello",
+    "tags": ["marketing", "trial"],
+    "collection": "marketing",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+86",
+    	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+86"
+    }
+	},
+	{
+		"id": 88,
+		"slug": "",
+		"metrics": [{
+			"views": 72,
+			"likes": 5,
+			"comments": 2,
+			"shares": 5
+		}],
+    "date": "2015-05-03T19:00:01.000Z",
+    "subject": "DesignModo in the Heezy",
+    "brand": "DesignModo",
+    "tags": ["notice"],
+    "collection": "notice",
+    "img": {
+    	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+88",
+    	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+88"
     }
 	}
 ]

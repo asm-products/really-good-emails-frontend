@@ -13,7 +13,7 @@
   var app = angular.module('reallygoodemails');
 
   // Main Ctrl /////
-	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', 'emails', function($rootScope, $scope, $window, $location, $timeout, emails) {
+	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', 'emails', 'brands', 'collections', function($rootScope, $scope, $window, $location, $timeout, emails, brands, collections) {
 
     $rootScope.appName = 'reallygoodemails';
     $rootScope.appTitle = 'Really Good Emails';
@@ -23,21 +23,38 @@
     $rootScope.appCDNurl = '//reallygoodemails-cdn.appspot.com';
 
     // -- Data -------------------------
-    // Build Urls
+    // Emails
     emails().success(function(emails) {
       $scope.emails = emails;
-      $scope.slugs = emails.map(function(email) {
-        var source = email.source.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
+      //
+      emails.map(function(email) {
+        // Build Urls
+        var source = email.brand.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
             subject = email.subject.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
             slug = 'emails/'+source+'-'+subject;
         email.slug = slug;
       });
     });
+    // Brands
+    brands().success(function(brands) {
+      $scope.brands = brands;
+      $scope.brandCount = $scope.brands.length;
+    });
+    // Collections
+    collections().success(function(collections) {
+      $scope.collections = collections;
+      $scope.collectionCount = $scope.collections.length;
+    });
 
     $scope.viewCount = 'metrics[0].views';
+    $scope.date = 'date';
+
+    $scope.someFunc = function(collection){
+      console.log({collection:collection});
+    };
 
     // -- Load (onReady) ---------------
-
+    //
     $rootScope.$on('$routeChangeStart', function (event, next, current, previous) {
       if (next && next.$$route) {
         // "Load Cover" Sequence: Start
@@ -52,7 +69,7 @@
       $rootScope.metaTitle = current.$$route.metaTitle;
       $rootScope.metaDesc = current.$$route.metaDesc;
       // Route Active State
-      $scope.page = function(viewLocation) { 
+      $scope.page = function(viewLocation) {
         return viewLocation === $location.path();
       };
       // "Load Cover" Sequence: End
