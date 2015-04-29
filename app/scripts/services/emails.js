@@ -19,6 +19,27 @@ angular.module('app.services.emails', [])
 	      return promise;
 	    }
 	  };
+  }])
+  .service('brands', ['$http', function($http){
+		var promise = null;
+	  return function() {
+	    if (promise) {
+	      return promise;
+	    } else {
+	      promise = $http.get('data/brands.json');
+	      return promise;
+	    }
+	  };
+  }])
+  .service('collections', ['$http', function($http){
+		var promise = null;
+	  return function() {
+	    if (promise) {
+	      return promise;
+	    } else {
+	      promise = $http.get('data/collections.json');
+	      return promise;
+	    }
+	  };
   }]);
 
-  

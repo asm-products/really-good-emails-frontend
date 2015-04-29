@@ -72,9 +72,9 @@
       }, 100);
   	};
 
-    // $scope.viewCount = 'metrics[0].views';
+    // email loop
 
-    // console.log($scope.emails);
+    
 
 
   }]);
