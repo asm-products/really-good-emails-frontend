@@ -37,10 +37,16 @@
         // Build email slugs
         var source = $filter('slugify')(email.brandName),
             subject = $filter('slugify')(email.subject),
-            slug = 'emails/'+source+'-'+subject;
+            slug = 'emails/'+source+'-'+subject+'?id='+email.id;
         email.slug = slug;
       });
     });
+
+    $scope.getID = function() {
+      // $timeout(function(){
+        return $location.search().id;
+      // }, 500);
+    };
 
     $scope.viewCount = 'metrics[0].views';
     $scope.postCount = 'metrics[0].posts';
@@ -64,10 +70,20 @@
       $scope.page = function(viewLocation) {
         return viewLocation === $location.path();
       };
+      // Theme Checker
+      var themeCheck = function() {
+        if ($location.path().indexOf('/emails/') >= 0) {
+          angular.element('.container > .theme-slate').removeClass('theme-slate');
+          $rootScope.theme = false;
+        } else {
+          $rootScope.theme = true;
+        }
+      };
       // "Load Cover" Sequence: End
       window.scrollTo(0,0);
       $timeout(function(){
         $rootScope.loader = false;
+        themeCheck();
       }, 750);
       $timeout(function(){
         $rootScope.loaderTrash = true;

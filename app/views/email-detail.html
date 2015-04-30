@@ -1,18 +1,123 @@
 <div class="base">
-  <div class="inner">
-  	<section>
-			Email Detail
-		</section>
-		<section>
+	<div class="inner">
+		<div data-ng-repeat="email in emails | filter:{id:getID()} | limitTo:'1'">
 			<br><br>
-			bacon bacon bacon
-			<br><br><br><br><br><br><br><br>
-			bacon bacon bacon
-			<br><br><br><br><br><br><br><br>
-			bacon bacon bacon
-			<br><br><br><br><br><br><br><br>
-			bacon bacon bacon
-			<br><br><br><br><br><br><br><br>
-		</section>
-  </div>
+			{{::email.brandName}}
+		</div>
+	</div>
 </div>
+<section class="card-grid">
+<!-- Collections -->
+	<div class="base">
+		<div class="inner">
+			<div class="card-grid-main">
+				<div class="header">
+					<h4>
+						In these collections
+					</h4><!--
+			 --><div class="secondary">
+						<a href="">
+							<span>View All {{::collectionCount}} Collections</span>
+							<svg class="icon-arrow" viewBox="0 0 32 32">
+	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+	            </svg>
+						</a>
+					</div>
+				</div>
+				<ul class="main two-three-four" data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'2'">
+					<li class="card">
+						<div class="inner">
+							<div class="thumb">
+								<a href="/collections/{{collection.name}}">
+									<img src="/media/images/thumb-spacer.png" alt="">
+								</a>
+								<div class="big-label">
+									<div class="count">
+										<span>{{::collection.metrics[0].posts}}</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+                    </svg>
+									</div>
+									<div class="title">
+										{{collection.name}}
+									</div>
+									<div class="category">
+										Collection
+									</div>
+								</div>
+							</div>
+						</div>
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collections:collection.name} | limitTo:'3'">
+						<div class="inner">
+							<div class="thumb">
+								<a href="/{{::email.slug}}">
+									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
+								</a>
+								<div class="overlay">
+									<div class="social">
+										<a href="" class="likes">
+											<svg class="icon-smiley" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].likes}}</span>
+										</a>
+										<a href="" class="comments">
+											<svg class="icon-comment" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].comments}}</span>
+										</a>
+										<a href="" class="shares">
+											<svg class="icon-share" viewBox="0 0 32 32">
+	                        <use xlink:href="/media/images/img.svg#icon-share"></use>
+	                    </svg>
+											<span>{{::email.metrics[0].shares}}</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Call out -->
+	<div class="base">
+		<div class="inner">
+			<div class="callout form close theme-slate">
+				<main>
+					<div class="inner">
+						<div class="primary">
+							<p>
+								Get weekly email inspiration in your&nbsp;inbox
+							</p>
+						</div>
+						<div class="secondary">
+							<form>
+								<div class="primary">
+			          	<input type="text" placeholder="Email Address">
+			          </div>
+			          <div class="secondary" style="width:9em;">
+				          <button class="button big" type="submit">
+				            Sign Up
+				          </button>
+				        </div>
+			        </form>
+						</div>
+					</div>
+				</main>
+				<aside>
+					<div class="inner">
+						<div class="close-button">
+							<a href="">
+								<svg class="icon-close" viewBox="0 0 32 32">
+		               <use xlink:href="/media/images/img.svg#icon-close"></use>
+		            </svg>
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+</section>

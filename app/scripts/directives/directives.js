@@ -28,13 +28,13 @@ angular.module('app.directives.general', [])
       });
       changeHeight();
 		};
+	}])
+	.directive('ngMobileClick', [function () {
+	  return function (scope, elem, attrs) {
+	    elem.bind('touchstart click', function (e) {
+	      e.preventDefault();
+	      e.stopPropagation();
+	      scope.$apply(attrs.ngMobileClick);
+	    });
+	  };
 	}]);
-
-	// .directive('menuToggle', ['$rootScope', function($rootScope) {
-	//   return {
-	//     restrict: 'A',
-	//     link: function (scope, element, attrs) {
-	//     	// code stuff
-	//     }
-	//   };
-	// }])
