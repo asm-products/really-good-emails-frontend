@@ -19,8 +19,7 @@ var app = angular
             'headroom',
             'app.services.emailData',
             'app.filters.general',
-            'app.directives.general',
-            'app.directives.navigation',
+            'app.directives.general'
           ])
           .run(['$templateCache', '$http', function($templateCache, $http) { // onReady
             $http.get('partials/header.html', {cache:$templateCache});

@@ -7,14 +7,15 @@ body > .container > header {
 	width:100%;
 	background: $white;
 	//
+	> .base {
+		border-bottom-color: $winkleLight;
+	}
+	//
 	&.theme-slate {
 		background: $slateDark;
 		//
-		.border-bottom-1 {
-			border: none;
-		}
 		> .base {
-			border-bottom: none;  // ?? see which of these two work
+			border-bottom: none;
 		}
 	}
 	// Headroom
