@@ -91,7 +91,7 @@
 				</div>
 				<ul class="main six-nine-twelve">
 					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | limitTo:'12'">
-						<div class="inner" href="{{::email.url}}">
+						<div class="inner">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">
 									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
@@ -123,14 +123,14 @@
 						<div class="label">
 							<div class="inner">
 								<div class="title">
-									<a href="/{{::email.slug}}">
-										{{::email.brand}}
+									<a href="/brands/{{::email.brandName | slugify}}">
+										{{::email.brandName}}
 									</a>
 								</div>
-								<div class="tags">
-									<div class="tag" data-ng-repeat="tag in email.tags">
-										<a href="">
-											{{::tag}}
+								<div class="collections">
+									<div class="item" data-ng-repeat="item in email.collections">
+										<a href="/collections/{{::item | slugify}}">
+											{{::item}}
 										</a>
 									</div>
 								</div>
@@ -199,9 +199,9 @@
 				</div>
 				<ul class="main two-three-four" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'4'">
 					<li class="card">
-						<div class="inner" href="{{::item.url}}">
+						<div class="inner">
 							<div class="thumb">
-								<a href="/email-details">
+								<a href="/brands/{{::brand.brandName | slugify}}">
 									<img src="/media/images/thumb-spacer.png" alt="">
 								</a>
 								<div class="big-label">
@@ -212,16 +212,16 @@
                     </svg>
 									</div>
 									<div class="title">
-										{{::brand.name}}
+										{{::brand.brandName}}
 									</div>
-									<div class="category">
-										{{::brand.type}}
+									<div class="service">
+										{{::brand.service}}
 									</div>
 								</div>
 							</div>
 						</div>
-					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brand:brand.name} | limitTo:'3'">
-						<div class="inner" href="{{::email.url}}">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brandName:brand.brandName} | limitTo:'3'">
+						<div class="inner">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">
 									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
@@ -253,144 +253,20 @@
 					</li>
 				</ul>
 			</div>
-			<div class="list-grid labels"> <!-- turn this into an ng-repeat -->
-				<ul>
+			<div class="list-grid labels">
+				<ul data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'6'">
 					<li class="title">
-						<a href="/">Ecommerce</a>
+						<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 					<li>
+					<li data-ng-repeat="brand in brands | orderBy:postCount:true | filter:{collections:collection.name} | limitTo:'9'"> <!-- we need to be able to filter by collection name here and order by brand post count below -->
+						<a href="/brands/{{::brand.brandName | slugify}}">
+							{{::brand.brandName}}
+							<span>
+								({{::brand.metrics[0].posts}})
+							</span>
+						</a>
 					<li>
-						<a href="/">Etsy <span>(10)</span></a>
-					<li>
-						<a href="/">Pinterest <span>(10)</span></a>
-					<li>
-						<a href="/">Treehouse <span>(10)</span></a>
-					<li>
-						<a href="/">Dot &amp; Bo <span>(10)</span></a>
-					<li>
-						<a href="/">Facebook <span>(10)</span></a>
-					<li>
-						<a href="/">Twitter <span>(10)</span></a>
-					<li>
-						<a href="/">Google <span>(10)</span></a>
-					<li>
-						<a href="/">Amazon <span>(10)</span></a>
-					<li>
-						<a href="">View All</a>
-				</ul>
-				<ul>
-					<li class="title">
-						<a href="/">SAAS</a>
-					<li>
-					<li>
-						<a href="/">Etsy <span>(10)</span></a>
-					<li>
-						<a href="/">Pinterest <span>(10)</span></a>
-					<li>
-						<a href="/">Treehouse <span>(10)</span></a>
-					<li>
-						<a href="/">Dot &amp; Bo <span>(10)</span></a>
-					<li>
-						<a href="/">Facebook <span>(10)</span></a>
-					<li>
-						<a href="/">Twitter <span>(10)</span></a>
-					<li>
-						<a href="/">Google <span>(10)</span></a>
-					<li>
-						<a href="/">Amazon <span>(10)</span></a>
-					<li>
-						<a href="">View All</a>
-				</ul>
-				<ul>
-					<li class="title">
-						<a href="/">Brick &amp; Mortar</a>
-					<li>
-					<li>
-						<a href="/">Etsy <span>(10)</span></a>
-					<li>
-						<a href="/">Pinterest <span>(10)</span></a>
-					<li>
-						<a href="/">Treehouse <span>(10)</span></a>
-					<li>
-						<a href="/">Dot &amp; Bo <span>(10)</span></a>
-					<li>
-						<a href="/">Facebook <span>(10)</span></a>
-					<li>
-						<a href="/">Twitter <span>(10)</span></a>
-					<li>
-						<a href="/">Google <span>(10)</span></a>
-					<li>
-						<a href="/">Amazon <span>(10)</span></a>
-					<li>
-						<a href="">View All</a>
-				</ul>
-				<ul>
-					<li class="title">
-						<a href="/">Category 4</a>
-					<li>
-					<li>
-						<a href="/">Etsy <span>(10)</span></a>
-					<li>
-						<a href="/">Pinterest <span>(10)</span></a>
-					<li>
-						<a href="/">Treehouse <span>(10)</span></a>
-					<li>
-						<a href="/">Dot &amp; Bo <span>(10)</span></a>
-					<li>
-						<a href="/">Facebook <span>(10)</span></a>
-					<li>
-						<a href="/">Twitter <span>(10)</span></a>
-					<li>
-						<a href="/">Google <span>(10)</span></a>
-					<li>
-						<a href="/">Amazon <span>(10)</span></a>
-					<li>
-						<a href="">View All</a>
-				</ul>
-				<ul>
-					<li class="title">
-						<a href="/">Category 5</a>
-					<li>
-					<li>
-						<a href="/">Etsy <span>(10)</span></a>
-					<li>
-						<a href="/">Pinterest <span>(10)</span></a>
-					<li>
-						<a href="/">Treehouse <span>(10)</span></a>
-					<li>
-						<a href="/">Dot &amp; Bo <span>(10)</span></a>
-					<li>
-						<a href="/">Facebook <span>(10)</span></a>
-					<li>
-						<a href="/">Twitter <span>(10)</span></a>
-					<li>
-						<a href="/">Google <span>(10)</span></a>
-					<li>
-						<a href="/">Amazon <span>(10)</span></a>
-					<li>
-						<a href="">View All</a>
-				</ul>
-				<ul>
-					<li class="title">
-						<a href="/">Category 6</a>
-					<li>
-					<li>
-						<a href="/">Etsy <span>(10)</span></a>
-					<li>
-						<a href="/">Pinterest <span>(10)</span></a>
-					<li>
-						<a href="/">Treehouse <span>(10)</span></a>
-					<li>
-						<a href="/">Dot &amp; Bo <span>(10)</span></a>
-					<li>
-						<a href="/">Facebook <span>(10)</span></a>
-					<li>
-						<a href="/">Twitter <span>(10)</span></a>
-					<li>
-						<a href="/">Google <span>(10)</span></a>
-					<li>
-						<a href="/">Amazon <span>(10)</span></a>
-					<li>
-						<a href="">View All</a>
+						<a href="/collections/{{::collection.name | slugify}}">View All</a>
 				</ul>
 			</div>
 		</div>
@@ -446,9 +322,9 @@
 				</div>
 				<ul class="main two-four-five-seven" data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'2'">
 					<li class="card">
-						<div class="inner" href="{{::item.url}}">
+						<div class="inner">
 							<div class="thumb">
-								<a href="/email-details">
+								<a href="/collections/{{collection.name}}">
 									<img src="/media/images/thumb-spacer.png" alt="">
 								</a>
 								<div class="big-label">
@@ -467,8 +343,8 @@
 								</div>
 							</div>
 						</div>
-					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collection:collection.name} | limitTo:'7'">
-						<div class="inner" href="{{::email.url}}">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collections:collection.name} | limitTo:'7'">
+						<div class="inner">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">
 									<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">

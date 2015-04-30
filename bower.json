@@ -13,7 +13,8 @@
     "angular-route": "1.4.0-rc.1",
     "modernizr": "latest",
     "jquery": "latest",
-    "enquire": "latest"
+    "enquire": "latest",
+    "angular-ui-utils": "bower"
   },
   "devDependencies": {
     "angular-mocks": "1.4.0-rc.1",

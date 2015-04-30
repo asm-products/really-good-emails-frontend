@@ -13,7 +13,9 @@
   var app = angular.module('reallygoodemails');
 
   // Main Ctrl /////
-	app.controller('mainCtrl', ['$rootScope', '$scope', '$window', '$location', '$timeout', 'emails', 'brands', 'collections', function($rootScope, $scope, $window, $location, $timeout, emails, brands, collections) {
+	app.controller('mainCtrl', [
+    '$rootScope', '$scope', '$window', '$location', '$timeout', '$filter', 'emailData',
+    function($rootScope, $scope, $window, $location, $timeout, $filter, emailData) {
 
     $rootScope.appName = 'reallygoodemails';
     $rootScope.appTitle = 'Really Good Emails';
@@ -23,35 +25,25 @@
     $rootScope.appCDNurl = '//reallygoodemails-cdn.appspot.com';
 
     // -- Data -------------------------
-    // Emails
-    emails().success(function(emails) {
-      $scope.emails = emails;
+    // Email Data
+    emailData().success(function(data) {
+      $scope.emails = data.emails;
+      $scope.brands = data.brands;
+      $scope.collections = data.collections;
+      $scope.brandCount = $scope.brands.length;
+      $scope.collectionCount = $scope.collections.length;
       //
-      emails.map(function(email) {
-        // Build Urls
-        var source = email.brand.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
-            subject = email.subject.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,'').replace(/\s+/g, '-').toLowerCase(),
+      data.emails.map(function(email) {
+        // Build email slugs
+        var source = $filter('slugify')(email.brandName),
+            subject = $filter('slugify')(email.subject),
             slug = 'emails/'+source+'-'+subject;
         email.slug = slug;
       });
     });
-    // Brands
-    brands().success(function(brands) {
-      $scope.brands = brands;
-      $scope.brandCount = $scope.brands.length;
-    });
-    // Collections
-    collections().success(function(collections) {
-      $scope.collections = collections;
-      $scope.collectionCount = $scope.collections.length;
-    });
 
     $scope.viewCount = 'metrics[0].views';
-    $scope.date = 'date';
-
-    $scope.someFunc = function(collection){
-      console.log({collection:collection});
-    };
+    $scope.postCount = 'metrics[0].posts';
 
     // -- Load (onReady) ---------------
     //
@@ -90,27 +82,6 @@
       }
       $window.ga('send', 'pageview', { page: $location.path() });
     });
-
-    // -- Load (LazyLoad) ---------------
-
-    // $scope.data = {};
-    // $scope.data.list = [];
-    // $scope.range = '12';
-    // $scope.startDelay = '1000';
-    // $scope.appendDelay = '1000';
-    // $scope.spinnerColor = 'rgb(79, 167, 217)';
-
-    // $scope.$watch('spinnerColor', function(newVal){
-    //   $scope.spinnerColor = newVal;
-    //   console.log('watch', $scope.spinnerColor);
-    // });
-
-    // $scope.update = function(newVal){
-    //   $scope.spinnerColor = newVal;
-    //   $timeout(function(){
-    //     $scope.$apply();
-    //   },100);
-    // };
 
     // -- Functions ---------------
     //
