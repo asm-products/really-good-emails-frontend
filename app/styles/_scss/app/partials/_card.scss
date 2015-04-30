@@ -82,11 +82,11 @@
 				text-decoration: none;
 			}
 		}
-		.tags {
+		.collections {
 			white-space: nowrap;
 			overflow: hidden;
 		}
-		.tag {
+		.item {
 			display: inline-block;
 			//
 			a {
@@ -140,11 +140,12 @@
 			}
 		}
 		.title {
-			font-size: 2em;
+			padding: 0.35em 0;
 		  line-height: 1.2em;
-		  padding: 0.35em 0;
+			font-size: 2em;
+			text-transform: capitalize;
 		}
-		.category {
+		.service {
 			font-size: 0.9em;
 			color: $slateLight;
 		}

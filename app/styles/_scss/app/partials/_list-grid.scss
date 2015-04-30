@@ -96,6 +96,7 @@
   		.title {
   			column-span: all;
   			font-size: 1.250em;
+  			text-transform: capitalize;
   			@media screen and (min-width: 480px) {
   				column-span: none;
   			}

@@ -13,7 +13,7 @@
 
   var app = angular.module('reallygoodemails');
   //
-  app.controller('cardGridCtrl',['$scope', '$timeout', '$http', 'emails', function($scope, $timeout, $http, emails) {
+  app.controller('cardGridCtrl',['$scope', '$timeout', '$http', 'emailData', function($scope, $timeout, $http, emailData) {
 
   	// todo: make item data conditional based on a route or key (class) of some sort
   	// make more dynamic, break out into dropdownCtrl.js (directive?)

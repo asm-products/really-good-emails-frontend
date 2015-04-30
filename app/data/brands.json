@@ -8,8 +8,9 @@
 			"comments": 86,
 			"shares": 34
 		}],
-    "name": "DesignModo",
-    "type": "Software Product"
+    "brandName": "DesignModo",
+    "productType": "Software Product",
+    "collections": ["onboarding", "retention", "ecommerce", "announcement", "notice"]
 	},
 	{
 		"id": 2,
@@ -20,8 +21,9 @@
 			"comments": 22,
 			"shares": 26
 		}],
-    "name": "Marvel",
-    "type": "Software Product"
+    "brandName": "Marvel",
+    "productType": "Software Product",
+    "collections": ["comments", "events", "newsletter", "feed", "notice"]
 	},
 	{
 		"id": 3,
@@ -32,8 +34,9 @@
 			"comments": 45,
 			"shares": 23
 		}],
-    "name": "Trello",
-    "type": "Software Product"
+    "brandName": "Trello",
+    "productType": "Software Product",
+    "collections": ["welcome", "offer", "comments", "reviews", "ecommerce", "trial"]
 	},
 	{
 		"id": 4,
@@ -44,8 +47,9 @@
 			"comments": 15,
 			"shares": 9
 		}],
-    "name": "JakPrints",
-    "type": "Ecommerce"
+    "brandName": "JakPrints",
+    "productType": "Ecommerce",
+    "collections": ["security", "report", "brick & mortar"]
 	},
 	{
 		"id": 5,
@@ -56,8 +60,9 @@
 			"comments": 19,
 			"shares": 30
 		}],
-    "name": "Spacely Sprockets",
-    "type": "Brick & Mortar"
+    "brandName": "Spacely Sprockets",
+    "productType": "Brick & Mortar",
+    "collections": ["trial", "notice", "holiday", "engagement", "discovery", "password reset"]
 	},
 	{
 		"id": 6,
@@ -68,8 +73,9 @@
 			"comments": 1,
 			"shares": 7
 		}],
-    "name": "Fajita Joe's",
-    "type": "Brick & Mortar"
+    "brandName": "Fajita Joe's",
+    "productType": "Brick & Mortar",
+    "collections": ["invitation", "retention", "brick & mortar"]
 	},
 	{
 		"id": 7,
@@ -80,8 +86,9 @@
 			"comments": 0,
 			"shares": 1
 		}],
-    "name": "Browserly",
-    "type": "Software Product"
+    "brandName": "Browserly",
+    "productType": "Software Product",
+    "collections": ["receipt", "order shipped", "local"]
 	},
 	{
 		"id": 8,
@@ -92,8 +99,9 @@
 			"comments": 2,
 			"shares": 1
 		}],
-    "name": "SoundCluster",
-    "type": "Ecommerce"
+    "brandName": "SoundCluster",
+    "productType": "Ecommerce",
+    "collections": ["saas", "newsletter", "feed"]
 	},
 	{
 		"id": 9,
@@ -104,8 +112,9 @@
 			"comments": 3,
 			"shares": 5
 		}],
-    "name": "Broseph, Inc",
-    "type": "Brick & Mortar"
+    "brandName": "Broseph, Inc",
+    "productType": "Brick & Mortar",
+    "collections": ["announcement", "publications"]
 	},
 	{
 		"id": 10,
@@ -116,8 +125,9 @@
 			"comments": 3,
 			"shares": 2
 		}],
-    "name": "Acme",
-    "type": "Hardware"
+    "brandName": "Acme",
+    "productType": "Hardware",
+    "collections": ["engagement", "discovery", "apps"]
 	},
 	{
 		"id": 11,
@@ -128,8 +138,9 @@
 			"comments": 1,
 			"shares": 0
 		}],
-    "name": "Wayne Enterprises",
-    "type": "Hardware"
+    "brandName": "Wayne Enterprises",
+    "productType": "Hardware",
+    "collections": ["text", "trial", "government"]
 	},
 	{
 		"id": 12,
@@ -140,8 +151,9 @@
 			"comments": 4,
 			"shares": 2
 		}],
-    "name": "Kanoodle",
-    "type": "Social Software"
+    "brandName": "Kanoodle",
+    "productType": "Social Media",
+    "collections": ["automated", "account", "ecommerce"]
 	},
 	{
 		"id": 13,
@@ -152,8 +164,9 @@
 			"comments": 2,
 			"shares": 2
 		}],
-    "name": "Zoomdawg",
-    "type": "Social Software"
+    "brandName": "Zoomdawg",
+    "productType": "Social Media",
+    "collections": ["saas", "notice", "product launch", "ecommerce"]
 	},
 	{
 		"id": 14,
@@ -164,8 +177,9 @@
 			"comments": 2,
 			"shares": 3
 		}],
-    "name": "Twitter",
-    "type": "Social Software"
+    "brandName": "Twitter",
+    "productType": "Social Media",
+    "collections": ["sharing", "social", "sharing", "retention", "product launch", "apps", "text", "trial", "promotion", "newsletter"]
 	},
 	{
 		"id": 15,
@@ -176,8 +190,9 @@
 			"comments": 1,
 			"shares": 1
 		}],
-    "name": "Chattertags",
-    "type": "Government"
+    "brandName": "Chattertags",
+    "productType": "Government",
+    "collections": ["government", "ecommerce"]
 	},
 	{
 		"id": 16,
@@ -188,8 +203,9 @@
 			"comments": 2,
 			"shares": 2
 		}],
-    "name": "WobbleLab",
-    "type": "Hardware"
+    "brandName": "WobbleLab",
+    "productType": "Hardware",
+    "collections": ["ecommerce", "reviews"]
 	},
 	{
 		"id": 17,
@@ -200,8 +216,9 @@
 			"comments": 2,
 			"shares": 1
 		}],
-    "name": "Coolnomics",
-    "type": "Software Product"
+    "brandName": "Coolnomics",
+    "productType": "Software Product",
+    "collections": ["saas"]
 	},
 	{
 		"id": 18,
@@ -212,8 +229,9 @@
 			"comments": 1,
 			"shares": 3
 		}],
-    "name": "Wonka Industries",
-    "type": "Hardware"
+    "brandName": "Wonka Industries",
+    "productType": "Hardware",
+    "collections": ["sharing", "retention"]
 	},
 	{
 		"id": 19,
@@ -224,8 +242,9 @@
 			"comments": 2,
 			"shares": 1
 		}],
-    "name": "Oscorp",
-    "type": "Government"
+    "brandName": "Oscorp",
+    "productType": "Government",
+    "collections": ["ecommerce", "transactional", "support"]
 	},
 	{
 		"id": 20,
@@ -236,8 +255,9 @@
 			"comments": 2,
 			"shares": 3
 		}],
-    "name": "Globex",
-    "type": "Government"
+    "brandName": "Globex",
+    "productType": "Government",
+    "collections": ["social", "support", "government"]
 	},
 	{
 		"id": 21,
@@ -248,8 +268,9 @@
 			"comments": 1,
 			"shares": 1
 		}],
-    "name": "Squarespace",
-    "type": "Software Product"
+    "brandName": "Squarespace",
+    "productType": "Software Product",
+    "collections": ["password reset", "saas", "new article", "transactional", "trial", "publications", "holiday", "hardware", "ecommerce", "government", "reviews", "comments", "engagement", "discovery", "text"]
 	},
 	{
 		"id": 22,
@@ -260,8 +281,9 @@
 			"comments": 2,
 			"shares": 2
 		}],
-    "name": "Treehouse",
-    "type": "Software Product"
+    "brandName": "Treehouse",
+    "productType": "Software Product",
+    "collections": ["ecommerce", "reviews", "saas", "support", "automated", "account", "education", "announcement", "invitation", "social", "product launch", "holiday", "promotion", "newsletter", "feed"]
 	},
 	{
 		"id": 23,
@@ -272,7 +294,281 @@
 			"comments": 2,
 			"shares": 1
 		}],
-    "name": "Dot & Bo",
-    "type": "Ecommerce"
+    "brandName": "Dot & Bo",
+    "productType": "Ecommerce",
+    "collections": ["other", "ecommerce", "product launch", "notice", "engagement", "discovery", "brick & mortar", "saas", "order shipped", "apps", "password reset"]
+	},
+	{
+		"id": 24,
+		"metrics": [{
+			"posts": 4,
+			"views": 146,
+			"likes": 2,
+			"comments": 1,
+			"shares": 0
+		}],
+    "brandName": "Best Buy",
+    "productType": "Brick & Mortar",
+    "collections": ["survey", "brick & mortar"]
+	},
+	{
+		"id": 25,
+		"metrics": [{
+			"posts": 5,
+			"views": 266,
+			"likes": 7,
+			"comments": 3,
+			"shares": 0
+		}],
+    "brandName": "Home Depot",
+    "productType": "Brick & Mortar",
+    "collections": ["offer", "brick & mortar"]
+	},
+	{
+		"id": 26,
+		"metrics": [{
+			"posts": 1,
+			"views": 236,
+			"likes": 20,
+			"comments": 12,
+			"shares": 10
+		}],
+    "brandName": "Target",
+    "productType": "Brick & Mortar",
+    "collections": ["invitation", "brick & mortar"]
+	},
+	{
+		"id": 27,
+		"metrics": [{
+			"posts": 5,
+			"views": 366,
+			"likes": 5,
+			"comments": 4,
+			"shares": 3
+		}],
+    "brandName": "Crate & Barrel",
+    "productType": "Brick & Mortar",
+    "collections": ["notice", "alerts"]
+	},
+	{
+		"id": 28,
+		"metrics": [{
+			"posts": 12,
+			"views": 766,
+			"likes": 22,
+			"comments": 8,
+			"shares": 11
+		}],
+    "brandName": "Chipotle",
+    "productType": "Brick & Mortar",
+    "collections": ["trial", "social", "brick & mortar"]
+	},
+	{
+		"id": 29,
+		"metrics": [{
+			"posts": 9,
+			"views": 366,
+			"likes": 9,
+			"comments": 8,
+			"shares": 5
+		}],
+    "brandName": "Starbucks",
+    "productType": "Brick & Mortar",
+    "collections": ["feed","brick & mortar"]
+	},
+	{
+		"id": 30,
+		"metrics": [{
+			"posts": 1,
+			"views": 218,
+			"likes": 6,
+			"comments": 3,
+			"shares": 5
+		}],
+    "brandName": "Pinterest",
+    "productType": "Social Media",
+    "collections": ["report", "text", "social"]
+	},
+	{
+		"id": 31,
+		"metrics": [{
+			"posts": 5,
+			"views": 443,
+			"likes": 9,
+			"comments": 6,
+			"shares": 4
+		}],
+    "brandName": "Facebook",
+    "productType": "Social Media",
+    "collections": ["account", "security", "social"]
+	},
+	{
+		"id": 32,
+		"metrics": [{
+			"posts": 6,
+			"views": 477,
+			"likes": 6,
+			"comments": 3,
+			"shares": 4
+		}],
+    "brandName": "Instagram",
+    "productType": "Social Media",
+    "collections": ["events", "social"]
+	},
+	{
+		"id": 33,
+		"metrics": [{
+			"posts": 6,
+			"views": 398,
+			"likes": 6,
+			"comments": 2,
+			"shares": 2
+		}],
+    "brandName": "Reddit",
+    "productType": "Social Media",
+    "collections": ["confirmation, notice", "social"]
+	},
+	{
+		"id": 34,
+		"metrics": [{
+			"posts": 10,
+			"views": 473,
+			"likes": 4,
+			"comments": 2,
+			"shares": 1
+		}],
+    "brandName": "Google+",
+    "productType": "Social Media",
+    "collections": ["automated", "retention", "social"]
+	},
+	{
+		"id": 35,
+		"metrics": [{
+			"posts": 5,
+			"views": 447,
+			"likes": 4,
+			"comments": 1,
+			"shares": 3
+		}],
+    "brandName": "Linkedin",
+    "productType": "Social Media",
+    "collections": ["discovery", "product launch", "social"]
+	},
+	{
+		"id": 36,
+		"metrics": [{
+			"posts": 3,
+			"views": 454,
+			"likes": 5,
+			"comments": 2,
+			"shares": 1
+		}],
+    "brandName": "Wired",
+    "productType": "Publication",
+    "collections": ["password reset", "publications"]
+	},
+	{
+		"id": 37,
+		"metrics": [{
+			"posts": 5,
+			"views": 354,
+			"likes": 4,
+			"comments": 2,
+			"shares": 3
+		}],
+    "brandName": "New York Times",
+    "productType": "Publication",
+    "collections": ["shipping", "publications"]
+	},
+	{
+		"id": 38,
+		"metrics": [{
+			"posts": 1,
+			"views": 105,
+			"likes": 5,
+			"comments": 1,
+			"shares": 1
+		}],
+    "brandName": "Dwell",
+    "productType": "Publication",
+    "collections": ["transactional", "publications"]
+	},
+	{
+		"id": 39,
+		"metrics": [{
+			"posts": 4,
+			"views": 233,
+			"likes": 6,
+			"comments": 2,
+			"shares": 2
+		}],
+    "brandName": "Lagom",
+    "productType": "Publication",
+    "collections": ["events", "publications"]
+	},
+	{
+		"id": 40,
+		"metrics": [{
+			"posts": 5,
+			"views": 366,
+			"likes": 5,
+			"comments": 4,
+			"shares": 3
+		}],
+    "brandName": "National Geographic",
+    "productType": "Publication",
+    "collections": ["activity", "publications"]
+	},
+	{
+		"id": 41,
+		"metrics": [{
+			"posts": 12,
+			"views": 766,
+			"likes": 22,
+			"comments": 8,
+			"shares": 11
+		}],
+    "brandName": "The Verge",
+    "productType": "Publication",
+    "collections": ["retention", "publications"]
+	},
+	{
+		"id": 42,
+		"metrics": [{
+			"posts": 9,
+			"views": 366,
+			"likes": 9,
+			"comments": 8,
+			"shares": 5
+		}],
+    "brandName": "Wikipedia",
+    "productType": "Publication",
+    "collections": ["sharing", "publications"]
+	},
+	{
+		"id": 43,
+		"metrics": [{
+			"posts": 1,
+			"views": 218,
+			"likes": 6,
+			"comments": 3,
+			"shares": 5
+		}],
+    "brandName": "Engadget",
+    "productType": "Publication",
+    "collections": ["invitation", "publications"]
+	},
+	{
+		"id": 44,
+		"metrics": [{
+			"posts": 5,
+			"views": 443,
+			"likes": 9,
+			"comments": 6,
+			"shares": 4
+		}],
+    "brandName": "Facebook",
+    "productType": "Publication",
+    "collections": ["discovery", "publications"]
 	}
 ]

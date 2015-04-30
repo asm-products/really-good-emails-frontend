@@ -58,114 +58,28 @@
 	<div class="inner">
 		<main class="list-grid freeflow">
 			<ul>
-				<li>
-					<a href="">Abandoned Cart</a>
-				<li>
-					<a href="">Account</a>
-				<li>
-					<a href="">Activation</a>
-				<li>
-					<a href="">Activity</a>
-				<li>
-					<a href="">Alerts</a>
-				<li>
-					<a href="">Announcement</a>
-				<li>
-					<a href="">Automated</a>
-				<li>
-					<a href="">Comments</a>
-				<li>
-					<a href="">Confirmation</a>
-				<li>
-					<a href="">Customer Appreciation</a>
+				<li data-ng-repeat="collection in collections" ng-if="$index % 3===0">
+					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
-				<li>
-					<a href="">Deactivation</a>
-				<li>
-					<a href="">Discovery</a>
-				<li>
-					<a href="">Ecommerce</a>
-				<li>
-					<a href="">Email Digest</a>
-				<li>
-					<a href="">Engagement</a>
-				<li>
-					<a href="">Events</a>
-				<li>
-					<a href="">Expiration</a>
-				<li>
-					<a href="">Featured Product</a>
-				<li>
-					<a href="">Feed</a>
-				<li>
-					<a href="">Holiday</a>
+				<li data-ng-repeat="collection in collections" ng-if="$index % 3===1">
+					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
-				<li>
-					<a href="">Invitation</a>
-				<li>
-					<a href="">Local</a>
-				<li>
-					<a href="">Marketing</a>
-				<li>
-					<a href="">New Article</a>
-				<li>
-					<a href="">Newsletter</a>
-				<li>
-					<a href="">Notice</a>
-				<li>
-					<a href="">Offer</a>
-				<li>
-					<a href="">Onboarding</a>
-				<li>
-					<a href="">Order Shipped</a>
-				<li>
-					<a href="">Password Reset</a>
+				<li data-ng-repeat="collection in collections" ng-if="$index % 3===2">
+					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
-				<li>
-						<a href="">Product Launch</a>
-				<li>
-					<a href="">Product Sale</a>
-				<li>
-					<a href="">Product Update</a>
-				<li>
-					<a href="">Promotion</a>
-				<li>
-					<a href="">Receipt</a>
-				<li>
-					<a href="">Referral</a>
-				<li>
-					<a href="">Report</a>
-				<li>
-					<a href="">Retention</a>
-				<li>
-					<a href="">Reviews</a>
-				<li>
-					<a href="">Security</a>
+				<li data-ng-repeat="collection in collections" ng-if="$index % 3===3">
+					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
-				<li>
-					<a href="">Sharing</a>
-				<li>
-					<a href="">Shipping</a>
-				<li>
-					<a href="">Social</a>
-				<li>
-					<a href="">Subscription</a>
-				<li>
-					<a href="">Support</a>
-				<li>
-					<a href="">Survey</a>
-				<li>
-					<a href="">Text</a>
-				<li>
-					<a href="">Transactional</a>
-				<li>
-					<a href="">Trial</a>
-				<li>
-					<a href="">Unsubscribe</a>
+				<li data-ng-repeat="collection in collections" ng-if="$index % 3===4">
+					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+			</ul>
+			<ul>
+				<li data-ng-repeat="collection in collections" ng-if="$index % 3===5">
+					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
 			</ul>
 		</main>
 	</div>

@@ -15,8 +15,10 @@
 var app = angular
           .module('reallygoodemails', [
             'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
+            'ui.utils',
             'headroom',
-            'app.services.emails',
+            'app.services.emailData',
+            'app.filters.general',
             'app.directives.general',
             'app.directives.navigation',
           ])
