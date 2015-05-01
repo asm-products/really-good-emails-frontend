@@ -59,27 +59,27 @@
 		<main class="list-grid freeflow">
 			<ul>
 				<li data-ng-repeat="collection in collections" ng-if="$index % 3===0">
-					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+					<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
 				<li data-ng-repeat="collection in collections" ng-if="$index % 3===1">
-					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+					<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
 				<li data-ng-repeat="collection in collections" ng-if="$index % 3===2">
-					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+					<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
 				<li data-ng-repeat="collection in collections" ng-if="$index % 3===3">
-					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+					<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
 				<li data-ng-repeat="collection in collections" ng-if="$index % 3===4">
-					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+					<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 			</ul>
 			<ul>
 				<li data-ng-repeat="collection in collections" ng-if="$index % 3===5">
-					<a href="/collections/{{::collection.name}}">{{::collection.name}}</a>
+					<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 			</ul>
 		</main>
 	</div>

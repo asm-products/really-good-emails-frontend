@@ -13,9 +13,10 @@
 			"collections": ["onboarding", "retention", "ecommerce"],
 		  "date": "2015-04-24T01:00:01.000Z",
 		  "subject": "Top Articles on DesignModo",
+		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg",
-		  	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+1"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+1"
 		  }
 		},
 		{
@@ -31,9 +32,10 @@
 			"collections": ["comments", "events", "SAAS"],
 		  "date": "2015-04-24T02:00:01.000Z",
 		  "subject": "Get Competitive with Marvel Enterprise",
+		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg",
-		  	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+2"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+2"
 		  }
 		},
 		{
@@ -49,9 +51,10 @@
 			"collections": ["welcome", "offer", "SAAS"],
 		  "date": "2015-04-24T03:00:01.000Z",
 		  "subject": "Welcome to Trello!",
+		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg",
-		  	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+3"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+3"
 		  }
 		},
 		{
@@ -67,9 +70,10 @@
 			"collections": ["security", "report", "brick & mortar"],
 		  "date": "2015-04-24T04:00:01.000Z",
 		  "subject": "Get Creative with JakPrints",
+		  "description": "JakPrints Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg",
-		  	"full": "http://placehold.it/680x1380/555555/999999&text=placeholder+4"
+		  	"full": "http://placehold.it/800x1380/555555/999999&text=placeholder+4"
 		  }
 		},
 		{
@@ -84,10 +88,11 @@
 			"brandName": "Spacely Sprockets",
 			"collections": ["trial", "engagement", "holiday"],
 		  "date": "2015-04-24T05:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 1vr6",
+		  "subject": "Spacely Sprockets Subject Ipsum - 1vr6",
+		  "description": "Spacely Sprockets Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+5",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+5"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+5"
 		  }
 		},
 		{
@@ -102,10 +107,11 @@
 			"brandName": "Fajita Joe's",
 			"collections": ["invitation", "retention", "brick & mortar"],
 		  "date": "2015-04-24T06:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. rj85",
+		  "subject": "Fajita Joe's Subject Ipsum - rj85",
+		  "description": "Fajita Joe's Subject Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+6",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+6"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+6"
 		  }
 		},
 		{
@@ -120,10 +126,11 @@
 			"brandName": "Browserly",
 			"collections": ["receipt", "order shipped", "local"],
 		  "date": "2015-04-24T07:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. pls2",
+		  "subject": "Browserly - Subject Ipsum - pls2",
+		  "description": "Browserly Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+7",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+7"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+7"
 		  }
 		},
 		{
@@ -138,10 +145,11 @@
 			"brandName": "SoundCluster",
 			"collections": ["SAAS", "newsletter", "feed"],
 		  "date": "2015-04-24T08:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 00pw",
+		  "subject": "SoundCluster Subject Ipsum - 00pw",
+		  "description": "SoundCluster Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+8",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+8"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+8"
 		  }
 		},
 		{
@@ -156,10 +164,11 @@
 			"brandName": "Broseph, Inc",
 			"collections": ["announcement", "publication"],
 		  "date": "2015-04-24T09:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. hd72",
+		  "subject": "Broseph, Inc Subject Ipsum - hd72",
+		  "description": "Brospeh, Inc Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+9",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+9"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+9"
 		  }
 		},
 		{
@@ -174,10 +183,11 @@
 			"brandName": "Acme",
 			"collections": ["engagement", "discovery", "apps"],
 		  "date": "2015-04-24T10:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. p26m",
+		  "subject": "Acme Subject Ipsum - p26m",
+		  "description": "Acme Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+10",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+10"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+10"
 		  }
 		},
 		{
@@ -192,10 +202,11 @@
 			"brandName": "Wayne Enterprises",
 			"collections": ["text", "trial", "government"],
 		  "date": "2015-04-24T11:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. x002",
+		  "subject": "Wayne Enterprise Subject Ipsum - x002",
+		  "description": "Wayne Enterprise Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+11",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+11"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+11"
 		  }
 		},
 		{
@@ -210,10 +221,11 @@
 			"brandName": "Kanoodle",
 			"collections": ["automated", "account", "ecommerce"],
 		  "date": "2015-04-24T12:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 22sl",
+		  "subject": "Kanoodle Subject Ipsum - 22sl",
+		  "description": "Kanoodle Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+12",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+12"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+12"
 		  }
 		},
 		{
@@ -228,10 +240,11 @@
 			"brandName": "Zoomdawg",
 			"collections": ["SAAS", "engagement"],
 		  "date": "2015-04-24T13:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ao2z",
+		  "subject": "Zoomdawg Subject Ipsum - ao2z",
+		  "description": "Zoomdawg Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+13",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+13"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+13"
 		  }
 		},
 		{
@@ -246,10 +259,11 @@
 			"brandName": "Zoomdawg",
 			"collections": ["product launch", "ecommerce"],
 		  "date": "2015-04-24T14:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. s7aa",
+		  "subject": "Zoomdawg Subject Ipsum - s7aa",
+		  "description": "Zoomdawg Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+14",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+14"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+14"
 		  }
 		},
 		{
@@ -264,10 +278,11 @@
 			"brandName": "ChatterTags",
 			"collections": ["government", "ecommerce"],
 		  "date": "2015-04-24T15:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 3zus",
+		  "subject": "ChatterTags Subject Ipsum - 3zus",
+		  "description": "Chattertags Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+15",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+15"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+15"
 		  }
 		},
 		{
@@ -282,10 +297,11 @@
 			"brandName": "WobbleLab",
 			"collections": ["ecommerce", "reviews"],
 		  "date": "2015-04-24T16:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 3d7a",
+		  "subject": "WobbleLab Subject Ipsum - 3d7a",
+		  "description": "WobbleLab Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+16",
-		  	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+16"
+		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+16"
 		  }
 		},
 		{
@@ -300,10 +316,11 @@
 			"brandName": "Coolnomics",
 			"collections": ["SAAS"],
 		  "date": "2015-04-25T01:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. q511",
+		  "subject": "Coolnomics Subject Ipsum - q511",
+		  "description": "Coolnomics Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+17",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+17"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+17"
 		  }
 		},
 		{
@@ -318,10 +335,11 @@
 			"brandName": "Wonka Industries",
 			"collections": ["brick & mortar", "retention"],
 		  "date": "2015-04-25T02:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 5n32",
+		  "subject": "Wonka Industries Subject Ipsum - 5n32",
+		  "description": "Wonka Industries Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+18",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+18"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+18"
 		  }
 		},
 		{
@@ -336,10 +354,11 @@
 			"brandName": "Oscorp",
 			"collections": ["ecommerce", "transactional", "support"],
 		  "date": "2015-04-25T03:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. pa9x",
+		  "subject": "Oscorp Subject Ipsum - pa9x",
+		  "description": "Oscorp Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+19",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+19"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+19"
 		  }
 		},
 		{
@@ -354,10 +373,11 @@
 			"brandName": "Globex",
 			"collections": ["social", "engagement", "government"],
 		  "date": "2015-04-25T04:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. sxx5",
+		  "subject": "Globex Subject Ipsum - sxx5",
+		  "description": "Globex Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+20",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+20"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+20"
 		  }
 		},
 		{
@@ -372,10 +392,11 @@
 			"brandName": "Squarespace",
 			"collections": ["password reset", "SAAS"],
 		  "date": "2015-04-25T05:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. hh2s",
+		  "subject": "Squarespace Subject Ipsum - hh2s",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+21",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+21"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+21"
 		  }
 		},
 		{
@@ -390,10 +411,11 @@
 			"brandName": "Treehouse",
 			"collections": ["ecommerce", "reviews"],
 		  "date": "2015-04-25T06:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. pli5",
+		  "subject": "Treehouse Subject Ipsum - pli5",
+		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+22",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+22"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+22"
 		  }
 		},
 		{
@@ -408,10 +430,11 @@
 			"brandName": "Dot & Bo",
 			"collections": ["other", "ecommerce"],
 		  "date": "2015-04-25T07:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. paa9",
+		  "subject": "Dot & Bo Subject Ipsum - paa9",
+		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+23",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+23"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+23"
 		  }
 		},
 		{
@@ -426,10 +449,11 @@
 			"brandName": "Twitter",
 			"collections": ["sharing", "social"],
 		  "date": "2015-04-25T08:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 0ps2",
+		  "subject": "Twitter Subject Ipsum - 0ps2",
+		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+24",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+24"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+24"
 		  }
 		},
 		{
@@ -444,10 +468,11 @@
 			"brandName": "Squarespace",
 			"collections": ["new article", "transactional", "SAAS"],
 		  "date": "2015-04-25T09:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. eu8s",
+		  "subject": "Squarespace Subject Ipsum - eu8s",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+25",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+25"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+25"
 		  }
 		},
 		{
@@ -462,10 +487,11 @@
 			"brandName": "Treehouse",
 			"collections": ["SAAS", "support", "ecommerce"],
 		  "date": "2015-04-25T10:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ok2a",
+		  "subject": "Treehouse Subject Ipsum - ok2a",
+		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+26",
-		  	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+26"
+		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+26"
 		  }
 		},
 		{
@@ -480,10 +506,11 @@
 			"brandName": "Dot & Bo",
 			"collections": ["other", "ecommerce"],
 		  "date": "2015-04-25T11:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. px07",
+		  "subject": "Dot & Bo Subject Ipsum - px07",
+		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+27",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+27"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+27"
 		  }
 		},
 		{
@@ -498,10 +525,11 @@
 			"brandName": "Twitter",
 			"collections": ["sharing", "retention", "social"],
 		  "date": "2015-04-25T12:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ee3s",
+		  "subject": "Twitter Subject Ipsum - ee3s",
+		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+28",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+28"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+28"
 		  }
 		},
 		{
@@ -516,10 +544,11 @@
 			"brandName": "Squarespace",
 			"collections": ["SAAS", "trial"],
 		  "date": "2015-04-25T13:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. pa6z",
+		  "subject": "Squarespace Subject Ipsum - pa6z",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+29",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+29"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+29"
 		  }
 		},
 		{
@@ -534,10 +563,11 @@
 			"brandName": "Treehouse",
 			"collections": ["automated", "account", "education"],
 		  "date": "2015-04-25T14:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. pt72",
+		  "subject": "Treehouse Subject Ipsum - pt72",
+		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+30",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+30"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+30"
 		  }
 		},
 		{
@@ -552,10 +582,11 @@
 			"brandName": "Dot & Bo",
 			"collections": ["product launch", "engagement"],
 		  "date": "2015-04-25T15:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. hsd1",
+		  "subject": "Dot & Bo Subject Ipsum - hsd1",
+		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+31",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+31"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+31"
 		  }
 		},
 		{
@@ -570,10 +601,11 @@
 			"brandName": "Twitter",
 			"collections": ["product launch", "apps"],
 		  "date": "2015-04-25T16:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. asd5",
+		  "subject": "Twitter Subject Ipsum - asd5",
+		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+32",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+32"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+32"
 		  }
 		},
 		{
@@ -588,10 +620,11 @@
 			"brandName": "Squarespace",
 			"collections": ["SAAS", "publication"],
 		  "date": "2015-04-26T01:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. zxc8",
+		  "subject": "Squarespace Subject Ipsum - zxc8",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+33",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+33"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+33"
 		  }
 		},
 		{
@@ -606,10 +639,11 @@
 			"brandName": "Treehouse",
 			"collections": ["announcement, education"],
 		  "date": "2015-04-26T02:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. cxz3",
+		  "subject": "Treehouse Subject Ipsum - cxz3",
+		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+34",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+34"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+34"
 		  }
 		},
 		{
@@ -624,10 +658,11 @@
 			"brandName": "Dot & Bo",
 			"collections": ["engagement", "discovery", "brick & mortar"],
 		  "date": "2015-04-26T03:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. mlk6",
+		  "subject": "Dot & Bo Subject Ipsum - mlk6",
+		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+35",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+35"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+35"
 		  }
 		},
 		{
@@ -642,10 +677,11 @@
 			"brandName": "Twitter",
 			"collections": ["text", "trial", "apps"],
 		  "date": "2015-04-26T04:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. lkk8",
+		  "subject": "Twitter Subject Ipsum - lkk8",
+		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+36",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+36"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+36"
 		  }
 		},
 		{
@@ -660,10 +696,11 @@
 			"brandName": "Squarespace",
 			"collections": ["trial", "holiday", "hardware"],
 		  "date": "2015-04-26T05:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ps2q",
+		  "subject": "Squarespace Subject Ipsum - ps2q",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+37",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+37"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+37"
 		  }
 		},
 		{
@@ -678,10 +715,11 @@
 			"brandName": "Treehouse",
 			"collections": ["invitation", "social"],
 		  "date": "2015-04-26T06:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. oil3",
+		  "subject": "Treespace Subject Ipsum - oil3",
+		  "description": "Treespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+38",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+38"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+38"
 		  }
 		},
 		{
@@ -696,10 +734,11 @@
 			"brandName": "Dot & Bo",
 			"collections": ["SAAS", "order shipped", "apps"],
 		  "date": "2015-04-26T07:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. lo2s",
+		  "subject": "Dot & Bo Subject Ipsum - lo2s",
+		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+39",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+39"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+39"
 		  }
 		},
 		{
@@ -714,10 +753,11 @@
 			"brandName": "Twitter",
 			"collections": ["promotion", "newsletter", "social"],
 		  "date": "2015-04-26T08:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. cuw8",
+		  "subject": "Twitter Subject Ipsum - cuw8",
+		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+40",
-		  	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+40"
+		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+40"
 		  }
 		},
 		{
@@ -732,10 +772,11 @@
 			"brandName": "Squarespace",
 			"collections": ["ecommerce", "government"],
 		  "date": "2015-04-26T09:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. xa92",
+		  "subject": "Squarespace Subject Ipsum - xa92",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+41",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+41"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+41"
 		  }
 		},
 		{
@@ -750,10 +791,11 @@
 			"brandName": "Treehouse",
 			"collections": ["product launch", "holiday"],
 		  "date": "2015-04-26T10:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. s22p",
+		  "subject": "Treehouse Subject Ipsum - s22p",
+		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+42",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+42"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+42"
 		  }
 		},
 		{
@@ -768,10 +810,11 @@
 			"brandName": "Dot & Bo",
 			"collections": ["password reset"],
 		  "date": "2015-04-26T11:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ma6c",
+		  "subject": "Dot & Bo Subject Ipsum - ma6c",
+		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+43",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+43"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+43"
 		  }
 		},
 		{
@@ -786,10 +829,11 @@
 			"brandName": "Squarespace",
 			"collections": ["ecommerce", "reviews", "comments"],
 		  "date": "2015-04-26T12:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. kkz3",
+		  "subject": "Squarespace Subject Ipsum - kkz3",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+44",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+44"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+44"
 		  }
 		},
 		{
@@ -804,10 +848,11 @@
 			"brandName": "Treehouse",
 			"collections": ["promotion", "newsletter", "feed"],
 		  "date": "2015-04-26T13:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 0pos",
+		  "subject": "Treehouse Subject Ipsum - 0pos",
+		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+45",
-		  	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+45"
+		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+45"
 		  }
 		},
 		{
@@ -822,10 +867,11 @@
 			"brandName": "Squarespace",
 			"collections": ["ecommerce"],
 		  "date": "2015-04-26T14:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. pla3",
+		  "subject": "Squarespace Subject Ipsum - pla3",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+46",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+46"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+46"
 		  }
 		},
 		{
@@ -840,10 +886,11 @@
 			"brandName": "Squarespace",
 			"collections": ["engagement", "discovery"],
 		  "date": "2015-04-26T15:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ooy2",
+		  "subject": "Squarespace Subject Ipsum - ooy2",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+47",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+47"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+47"
 		  }
 		},
 		{
@@ -858,10 +905,11 @@
 			"brandName": "Squarespace",
 			"collections": ["text", "trial"],
 		  "date": "2015-04-26T16:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 551s",
+		  "subject": "Squarespace Subject Ipsum - 551s",
+		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+48",
-		  	"full": "http://placehold.it/680x1380/999999/cccccc&text=placeholder+48"
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+48"
 		  }
 		},
 		{
@@ -877,9 +925,10 @@
 			"collections": ["announcement"],
 		  "date": "2015-04-26T18:00:01.000Z",
 		  "subject": "Designs of the Week",
+		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+49",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+49"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+49"
 		  }
 		},
 		{
@@ -895,9 +944,10 @@
 			"collections": ["comments", "reviews"],
 		  "date": "2015-04-27T19:00:01.000Z",
 		  "subject": "Trello Reviews FTW!",
+		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+50",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+50"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+50"
 		  }
 		},
 		{
@@ -913,9 +963,10 @@
 			"collections": ["engagement", "discovery"],
 		  "date": "2015-04-28T17:00:01.000Z",
 		  "subject": "Mo' Sprockets, Mo' Problems",
+		  "description": "Spacely Sprockets Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+51",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+51"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+51"
 		  }
 		},
 		{
@@ -931,9 +982,10 @@
 			"collections": ["newsletter", "feed"],
 		  "date": "2015-04-29T17:00:01.000Z",
 		  "subject": "Marvel Newsletter - August 2015",
+		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+52",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+52"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+52"
 		  }
 		},
 		{
@@ -949,9 +1001,10 @@
 			"collections": ["password reset", "SAAS"],
 		  "date": "2015-04-30T18:00:01.000Z",
 		  "subject": "Put Some Space In Your Sprockets",
+		  "description": "Spacely Sprockets Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+53",
-		  	"full": "http://placehold.it/680x1380/427fed/a1bff6&text=placeholder+53"
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+53"
 		  }
 		},
 		{
@@ -966,10 +1019,11 @@
 			"brandName": "Marvel",
 			"collections": ["feed", "engagement"],
 		  "date": "2015-05-01T08:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. xx0p",
+		  "subject": "Marvel Subject Ipsum - xx0p",
+		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+54",
-		  	"full": "http://placehold.it/680x1380/e5e5e5/999999&text=placeholder+54"
+		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+54"
 		  }
 		},
 		{
@@ -984,10 +1038,11 @@
 			"brandName": "Trello",
 			"collections": ["ecommerce", "trial"],
 		  "date": "2015-05-02T13:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. vbb7",
+		  "subject": "Trello Subject Ipsum - vbb7",
+		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+55",
-		  	"full": "http://placehold.it/680x1380/ffbb1b/ffdd8d&text=placeholder+55"
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+55"
 		  }
 		},
 		{
@@ -1002,10 +1057,11 @@
 			"brandName": "DesignModo",
 			"collections": ["engagement"],
 		  "date": "2015-05-03T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. wnm9",
+		  "subject": "DesignModo Subject Ipsum - wnm9",
+		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+56",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+56"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+56"
 		  }
 		},
 		{
@@ -1020,10 +1076,11 @@
 			"brandName": "Best Buy",
 			"collections": ["survey", "brick & mortar"],
 		  "date": "2015-05-04T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. u889",
+		  "subject": "Best Buy Subject Ipsum - u889",
+		  "description": "Best Buy Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+57",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+57"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+57"
 		  }
 		},
 		{
@@ -1038,10 +1095,11 @@
 			"brandName": "Home Depot",
 			"collections": ["offer", "brick & mortar"],
 		  "date": "2015-05-05T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 4tgr",
+		  "subject": "Home Depot Subject Ipsum - 4tgr",
+		  "description": "Home Depot Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+58",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+58"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+58"
 		  }
 		},
 		{
@@ -1056,10 +1114,11 @@
 			"brandName": "Target",
 			"collections": ["invitation", "brick & mortar"],
 		  "date": "2015-05-06T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. jkl9",
+		  "subject": "Target Subject Ipsum - jkl9",
+		  "description": "Target Subject Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+59",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+59"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+59"
 		  }
 		},
 		{
@@ -1074,10 +1133,11 @@
 			"brandName": "Crate & Barrel",
 			"collections": ["engagement", "alerts"],
 		  "date": "2015-05-07T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 44rf",
+		  "subject": "Crate & Barrel Subject Ipsum - 44rf",
+		  "description": "Crate & Barrel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+60",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+60"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+60"
 		  }
 		},
 		{
@@ -1092,10 +1152,11 @@
 			"brandName": "Chipotle",
 			"collections": ["trial", "social", "brick & mortar"],
 		  "date": "2015-05-08T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 8lop",
+		  "subject": "Chipotle Subject Ipsum - 8lop",
+		  "description": "Chipotle Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+61",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+61"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+61"
 		  }
 		},
 		{
@@ -1110,10 +1171,11 @@
 			"brandName": "Starbucks",
 			"collections": ["feed","brick & mortar"],
 		  "date": "2015-05-09T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ujjh",
+		  "subject": "Starbucks Subject Ipsum - ujjh",
+		  "description": "Starbucks Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+62",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+62"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+62"
 		  }
 		},
 		{
@@ -1128,10 +1190,11 @@
 			"brandName": "Pinterest",
 			"collections": ["report", "text", "social"],
 		  "date": "2015-05-10T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 7u77",
+		  "subject": "Pinterest Subject Ipsum - 7u77",
+		  "description": "Pinterest Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+63",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+63"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+63"
 		  }
 		},
 		{
@@ -1146,10 +1209,11 @@
 			"brandName": "Facebook",
 			"collections": ["account", "security", "social"],
 		  "date": "2015-05-11T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. io99",
+		  "subject": "Facebook Subject Ipsum - io99",
+		  "description": "Facebook Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+64",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+64"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+64"
 		  }
 		},
 		{
@@ -1164,10 +1228,11 @@
 			"brandName": "Instagram",
 			"collections": ["events", "social"],
 		  "date": "2015-05-12T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. lp90",
+		  "subject": "Instagram Subject Ipsum - lp90",
+		  "description": "Instagram Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+65",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+65"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+65"
 		  }
 		},
 		{
@@ -1182,10 +1247,11 @@
 			"brandName": "Reddit",
 			"collections": ["confirmation, notice", "social"],
 		  "date": "2015-05-13T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. hnj8",
+		  "subject": "Reddit Subject Ipsum - hnj8",
+		  "description": "Reddit Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+66",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+66"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+66"
 		  }
 		},
 		{
@@ -1200,10 +1266,11 @@
 			"brandName": "Google+",
 			"collections": ["automated", "retention", "social"],
 		  "date": "2015-05-14T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. va6w",
+		  "subject": "Google+ Subject Ipsum - va6w",
+		  "description": "Google+ Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+67",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+67"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+67"
 		  }
 		},
 		{
@@ -1218,10 +1285,11 @@
 			"brandName": "Linkedin",
 			"collections": ["discovery", "product launch", "social"],
 		  "date": "2015-05-15T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 2waw",
+		  "subject": "Linkedin Subject Ipsum - 2waw",
+		  "description": "LinkedIn Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+68",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+68"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+68"
 		  }
 		},
 		{
@@ -1236,10 +1304,11 @@
 			"brandName": "Wired",
 			"collections": ["password reset", "publication"],
 		  "date": "2015-05-16T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. vvf4",
+		  "subject": "Wired Subject Ipsum - vvf4",
+		  "description": "Wired Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+69",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+69"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+69"
 		  }
 		},
 		{
@@ -1254,10 +1323,11 @@
 			"brandName": "New York Times",
 			"collections": ["shipping", "publication"],
 		  "date": "2015-05-17T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. ffd4",
+		  "subject": "New York Times Subject Ipsum - ffd4",
+		  "description": "New York Times Description orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+70",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+70"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+70"
 		  }
 		},
 		{
@@ -1272,10 +1342,11 @@
 			"brandName": "Dwell",
 			"collections": ["transactional", "publication"],
 		  "date": "2015-05-18T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 33f3",
+		  "subject": "Dwell Subject Ipsum - 33f3",
+		  "description": "Dwell Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+71",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+71"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+71"
 		  }
 		},
 		{
@@ -1290,10 +1361,11 @@
 			"brandName": "Lagom",
 			"collections": ["events", "publication"],
 		  "date": "2015-05-19T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 6yyf",
+		  "subject": "Lagom Subject Ipsum - 6yyf",
+		  "description": "Lagom Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+72",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+72"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+72"
 		  }
 		},
 		{
@@ -1308,10 +1380,11 @@
 			"brandName": "National Geographic",
 			"collections": ["activity", "publication"],
 		  "date": "2015-05-20T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 66hf",
+		  "subject": "National Geographic Subject Ipsum - 66hf",
+		  "description": "National Geographic Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+73",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+73"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+73"
 		  }
 		},
 		{
@@ -1326,10 +1399,11 @@
 			"brandName": "The Verge",
 			"collections": ["retention", "publication"],
 		  "date": "2015-05-21T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. 32cd",
+		  "subject": "The Verge Subject Ipsum - 32cd",
+		  "description": "The Verge Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+74",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+74"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+74"
 		  }
 		},
 		{
@@ -1344,10 +1418,11 @@
 			"brandName": "Wikipedia",
 			"collections": ["sharing", "publication"],
 		  "date": "2015-05-22T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. fds2",
+		  "subject": "Wikipedia Subject Ipsum - fds2",
+		  "description": "Wikipedia Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+75",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+75"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+75"
 		  }
 		},
 		{
@@ -1362,10 +1437,11 @@
 			"brandName": "Engadget",
 			"collections": ["invitation", "publication"],
 		  "date": "2015-05-23T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. d21d",
+		  "subject": "Engadget Subject Ipsum - d21d",
+		  "description": "Engadget Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+76",
-		  	"full": "http://placehold.it/680x1380/53a93f/a9d49f&text=placeholder+76"
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+76"
 		  }
 		},
 		{
@@ -1380,10 +1456,11 @@
 			"brandName": "Techcrunch",
 			"collections": ["discovery", "publication"],
 		  "date": "2015-05-24T19:00:01.000Z",
-		  "subject": "Lorem ipsum dolor sit amet. d21d",
+		  "subject": "Techcrunch Subject Ipsum - d21d",
+		  "description": "Techcrunch Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+77",
-		  	"full": "http://placehold.it/680x1380/df5138/efa89c&text=placeholder+77"
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+77"
 		  }
 		}
 	],

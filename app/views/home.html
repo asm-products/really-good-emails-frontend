@@ -23,8 +23,8 @@
 						<dt data-ng-click="toggleNavGroupOne = !toggleNavGroupOne; toggleNavGroupTwo = ''; toggleNavGroupThree = '';">
 							<a href="">
 								<span class="item">{{::navGroupOneTitle}}</span>
-								<svg class="icon-arrow" viewBox="0 0 32 32">
-								  <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+								<svg class="icon-caret" viewBox="0 0 32 32">
+								  <use xlink:href="/media/images/img.svg#icon-caret"></use>
 								</svg>
 							</a>
 						<dd>
@@ -39,8 +39,8 @@
 						<dt data-ng-click="toggleNavGroupTwo = !toggleNavGroupTwo; toggleNavGroupOne = ''; toggleNavGroupThree = '';">
 							<a href="">
 								<span class="item">{{::navGroupTwoTitle}}</span>
-								<svg class="icon-arrow" viewBox="0 0 32 32">
-								  <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+								<svg class="icon-caret" viewBox="0 0 32 32">
+								  <use xlink:href="/media/images/img.svg#icon-caret"></use>
 								</svg>
 							</a>
 						<dd>
@@ -58,8 +58,8 @@
 						<dt data-ng-click="toggleNavGroupThree = !toggleNavGroupThree; toggleNavGroupOne = ''; toggleNavGroupTwo = '';">
 							<a href="">
 								<span class="item">{{::navGroupThreeTitle}}</span>
-								<svg class="icon-arrow" viewBox="0 0 32 32">
-								  <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+								<svg class="icon-caret" viewBox="0 0 32 32">
+								  <use xlink:href="/media/images/img.svg#icon-caret"></use>
 								</svg>
 							</a>
 						<dd>
@@ -83,8 +83,8 @@
 			 --><div class="secondary">
 						<a href="">
 							<span>View All Trending</span>
-							<svg class="icon-arrow" viewBox="0 0 32 32">
-	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+							<svg class="icon-caret" viewBox="0 0 32 32">
+	              <use xlink:href="/media/images/img.svg#icon-caret"></use>
 	            </svg>
 						</a>
 					</div>
@@ -191,8 +191,8 @@
 			 --><div class="secondary">
 						<a href="">
 							<span>View All {{::brandCount}} Brands</span>
-							<svg class="icon-arrow" viewBox="0 0 32 32">
-	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+							<svg class="icon-caret" viewBox="0 0 32 32">
+	              <use xlink:href="/media/images/img.svg#icon-caret"></use>
 	            </svg>
 						</a>
 					</div>
@@ -258,7 +258,7 @@
 					<li class="title">
 						<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 					<li>
-					<li data-ng-repeat="brand in brands | orderBy:postCount:true | filter:{collections:collection.name} | limitTo:'9'"> <!-- we need to be able to filter by collection name here and order by brand post count below -->
+					<li data-ng-repeat="brand in brands | orderBy:postCount:true | filter:{collections:collection.name} | limitTo:'9'">
 						<a href="/brands/{{::brand.brandName | slugify}}">
 							{{::brand.brandName}}
 							<span>
@@ -314,8 +314,8 @@
 			 --><div class="secondary">
 						<a href="">
 							<span>View All {{::collectionCount}} Collections</span>
-							<svg class="icon-arrow" viewBox="0 0 32 32">
-	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
+							<svg class="icon-caret" viewBox="0 0 32 32">
+	              <use xlink:href="/media/images/img.svg#icon-caret"></use>
 	            </svg>
 						</a>
 					</div>
