@@ -1,0 +1,43 @@
+/* >> Breadcrumbs (Module) >>>>>>>>>>>>
+============================================*/
+//
+.breadcrumbs {
+	display:inline-block;
+	margin: 0 0 0.35em 0;
+	//
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		color: $slate;
+		text-decoration: none;
+		font-size: 0.938em;
+		//
+		&:hover {
+			color: $ruby;
+			//
+			img {
+				opacity: 0.75;
+			}
+			svg {
+				fill: $ruby;
+			}
+		}
+		svg {
+			display: inline-block;
+			width: 12px;
+			vertical-align: middle;
+			transform: rotate(180deg);
+			fill: slateDark;
+			transition: fill 0.2s ease;
+		}
+		span {
+			display: inline-block;
+			padding-left: 0.25em;
+			vertical-align: middle;
+			text-decoration: none;
+			opacity: 1;
+			transition: opacity 0.2s ease;
+		}
+	}
+}
+

@@ -1,13 +1,162 @@
 /* >> Detail Grid (Module) >>>>>>>>>>>>
 ============================================*/
 //
-.detail-grid {
-	//
-	.primary {
-
+.detail-grid-base {
+	margin-bottom: 1.5em;
+	padding-top: 0;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid $winkleLight;
+	@media screen and (min-width: 768px) {
+		padding-bottom: 0;
 	}
-	.secondary {
+}
+.detail-grid {
+	@media screen and (min-width: 768px) {
+		display: table;
+		width: 100%;
+	}
+	//
+	> .primary {
+		position: relative;
+		padding-top: 1em;
+		padding-bottom: 1.5em;
+		margin: 0 0 1.5em;
+		vertical-align: top;
+		@media screen and (min-width: 768px) {
+			display: table-cell;
+			padding-bottom: 1em;;
+			margin: 0;
+			border-right: 1px solid $winkleLight;
+		}
+		@media screen and (min-width: 1265px) {
+			padding-bottom: 2.5em;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			bottom:0;
+			left: -10%;
+	  	width: 120%;
+			height: 1px;
+			background: $winkleLight;
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
+	> .secondary {
+		vertical-align: top;
+		@media screen and (min-width: 768px) {
+			display: table-cell;
+			width: 20em;
+			padding: 1em 0 1em 1em;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 30em;
+		}
+		@media screen and (min-width: 1265px) {
+			padding: 2.5em 0 2.5em 2.5em;
+		}
+	}
+}
+.detail-grid > .primary {
+	//
+	> header {
+		position: relative;
+		padding-right: 1em;
+		@media screen and (min-width: 768px) {
+			padding-right: 1em;
+		}
+		@media screen and (min-width: 1265px) {
+			padding-right: 2.5em;
+		}
+		&:after {
+			@media screen and (min-width: 768px) {
+				content: '';
+				position: absolute;
+				bottom:0;
+				left: -100%;
+		  	width: 200%;
+				height: 1px;
+				background: $winkleLight;
+			}
+		}
+		h1 {
+			margin:0 0 0.25em 0;
+			font-family: $roboto-bold;
+			font-size: 2.25em;
+			line-height: 1.15em;
+			text-transform: capitalize;
+			//
+			a {
+				color: $slateDark;
+			}
+		}
+		.description {
+			margin-bottom: 0.75em;
+			font-size: 1.063em;
+			line-height: 1.375em;
+			color: $slateLightest;
+		}
+		ul.collections {
+			margin: 0 0 0 0.6em;
+  		padding: 0 0 1em 0;
+			//
+			li {
+				position: relative;
+				margin-right: 1em;
+				display: inline-block;
+				text-transform: capitalize;
+				//
+			}
+			a {
+				color: $tealDark;
+				font-family: $roboto-bold;
+				//
+				&:before {
+					content: '#';
+					position: absolute;
+					top: 0;
+					left: -0.6em;
+				}
+			}
+		}
+		.user {
+			display:none;
+		}
+	}
+	> main {
+		@media screen and (min-width: 768px) {
+			padding-right: 1em;
+		}
+		@media screen and (min-width: 1265px) {
+			padding-right: 2.5em;
+		}
+	}
+}
+.detail-grid-nav {
+	background: #eee;
+}
 
+.detail-grid > .secondary {
+	//
+	> ul.main {
+		margin: 0;
+		padding: 0;
+		//
+		> li {
+			list-style: none;
+		}
+	}
+	.card-grid-main {
+		margin-bottom: 1em;
+		@media screen and (min-width: 1265px) {
+			margin-bottom: 4em;
+		}
+		//
+		> .card {
+			margin-bottom: 1em;
+		}
 	}
 }
 
