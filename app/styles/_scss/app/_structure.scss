@@ -30,15 +30,9 @@ body {
 
 body > .container {
 	overflow: hidden;
-	margin-top: 3.75em;
-  @media screen and (min-width: 768px) {
-		margin-top: 4.95em;
-	}
+	margin-top: 4.938em;
 	> header {
-		margin-top: -3.75em;
-	  @media screen and (min-width: 768px) {
-			margin-top: -4.95em;
-		}
+		margin-top: -4.938em;
 	}
 	> .core {
 		position: relative;

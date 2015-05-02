@@ -1,6 +1,15 @@
 /* >> Detail Grid (Module) >>>>>>>>>>>>
 ============================================*/
 //
+.detail-grid-base {
+	margin-bottom: 1.5em;
+	padding-top: 0;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid $winkleLight;
+	@media screen and (min-width: 768px) {
+		padding-bottom: 0;
+	}
+}
 .detail-grid {
 	@media screen and (min-width: 768px) {
 		display: table;
@@ -8,20 +17,39 @@
 	}
 	//
 	> .primary {
-		padding: 1em 0 2.5em 0;
+		position: relative;
+		padding-top: 1em;
+		padding-bottom: 1.5em;
+		margin: 0 0 1.5em;
 		vertical-align: top;
-		border-right: 1px solid $winkleLight;
 		@media screen and (min-width: 768px) {
 			display: table-cell;
-			padding: 1em 0 1em 0;
+			padding-bottom: 1em;;
+			margin: 0;
+			border-right: 1px solid $winkleLight;
+		}
+		@media screen and (min-width: 1265px) {
+			padding-bottom: 2.5em;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			bottom:0;
+			left: -10%;
+	  	width: 120%;
+			height: 1px;
+			background: $winkleLight;
+			@media screen and (min-width: 768px) {
+				display: none;
+			}
 		}
 	}
 	> .secondary {
-		padding: 1em 0 1em 1em;
 		vertical-align: top;
 		@media screen and (min-width: 768px) {
 			display: table-cell;
 			width: 20em;
+			padding: 1em 0 1em 1em;
 		}
 		@media screen and (min-width: 1024px) {
 			width: 30em;
@@ -36,17 +64,22 @@
 	> header {
 		position: relative;
 		padding-right: 1em;
+		@media screen and (min-width: 768px) {
+			padding-right: 1em;
+		}
 		@media screen and (min-width: 1265px) {
 			padding-right: 2.5em;
 		}
 		&:after {
-			content: '';
-			position: absolute;
-			bottom:0;
-			left: -100%;
-	  	width: 200%;
-			height: 1px;
-			background: $winkleLight;
+			@media screen and (min-width: 768px) {
+				content: '';
+				position: absolute;
+				bottom:0;
+				left: -100%;
+		  	width: 200%;
+				height: 1px;
+				background: $winkleLight;
+			}
 		}
 		h1 {
 			margin:0 0 0.25em 0;
@@ -93,7 +126,9 @@
 		}
 	}
 	> main {
-		padding-right: 1em;
+		@media screen and (min-width: 768px) {
+			padding-right: 1em;
+		}
 		@media screen and (min-width: 1265px) {
 			padding-right: 2.5em;
 		}
@@ -105,15 +140,22 @@
 
 .detail-grid > .secondary {
 	//
-	main {
+	> ul.main {
+		margin: 0;
+		padding: 0;
 		//
-		> ul {
-			margin: 0;
-			padding: 0;
-			//
-			> li {
-				list-style: none;
-			}
+		> li {
+			list-style: none;
+		}
+	}
+	.card-grid-main {
+		margin-bottom: 1em;
+		@media screen and (min-width: 1265px) {
+			margin-bottom: 4em;
+		}
+		//
+		> .card {
+			margin-bottom: 1em;
 		}
 	}
 }

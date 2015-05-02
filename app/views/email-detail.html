@@ -1,4 +1,4 @@
-<div class="base _ptb0 _bb1">
+<div class="base detail-grid-base">
 	<div class="inner">
 		<section class="detail-grid">
 			<div class="primary">
@@ -85,40 +85,77 @@
 				</main>
 			</div>
 			<div class="secondary">
-				<main>
-					<ul>
-						<li>
-							<div class="card" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'1'">
-								<div class="inner">
-									<div class="thumb">
-										<a href="/brands/{{::brand.brandName | slugify}}">
-											<img src="/media/images/thumb-spacer.png" alt="">
-										</a>
-										<div class="big-label">
-											<div class="count">
-												<span>{{::brand.metrics[0].posts}}</span>
-												<svg class="icon-smiley" viewBox="0 0 32 32">
-		                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
-		                    </svg>
-											</div>
-											<div class="title">
-												{{::brand.brandName}}
-											</div>
-											<div class="service">
-												{{::brand.service}}
+				<ul class="main">
+					<li>
+						<div class="card-grid">
+							<div class="card-grid-main">
+								<div class="card" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'1'">
+									<div class="inner">
+										<div class="thumb">
+											<a href="/brands/{{::brand.brandName | slugify}}">
+												<img src="/media/images/thumb-spacer.png" alt="">
+											</a>
+											<div class="big-label">
+												<div class="count">
+													<span>{{::brand.metrics[0].posts}}</span>
+													<svg class="icon-smiley" viewBox="0 0 32 32">
+			                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+			                    </svg>
+												</div>
+												<div class="title">
+													{{::brand.brandName}}
+												</div>
+												<div class="service">
+													{{::brand.service}}
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<ul class="main mini two-six-1024" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'1'">
+									<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brandName:brand.brandName} | limitTo:'6'">
+										<div class="inner">
+											<div class="thumb">
+												<a href="/{{::email.slug}}">
+													<img data-ng-src="{{::email.img.thumb}}" alt="{{::email.subject}}">
+												</a>
+												<div class="overlay">
+													<div class="social">
+														<a href="" class="likes">
+															<svg class="icon-smiley" viewBox="0 0 32 32">
+					                        <use xlink:href="/media/images/img.svg#icon-smiley"></use>
+					                    </svg>
+															<span>{{::email.metrics[0].likes}}</span>
+														</a>
+														<a href="" class="comments">
+															<svg class="icon-comment" viewBox="0 0 32 32">
+					                        <use xlink:href="/media/images/img.svg#icon-comment"></use>
+					                    </svg>
+															<span>{{::email.metrics[0].comments}}</span>
+														</a>
+														<a href="" class="shares">
+															<svg class="icon-share" viewBox="0 0 32 32">
+					                        <use xlink:href="/media/images/img.svg#icon-share"></use>
+					                    </svg>
+															<span>{{::email.metrics[0].shares}}</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
-						<li>
-							<!-- card grid -->
-						<li>
-							<!-- related articles -->
-						<li>
-							<!-- ad -->
-					</ul>
-				</main>
+						</div>
+					<li>
+						<!-- related articles -->
+					<li>
+						<div class="banner banner_4x3">
+							<a href="/email-kits" title="">
+								<img src="https://reallygoodemails-cdn.appspot.com/media/images/banners/banner_480x300_email-kits.jpg" alt="">
+							</a>
+						</div>
+				</ul>
 			</div>
 		</section>
 	</div>
