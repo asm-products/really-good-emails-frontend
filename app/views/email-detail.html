@@ -40,7 +40,44 @@
 				<main>
 					<div class="detail-grid-nav">
 						<div class="primary">	<!-- nav stuff -->
-							<dl class="nav-dropdown nav-group-one" data-ng-class="toggleNavGroupOne ? 'active' : ''">
+
+							<!-- <svg class="icon-smiley" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-smiley"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-comment" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-comment"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-share" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-share"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-desktop" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-desktop"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-mobile" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-mobile"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-code" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-code"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-facebook" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-facebook"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-twitter" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-twitter"></use>
+							</svg> &nbsp;
+
+							<svg class="icon-pinterest" viewBox="0 0 32 32">
+							  <use xlink:href="/media/images/img.svg#icon-pinterest"></use>
+							</svg> &nbsp; -->
+
+							<!-- <dl class="nav-dropdown nav-group-one" data-ng-class="toggleNavGroupOne ? 'active' : ''">
 								<dt data-ng-click="toggleNavGroupOne = !toggleNavGroupOne; toggleNavGroupTwo = ''; toggleNavGroupThree = '';">
 									<a href="">
 										<span class="item">{{::navGroupOneTitle}}</span>
@@ -53,10 +90,10 @@
 			              <li class="{{::status1}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupOneItems">
 			              	<a href="#" data-ng-click="toggleNavGroupOneItem(this)">{{::item.title}}</a>
 				          </ul>
-							</dl>
+							</dl> -->
 						</div>
 						<div class="secondary"> <!-- social stuff -->
-							<dl class="nav-dropdown nav-group-two _inline _right" data-ng-class="toggleNavGroupTwo ? 'active' : '';">
+							<!-- <dl class="nav-dropdown nav-group-two _inline _right" data-ng-class="toggleNavGroupTwo ? 'active' : '';">
 								<dt data-ng-click="toggleNavGroupTwo = !toggleNavGroupTwo; toggleNavGroupOne = ''; toggleNavGroupThree = '';">
 									<a href="">
 										<span class="item">{{::navGroupTwoTitle}}</span>
@@ -74,7 +111,7 @@
 			              		{{::item.title}}
 			              	</a>
 				          </ul>
-							</dl>
+							</dl> -->
 						</div>
 					</div>
 					<div class="detail-grid-main" data-ng-repeat="item in emails | filter:{id:getID()} | limitTo:'1'">
