@@ -1,7 +1,7 @@
 {
 	"emails": [
 		{
-			"id": 1,
+			"emailID": 1,
 			"slug": "",
 			"metrics": [{
 				"views": 251,
@@ -9,18 +9,18 @@
 				"comments": 4,
 				"shares": 10
 			}],
-			"brandName": "DesignModo",
-			"collections": ["onboarding", "retention", "ecommerce"],
-		  "date": "2015-04-24T01:00:01.000Z",
+		  "date": "2015-02-24T01:00:01.000Z",
 		  "subject": "Top Articles on DesignModo",
 		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/designmodo-phablets_041715_thumb.jpg",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+1"
-		  }
+		  },
+		  "brandName": "DesignModo",
+		  "collections": ["onboarding", "retention", "ecommerce"]
 		},
 		{
-			"id": 2,
+			"emailID": 2,
 			"slug": "",
 			"metrics": [{
 				"views": 207,
@@ -28,18 +28,18 @@
 				"comments": 2,
 				"shares": 7
 			}],
-			"brandName": "Marvel",
-			"collections": ["comments", "events", "SAAS"],
-		  "date": "2015-04-24T02:00:01.000Z",
+		  "date": "2015-02-24T02:00:01.000Z",
 		  "subject": "Get Competitive with Marvel Enterprise",
 		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/marvel-enterprise_041615_thumb.jpg",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+2"
-		  }
+		  },
+		  "brandName": "Marvel",
+		  "collections": ["comments", "events", "SAAS"]
 		},
 		{
-			"id": 3,
+			"emailID": 3,
 			"slug": "",
 			"metrics": [{
 				"views": 193,
@@ -47,18 +47,18 @@
 				"comments": 0,
 				"shares": 4
 			}],
-			"brandName": "Trello",
-			"collections": ["welcome", "offer", "SAAS"],
-		  "date": "2015-04-24T03:00:01.000Z",
+		  "date": "2015-02-24T03:00:01.000Z",
 		  "subject": "Welcome to Trello!",
 		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/trello-welcome_041215_thumb.jpg",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+3"
-		  }
+		  },
+		  "brandName": "Trello",
+		  "collections": ["welcome", "offer", "SAAS"]
 		},
 		{
-			"id": 4,
+			"emailID": 4,
 			"slug": "",
 			"metrics": [{
 				"views": 188,
@@ -66,18 +66,18 @@
 				"comments": 5,
 				"shares": 3
 			}],
-			"brandName": "JakPrints",
-			"collections": ["security", "report", "brick & mortar"],
-		  "date": "2015-04-24T04:00:01.000Z",
+		  "date": "2015-02-24T04:00:01.000Z",
 		  "subject": "Get Creative with JakPrints",
 		  "description": "JakPrints Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://reallygoodemails-cdn.appspot.com/media/images/emails/jakprints-48-pages_041615_thumb.jpg",
 		  	"full": "http://placehold.it/800x1380/555555/999999&text=placeholder+4"
-		  }
+		  },
+		  "brandName": "JakPrints",
+		  "collections": ["security", "referral", "brick & mortar"]
 		},
 		{
-			"id": 5,
+			"emailID": 5,
 			"slug": "",
 			"metrics": [{
 				"views": 142,
@@ -85,18 +85,18 @@
 				"comments": 3,
 				"shares": 5
 			}],
-			"brandName": "Spacely Sprockets",
-			"collections": ["trial", "engagement", "holiday"],
-		  "date": "2015-04-24T05:00:01.000Z",
-		  "subject": "Spacely Sprockets Subject Ipsum - 1vr6",
+		  "date": "2015-02-24T05:00:01.000Z",
+		  "subject": "Spacely Sprockets Subject Ipsum",
 		  "description": "Spacely Sprockets Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+5",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+5"
-		  }
+		  },
+		  "brandName": "Spacely Sprockets",
+		  "collections": ["trial", "engagement", "holiday"]
 		},
 		{
-			"id": 6,
+			"emailID": 6,
 			"slug": "",
 			"metrics": [{
 				"views": 127,
@@ -104,18 +104,18 @@
 				"comments": 1,
 				"shares": 7
 			}],
-			"brandName": "Fajita Joe's",
-			"collections": ["invitation", "retention", "brick & mortar"],
-		  "date": "2015-04-24T06:00:01.000Z",
-		  "subject": "Fajita Joe's Subject Ipsum - rj85",
+		  "date": "2015-02-24T06:00:01.000Z",
+		  "subject": "Fajita Joe's Subject Ipsum",
 		  "description": "Fajita Joe's Subject Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+6",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+6"
-		  }
+		  },
+		  "brandName": "Fajita Joe's",
+		  "collections": ["invitation", "referral", "brick & mortar"]
 		},
 		{
-			"id": 7,
+			"emailID": 7,
 			"slug": "",
 			"metrics": [{
 				"views": 132,
@@ -123,18 +123,18 @@
 				"comments": 0,
 				"shares": 1
 			}],
-			"brandName": "Browserly",
-			"collections": ["receipt", "order shipped", "local"],
-		  "date": "2015-04-24T07:00:01.000Z",
-		  "subject": "Browserly - Subject Ipsum - pls2",
+		  "date": "2015-02-24T07:00:01.000Z",
+		  "subject": "Browserly - Subject Ipsum",
 		  "description": "Browserly Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+7",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+7"
-		  }
+		  },
+		  "brandName": "Browserly",
+		  "collections": ["receipt", "order shipped", "local"]
 		},
 		{
-			"id": 8,
+			"emailID": 8,
 			"slug": "",
 			"metrics": [{
 				"views": 145,
@@ -142,18 +142,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "SoundCluster",
-			"collections": ["SAAS", "newsletter", "feed"],
-		  "date": "2015-04-24T08:00:01.000Z",
-		  "subject": "SoundCluster Subject Ipsum - 00pw",
+		  "date": "2015-02-24T08:00:01.000Z",
+		  "subject": "SoundCluster Subject Ipsum",
 		  "description": "SoundCluster Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+8",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+8"
-		  }
+		  },
+		  "brandName": "SoundCluster",
+		  "collections": ["SAAS", "newsletter", "feed"]
 		},
 		{
-			"id": 9,
+			"emailID": 9,
 			"slug": "",
 			"metrics": [{
 				"views": 150,
@@ -161,18 +161,18 @@
 				"comments": 3,
 				"shares": 5
 			}],
-			"brandName": "Broseph, Inc",
-			"collections": ["announcement", "publication"],
-		  "date": "2015-04-24T09:00:01.000Z",
-		  "subject": "Broseph, Inc Subject Ipsum - hd72",
+		  "date": "2015-02-24T09:00:01.000Z",
+		  "subject": "Broseph, Inc Subject Ipsum",
 		  "description": "Brospeh, Inc Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+9",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+9"
-		  }
+		  },
+		  "brandName": "Broseph, Inc",
+		  "collections": ["announcement", "publication"]
 		},
 		{
-			"id": 10,
+			"emailID": 10,
 			"slug": "",
 			"metrics": [{
 				"views": 112,
@@ -180,18 +180,18 @@
 				"comments": 3,
 				"shares": 2
 			}],
-			"brandName": "Acme",
-			"collections": ["engagement", "discovery", "apps"],
-		  "date": "2015-04-24T10:00:01.000Z",
-		  "subject": "Acme Subject Ipsum - p26m",
+		  "date": "2015-02-24T10:00:01.000Z",
+		  "subject": "Acme Subject Ipsum",
 		  "description": "Acme Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+10",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+10"
-		  }
+		  },
+		  "brandName": "Acme",
+		  "collections": ["engagement", "discovery", "apps"]
 		},
 		{
-			"id": 11,
+			"emailID": 11,
 			"slug": "",
 			"metrics": [{
 				"views": 124,
@@ -199,18 +199,18 @@
 				"comments": 1,
 				"shares": 0
 			}],
-			"brandName": "Wayne Enterprises",
-			"collections": ["text", "trial", "government"],
-		  "date": "2015-04-24T11:00:01.000Z",
-		  "subject": "Wayne Enterprise Subject Ipsum - x002",
-		  "description": "Wayne Enterprise Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "date": "2015-02-24T11:00:01.000Z",
+		  "subject": "Wayne Enterprises Subject Ipsum",
+		  "description": "Wayne Enterprises Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+11",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+11"
-		  }
+		  },
+		  "brandName": "Wayne Enterprises",
+		  "collections": ["text", "trial", "government"]
 		},
 		{
-			"id": 12,
+			"emailID": 12,
 			"slug": "",
 			"metrics": [{
 				"views": 152,
@@ -218,18 +218,18 @@
 				"comments": 4,
 				"shares": 2
 			}],
-			"brandName": "Kanoodle",
-			"collections": ["automated", "account", "ecommerce"],
-		  "date": "2015-04-24T12:00:01.000Z",
-		  "subject": "Kanoodle Subject Ipsum - 22sl",
+		  "date": "2015-02-24T12:00:01.000Z",
+		  "subject": "Kanoodle Subject Ipsum",
 		  "description": "Kanoodle Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+12",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+12"
-		  }
+		  },
+		  "brandName": "Kanoodle",
+		  "collections": ["automated", "account", "ecommerce"]
 		},
 		{
-			"id": 13,
+			"emailID": 13,
 			"slug": "",
 			"metrics": [{
 				"views": 161,
@@ -237,18 +237,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Zoomdawg",
-			"collections": ["SAAS", "engagement"],
-		  "date": "2015-04-24T13:00:01.000Z",
-		  "subject": "Zoomdawg Subject Ipsum - ao2z",
+		  "date": "2015-02-24T13:00:01.000Z",
+		  "subject": "Zoomdawg Subject Ipsum",
 		  "description": "Zoomdawg Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+13",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+13"
-		  }
+		  },
+		  "brandName": "Zoomdawg",
+		  "collections": ["SAAS", "engagement"]
 		},
 		{
-			"id": 14,
+			"emailID": 14,
 			"slug": "",
 			"metrics": [{
 				"views": 130,
@@ -256,18 +256,18 @@
 				"comments": 2,
 				"shares": 3
 			}],
-			"brandName": "Zoomdawg",
-			"collections": ["product launch", "ecommerce"],
-		  "date": "2015-04-24T14:00:01.000Z",
-		  "subject": "Zoomdawg Subject Ipsum - s7aa",
+		  "date": "2015-02-24T14:00:01.000Z",
+		  "subject": "Zoomdawg Subject Ipsum",
 		  "description": "Zoomdawg Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+14",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+14"
-		  }
+		  },
+		  "brandName": "Zoomdawg",
+		  "collections": ["product launch", "ecommerce"]
 		},
 		{
-			"id": 15,
+			"emailID": 15,
 			"slug": "",
 			"metrics": [{
 				"views": 128,
@@ -275,18 +275,18 @@
 				"comments": 1,
 				"shares": 1
 			}],
-			"brandName": "ChatterTags",
-			"collections": ["government", "ecommerce"],
-		  "date": "2015-04-24T15:00:01.000Z",
-		  "subject": "ChatterTags Subject Ipsum - 3zus",
+		  "date": "2015-02-24T15:00:01.000Z",
+		  "subject": "ChatterTags Subject Ipsum",
 		  "description": "Chattertags Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+15",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+15"
-		  }
+		  },
+		  "brandName": "ChatterTags",
+		  "collections": ["government", "ecommerce"]
 		},
 		{
-			"id": 16,
+			"emailID": 16,
 			"slug": "",
 			"metrics": [{
 				"views": 124,
@@ -294,18 +294,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "WobbleLab",
-			"collections": ["ecommerce", "reviews"],
-		  "date": "2015-04-24T16:00:01.000Z",
-		  "subject": "WobbleLab Subject Ipsum - 3d7a",
+		  "date": "2015-02-24T16:00:01.000Z",
+		  "subject": "WobbleLab Subject Ipsum",
 		  "description": "WobbleLab Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+16",
 		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+16"
-		  }
+		  },
+		  "brandName": "WobbleLab",
+		  "collections": ["ecommerce", "reviews"]
 		},
 		{
-			"id": 17,
+			"emailID": 17,
 			"slug": "",
 			"metrics": [{
 				"views": 121,
@@ -313,18 +313,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Coolnomics",
-			"collections": ["SAAS"],
-		  "date": "2015-04-25T01:00:01.000Z",
-		  "subject": "Coolnomics Subject Ipsum - q511",
+		  "date": "2015-02-25T01:00:01.000Z",
+		  "subject": "Coolnomics Subject Ipsum",
 		  "description": "Coolnomics Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+17",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+17"
-		  }
+		  },
+		  "brandName": "Coolnomics",
+		  "collections": ["SAAS"]
 		},
 		{
-			"id": 18,
+			"emailID": 18,
 			"slug": "",
 			"metrics": [{
 				"views": 117,
@@ -332,18 +332,18 @@
 				"comments": 1,
 				"shares": 3
 			}],
-			"brandName": "Wonka Industries",
-			"collections": ["brick & mortar", "retention"],
-		  "date": "2015-04-25T02:00:01.000Z",
-		  "subject": "Wonka Industries Subject Ipsum - 5n32",
+		  "date": "2015-02-25T02:00:01.000Z",
+		  "subject": "Wonka Industries Subject Ipsum",
 		  "description": "Wonka Industries Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+18",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+18"
-		  }
+		  },
+		  "brandName": "Wonka Industries",
+		  "collections": ["brick & mortar", "retention"]
 		},
 		{
-			"id": 19,
+			"emailID": 19,
 			"slug": "",
 			"metrics": [{
 				"views": 112,
@@ -351,18 +351,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Oscorp",
-			"collections": ["ecommerce", "transactional", "support"],
-		  "date": "2015-04-25T03:00:01.000Z",
-		  "subject": "Oscorp Subject Ipsum - pa9x",
+		  "date": "2015-02-25T03:00:01.000Z",
+		  "subject": "Oscorp Subject Ipsum",
 		  "description": "Oscorp Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+19",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+19"
-		  }
+		  },
+		  "brandName": "Oscorp",
+		  "collections": ["ecommerce", "transactional", "support"]
 		},
 		{
-			"id": 20,
+			"emailID": 20,
 			"slug": "",
 			"metrics": [{
 				"views": 156,
@@ -370,18 +370,18 @@
 				"comments": 2,
 				"shares": 3
 			}],
-			"brandName": "Globex",
-			"collections": ["social", "engagement", "government"],
-		  "date": "2015-04-25T04:00:01.000Z",
-		  "subject": "Globex Subject Ipsum - sxx5",
+		  "date": "2015-02-25T04:00:01.000Z",
+		  "subject": "Globex Subject Ipsum",
 		  "description": "Globex Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+20",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+20"
-		  }
+		  },
+		  "brandName": "Globex",
+		  "collections": ["social", "engagement", "government"]
 		},
 		{
-			"id": 21,
+			"emailID": 21,
 			"slug": "",
 			"metrics": [{
 				"views": 105,
@@ -389,18 +389,18 @@
 				"comments": 1,
 				"shares": 1
 			}],
-			"brandName": "Squarespace",
-			"collections": ["password reset", "SAAS"],
-		  "date": "2015-04-25T05:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - hh2s",
+		  "date": "2015-02-25T05:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+21",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+21"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["password reset", "SAAS"]
 		},
 		{
-			"id": 22,
+			"emailID": 22,
 			"slug": "",
 			"metrics": [{
 				"views": 102,
@@ -408,18 +408,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Treehouse",
-			"collections": ["ecommerce", "reviews"],
-		  "date": "2015-04-25T06:00:01.000Z",
-		  "subject": "Treehouse Subject Ipsum - pli5",
+		  "date": "2015-02-25T06:00:01.000Z",
+		  "subject": "Treehouse Subject Ipsum",
 		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+22",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+22"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["ecommerce", "reviews"]
 		},
 		{
-			"id": 23,
+			"emailID": 23,
 			"slug": "",
 			"metrics": [{
 				"views": 166,
@@ -427,18 +427,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Dot & Bo",
-			"collections": ["other", "ecommerce"],
-		  "date": "2015-04-25T07:00:01.000Z",
-		  "subject": "Dot & Bo Subject Ipsum - paa9",
+		  "date": "2015-02-25T07:00:01.000Z",
+		  "subject": "Dot & Bo Subject Ipsum",
 		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+23",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+23"
-		  }
+		  },
+		  "brandName": "Dot & Bo",
+		  "collections": ["other", "ecommerce"]
 		},
 		{
-			"id": 24,
+			"emailID": 24,
 			"slug": "",
 			"metrics": [{
 				"views": 94,
@@ -446,18 +446,18 @@
 				"comments": 1,
 				"shares": 3
 			}],
-			"brandName": "Twitter",
-			"collections": ["sharing", "social"],
-		  "date": "2015-04-25T08:00:01.000Z",
-		  "subject": "Twitter Subject Ipsum - 0ps2",
+		  "date": "2015-02-25T08:00:01.000Z",
+		  "subject": "Twitter Subject Ipsum",
 		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+24",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+24"
-		  }
+		  },
+		  "brandName": "Twitter",
+		  "collections": ["sharing", "social"]
 		},
 		{
-			"id": 25,
+			"emailID": 25,
 			"slug": "",
 			"metrics": [{
 				"views": 92,
@@ -465,18 +465,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Squarespace",
-			"collections": ["new article", "transactional", "SAAS"],
-		  "date": "2015-04-25T09:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - eu8s",
+		  "date": "2015-02-25T09:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+25",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+25"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["new article", "transactional", "SAAS"]
 		},
 		{
-			"id": 26,
+			"emailID": 26,
 			"slug": "",
 			"metrics": [{
 				"views": 87,
@@ -484,18 +484,18 @@
 				"comments": 2,
 				"shares": 3
 			}],
-			"brandName": "Treehouse",
-			"collections": ["SAAS", "support", "ecommerce"],
-		  "date": "2015-04-25T10:00:01.000Z",
-		  "subject": "Treehouse Subject Ipsum - ok2a",
+		  "date": "2015-02-25T10:00:01.000Z",
+		  "subject": "Treehouse Subject Ipsum",
 		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+26",
 		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+26"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["SAAS", "support", "ecommerce"]
 		},
 		{
-			"id": 27,
+			"emailID": 27,
 			"slug": "",
 			"metrics": [{
 				"views": 85,
@@ -503,18 +503,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Dot & Bo",
-			"collections": ["other", "ecommerce"],
-		  "date": "2015-04-25T11:00:01.000Z",
-		  "subject": "Dot & Bo Subject Ipsum - px07",
+		  "date": "2015-02-25T11:00:01.000Z",
+		  "subject": "Dot & Bo Subject Ipsum",
 		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+27",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+27"
-		  }
+		  },
+		  "brandName": "Dot & Bo",
+		  "collections": ["other", "ecommerce", "support"]
 		},
 		{
-			"id": 28,
+			"emailID": 28,
 			"slug": "",
 			"metrics": [{
 				"views": 83,
@@ -522,18 +522,18 @@
 				"comments": 1,
 				"shares": 3
 			}],
-			"brandName": "Twitter",
-			"collections": ["sharing", "retention", "social"],
-		  "date": "2015-04-25T12:00:01.000Z",
-		  "subject": "Twitter Subject Ipsum - ee3s",
+		  "date": "2015-02-25T12:00:01.000Z",
+		  "subject": "Twitter Subject Ipsum",
 		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+28",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+28"
-		  }
+		  },
+		  "brandName": "Twitter",
+		  "collections": ["sharing", "retention", "social"]
 		},
 		{
-			"id": 29,
+			"emailID": 29,
 			"slug": "",
 			"metrics": [{
 				"views": 175,
@@ -541,18 +541,18 @@
 				"comments": 1,
 				"shares": 0
 			}],
-			"brandName": "Squarespace",
-			"collections": ["SAAS", "trial"],
-		  "date": "2015-04-25T13:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - pa6z",
+		  "date": "2015-02-25T13:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+29",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+29"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["SAAS", "trial"]
 		},
 		{
-			"id": 30,
+			"emailID": 30,
 			"slug": "",
 			"metrics": [{
 				"views": 78,
@@ -560,18 +560,18 @@
 				"comments": 4,
 				"shares": 2
 			}],
-			"brandName": "Treehouse",
-			"collections": ["automated", "account", "education"],
-		  "date": "2015-04-25T14:00:01.000Z",
-		  "subject": "Treehouse Subject Ipsum - pt72",
+		  "date": "2015-02-25T14:00:01.000Z",
+		  "subject": "Treehouse Subject Ipsum",
 		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+30",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+30"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["automated", "account", "education"]
 		},
 		{
-			"id": 31,
+			"emailID": 31,
 			"slug": "",
 			"metrics": [{
 				"views": 77,
@@ -579,18 +579,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Dot & Bo",
-			"collections": ["product launch", "engagement"],
-		  "date": "2015-04-25T15:00:01.000Z",
-		  "subject": "Dot & Bo Subject Ipsum - hsd1",
+		  "date": "2015-02-25T15:00:01.000Z",
+		  "subject": "Dot & Bo Subject Ipsum",
 		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+31",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+31"
-		  }
+		  },
+		  "brandName": "Dot & Bo",
+		  "collections": ["product launch", "engagement"]
 		},
 		{
-			"id": 32,
+			"emailID": 32,
 			"slug": "",
 			"metrics": [{
 				"views": 74,
@@ -598,18 +598,18 @@
 				"comments": 2,
 				"shares": 3
 			}],
-			"brandName": "Twitter",
-			"collections": ["product launch", "apps"],
-		  "date": "2015-04-25T16:00:01.000Z",
-		  "subject": "Twitter Subject Ipsum - asd5",
+		  "date": "2015-02-25T16:00:01.000Z",
+		  "subject": "Twitter Subject Ipsum",
 		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+32",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+32"
-		  }
+		  },
+		  "brandName": "Twitter",
+		  "collections": ["product launch", "apps"]
 		},
 		{
-			"id": 33,
+			"emailID": 33,
 			"slug": "",
 			"metrics": [{
 				"views": 71,
@@ -617,18 +617,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Squarespace",
-			"collections": ["SAAS", "publication"],
-		  "date": "2015-04-26T01:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - zxc8",
+		  "date": "2015-02-26T01:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+33",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+33"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["SAAS", "publication"]
 		},
 		{
-			"id": 34,
+			"emailID": 34,
 			"slug": "",
 			"metrics": [{
 				"views": 69,
@@ -636,18 +636,18 @@
 				"comments": 3,
 				"shares": 5
 			}],
-			"brandName": "Treehouse",
-			"collections": ["announcement, education"],
-		  "date": "2015-04-26T02:00:01.000Z",
-		  "subject": "Treehouse Subject Ipsum - cxz3",
+		  "date": "2015-02-26T02:00:01.000Z",
+		  "subject": "Treehouse Subject Ipsum",
 		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+34",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+34"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["announcement", "education"]
 		},
 		{
-			"id": 35,
+			"emailID": 35,
 			"slug": "",
 			"metrics": [{
 				"views": 67,
@@ -655,18 +655,18 @@
 				"comments": 3,
 				"shares": 2
 			}],
-			"brandName": "Dot & Bo",
-			"collections": ["engagement", "discovery", "brick & mortar"],
-		  "date": "2015-04-26T03:00:01.000Z",
-		  "subject": "Dot & Bo Subject Ipsum - mlk6",
+		  "date": "2015-02-26T03:00:01.000Z",
+		  "subject": "Dot & Bo Subject Ipsum",
 		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+35",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+35"
-		  }
+		  },
+		  "brandName": "Dot & Bo",
+		  "collections": ["engagement", "discovery", "brick & mortar"]
 		},
 		{
-			"id": 36,
+			"emailID": 36,
 			"slug": "",
 			"metrics": [{
 				"views": 64,
@@ -674,18 +674,18 @@
 				"comments": 1,
 				"shares": 0
 			}],
-			"brandName": "Twitter",
-			"collections": ["text", "trial", "apps"],
-		  "date": "2015-04-26T04:00:01.000Z",
-		  "subject": "Twitter Subject Ipsum - lkk8",
+		  "date": "2015-02-26T04:00:01.000Z",
+		  "subject": "Twitter Subject Ipsum",
 		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+36",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+36"
-		  }
+		  },
+		  "brandName": "Twitter",
+		  "collections": ["text", "trial", "apps"]
 		},
 		{
-			"id": 37,
+			"emailID": 37,
 			"slug": "",
 			"metrics": [{
 				"views": 63,
@@ -693,18 +693,18 @@
 				"comments": 3,
 				"shares": 5
 			}],
-			"brandName": "Squarespace",
-			"collections": ["trial", "holiday", "hardware"],
-		  "date": "2015-04-26T05:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - ps2q",
+		  "date": "2015-02-26T05:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+37",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+37"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["trial", "holiday", "hardware"]
 		},
 		{
-			"id": 38,
+			"emailID": 38,
 			"slug": "",
 			"metrics": [{
 				"views": 60,
@@ -712,18 +712,18 @@
 				"comments": 1,
 				"shares": 7
 			}],
-			"brandName": "Treehouse",
-			"collections": ["invitation", "social"],
-		  "date": "2015-04-26T06:00:01.000Z",
-		  "subject": "Treespace Subject Ipsum - oil3",
+		  "date": "2015-02-26T06:00:01.000Z",
+		  "subject": "Treespace Subject Ipsum",
 		  "description": "Treespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+38",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+38"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["invitation", "social"]
 		},
 		{
-			"id": 39,
+			"emailID": 39,
 			"slug": "",
 			"metrics": [{
 				"views": 57,
@@ -731,18 +731,18 @@
 				"comments": 0,
 				"shares": 1
 			}],
-			"brandName": "Dot & Bo",
-			"collections": ["SAAS", "order shipped", "apps"],
-		  "date": "2015-04-26T07:00:01.000Z",
-		  "subject": "Dot & Bo Subject Ipsum - lo2s",
+		  "date": "2015-02-26T07:00:01.000Z",
+		  "subject": "Dot & Bo Subject Ipsum",
 		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+39",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+39"
-		  }
+		  },
+		  "brandName": "Dot & Bo",
+		  "collections": ["SAAS", "order shipped", "apps"]
 		},
 		{
-			"id": 40,
+			"emailID": 40,
 			"slug": "",
 			"metrics": [{
 				"views": 54,
@@ -750,18 +750,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Twitter",
-			"collections": ["promotion", "newsletter", "social"],
-		  "date": "2015-04-26T08:00:01.000Z",
-		  "subject": "Twitter Subject Ipsum - cuw8",
+		  "date": "2015-02-26T08:00:01.000Z",
+		  "subject": "Twitter Subject Ipsum",
 		  "description": "Twitter Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+40",
 		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+40"
-		  }
+		  },
+		  "brandName": "Twitter",
+		  "collections": ["promotion", "newsletter", "social"]
 		},
 		{
-			"id": 41,
+			"emailID": 41,
 			"slug": "",
 			"metrics": [{
 				"views": 52,
@@ -769,18 +769,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Squarespace",
-			"collections": ["ecommerce", "government"],
-		  "date": "2015-04-26T09:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - xa92",
+		  "date": "2015-02-26T09:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+41",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+41"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["ecommerce", "government"]
 		},
 		{
-			"id": 42,
+			"emailID": 42,
 			"slug": "",
 			"metrics": [{
 				"views": 50,
@@ -788,18 +788,18 @@
 				"comments": 2,
 				"shares": 3
 			}],
-			"brandName": "Treehouse",
-			"collections": ["product launch", "holiday"],
-		  "date": "2015-04-26T10:00:01.000Z",
-		  "subject": "Treehouse Subject Ipsum - s22p",
+		  "date": "2015-02-26T10:00:01.000Z",
+		  "subject": "Treehouse Subject Ipsum",
 		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+42",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+42"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["product launch", "holiday"]
 		},
 		{
-			"id": 43,
+			"emailID": 43,
 			"slug": "",
 			"metrics": [{
 				"views": 48,
@@ -807,18 +807,18 @@
 				"comments": 1,
 				"shares": 1
 			}],
-			"brandName": "Dot & Bo",
-			"collections": ["password reset"],
-		  "date": "2015-04-26T11:00:01.000Z",
-		  "subject": "Dot & Bo Subject Ipsum - ma6c",
+		  "date": "2015-02-26T11:00:01.000Z",
+		  "subject": "Dot & Bo Subject Ipsum",
 		  "description": "Dot & Bo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+43",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+43"
-		  }
+		  },
+		  "brandName": "Dot & Bo",
+		  "collections": ["password reset", "offer"]
 		},
 		{
-			"id": 44,
+			"emailID": 44,
 			"slug": "",
 			"metrics": [{
 				"views": 46,
@@ -826,18 +826,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Squarespace",
-			"collections": ["ecommerce", "reviews", "comments"],
-		  "date": "2015-04-26T12:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - kkz3",
+		  "date": "2015-02-26T12:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+44",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+44"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["ecommerce", "reviews", "comments"]
 		},
 		{
-			"id": 45,
+			"emailID": 45,
 			"slug": "",
 			"metrics": [{
 				"views": 42,
@@ -845,18 +845,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Treehouse",
-			"collections": ["promotion", "newsletter", "feed"],
-		  "date": "2015-04-26T13:00:01.000Z",
-		  "subject": "Treehouse Subject Ipsum - 0pos",
+		  "date": "2015-02-26T13:00:01.000Z",
+		  "subject": "Treehouse Subject Ipsum",
 		  "description": "Treehouse Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+45",
 		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+45"
-		  }
+		  },
+		  "brandName": "Treehouse",
+		  "collections": ["promotion", "newsletter", "feed"]
 		},
 		{
-			"id": 46,
+			"emailID": 46,
 			"slug": "",
 			"metrics": [{
 				"views": 40,
@@ -864,18 +864,18 @@
 				"comments": 3,
 				"shares": 5
 			}],
-			"brandName": "Squarespace",
-			"collections": ["ecommerce"],
-		  "date": "2015-04-26T14:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - pla3",
+		  "date": "2015-02-26T14:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+46",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+46"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["ecommerce"]
 		},
 		{
-			"id": 47,
+			"emailID": 47,
 			"slug": "",
 			"metrics": [{
 				"views": 38,
@@ -883,18 +883,18 @@
 				"comments": 3,
 				"shares": 2
 			}],
-			"brandName": "Squarespace",
-			"collections": ["engagement", "discovery"],
-		  "date": "2015-04-26T15:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - ooy2",
+		  "date": "2015-02-26T15:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+47",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+47"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["engagement", "discovery"]
 		},
 		{
-			"id": 48,
+			"emailID": 48,
 			"slug": "",
 			"metrics": [{
 				"views": 33,
@@ -902,18 +902,18 @@
 				"comments": 1,
 				"shares": 0
 			}],
-			"brandName": "Squarespace",
-			"collections": ["text", "trial"],
-		  "date": "2015-04-26T16:00:01.000Z",
-		  "subject": "Squarespace Subject Ipsum - 551s",
+		  "date": "2015-02-26T16:00:01.000Z",
+		  "subject": "Squarespace Subject Ipsum",
 		  "description": "Squarespace Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+48",
 		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+48"
-		  }
+		  },
+		  "brandName": "Squarespace",
+		  "collections": ["text", "trial"]
 		},
 		{
-			"id": 49,
+			"emailID": 49,
 			"slug": "",
 			"metrics": [{
 				"views": 69,
@@ -921,18 +921,18 @@
 				"comments": 0,
 				"shares": 4
 			}],
-			"brandName": "DesignModo",
-			"collections": ["announcement"],
-		  "date": "2015-04-26T18:00:01.000Z",
+		  "date": "2015-02-26T18:00:01.000Z",
 		  "subject": "Designs of the Week",
 		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+49",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+49"
-		  }
+		  },
+		  "brandName": "DesignModo",
+		  "collections": ["announcement"]
 		},
 		{
-			"id": 50,
+			"emailID": 50,
 			"slug": "",
 			"metrics": [{
 				"views": 77,
@@ -940,18 +940,18 @@
 				"comments": 0,
 				"shares": 4
 			}],
-			"brandName": "Trello",
-			"collections": ["comments", "reviews"],
-		  "date": "2015-04-27T19:00:01.000Z",
+		  "date": "2015-02-27T19:00:01.000Z",
 		  "subject": "Trello Reviews FTW!",
 		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+50",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+50"
-		  }
+		  },
+		  "brandName": "Trello",
+		  "collections": ["comments", "reviews"]
 		},
 		{
-			"id": 51,
+			"emailID": 51,
 			"slug": "",
 			"metrics": [{
 				"views": 123,
@@ -959,18 +959,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Spacely Sprockets",
-			"collections": ["engagement", "discovery"],
-		  "date": "2015-04-28T17:00:01.000Z",
+		  "date": "2015-02-28T17:00:01.000Z",
 		  "subject": "Mo' Sprockets, Mo' Problems",
 		  "description": "Spacely Sprockets Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+51",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+51"
-		  }
+		  },
+		  "brandName": "Spacely Sprockets",
+		  "collections": ["engagement", "discovery"]
 		},
 		{
-			"id": 52,
+			"emailID": 52,
 			"slug": "",
 			"metrics": [{
 				"views": 55,
@@ -978,18 +978,18 @@
 				"comments": 2,
 				"shares": 2
 			}],
-			"brandName": "Marvel",
-			"collections": ["newsletter", "feed"],
-		  "date": "2015-04-29T17:00:01.000Z",
+		  "date": "2015-02-29T17:00:01.000Z",
 		  "subject": "Marvel Newsletter - August 2015",
 		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+52",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+52"
-		  }
+		  },
+		  "brandName": "Marvel",
+		  "collections": ["newsletter", "feed"]
 		},
 		{
-			"id": 53,
+			"emailID": 53,
 			"slug": "",
 			"metrics": [{
 				"views": 65,
@@ -997,18 +997,18 @@
 				"comments": 1,
 				"shares": 2
 			}],
-			"brandName": "Spacely Sprockets",
-			"collections": ["password reset", "SAAS"],
-		  "date": "2015-04-30T18:00:01.000Z",
+		  "date": "2015-02-30T18:00:01.000Z",
 		  "subject": "Put Some Space In Your Sprockets",
 		  "description": "Spacely Sprockets Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+53",
 		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+53"
-		  }
+		  },
+		  "brandName": "Spacely Sprockets",
+		  "collections": ["password reset", "SAAS"]
 		},
 		{
-			"id": 54,
+			"emailID": 54,
 			"slug": "",
 			"metrics": [{
 				"views": 42,
@@ -1016,18 +1016,18 @@
 				"comments": 2,
 				"shares": 1
 			}],
-			"brandName": "Marvel",
-			"collections": ["feed", "engagement"],
-		  "date": "2015-05-01T08:00:01.000Z",
-		  "subject": "Marvel Subject Ipsum - xx0p",
+		  "date": "2015-03-01T08:00:01.000Z",
+		  "subject": "Marvel Subject Ipsum",
 		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/e5e5e5/999999&text=placeholder+54",
 		  	"full": "http://placehold.it/800x1380/e5e5e5/999999&text=placeholder+54"
-		  }
+		  },
+		  "brandName": "Marvel",
+		  "collections": ["feed", "engagement"]
 		},
 		{
-			"id": 55,
+			"emailID": 55,
 			"slug": "",
 			"metrics": [{
 				"views": 47,
@@ -1035,18 +1035,18 @@
 				"comments": 1,
 				"shares": 0
 			}],
-			"brandName": "Trello",
-			"collections": ["ecommerce", "trial"],
-		  "date": "2015-05-02T13:00:01.000Z",
-		  "subject": "Trello Subject Ipsum - vbb7",
+		  "date": "2015-03-02T13:00:01.000Z",
+		  "subject": "Trello Subject Ipsum",
 		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+55",
 		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+55"
-		  }
+		  },
+		  "brandName": "Trello",
+		  "collections": ["ecommerce", "trial"]
 		},
 		{
-			"id": 56,
+			"emailID": 56,
 			"slug": "",
 			"metrics": [{
 				"views": 72,
@@ -1054,18 +1054,18 @@
 				"comments": 2,
 				"shares": 5
 			}],
-			"brandName": "DesignModo",
-			"collections": ["engagement"],
-		  "date": "2015-05-03T19:00:01.000Z",
-		  "subject": "DesignModo Subject Ipsum - wnm9",
+		  "date": "2015-03-03T19:00:01.000Z",
+		  "subject": "DesignModo Subject Ipsum",
 		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+56",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+56"
-		  }
+		  },
+		  "brandName": "DesignModo",
+		  "collections": ["engagement"]
 		},
 		{
-			"id": 57,
+			"emailID": 57,
 			"slug": "",
 			"metrics": [{
 				"views": 22,
@@ -1073,18 +1073,18 @@
 				"comments": 3,
 				"shares": 4
 			}],
-			"brandName": "Best Buy",
-			"collections": ["survey", "brick & mortar"],
-		  "date": "2015-05-04T19:00:01.000Z",
-		  "subject": "Best Buy Subject Ipsum - u889",
+		  "date": "2015-03-04T19:00:01.000Z",
+		  "subject": "Best Buy Subject Ipsum",
 		  "description": "Best Buy Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+57",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+57"
-		  }
+		  },
+		  "brandName": "Best Buy",
+		  "collections": ["survey", "brick & mortar"]
 		},
 		{
-			"id": 58,
+			"emailID": 58,
 			"slug": "",
 			"metrics": [{
 				"views": 65,
@@ -1092,18 +1092,18 @@
 				"comments": 1,
 				"shares": 4
 			}],
-			"brandName": "Home Depot",
-			"collections": ["offer", "brick & mortar"],
-		  "date": "2015-05-05T19:00:01.000Z",
-		  "subject": "Home Depot Subject Ipsum - 4tgr",
+		  "date": "2015-03-05T19:00:01.000Z",
+		  "subject": "Home Depot Subject Ipsum",
 		  "description": "Home Depot Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+58",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+58"
-		  }
+		  },
+		  "brandName": "Home Depot",
+		  "collections": ["offer", "brick & mortar"]
 		},
 		{
-			"id": 59,
+			"emailID": 59,
 			"slug": "",
 			"metrics": [{
 				"views": 82,
@@ -1111,18 +1111,18 @@
 				"comments": 2,
 				"shares": 7
 			}],
-			"brandName": "Target",
-			"collections": ["invitation", "brick & mortar"],
-		  "date": "2015-05-06T19:00:01.000Z",
-		  "subject": "Target Subject Ipsum - jkl9",
+		  "date": "2015-03-06T19:00:01.000Z",
+		  "subject": "Target Subject Ipsum",
 		  "description": "Target Subject Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+59",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+59"
-		  }
+		  },
+		  "brandName": "Target",
+		  "collections": ["invitation", "brick & mortar"]
 		},
 		{
-			"id": 60,
+			"emailID": 60,
 			"slug": "",
 			"metrics": [{
 				"views": 101,
@@ -1130,18 +1130,18 @@
 				"comments": 5,
 				"shares": 9
 			}],
-			"brandName": "Crate & Barrel",
-			"collections": ["engagement", "alerts"],
-		  "date": "2015-05-07T19:00:01.000Z",
-		  "subject": "Crate & Barrel Subject Ipsum - 44rf",
+		  "date": "2015-03-07T19:00:01.000Z",
+		  "subject": "Crate & Barrel Subject Ipsum",
 		  "description": "Crate & Barrel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+60",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+60"
-		  }
+		  },
+		  "brandName": "Crate & Barrel",
+		  "collections": ["engagement", "alerts"]
 		},
 		{
-			"id": 61,
+			"emailID": 61,
 			"slug": "",
 			"metrics": [{
 				"views": 58,
@@ -1149,18 +1149,18 @@
 				"comments": 13,
 				"shares": 4
 			}],
-			"brandName": "Chipotle",
-			"collections": ["trial", "social", "brick & mortar"],
-		  "date": "2015-05-08T19:00:01.000Z",
-		  "subject": "Chipotle Subject Ipsum - 8lop",
+		  "date": "2015-03-08T19:00:01.000Z",
+		  "subject": "Chipotle Subject Ipsum",
 		  "description": "Chipotle Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+61",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+61"
-		  }
+		  },
+		  "brandName": "Chipotle",
+		  "collections": ["trial", "social", "brick & mortar"]
 		},
 		{
-			"id": 62,
+			"emailID": 62,
 			"slug": "",
 			"metrics": [{
 				"views": 122,
@@ -1168,18 +1168,18 @@
 				"comments": 11,
 				"shares": 12
 			}],
-			"brandName": "Starbucks",
-			"collections": ["feed","brick & mortar"],
-		  "date": "2015-05-09T19:00:01.000Z",
-		  "subject": "Starbucks Subject Ipsum - ujjh",
+		  "date": "2015-03-09T19:00:01.000Z",
+		  "subject": "Starbucks Subject Ipsum",
 		  "description": "Starbucks Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+62",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+62"
-		  }
+		  },
+		  "brandName": "Starbucks",
+		  "collections": ["feed","brick & mortar"]
 		},
 		{
-			"id": 63,
+			"emailID": 63,
 			"slug": "",
 			"metrics": [{
 				"views": 44,
@@ -1187,18 +1187,18 @@
 				"comments": 2,
 				"shares": 6
 			}],
-			"brandName": "Pinterest",
-			"collections": ["report", "text", "social"],
-		  "date": "2015-05-10T19:00:01.000Z",
-		  "subject": "Pinterest Subject Ipsum - 7u77",
+		  "date": "2015-03-10T19:00:01.000Z",
+		  "subject": "Pinterest Subject Ipsum",
 		  "description": "Pinterest Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+63",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+63"
-		  }
+		  },
+		  "brandName": "Pinterest",
+		  "collections": ["referral", "text", "social"]
 		},
 		{
-			"id": 64,
+			"emailID": 64,
 			"slug": "",
 			"metrics": [{
 				"views": 96,
@@ -1206,18 +1206,18 @@
 				"comments": 6,
 				"shares": 8
 			}],
-			"brandName": "Facebook",
-			"collections": ["account", "security", "social"],
-		  "date": "2015-05-11T19:00:01.000Z",
-		  "subject": "Facebook Subject Ipsum - io99",
+		  "date": "2015-03-11T19:00:01.000Z",
+		  "subject": "Facebook Subject Ipsum",
 		  "description": "Facebook Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+64",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+64"
-		  }
+		  },
+		  "brandName": "Facebook",
+		  "collections": ["account", "security", "social"]
 		},
 		{
-			"id": 65,
+			"emailID": 65,
 			"slug": "",
 			"metrics": [{
 				"views": 84,
@@ -1225,18 +1225,18 @@
 				"comments": 4,
 				"shares": 10
 			}],
-			"brandName": "Instagram",
-			"collections": ["events", "social"],
-		  "date": "2015-05-12T19:00:01.000Z",
-		  "subject": "Instagram Subject Ipsum - lp90",
+		  "date": "2015-03-12T19:00:01.000Z",
+		  "subject": "Instagram Subject Ipsum",
 		  "description": "Instagram Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+65",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+65"
-		  }
+		  },
+		  "brandName": "Instagram",
+		  "collections": ["events", "social"]
 		},
 		{
-			"id": 66,
+			"emailID": 66,
 			"slug": "",
 			"metrics": [{
 				"views": 35,
@@ -1244,18 +1244,18 @@
 				"comments": 2,
 				"shares": 0
 			}],
-			"brandName": "Reddit",
-			"collections": ["confirmation, notice", "social"],
-		  "date": "2015-05-13T19:00:01.000Z",
-		  "subject": "Reddit Subject Ipsum - hnj8",
+		  "date": "2015-03-13T19:00:01.000Z",
+		  "subject": "Reddit Subject Ipsum",
 		  "description": "Reddit Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+66",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+66"
-		  }
+		  },
+		  "brandName": "Reddit",
+		  "collections": ["confirmation, notice", "social"]
 		},
 		{
-			"id": 67,
+			"emailID": 67,
 			"slug": "",
 			"metrics": [{
 				"views": 61,
@@ -1263,18 +1263,18 @@
 				"comments": 1,
 				"shares": 0
 			}],
-			"brandName": "Google+",
-			"collections": ["automated", "retention", "social"],
-		  "date": "2015-05-14T19:00:01.000Z",
-		  "subject": "Google+ Subject Ipsum - va6w",
+		  "date": "2015-03-14T19:00:01.000Z",
+		  "subject": "Google+ Subject Ipsum",
 		  "description": "Google+ Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+67",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+67"
-		  }
+		  },
+		  "brandName": "Google+",
+		  "collections": ["automated", "retention", "social"]
 		},
 		{
-			"id": 68,
+			"emailID": 68,
 			"slug": "",
 			"metrics": [{
 				"views": 83,
@@ -1282,18 +1282,18 @@
 				"comments": 3,
 				"shares": 3
 			}],
-			"brandName": "Linkedin",
-			"collections": ["discovery", "product launch", "social"],
-		  "date": "2015-05-15T19:00:01.000Z",
-		  "subject": "Linkedin Subject Ipsum - 2waw",
+		  "date": "2015-03-15T19:00:01.000Z",
+		  "subject": "Linkedin Subject Ipsum",
 		  "description": "LinkedIn Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+68",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+68"
-		  }
+		  },
+		  "brandName": "Linkedin",
+		  "collections": ["discovery", "product launch", "social"]
 		},
 		{
-			"id": 69,
+			"emailID": 69,
 			"slug": "",
 			"metrics": [{
 				"views": 75,
@@ -1301,18 +1301,18 @@
 				"comments": 3,
 				"shares": 11
 			}],
-			"brandName": "Wired",
-			"collections": ["password reset", "publication"],
-		  "date": "2015-05-16T19:00:01.000Z",
-		  "subject": "Wired Subject Ipsum - vvf4",
+		  "date": "2015-03-16T19:00:01.000Z",
+		  "subject": "Wired Subject Ipsum",
 		  "description": "Wired Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+69",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+69"
-		  }
+		  },
+		  "brandName": "Wired",
+		  "collections": ["password reset", "publication"]
 		},
 		{
-			"id": 70,
+			"emailID": 70,
 			"slug": "",
 			"metrics": [{
 				"views": 79,
@@ -1320,18 +1320,18 @@
 				"comments": 1,
 				"shares": 4
 			}],
-			"brandName": "New York Times",
-			"collections": ["shipping", "publication"],
-		  "date": "2015-05-17T19:00:01.000Z",
-		  "subject": "New York Times Subject Ipsum - ffd4",
+		  "date": "2015-03-17T19:00:01.000Z",
+		  "subject": "New York Times Subject Ipsum",
 		  "description": "New York Times Description orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+70",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+70"
-		  }
+		  },
+		  "brandName": "New York Times",
+		  "collections": ["shipping", "publication"]
 		},
 		{
-			"id": 71,
+			"emailID": 71,
 			"slug": "",
 			"metrics": [{
 				"views": 113,
@@ -1339,18 +1339,18 @@
 				"comments": 4,
 				"shares": 3
 			}],
-			"brandName": "Dwell",
-			"collections": ["transactional", "publication"],
-		  "date": "2015-05-18T19:00:01.000Z",
-		  "subject": "Dwell Subject Ipsum - 33f3",
+		  "date": "2015-03-18T19:00:01.000Z",
+		  "subject": "Dwell Subject Ipsum",
 		  "description": "Dwell Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+71",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+71"
-		  }
+		  },
+		  "brandName": "Dwell",
+		  "collections": ["transactional", "publication"]
 		},
 		{
-			"id": 72,
+			"emailID": 72,
 			"slug": "",
 			"metrics": [{
 				"views": 124,
@@ -1358,18 +1358,18 @@
 				"comments": 4,
 				"shares": 4
 			}],
-			"brandName": "Lagom",
-			"collections": ["events", "publication"],
-		  "date": "2015-05-19T19:00:01.000Z",
-		  "subject": "Lagom Subject Ipsum - 6yyf",
+		  "date": "2015-03-19T19:00:01.000Z",
+		  "subject": "Lagom Subject Ipsum",
 		  "description": "Lagom Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+72",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+72"
-		  }
+		  },
+		  "brandName": "Lagom",
+		  "collections": ["events", "publication"]
 		},
 		{
-			"id": 73,
+			"emailID": 73,
 			"slug": "",
 			"metrics": [{
 				"views": 91,
@@ -1377,18 +1377,18 @@
 				"comments": 3,
 				"shares": 3
 			}],
-			"brandName": "National Geographic",
-			"collections": ["activity", "publication"],
-		  "date": "2015-05-20T19:00:01.000Z",
-		  "subject": "National Geographic Subject Ipsum - 66hf",
+		  "date": "2015-03-20T19:00:01.000Z",
+		  "subject": "National Geographic Subject Ipsum",
 		  "description": "National Geographic Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+73",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+73"
-		  }
+		  },
+		  "brandName": "National Geographic",
+		  "collections": ["activity", "publication"]
 		},
 		{
-			"id": 74,
+			"emailID": 74,
 			"slug": "",
 			"metrics": [{
 				"views": 106,
@@ -1396,18 +1396,18 @@
 				"comments": 3,
 				"shares": 2
 			}],
-			"brandName": "The Verge",
-			"collections": ["retention", "publication"],
-		  "date": "2015-05-21T19:00:01.000Z",
-		  "subject": "The Verge Subject Ipsum - 32cd",
+		  "date": "2015-03-21T19:00:01.000Z",
+		  "subject": "The Verge Subject Ipsum",
 		  "description": "The Verge Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+74",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+74"
-		  }
+		  },
+		  "brandName": "The Verge",
+		  "collections": ["retention", "publication"]
 		},
 		{
-			"id": 75,
+			"emailID": 75,
 			"slug": "",
 			"metrics": [{
 				"views": 121,
@@ -1415,18 +1415,18 @@
 				"comments": 8,
 				"shares": 8
 			}],
-			"brandName": "Wikipedia",
-			"collections": ["sharing", "publication"],
-		  "date": "2015-05-22T19:00:01.000Z",
-		  "subject": "Wikipedia Subject Ipsum - fds2",
+		  "date": "2015-03-22T19:00:01.000Z",
+		  "subject": "Wikipedia Subject Ipsum",
 		  "description": "Wikipedia Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+75",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+75"
-		  }
+		  },
+		  "brandName": "Wikipedia",
+		  "collections": ["sharing", "publication"]
 		},
 		{
-			"id": 76,
+			"emailID": 76,
 			"slug": "",
 			"metrics": [{
 				"views": 82,
@@ -1434,18 +1434,18 @@
 				"comments": 3,
 				"shares": 3
 			}],
-			"brandName": "Engadget",
-			"collections": ["invitation", "publication"],
-		  "date": "2015-05-23T19:00:01.000Z",
-		  "subject": "Engadget Subject Ipsum - d21d",
+		  "date": "2015-03-23T19:00:01.000Z",
+		  "subject": "Engadget Subject Ipsum",
 		  "description": "Engadget Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+76",
 		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+76"
-		  }
+		  },
+		  "brandName": "Engadget",
+		  "collections": ["invitation", "publication"]
 		},
 		{
-			"id": 77,
+			"emailID": 77,
 			"slug": "",
 			"metrics": [{
 				"views": 154,
@@ -1453,20 +1453,191 @@
 				"comments": 3,
 				"shares": 1
 			}],
-			"brandName": "Techcrunch",
-			"collections": ["discovery", "publication"],
-		  "date": "2015-05-24T19:00:01.000Z",
-		  "subject": "Techcrunch Subject Ipsum - d21d",
+		  "date": "2015-03-24T19:00:01.000Z",
+		  "subject": "Techcrunch Subject Ipsum",
 		  "description": "Techcrunch Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
 		  "img": {
 		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+77",
 		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+77"
-		  }
+		  },
+		  "brandName": "Techcrunch",
+		  "collections": ["discovery", "publication"]
+		},
+		{
+			"emailID": 78,
+			"slug": "",
+			"metrics": [{
+				"views": 112,
+				"likes": 4,
+				"comments": 2,
+				"shares": 2
+			}],
+		  "date": "2015-03-24T19:00:01.000Z",
+		  "subject": "DesignModo Subject Ipsum",
+		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+78",
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+78"
+		  },
+		  "brandName": "DesignModo",
+		  "collections": ["announcement", "education"]
+		},
+		{
+			"emailID": 79,
+			"slug": "",
+			"metrics": [{
+				"views": 144,
+				"likes": 5,
+				"comments": 4,
+				"shares": 2
+			}],
+		  "date": "2015-03-24T19:00:01.000Z",
+		  "subject": "DesignModo Subject Ipsum",
+		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/df5138/efa89c&text=placeholder+79",
+		  	"full": "http://placehold.it/800x1380/df5138/efa89c&text=placeholder+79"
+		  },
+		  "brandName": "DesignModo",
+		  "collections": ["announcement", "education"]
+		},
+		{
+			"emailID": 80,
+			"slug": "",
+			"metrics": [{
+				"views": 121,
+				"likes": 4,
+				"comments": 4,
+				"shares": 1
+			}],
+		  "date": "2015-03-24T19:00:01.000Z",
+		  "subject": "DesignModo Subject Ipsum",
+		  "description": "DesignModo Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/53a93f/a9d49f&text=placeholder+80",
+		  	"full": "http://placehold.it/800x1380/53a93f/a9d49f&text=placeholder+80"
+		  },
+		  "brandName": "DesignModo",
+		  "collections": ["announcement", "education"]
+		},
+		{
+			"emailID": 81,
+			"slug": "",
+			"metrics": [{
+				"views": 71,
+				"likes": 2,
+				"comments": 2,
+				"shares": 1
+			}],
+		  "date": "2015-02-26T01:00:01.000Z",
+		  "subject": "Marvel Subject Ipsum",
+		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+81",
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+81"
+		  },
+		  "brandName": "Marvel",
+		  "collections": ["automated"]
+		},
+		{
+			"emailID": 82,
+			"slug": "",
+			"metrics": [{
+				"views": 69,
+				"likes": 8,
+				"comments": 3,
+				"shares": 5
+			}],
+		  "date": "2015-02-26T02:00:01.000Z",
+		  "subject": "Marvel Subject Ipsum",
+		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/427fed/a1bff6&text=placeholder+82",
+		  	"full": "http://placehold.it/800x1380/427fed/a1bff6&text=placeholder+82"
+		  },
+		  "brandName": "Marvel",
+		  "collections": ["automated"]
+		},
+		{
+			"emailID": 83,
+			"slug": "",
+			"metrics": [{
+				"views": 67,
+				"likes": 3,
+				"comments": 3,
+				"shares": 2
+			}],
+		  "date": "2015-02-26T03:00:01.000Z",
+		  "subject": "Marvel Subject Ipsum",
+		  "description": "Marvel Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+83",
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+83"
+		  },
+		  "brandName": "Marvel",
+		  "collections": ["automated"]
+		},
+		{
+			"emailID": 84,
+			"slug": "",
+			"metrics": [{
+				"views": 72,
+				"likes": 3,
+				"comments": 3,
+				"shares": 2
+			}],
+		  "date": "2015-02-24T10:00:01.000Z",
+		  "subject": "Trello Subject Ipsum",
+		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/ffbb1b/ffdd8d&text=placeholder+84",
+		  	"full": "http://placehold.it/800x1380/ffbb1b/ffdd8d&text=placeholder+84"
+		  },
+		  "brandName": "Trello",
+		  "collections": ["engagement", "apps"]
+		},
+		{
+			"emailID": 85,
+			"slug": "",
+			"metrics": [{
+				"views": 54,
+				"likes": 3,
+				"comments": 1,
+				"shares": 0
+			}],
+		  "date": "2015-02-24T11:00:01.000Z",
+		  "subject": "Trello Enterprises Subject Ipsum",
+		  "description": "Trello Enterprises Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+85",
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+85"
+		  },
+		  "brandName": "Trello Enterprises",
+		  "collections": ["engagement", "apps"]
+		},
+		{
+			"emailID": 86,
+			"slug": "",
+			"metrics": [{
+				"views": 62,
+				"likes": 4,
+				"comments": 4,
+				"shares": 2
+			}],
+		  "date": "2015-02-24T12:00:01.000Z",
+		  "subject": "Trello Subject Ipsum",
+		  "description": "Trello Description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+		  "img": {
+		  	"thumb": "http://placehold.it/600x600/999999/cccccc&text=placeholder+86",
+		  	"full": "http://placehold.it/800x1380/999999/cccccc&text=placeholder+86"
+		  },
+		  "brandName": "Trello",
+		  "collections": ["engagement", "apps"]
 		}
 	],
 	"brands": [
 		{
-			"id": 1,
+			"brandID": 1,
 			"metrics": [{
 				"posts": 14,
 				"views": 1022,
@@ -1475,11 +1646,12 @@
 				"shares": 34
 			}],
 		  "brandName": "DesignModo",
-		  "service": "Software Product",
-		  "collections": ["onboarding", "retention", "ecommerce", "announcement", "engagement"]
+		  "service": "software product",
+		  "emailIDs": [1, 49, 56, 78, 79, 80],
+		  "collections": ["onboarding", "retention", "ecommerce", "announcement", "engagement", "announcement", "education"]
 		},
 		{
-			"id": 2,
+			"brandID": 2,
 			"metrics": [{
 				"posts": 11,
 				"views": 899,
@@ -1488,11 +1660,12 @@
 				"shares": 26
 			}],
 		  "brandName": "Marvel",
-		  "service": "Software Product",
-		  "collections": ["comments", "events", "newsletter", "feed", "engagement", "SAAS"]
+		  "service": "software product",
+		  "emailIDs": [2, 52, 54, 81, 82, 83],
+		  "collections": ["comments", "events", "newsletter", "feed", "engagement", "SAAS", "automated"]
 		},
 		{
-			"id": 3,
+			"brandID": 3,
 			"metrics": [{
 				"posts": 14,
 				"views": 755,
@@ -1501,11 +1674,12 @@
 				"shares": 23
 			}],
 		  "brandName": "Trello",
-		  "service": "Software Product",
-		  "collections": ["welcome", "offer", "comments", "reviews", "ecommerce", "trial", "SAAS"]
+		  "service": "software product",
+		  "emailIDs": [3, 50, 55, 84, 85, 86],
+		  "collections": ["welcome", "offer", "comments", "reviews", "ecommerce", "trial", "SAAS", "engagement", "apps"]
 		},
 		{
-			"id": 4,
+			"brandID": 4,
 			"metrics": [{
 				"posts": 7,
 				"views": 200,
@@ -1514,11 +1688,12 @@
 				"shares": 9
 			}],
 		  "brandName": "JakPrints",
-		  "service": "Ecommerce",
-		  "collections": ["security", "report", "brick & mortar"]
+		  "service": "ecommerce",
+		  "emailIDs": [4],
+		  "collections": ["security", "referral", "brick & mortar"]
 		},
 		{
-			"id": 5,
+			"brandID": 5,
 			"metrics": [{
 				"posts": 6,
 				"views": 802,
@@ -1527,11 +1702,12 @@
 				"shares": 30
 			}],
 		  "brandName": "Spacely Sprockets",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [5, 51, 53],
 		  "collections": ["trial", "engagement", "holiday", "discovery", "password reset", "SAAS"]
 		},
 		{
-			"id": 6,
+			"brandID": 6,
 			"metrics": [{
 				"posts": 7,
 				"views": 545,
@@ -1540,11 +1716,12 @@
 				"shares": 7
 			}],
 		  "brandName": "Fajita Joe's",
-		  "service": "Brick & Mortar",
-		  "collections": ["invitation", "retention", "brick & mortar"]
+		  "service": "brick & mortar",
+		  "emailIDs": [6],
+		  "collections": ["invitation", "referral", "brick & mortar"]
 		},
 		{
-			"id": 7,
+			"brandID": 7,
 			"metrics": [{
 				"posts": 2,
 				"views": 177,
@@ -1553,11 +1730,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Browserly",
-		  "service": "Software Product",
+		  "service": "software product",
+		  "emailIDs": [7],
 		  "collections": ["receipt", "order shipped", "local"]
 		},
 		{
-			"id": 8,
+			"brandID": 8,
 			"metrics": [{
 				"posts": 5,
 				"views": 370,
@@ -1566,11 +1744,12 @@
 				"shares": 1
 			}],
 		  "brandName": "SoundCluster",
-		  "service": "Ecommerce",
+		  "service": "ecommerce",
+		  "emailIDs": [8],
 		  "collections": ["SAAS", "newsletter", "feed"]
 		},
 		{
-			"id": 9,
+			"brandID": 9,
 			"metrics": [{
 				"posts": 4,
 				"views": 299,
@@ -1579,11 +1758,12 @@
 				"shares": 5
 			}],
 		  "brandName": "Broseph, Inc",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [9],
 		  "collections": ["announcement", "publication"]
 		},
 		{
-			"id": 10,
+			"brandID": 10,
 			"metrics": [{
 				"posts": 4,
 				"views": 355,
@@ -1592,11 +1772,12 @@
 				"shares": 2
 			}],
 		  "brandName": "Acme",
-		  "service": "Hardware",
+		  "service": "hardware",
+		  "emailIDs": [10],
 		  "collections": ["engagement", "discovery", "apps"]
 		},
 		{
-			"id": 11,
+			"brandID": 11,
 			"metrics": [{
 				"posts": 6,
 				"views": 371,
@@ -1605,11 +1786,12 @@
 				"shares": 0
 			}],
 		  "brandName": "Wayne Enterprises",
-		  "service": "Hardware",
+		  "service": "hardware",
+		  "emailIDs": [11],
 		  "collections": ["text", "trial", "government"]
 		},
 		{
-			"id": 12,
+			"brandID": 12,
 			"metrics": [{
 				"posts": 8,
 				"views": 411,
@@ -1618,11 +1800,12 @@
 				"shares": 2
 			}],
 		  "brandName": "Kanoodle",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [12],
 		  "collections": ["automated", "account", "ecommerce"]
 		},
 		{
-			"id": 13,
+			"brandID": 13,
 			"metrics": [{
 				"posts": 2,
 				"views": 254,
@@ -1631,11 +1814,12 @@
 				"shares": 2
 			}],
 		  "brandName": "Zoomdawg",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [13, 14],
 		  "collections": ["SAAS", "engagement", "product launch", "ecommerce"]
 		},
 		{
-			"id": 14,
+			"brandID": 14,
 			"metrics": [{
 				"posts": 3,
 				"views": 266,
@@ -1644,11 +1828,12 @@
 				"shares": 3
 			}],
 		  "brandName": "Twitter",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [24, 28, 32, 36, 40],
 		  "collections": ["sharing", "social", "sharing", "retention", "product launch", "apps", "text", "trial", "promotion", "newsletter"]
 		},
 		{
-			"id": 15,
+			"brandID": 15,
 			"metrics": [{
 				"posts": 3,
 				"views": 287,
@@ -1657,11 +1842,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Chattertags",
-		  "service": "Government",
+		  "service": "government",
+		  "emailIDs": [15],
 		  "collections": ["government", "ecommerce"]
 		},
 		{
-			"id": 16,
+			"brandID": 16,
 			"metrics": [{
 				"posts": 6,
 				"views": 398,
@@ -1670,11 +1856,12 @@
 				"shares": 2
 			}],
 		  "brandName": "WobbleLab",
-		  "service": "Hardware",
+		  "service": "hardware",
+		  "emailIDs": [16],
 		  "collections": ["ecommerce", "reviews"]
 		},
 		{
-			"id": 17,
+			"brandID": 17,
 			"metrics": [{
 				"posts": 10,
 				"views": 473,
@@ -1683,11 +1870,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Coolnomics",
-		  "service": "Software Product",
+		  "service": "software product",
+		  "emailIDs": [17],
 		  "collections": ["SAAS"]
 		},
 		{
-			"id": 18,
+			"brandID": 18,
 			"metrics": [{
 				"posts": 5,
 				"views": 447,
@@ -1696,11 +1884,12 @@
 				"shares": 3
 			}],
 		  "brandName": "Wonka Industries",
-		  "service": "Hardware",
+		  "service": "hardware",
+		  "emailIDs": [18],
 		  "collections": ["brick & mortar", "retention"]
 		},
 		{
-			"id": 19,
+			"brandID": 19,
 			"metrics": [{
 				"posts": 3,
 				"views": 454,
@@ -1709,11 +1898,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Oscorp",
-		  "service": "Government",
+		  "service": "government",
+		  "emailIDs": [19],
 		  "collections": ["ecommerce", "transactional", "support"]
 		},
 		{
-			"id": 20,
+			"brandID": 20,
 			"metrics": [{
 				"posts": 5,
 				"views": 354,
@@ -1722,24 +1912,26 @@
 				"shares": 3
 			}],
 		  "brandName": "Globex",
-		  "service": "Government",
+		  "service": "government",
+		  "emailIDs": [20],
 		  "collections": ["social", "government", "engagement"]
 		},
 		{
-			"id": 21,
+			"brandID": 21,
 			"metrics": [{
-				"posts": 1,
-				"views": 105,
-				"likes": 5,
-				"comments": 1,
-				"shares": 1
+				"posts": 28,
+				"views": 905,
+				"likes": 22,
+				"comments": 20,
+				"shares": 15
 			}],
 		  "brandName": "Squarespace",
-		  "service": "Software Product",
+		  "service": "software product",
+		  "emailIDs": [21, 25, 29, 33, 37, 41, 44, 46, 47, 48],
 		  "collections": ["password reset", "SAAS", "new article", "transactional", "trial", "publication", "holiday", "hardware", "ecommerce", "government", "reviews", "comments", "engagement", "discovery", "text"]
 		},
 		{
-			"id": 22,
+			"brandID": 22,
 			"metrics": [{
 				"posts": 4,
 				"views": 233,
@@ -1748,24 +1940,26 @@
 				"shares": 2
 			}],
 		  "brandName": "Treehouse",
-		  "service": "Software Product",
+		  "service": "software product",
+		  "emailIDs": [22, 26, 30, 34, 38, 42, 45],
 		  "collections": ["ecommerce", "reviews", "SAAS", "support", "automated", "account", "education", "announcement", "invitation", "social", "product launch", "holiday", "promotion", "newsletter", "feed"]
 		},
 		{
-			"id": 23,
+			"brandID": 23,
 			"metrics": [{
-				"posts": 1,
-				"views": 166,
-				"likes": 4,
-				"comments": 2,
-				"shares": 1
+				"posts": 21,
+				"views": 866,
+				"likes": 14,
+				"comments": 12,
+				"shares": 14
 			}],
 		  "brandName": "Dot & Bo",
-		  "service": "Ecommerce",
-		  "collections": ["other", "ecommerce", "product launch", "engagement", "discovery", "brick & mortar", "SAAS", "order shipped", "apps", "password reset"]
+		  "service": "ecommerce",
+		  "emailIDs": [23, 27, 31, 35, 39, 43, 27],
+		  "collections": ["other", "offer", "ecommerce", "product launch", "engagement", "discovery", "brick & mortar", "SAAS", "order shipped", "apps", "password reset", "support"]
 		},
 		{
-			"id": 24,
+			"brandID": 24,
 			"metrics": [{
 				"posts": 4,
 				"views": 146,
@@ -1774,11 +1968,12 @@
 				"shares": 0
 			}],
 		  "brandName": "Best Buy",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [57],
 		  "collections": ["survey", "brick & mortar"]
 		},
 		{
-			"id": 25,
+			"brandID": 25,
 			"metrics": [{
 				"posts": 5,
 				"views": 266,
@@ -1787,11 +1982,12 @@
 				"shares": 0
 			}],
 		  "brandName": "Home Depot",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [58],
 		  "collections": ["offer", "brick & mortar"]
 		},
 		{
-			"id": 26,
+			"brandID": 26,
 			"metrics": [{
 				"posts": 1,
 				"views": 236,
@@ -1800,11 +1996,12 @@
 				"shares": 10
 			}],
 		  "brandName": "Target",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [59],
 		  "collections": ["invitation", "brick & mortar"]
 		},
 		{
-			"id": 27,
+			"brandID": 27,
 			"metrics": [{
 				"posts": 5,
 				"views": 366,
@@ -1813,11 +2010,12 @@
 				"shares": 3
 			}],
 		  "brandName": "Crate & Barrel",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [60],
 		  "collections": ["engagement", "alerts"]
 		},
 		{
-			"id": 28,
+			"brandID": 28,
 			"metrics": [{
 				"posts": 12,
 				"views": 566,
@@ -1826,11 +2024,12 @@
 				"shares": 11
 			}],
 		  "brandName": "Chipotle",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [61],
 		  "collections": ["trial", "social", "brick & mortar"]
 		},
 		{
-			"id": 29,
+			"brandID": 29,
 			"metrics": [{
 				"posts": 9,
 				"views": 366,
@@ -1839,11 +2038,12 @@
 				"shares": 5
 			}],
 		  "brandName": "Starbucks",
-		  "service": "Brick & Mortar",
+		  "service": "brick & mortar",
+		  "emailIDs": [62],
 		  "collections": ["feed","brick & mortar"]
 		},
 		{
-			"id": 30,
+			"brandID": 30,
 			"metrics": [{
 				"posts": 1,
 				"views": 218,
@@ -1852,11 +2052,12 @@
 				"shares": 5
 			}],
 		  "brandName": "Pinterest",
-		  "service": "Social Media",
-		  "collections": ["report", "text", "social"]
+		  "service": "social media",
+		  "emailIDs": [63],
+		  "collections": ["referral", "text", "social"]
 		},
 		{
-			"id": 31,
+			"brandID": 31,
 			"metrics": [{
 				"posts": 5,
 				"views": 443,
@@ -1865,11 +2066,12 @@
 				"shares": 4
 			}],
 		  "brandName": "Facebook",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [64],
 		  "collections": ["account", "security", "social"]
 		},
 		{
-			"id": 32,
+			"brandID": 32,
 			"metrics": [{
 				"posts": 6,
 				"views": 477,
@@ -1878,11 +2080,12 @@
 				"shares": 4
 			}],
 		  "brandName": "Instagram",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [65],
 		  "collections": ["events", "social"]
 		},
 		{
-			"id": 33,
+			"brandID": 33,
 			"metrics": [{
 				"posts": 6,
 				"views": 398,
@@ -1891,11 +2094,12 @@
 				"shares": 2
 			}],
 		  "brandName": "Reddit",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [66],
 		  "collections": ["confirmation, notice", "social"]
 		},
 		{
-			"id": 34,
+			"brandID": 34,
 			"metrics": [{
 				"posts": 10,
 				"views": 473,
@@ -1904,11 +2108,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Google+",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [67],
 		  "collections": ["automated", "retention", "social"]
 		},
 		{
-			"id": 35,
+			"brandID": 35,
 			"metrics": [{
 				"posts": 5,
 				"views": 447,
@@ -1917,11 +2122,12 @@
 				"shares": 3
 			}],
 		  "brandName": "Linkedin",
-		  "service": "Social Media",
+		  "service": "social media",
+		  "emailIDs": [68],
 		  "collections": ["discovery", "product launch", "social"]
 		},
 		{
-			"id": 36,
+			"brandID": 36,
 			"metrics": [{
 				"posts": 3,
 				"views": 454,
@@ -1930,11 +2136,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Wired",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [69],
 		  "collections": ["password reset", "publication"]
 		},
 		{
-			"id": 37,
+			"brandID": 37,
 			"metrics": [{
 				"posts": 5,
 				"views": 354,
@@ -1943,11 +2150,12 @@
 				"shares": 3
 			}],
 		  "brandName": "New York Times",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [70],
 		  "collections": ["shipping", "publication"]
 		},
 		{
-			"id": 38,
+			"brandID": 38,
 			"metrics": [{
 				"posts": 1,
 				"views": 105,
@@ -1956,11 +2164,12 @@
 				"shares": 1
 			}],
 		  "brandName": "Dwell",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [71],
 		  "collections": ["transactional", "publication"]
 		},
 		{
-			"id": 39,
+			"brandID": 39,
 			"metrics": [{
 				"posts": 4,
 				"views": 233,
@@ -1969,11 +2178,12 @@
 				"shares": 2
 			}],
 		  "brandName": "Lagom",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [72],
 		  "collections": ["events", "publication"]
 		},
 		{
-			"id": 40,
+			"brandID": 40,
 			"metrics": [{
 				"posts": 5,
 				"views": 366,
@@ -1982,11 +2192,12 @@
 				"shares": 3
 			}],
 		  "brandName": "National Geographic",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [73],
 		  "collections": ["activity", "publication"]
 		},
 		{
-			"id": 41,
+			"brandID": 41,
 			"metrics": [{
 				"posts": 12,
 				"views": 466,
@@ -1995,11 +2206,12 @@
 				"shares": 11
 			}],
 		  "brandName": "The Verge",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [74],
 		  "collections": ["retention", "publication"]
 		},
 		{
-			"id": 42,
+			"brandID": 42,
 			"metrics": [{
 				"posts": 9,
 				"views": 366,
@@ -2008,11 +2220,12 @@
 				"shares": 5
 			}],
 		  "brandName": "Wikipedia",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [75],
 		  "collections": ["sharing", "publication"]
 		},
 		{
-			"id": 43,
+			"brandID": 43,
 			"metrics": [{
 				"posts": 1,
 				"views": 218,
@@ -2021,26 +2234,28 @@
 				"shares": 5
 			}],
 		  "brandName": "Engadget",
-		  "service": "Publication",
+		  "service": "publication",
+		  "emailIDs": [76],
 		  "collections": ["invitation", "publication"]
 		},
 		{
-			"id": 44,
+			"brandID": 44,
 			"metrics": [{
 				"posts": 5,
-				"views": 443,
-				"likes": 9,
-				"comments": 6,
-				"shares": 4
+				"views": 322,
+				"likes": 15,
+				"comments": 16,
+				"shares": 10
 			}],
-		  "brandName": "Facebook",
-		  "service": "Publication",
+		  "brandName": "Techcrunch",
+		  "service": "publication",
+		  "emailIDs": [77],
 		  "collections": ["discovery", "publication"]
 		}
 	],
 	"collections": [
 		{
-			"id": 1,
+			"collectionID": 1,
 			"metrics": [{
 				"posts": 36,
 				"views": 2203,
@@ -2048,21 +2263,25 @@
 				"comments": 105,
 				"shares": 67
 			}],
-	    "name": "abandoned cart"
+	    "name": "abandoned cart",
+	    "emailIDs": "",
+	    "brands": ""
 		},
 		{
-			"id": 2,
+			"collectionID": 2,
 			"metrics": [{
-				"posts": 42,
+				"posts": 24,
 				"views": 3440,
 				"likes": 182,
 				"comments": 122,
 				"shares": 126
 			}],
-	    "name": "account"
+	    "name": "account",
+	    "emailIDs": [12, 30, 64],
+	    "brands": ["Kanoodle", "Treehouse"]
 		},
 		{
-			"id": 3,
+			"collectionID": 3,
 			"metrics": [{
 				"posts": 32,
 				"views": 2999,
@@ -2070,10 +2289,12 @@
 				"comments": 145,
 				"shares": 123
 			}],
-	    "name": "activation"
+	    "name": "activation",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 4,
+			"collectionID": 4,
 			"metrics": [{
 				"posts": 27,
 				"views": 2200,
@@ -2081,10 +2302,12 @@
 				"comments": 115,
 				"shares": 29
 			}],
-	    "name": "activity"
+	    "name": "activity",
+	    "emailIDs": [73, 40],
+	    "brands": ["National Geographic"]
 		},
 		{
-			"id": 6,
+			"collectionID": 6,
 			"metrics": [{
 				"posts": 37,
 				"views": 2545,
@@ -2092,10 +2315,12 @@
 				"comments": 101,
 				"shares": 57
 			}],
-	    "name": "alerts"
+	    "name": "alerts",
+	    "emailIDs": [60, 27],
+	    "brands": ["Crate & Barrel"]
 		},
 		{
-			"id": 7,
+			"collectionID": 7,
 			"metrics": [{
 				"posts": 42,
 				"views": 2177,
@@ -2103,10 +2328,12 @@
 				"comments": 70,
 				"shares": 1
 			}],
-	    "name": "announcement"
+	    "name": "announcement",
+	    "emailIDs": [9, 34, 49],
+	    "brands": ["Broseph, Inc", "Treehouse", "DesignModo"]
 		},
 		{
-			"id": 8,
+			"collectionID": 8,
 			"metrics": [{
 				"posts": 25,
 				"views": 2370,
@@ -2114,10 +2341,12 @@
 				"comments": 52,
 				"shares": 41
 			}],
-	    "name": "automated"
+	    "name": "automated",
+	    "emailIDs": [12, 30, 67],
+	    "brands": ["Kanoodle", "Treehouse", "Google+"]
 		},
 		{
-			"id": 9,
+			"collectionID": 9,
 			"metrics": [{
 				"posts": 34,
 				"views": 3299,
@@ -2125,10 +2354,12 @@
 				"comments": 63,
 				"shares": 55
 			}],
-	    "name": "comments"
+	    "name": "comments",
+	    "emailIDs": [2, 44, 50],
+	    "brands": ["Marvel", "Squarespace", "Trello"]
 		},
 		{
-			"id": 10,
+			"collectionID": 10,
 			"metrics": [{
 				"posts": 44,
 				"views": 2355,
@@ -2136,10 +2367,12 @@
 				"comments": 73,
 				"shares": 62
 			}],
-	    "name": "confirmation"
+	    "name": "confirmation",
+	    "emailIDs": [66],
+	    "brands": ["Reddit"]
 		},
 		{
-			"id": 11,
+			"collectionID": 11,
 			"metrics": [{
 				"posts": 56,
 				"views": 3071,
@@ -2147,10 +2380,12 @@
 				"comments": 51,
 				"shares": 40
 			}],
-	    "name": "appreciation"
+	    "name": "appreciation",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 12,
+			"collectionID": 12,
 			"metrics": [{
 				"posts": 28,
 				"views": 3411,
@@ -2158,21 +2393,25 @@
 				"comments": 64,
 				"shares": 52
 			}],
-	    "name": "deactivation"
+	    "name": "deactivation",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 13,
+			"collectionID": 13,
 			"metrics": [{
-				"posts": 42,
-				"views": 3254,
-				"likes": 85,
-				"comments": 72,
-				"shares": 62
+				"posts": 32,
+				"views": 2854,
+				"likes": 65,
+				"comments": 52,
+				"shares": 32
 			}],
-	    "name": "discovery"
+	    "name": "discovery",
+	    "emailIDs": [10, 35, 47, 51, 68, 77],
+	    "brands": ["Acme", "Dot & Bo", "Squarespace", "Spacely Sprockets", "Linkedin", "Techcrunch"]
 		},
 		{
-			"id": 14,
+			"collectionID": 14,
 			"metrics": [{
 				"posts": 33,
 				"views": 5066,
@@ -2180,10 +2419,12 @@
 				"comments": 52,
 				"shares": 43
 			}],
-	    "name": "ecommerce"
+	    "name": "ecommerce",
+	    "emailIDs": [1, 12, 14, 15, 16, 19, 22, 23, 26, 27, 41, 44, 46, 55],
+	    "brands": ["DesignModo", "Kanoodle", "Zoomdawg", "Chattertags", "WobbleLab", "Oscorp", "Treehouse", "Dot & Bo", "Squarespace", "Trello"]
 		},
 		{
-			"id": 15,
+			"collectionID": 15,
 			"metrics": [{
 				"posts": 33,
 				"views": 2287,
@@ -2191,10 +2432,12 @@
 				"comments": 61,
 				"shares": 51
 			}],
-	    "name": "email digest"
+	    "name": "email digest",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 16,
+			"collectionID": 16,
 			"metrics": [{
 				"posts": 36,
 				"views": 4098,
@@ -2202,21 +2445,25 @@
 				"comments": 72,
 				"shares": 62
 			}],
-	    "name": "engagement"
+	    "name": "engagement",
+	    "emailIDs": [5, 10, 13, 20, 31, 35, 47, 51, 54, 56, 60],
+	    "brands": ["Spacely Sprockets", "Acme", "Zoomdawg", "Globex", "Dot & Bo", "Squarespace", "Marvel", "DesignModo", "Crate & Barrel", "Trello"]
 		},
 		{
-			"id": 17,
+			"collectionID": 17,
 			"metrics": [{
-				"posts": 41,
+				"posts": 32,
 				"views": 2473,
 				"likes": 124,
 				"comments": 52,
 				"shares": 41
 			}],
-	    "name": "events"
+	    "name": "events",
+	    "emailIDs": [2, 65, 72],
+	    "brands": ["marvel", "instagram", "lagom"]
 		},
 		{
-			"id": 18,
+			"collectionID": 18,
 			"metrics": [{
 				"posts": 35,
 				"views": 2447,
@@ -2224,10 +2471,12 @@
 				"comments": 61,
 				"shares": 53
 			}],
-	    "name": "expiration"
+	    "name": "expiration",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 19,
+			"collectionID": 19,
 			"metrics": [{
 				"posts": 25,
 				"views": 2354,
@@ -2235,10 +2484,12 @@
 				"comments": 52,
 				"shares": 43
 			}],
-	    "name": "featured product"
+	    "name": "featured product",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 20,
+			"collectionID": 20,
 			"metrics": [{
 				"posts": 21,
 				"views": 2105,
@@ -2246,10 +2497,12 @@
 				"comments": 61,
 				"shares": 51
 			}],
-	    "name": "feed"
+	    "name": "feed",
+	    "emailIDs": [8, 45, 52, 54, 62],
+	    "brands": ["SoundCluster", "Treehouse", "Marvel", "Starbucks"]
 		},
 		{
-			"id": 21,
+			"collectionID": 21,
 			"metrics": [{
 				"posts": 34,
 				"views": 2233,
@@ -2257,10 +2510,12 @@
 				"comments": 72,
 				"shares": 62
 			}],
-	    "name": "holiday"
+	    "name": "holiday",
+	    "emailIDs": [5, 37, 42],
+	    "brands": ["Spacely Sprockets", "Squarespace", "Treehouse"]
 		},
 		{
-			"id": 22,
+			"collectionID": 22,
 			"metrics": [{
 				"posts": 21,
 				"views": 3166,
@@ -2268,10 +2523,12 @@
 				"comments": 52,
 				"shares": 41
 			}],
-	    "name": "invitation"
+	    "name": "invitation",
+	    "emailIDs": [6, 38, 59, 76],
+	    "brands": ["Fajita Joe's", "Treehouse", "Target", "Engadget"]
 		},
 		{
-			"id": 23,
+			"collectionID": 23,
 			"metrics": [{
 				"posts": 45,
 				"views": 3203,
@@ -2279,10 +2536,12 @@
 				"comments": 66,
 				"shares": 54
 			}],
-	    "name": "local"
+	    "name": "local",
+	    "emailIDs": [7],
+	    "brands": ["Browserly"]
 		},
 		{
-			"id": 24,
+			"collectionID": 24,
 			"metrics": [{
 				"posts": 39,
 				"views": 3001,
@@ -2290,10 +2549,12 @@
 				"comments": 72,
 				"shares": 66
 			}],
-	    "name": "marketing"
+	    "name": "marketing",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 25,
+			"collectionID": 25,
 			"metrics": [{
 				"posts": 32,
 				"views": 3755,
@@ -2301,10 +2562,12 @@
 				"comments": 55,
 				"shares": 43
 			}],
-	    "name": "new article"
+	    "name": "new article",
+	    "emailIDs": [25],
+	    "brands": ["Squarespace"]
 		},
 		{
-			"id": 26,
+			"collectionID": 26,
 			"metrics": [{
 				"posts": 35,
 				"views": 2200,
@@ -2312,21 +2575,12 @@
 				"comments": 65,
 				"shares": 59
 			}],
-	    "name": "news letter"
+	    "name": "newsletter",
+	    "emailIDs": [8, 40, 45, 52],
+	    "brands": ["SoundCluster", "Twitter", "Treehouse", "Marvel"]
 		},
 		{
-			"id": 27,
-			"metrics": [{
-				"posts": 36,
-				"views": 2802,
-				"likes": 147,
-				"comments": 79,
-				"shares": 60
-			}],
-	    "name": "engagement"
-		},
-		{
-			"id": 28,
+			"collectionID": 28,
 			"metrics": [{
 				"posts": 27,
 				"views": 2545,
@@ -2334,10 +2588,12 @@
 				"comments": 51,
 				"shares": 47
 			}],
-	    "name": "offer"
+	    "name": "offer",
+	    "emailIDs": [3, 58, 43],
+	    "brands": ["Trello", "Dot & Bo"]
 		},
 		{
-			"id": 29,
+			"collectionID": 29,
 			"metrics": [{
 				"posts": 32,
 				"views": 3177,
@@ -2345,10 +2601,12 @@
 				"comments": 60,
 				"shares": 51
 			}],
-	    "name": "onboarding"
+	    "name": "onboarding",
+	    "emailIDs": [1],
+	    "brands": ["DesignModo"]
 		},
 		{
-			"id": 30,
+			"collectionID": 30,
 			"metrics": [{
 				"posts": 35,
 				"views": 2370,
@@ -2356,32 +2614,38 @@
 				"comments": 72,
 				"shares": 61
 			}],
-	    "name": "order shipped"
+	    "name": "order shipped",
+	    "emailIDs": [7, 39],
+	    "brands": ["Browserly", "Dot & Bo"]
 		},
 		{
-			"id": 32,
+			"collectionID": 32,
 			"metrics": [{
-				"posts": 44,
+				"posts": 20,
 				"views": 3299,
 				"likes": 138,
 				"comments": 53,
 				"shares": 45
 			}],
-	    "name": "password reset"
+	    "name": "password reset",
+	    "emailIDs": [21, 43, 53, 69],
+	    "brands": ["Squarespace", "Dot & Bo", "Wired"]
 		},
 		{
-			"id": 31,
+			"collectionID": 31,
 			"metrics": [{
-				"posts": 44,
+				"posts": 21,
 				"views": 2355,
 				"likes": 113,
 				"comments": 63,
 				"shares": 52
 			}],
-	    "name": "product launch"
+	    "name": "product launch",
+	    "emailIDs": [],
+	    "brands": ["Zoomdawg", "Dot & Bo", "Twitter", "Treehouse", "Linkedin"]
 		},
 		{
-			"id": 32,
+			"collectionID": 32,
 			"metrics": [{
 				"posts": 36,
 				"views": 3371,
@@ -2389,10 +2653,12 @@
 				"comments": 71,
 				"shares": 60
 			}],
-	    "name": "product sale"
+	    "name": "product sale",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 33,
+			"collectionID": 33,
 			"metrics": [{
 				"posts": 28,
 				"views": 2411,
@@ -2400,10 +2666,12 @@
 				"comments": 54,
 				"shares": 42
 			}],
-	    "name": "product update"
+	    "name": "product update",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 34,
+			"collectionID": 34,
 			"metrics": [{
 				"posts": 32,
 				"views": 2254,
@@ -2411,10 +2679,12 @@
 				"comments": 62,
 				"shares": 52
 			}],
-	    "name": "promotion"
+	    "name": "promotion",
+	    "emailIDs": [40, 45],
+	    "brands": ["Twitter", "Treehouse"]
 		},
 		{
-			"id": 35,
+			"collectionID": 35,
 			"metrics": [{
 				"posts": 43,
 				"views": 2266,
@@ -2422,10 +2692,12 @@
 				"comments": 72,
 				"shares": 63
 			}],
-	    "name": "receipt"
+	    "name": "receipt",
+	    "emailIDs": [7],
+	    "brands": ["Browserly"]
 		},
 		{
-			"id": 36,
+			"collectionID": 36,
 			"metrics": [{
 				"posts": 33,
 				"views": 2287,
@@ -2433,10 +2705,12 @@
 				"comments": 51,
 				"shares": 41
 			}],
-	    "name": "referral"
+	    "name": "referral",
+	    "emailIDs": [4, 6],
+	    "brands": ["JakPrints", "Fajita Joe's", "Pinterest"]
 		},
 		{
-			"id": 37,
+			"collectionID": 37,
 			"metrics": [{
 				"posts": 26,
 				"views": 2398,
@@ -2444,10 +2718,12 @@
 				"comments": 62,
 				"shares": 52
 			}],
-	    "name": "report"
+	    "name": "report",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 38,
+			"collectionID": 38,
 			"metrics": [{
 				"posts": 33,
 				"views": 2473,
@@ -2455,10 +2731,12 @@
 				"comments": 72,
 				"shares": 61
 			}],
-	    "name": "retention"
+	    "name": "retention",
+	    "emailIDs": [1, 6, 18, 28, 67, 74],
+	    "brands": ["DesignModo", "Fajita", "Wonka", "Twitter", "Google+", "The Verge"]
 		},
 		{
-			"id": 39,
+			"collectionID": 39,
 			"metrics": [{
 				"posts": 35,
 				"views": 3447,
@@ -2466,10 +2744,12 @@
 				"comments": 61,
 				"shares": 43
 			}],
-	    "name": "reviews"
+	    "name": "reviews",
+	    "emailIDs": [16, 22, 44, 50],
+	    "brands": ["WobbleLab", "Treehouse", "Squarespace", "Trello"]
 		},
 		{
-			"id": 40,
+			"collectionID": 40,
 			"metrics": [{
 				"posts": 23,
 				"views": 4454,
@@ -2477,10 +2757,12 @@
 				"comments": 52,
 				"shares": 51
 			}],
-	    "name": "SAAS"
+	    "name": "SAAS",
+	    "emailIDs": [2, 3, 8, 13, 17, 21, 25, 26, 29, 33, 39, 53],
+	    "brands": ["Marvel", "Trello", "SoundCluster", "Zoomdawg", "Coolnomics", "Squarespace", "Treehouse", "Dot & Bo", "Spacely Sprockets"]
 		},
 		{
-			"id": 42,
+			"collectionID": 42,
 			"metrics": [{
 				"posts": 23,
 				"views": 2454,
@@ -2488,10 +2770,12 @@
 				"comments": 52,
 				"shares": 51
 			}],
-	    "name": "security"
+	    "name": "security",
+	    "emailIDs": [4, 64],
+	    "brands": ["JakPrints", "Facebook"]
 		},
 		{
-			"id": 42,
+			"collectionID": 42,
 			"metrics": [{
 				"posts": 35,
 				"views": 3354,
@@ -2499,10 +2783,12 @@
 				"comments": 72,
 				"shares": 63
 			}],
-	    "name": "sharing"
+	    "name": "sharing",
+	    "emailIDs": [24, 28, 75],
+	    "brands": ["Twitter", "Wikipedia"]
 		},
 		{
-			"id": 43,
+			"collectionID": 43,
 			"metrics": [{
 				"posts": 21,
 				"views": 2105,
@@ -2510,10 +2796,12 @@
 				"comments": 61,
 				"shares": 41
 			}],
-	    "name": "shipping"
+	    "name": "shipping",
+	    "emailIDs": [70],
+	    "brands": ["New York Times"]
 		},
 		{
-			"id": 44,
+			"collectionID": 44,
 			"metrics": [{
 				"posts": 34,
 				"views": 4000,
@@ -2521,10 +2809,12 @@
 				"comments": 52,
 				"shares": 52
 			}],
-	    "name": "social"
+	    "name": "social",
+	    "emailIDs": [20, 24, 28, 38],
+	    "brands": ["Globex", "Twitter", "Treehouse"]
 		},
 		{
-			"id": 45,
+			"collectionID": 45,
 			"metrics": [{
 				"posts": 21,
 				"views": 3166,
@@ -2532,10 +2822,12 @@
 				"comments": 72,
 				"shares": 61
 			}],
-	    "name": "subscription"
+	    "name": "subscription",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 46,
+			"collectionID": 46,
 			"metrics": [{
 				"posts": 40,
 				"views": 2473,
@@ -2543,10 +2835,12 @@
 				"comments": 62,
 				"shares": 41
 			}],
-	    "name": "support"
+	    "name": "support",
+	    "emailIDs": [19, 26, 27],
+	    "brands": ["Oscorp", "Treehouse", "Dot & Bo"]
 		},
 		{
-			"id": 47,
+			"collectionID": 47,
 			"metrics": [{
 				"posts": 35,
 				"views": 3447,
@@ -2554,21 +2848,25 @@
 				"comments": 51,
 				"shares": 53
 			}],
-	    "name": "survey"
+	    "name": "survey",
+	    "emailIDs": [57],
+	    "brands": ["Best Buy"]
 		},
 		{
-			"id": 48,
+			"collectionID": 48,
 			"metrics": [{
-				"posts": 43,
-				"views": 3454,
-				"likes": 165,
-				"comments": 72,
-				"shares": 61
+				"posts": 33,
+				"views": 2454,
+				"likes": 85,
+				"comments": 42,
+				"shares": 21
 			}],
-	    "name": "text"
+	    "name": "text",
+	    "emailIDs": [11, 46, 48, 63],
+	    "brands": ["Wayne Enterprises", "Twitter", "Squarespace", "Pinterest"]
 		},
 		{
-			"id": 49,
+			"collectionID": 49,
 			"metrics": [{
 				"posts": 25,
 				"views": 2354,
@@ -2576,10 +2874,12 @@
 				"comments": 62,
 				"shares": 43
 			}],
-	    "name": "transactional"
+	    "name": "transactional",
+	    "emailIDs": [19, 25, 71],
+	    "brands": ["Oscorp", "Squarespace", "Dwell"]
 		},
 		{
-			"id": 50,
+			"collectionID": 50,
 			"metrics": [{
 				"posts": 31,
 				"views": 3105,
@@ -2587,10 +2887,12 @@
 				"comments": 51,
 				"shares": 51
 			}],
-	    "name": "trial"
+	    "name": "trial",
+	    "emailIDs": [5, 11, 29, 36, 37, 48, 55, 61],
+	    "brands": ["Spacely Sprockets", "Wayne Enterprises", "Squarespace", "Twitter", "Trello", "Chipotle"]
 		},
 		{
-			"id": 51,
+			"collectionID": 51,
 			"metrics": [{
 				"posts": 44,
 				"views": 2233,
@@ -2598,10 +2900,12 @@
 				"comments": 72,
 				"shares": 62
 			}],
-	    "name": "unsubscribe"
+	    "name": "unsubscribe",
+	    "emailIDs": [],
+	    "brands": [""]
 		},
 		{
-			"id": 52,
+			"collectionID": 52,
 			"metrics": [{
 				"posts": 39,
 				"views": 4005,
@@ -2609,10 +2913,12 @@
 				"comments": 133,
 				"shares": 111
 			}],
-	    "name": "brick & mortar"
+	    "name": "brick & mortar",
+	    "emailIDs": [4, 6, 18, 35, 57, 58, 59, 61, 62],
+	    "brands": ["JakPrints", "Fajita Joe's", "Wonka", "Dot & Bo", "Best Buy", "Home Depot", "Target", "Chipotle", "Starbucks"]
 		},
 		{
-			"id": 52,
+			"collectionID": 52,
 			"metrics": [{
 				"posts": 36,
 				"views": 3900,
@@ -2620,7 +2926,22 @@
 				"comments": 133,
 				"shares": 111
 			}],
-	    "name": "publication"
+	    "name": "publication",
+	    "emailIDs": [9, 33, 69, 70, 71, 72, 73, 74, 75, 76, 77],
+	    "brands": ["Broseph, Inc", "Squarespace", "Wired", "New York Times", "Dwell", "Lagom", "National Geographic", "The Verge", "Wikipedia", "Engadget", "Techcrunch"]
+		},
+		{
+			"collectionID": 53,
+			"metrics": [{
+				"posts": 14,
+				"views": 1233,
+				"likes": 26,
+				"comments": 42,
+				"shares": 22
+			}],
+	    "name": "apps",
+	    "emailIDs": [84, 85, 86],
+	    "brands": ["Trello"]
 		}
 	]
 }
