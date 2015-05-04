@@ -37,7 +37,7 @@
         // Build email slugs
         var source = $filter('slugify')(email.brandName),
             subject = $filter('slugify')(email.subject),
-            slug = 'emails/'+source+'-'+subject+'?id='+email.id;
+            slug = 'emails/'+source+'-'+subject+'?id='+email.emailID;
         email.slug = slug;
       });
     });

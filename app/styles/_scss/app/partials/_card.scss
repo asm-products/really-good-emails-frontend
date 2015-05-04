@@ -136,7 +136,9 @@
 			color: $winkleDarker;
 			//
 			svg {
-				display:none;
+				width:20px;
+				vertical-align: middle;
+				fill: $winkleDarker;
 			}
 		}
 		.title {

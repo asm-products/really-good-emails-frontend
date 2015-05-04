@@ -11,39 +11,34 @@
 	            <span>Brands</span>
 						</a>
 					</div>
-					<h1 data-ng-repeat="item in emails | filter:{id:getID()} | limitTo:'1'">
-						<a href="/{{::item.slug}}">
-							{{::item.subject}}
+					<h1 data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+						<a href="/{{::email.slug}}">
+							{{::email.subject}}
 						</a>
 					</h1>
-					<div class="description" data-ng-repeat="item in emails | filter:{id:getID()} | limitTo:'1'">
-						{{::item.description}}
+					<div class="description" data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+						{{::email.description}}
 					</div>
-					<ul class="collections" data-ng-repeat="email in emails | filter:{id:getID()} | limitTo:'1'">
-						<li data-ng-repeat="item in email.collections">
-							<a href="/collections/{{::item | slugify}}">
-								{{::item}}
+					<ul class="collections" data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+						<li data-ng-repeat="email in email.collections">
+							<a href="/collections/{{::email | slugify}}">
+								{{::email}}
 							</a>
 						</li>
 					</ul>
-					<div class="user">
-						<div class="primary">
-							<a href="">
-								<img src="http://placehold.it/32x32" alt="">
-							</a>
-						</div>
-						<div class="secondary">
-							@someone submitted this 28 days ago
-						</div>
-					</div>
+					<avatar>
+						<div class="label post-label" name="post-label">
+							<span class="username">@dustintheweb</span>
+							<span class="omit_480">submitted this</span>
+							<span class="timestamp">28 days ago</span>
+			    	</div>
+					</avatar>
 				</header>
 				<main>
 					<div class="detail-grid-nav">
 						<div class="primary">	<!-- nav stuff -->
 
-							<!-- <svg class="icon-smiley" viewBox="0 0 32 32">
-							  <use xlink:href="/media/images/img.svg#icon-smiley"></use>
-							</svg> &nbsp;
+							<!--  &nbsp;
 
 							<svg class="icon-comment" viewBox="0 0 32 32">
 							  <use xlink:href="/media/images/img.svg#icon-comment"></use>
@@ -77,46 +72,49 @@
 							  <use xlink:href="/media/images/img.svg#icon-pinterest"></use>
 							</svg> &nbsp; -->
 
-							<!-- <dl class="nav-dropdown nav-group-one" data-ng-class="toggleNavGroupOne ? 'active' : ''">
-								<dt data-ng-click="toggleNavGroupOne = !toggleNavGroupOne; toggleNavGroupTwo = ''; toggleNavGroupThree = '';">
-									<a href="">
-										<span class="item">{{::navGroupOneTitle}}</span>
+							<dl class="nav-dropdown xnav-group-one">
+								<dt>
+									<!-- <a href="">
+										<span class="email">Stuff</span>
 										<svg class="icon-caret" viewBox="0 0 32 32">
 										  <use xlink:href="/media/images/img.svg#icon-caret"></use>
 										</svg>
-									</a>
+									</a> -->
 								<dd>
 									<ul class="dd-list">
-			              <li class="{{::status1}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupOneItems">
-			              	<a href="#" data-ng-click="toggleNavGroupOneItem(this)">{{::item.title}}</a>
-				          </ul>
-							</dl> -->
-						</div>
-						<div class="secondary"> <!-- social stuff -->
-							<!-- <dl class="nav-dropdown nav-group-two _inline _right" data-ng-class="toggleNavGroupTwo ? 'active' : '';">
-								<dt data-ng-click="toggleNavGroupTwo = !toggleNavGroupTwo; toggleNavGroupOne = ''; toggleNavGroupThree = '';">
-									<a href="">
-										<span class="item">{{::navGroupTwoTitle}}</span>
-										<svg class="icon-caret" viewBox="0 0 32 32">
-										  <use xlink:href="/media/images/img.svg#icon-caret"></use>
-										</svg>
-									</a>
-								<dd>
-									<ul class="dd-list">
-			              <li class="{{::status2}}" data-ng-class="{active:$first, first:$first}" data-ng-repeat="item in navGroupTwoItems">
-			              	<a href="#" data-ng-click="toggleNavGroupTwoItem(this)">
-						            <svg class="{{::item.svg}}" viewBox="0 0 32 32">
-												    <use data-ng-href="{{::'/media/images/img.svg#' + item.svg}}" xlink:href="/media/images/img.svg#"></use>
+			              <li>
+			              	<a href="#">
+			              		<svg class="icon-smiley" viewBox="0 0 32 32">
+												  <use xlink:href="/media/images/img.svg#icon-smiley"></use>
 												</svg>
-			              		{{::item.title}}
 			              	</a>
 				          </ul>
-							</dl> -->
+							</dl>
+						</div>
+						<div class="secondary"> <!-- social stuff -->
+							<dl class="nav-dropdown nav-group-one">
+								<dt>
+									<!-- <a href="">
+										<span class="email">Stuff</span>
+										<svg class="icon-smiley" viewBox="0 0 32 32">
+										  <use xlink:href="/media/images/img.svg#icon-smiley"></use>
+										</svg>
+									</a> -->
+								<dd>
+									<ul class="dd-list">
+			              <li>
+			              	<a href="#">
+			              		<svg class="icon-facebook" viewBox="0 0 32 32">
+												  <use xlink:href="/media/images/img.svg#icon-facebook"></use>
+												</svg>
+			              	</a>
+				          </ul>
+							</dl>
 						</div>
 					</div>
-					<div class="detail-grid-main" data-ng-repeat="item in emails | filter:{id:getID()} | limitTo:'1'">
-						<a href="{{::item.img.full}}">
-							<img data-ng-src="{{::item.img.full}}" alt="">
+					<div class="detail-grid-main" data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+						<a href="{{::email.img.full}}">
+							<img data-ng-src="{{::email.img.full}}" alt="">
 						</a>
 					</div>
 				</main>
@@ -135,8 +133,8 @@
 											<div class="big-label">
 												<div class="count">
 													<span>{{::brand.metrics[0].posts}}</span>
-													<svg class="icon-smiley" viewBox="0 0 32 32">
-			                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+													<svg class="icon-mail-line" viewBox="0 0 32 32">
+			                    	<use xlink:href="/media/images/img.svg#icon-mail-line"></use>
 			                    </svg>
 												</div>
 												<div class="title">
@@ -215,7 +213,9 @@
 						</a>
 					</div>
 				</div>
-				<ul class="main two-three-four" data-ng-repeat="collection in collections | orderBy:viewCount:true | limitTo:'2'">
+				<!-- <ul class="main two-three-four" data-ng-repeat="email in emails | filter:{id:getID()} | limitTo:'1'"> -->
+				<ul class="main two-three-four" data-ng-repeat="collection in collections | filter:{emailIDs:getID()} | orderBy:postCount:true | limitTo:'2'">
+				<!-- <h1 data-ng-repeat="email in emails | filter:{id:getID()} | limitTo:'1'"> -->
 					<li class="card">
 						<div class="inner">
 							<div class="thumb">
@@ -225,8 +225,8 @@
 								<div class="big-label">
 									<div class="count">
 										<span>{{::collection.metrics[0].posts}}</span>
-										<svg class="icon-smiley" viewBox="0 0 32 32">
-                    	<use xlink:href="/media/images/img.svg#icon-smiley"></use>
+										<svg class="icon-mail-line" viewBox="0 0 32 32">
+                    	<use xlink:href="/media/images/img.svg#icon-mail-line"></use>
                     </svg>
 									</div>
 									<div class="title">

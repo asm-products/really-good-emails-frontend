@@ -1,7 +1,7 @@
 /* >> Avatar (Module) >>>>>>>>>>>>
 ============================================*/
 //
-.avatar-box {
+.avatar {
 	display:inline-block;
 	//
 	a {
@@ -18,25 +18,37 @@
 				opacity: 0.75;
 			}
 		}
-		.label {
-			display: inline-block;
+	}
+	.label {
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		opacity: 1;
+		transition: opacity 0.2s ease;
+		//
+		&.pre-label {
 			padding-right: 0.25em;
-			vertical-align: middle;
-			text-decoration: none;
-			opacity: 1;
-			transition: opacity 0.2s ease;
 		}
-		.avatar {
-			display:inline-block;
-			width:32px;
-			text-decoration: none;
-			background: $slateLightest;
-			border-radius: 3px;
-			//
-			img {
-				border-radius: 3px;
-				transition: opacity 0.2s ease;
+		&.post-label {
+			padding-left: 0.25em;
+		}
+		.omit_480 {
+			display: none;
+			@media screen and (min-width: 480px) {
+				display: inline;
 			}
+		}
+	}
+	.avatar-thumb {
+		display:inline-block;
+		width:32px;
+		text-decoration: none;
+		// background: $slateLightest;
+		border-radius: 3px;
+		//
+		img {
+			border-radius: 3px;
+			transition: opacity 0.2s ease;
 		}
 	}
 }

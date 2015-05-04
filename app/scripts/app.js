@@ -15,11 +15,12 @@
 var app = angular
           .module('reallygoodemails', [
             'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
-            'ui.utils',
-            'headroom',
+            'ui.utils', 'multi-transclude','headroom',
             'app.services.emailData',
             'app.filters.general',
-            'app.directives.general'
+            'app.directives.general',
+            'app.directives.avatar',
+            'app.directives.notification'
           ])
           .run(['$templateCache', '$http', function($templateCache, $http) { // onReady
             $http.get('partials/header.html', {cache:$templateCache});

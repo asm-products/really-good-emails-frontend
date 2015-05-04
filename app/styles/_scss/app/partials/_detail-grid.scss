@@ -121,8 +121,29 @@
 				}
 			}
 		}
-		.user {
-			
+		.avatar {
+			margin-bottom: 2.5em;
+			//
+			a {
+				font-size: 0.813em;
+				color: $slateLightest;
+				//
+				&:hover {
+					//
+					.username {
+						color: $tealDark;
+					}
+				}
+			}
+			.label {
+				//
+				&.post-label {
+					padding-left: 0.35em;
+				}
+			}
+			.avatar-thumb {
+				width:24px;
+			}
 		}
 	}
 	> main {

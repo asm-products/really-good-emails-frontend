@@ -14,7 +14,8 @@
     "modernizr": "latest",
     "jquery": "latest",
     "enquire": "latest",
-    "angular-ui-utils": "bower"
+    "angular-ui-utils": "bower",
+    "ng-multi-transclude": "~0.1.5"
   },
   "devDependencies": {
     "angular-mocks": "1.4.0-rc.1",
