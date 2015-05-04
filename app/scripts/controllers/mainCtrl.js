@@ -37,16 +37,10 @@
         // Build email slugs
         var source = $filter('slugify')(email.brandName),
             subject = $filter('slugify')(email.subject),
-            slug = 'emails/'+source+'-'+subject+'?id='+email.id;
+            slug = 'emails/'+source+'-'+subject+'?id='+email.emailID;
         email.slug = slug;
       });
     });
-
-    $scope.getID = function() {
-      // $timeout(function(){
-        return $location.search().id;
-      // }, 500);
-    };
 
     $scope.viewCount = 'metrics[0].views';
     $scope.postCount = 'metrics[0].posts';
@@ -62,6 +56,11 @@
       }
     });
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+      // Pull Query ID
+      var queryID = $location.search().id;
+      $rootScope.queryID = parseInt(queryID);
+      // Pull Post date
+
       // Inject Vars
       $rootScope.titleTag = current.$$route.titleTag;
       $rootScope.metaTitle = current.$$route.metaTitle;
@@ -115,6 +114,10 @@
     //
     $rootScope.heightAdjust = function() {
       var $header = angular.element($('header'));
+    };
+
+    $scope.message = {
+      time: new Date()
     };
 
 	}]);

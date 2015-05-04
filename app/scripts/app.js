@@ -15,11 +15,12 @@
 var app = angular
           .module('reallygoodemails', [
             'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch', // services / dependencies / directives
-            'ui.utils',
-            'headroom',
+            'ui.utils', 'multi-transclude', 'angularMoment', 'headroom',
             'app.services.emailData',
             'app.filters.general',
-            'app.directives.general'
+            'app.directives.general',
+            'app.directives.avatar',
+            'app.directives.notification'
           ])
           .run(['$templateCache', '$http', function($templateCache, $http) { // onReady
             $http.get('partials/header.html', {cache:$templateCache});
@@ -160,6 +161,11 @@ app.run(function() { // onready
 // >> Global Functions (onReady) >>>>>>>>>>>>>>>
 //
   app.run(['$rootScope', '$window', '$timeout', function($rootScope, $window, $timeout) {
+  // -- Click / Touch 
+  // -- Go back
+  $rootScope.back = function() {
+    $window.history.back();
+  };
   // -- Scroll
     angular.element($window).on('scroll', function() {
       // $timeout(function(){
