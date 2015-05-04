@@ -15,7 +15,8 @@
     "jquery": "latest",
     "enquire": "latest",
     "angular-ui-utils": "bower",
-    "ng-multi-transclude": "~0.1.5"
+    "ng-multi-transclude": "~0.1.5",
+    "angular-moment": "~0.10.1"
   },
   "devDependencies": {
     "angular-mocks": "1.4.0-rc.1",

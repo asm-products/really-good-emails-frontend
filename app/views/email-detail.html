@@ -4,22 +4,22 @@
 			<div class="primary">
 				<header>
 					<div class="breadcrumbs">
-						<a href="" title="">
+						<a href="#" title="" data-ng-click="back();">
 							<svg class="icon-arrow" viewBox="0 0 32 32">
 	              <use xlink:href="/media/images/img.svg#icon-arrow"></use>
 	            </svg>
 	            <span>Brands</span>
 						</a>
 					</div>
-					<h1 data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+					<h1 data-ng-repeat="email in emails | filter:{emailID:queryID}:true">
 						<a href="/{{::email.slug}}">
 							{{::email.subject}}
 						</a>
 					</h1>
-					<div class="description" data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+					<div class="description" data-ng-repeat="email in emails | filter:{emailID:queryID}:true">
 						{{::email.description}}
 					</div>
-					<ul class="collections" data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+					<ul class="collections" data-ng-repeat="email in emails | filter:{emailID:queryID}:true">
 						<li data-ng-repeat="email in email.collections">
 							<a href="/collections/{{::email | slugify}}">
 								{{::email}}
@@ -30,7 +30,9 @@
 						<div class="label post-label" name="post-label">
 							<span class="username">@dustintheweb</span>
 							<span class="omit_480">submitted this</span>
-							<span class="timestamp">28 days ago</span>
+							<span class="timestamp" data-ng-repeat="email in emails | filter:{emailID:queryID}:true">
+								<span am-time-ago="email.date"></span>
+							</span>
 			    	</div>
 					</avatar>
 				</header>
@@ -112,7 +114,7 @@
 							</dl>
 						</div>
 					</div>
-					<div class="detail-grid-main" data-ng-repeat="email in emails | filter:{emailID:getID()} | limitTo:'1'">
+					<div class="detail-grid-main" data-ng-repeat="email in emails | filter:{emailID:queryID}:true">
 						<a href="{{::email.img.full}}">
 							<img data-ng-src="{{::email.img.full}}" alt="">
 						</a>
@@ -124,7 +126,7 @@
 					<li>
 						<div class="card-grid">
 							<div class="card-grid-main">
-								<div class="card" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'1'">
+								<div class="card" data-ng-repeat="brand in brands | filter:{emailIDs:queryID}:true">
 									<div class="inner">
 										<div class="thumb">
 											<a href="/brands/{{::brand.brandName | slugify}}">
@@ -147,7 +149,7 @@
 										</div>
 									</div>
 								</div>
-								<ul class="main mini two-six-1024" data-ng-repeat="brand in brands | orderBy:viewCount:true | limitTo:'1'">
+								<ul class="main mini two-six-1024" data-ng-repeat="brand in brands | filter:{emailIDs:queryID}:true">
 									<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brandName:brand.brandName} | limitTo:'6'">
 										<div class="inner">
 											<div class="thumb">
@@ -213,9 +215,7 @@
 						</a>
 					</div>
 				</div>
-				<!-- <ul class="main two-three-four" data-ng-repeat="email in emails | filter:{id:getID()} | limitTo:'1'"> -->
-				<ul class="main two-three-four" data-ng-repeat="collection in collections | filter:{emailIDs:getID()} | orderBy:postCount:true | limitTo:'2'">
-				<!-- <h1 data-ng-repeat="email in emails | filter:{id:getID()} | limitTo:'1'"> -->
+				<ul class="main two-three-four" data-ng-repeat="collection in collections | filter:{emailIDs:queryID}:true | orderBy:postCount:true | limitTo:'2'">
 					<li class="card">
 						<div class="inner">
 							<div class="thumb">
@@ -238,7 +238,7 @@
 								</div>
 							</div>
 						</div>
-					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collections:collection.name} | limitTo:'3'">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collections:collection.name}:true | limitTo:'3'">
 						<div class="inner">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">

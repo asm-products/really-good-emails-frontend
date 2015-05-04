@@ -220,7 +220,7 @@
 								</div>
 							</div>
 						</div>
-					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brandName:brand.brandName} | limitTo:'3'">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{brandName:brand.brandName}:true | limitTo:'3'">
 						<div class="inner">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">
@@ -258,7 +258,7 @@
 					<li class="title">
 						<a href="/collections/{{::collection.name | slugify}}">{{::collection.name}}</a>
 					<li>
-					<li data-ng-repeat="brand in brands | orderBy:postCount:true | filter:{collections:collection.name} | limitTo:'9'">
+					<li data-ng-repeat="brand in brands | orderBy:postCount:true | filter:{collections:collection.name}:true | limitTo:'9'">
 						<a href="/brands/{{::brand.brandName | slugify}}">
 							{{::brand.brandName}}
 							<span>
@@ -343,7 +343,7 @@
 								</div>
 							</div>
 						</div>
-					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collections:collection.name} | limitTo:'7'">
+					<li class="card" data-ng-repeat="email in emails | orderBy:viewCount:true | filter:{collections:collection.name}:true | limitTo:'7'">
 						<div class="inner">
 							<div class="thumb">
 								<a href="/{{::email.slug}}">
